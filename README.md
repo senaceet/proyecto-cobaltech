@@ -30,3 +30,14 @@ Se plantea algo diferente al usuario, con un enfoque de contenido desglosado y d
 ### ALCANCES Y LIMITACIONES
 ----
 Ser el portal más importante de tecnología a nivel nacional en la compra al detal de equipos de cómputo y tecnología para empresa y consumo.
+
+#### Integrantes 
+----
+- Angie Lorena Clavijo García 
+    - lorenitagarcia@misena.edu.co
+- Christian Alfredo León Rodriguez 
+     
+- Freddy Jhovan Moreno León 
+    - fjmoreno91@misena.edu.co
+- Leidy Patricia Quevedo Barreto 
+    - lpquevedo7@misena.edu.co
