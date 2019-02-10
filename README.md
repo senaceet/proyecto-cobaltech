@@ -36,7 +36,7 @@ Ser el portal más importante de tecnología a nivel nacional en la compra al de
 - Angie Lorena Clavijo García 
     - lorenitagarcia@misena.edu.co
 - Christian Alfredo León Rodriguez
-    -christian.leon@misena.edu.co
+    -christianleon@misena.edu.co
 - Freddy Jhovan Moreno León 
     - fjmoreno91@misena.edu.co
 - Leidy Patricia Quevedo Barreto 
