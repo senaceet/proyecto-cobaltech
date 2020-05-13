@@ -3,14 +3,13 @@
 
 -- Angie Lorena Clavijo Garcia
 -- Christian Alfredo León Rodriguez
--- Freddy Jhovan Moreno León
 -- Leidy Patricia Quevedo Barreto
 
 -- -------------------------------------------------------------------------------
 
 -- Bloque base de datos
 
-DROP DATABASE COBALTECH;
+DROP DATABASE IF EXISTS COBALTECH;
 CREATE DATABASE COBALTECH;
 USE COBALTECH;
 

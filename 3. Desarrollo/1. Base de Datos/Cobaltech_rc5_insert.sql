@@ -3,7 +3,6 @@
 
 -- Angie Lorena Clavijo Garcia
 -- Christian Alfredo León Rodriguez
--- Freddy Jhovan Moreno León
 -- Leidy Patricia Quevedo Barreto
 
 -- -------------------------------------------------------------------------------
