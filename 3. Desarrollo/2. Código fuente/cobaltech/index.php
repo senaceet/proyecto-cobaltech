@@ -8,10 +8,12 @@
 
 <?php
 
-$controller = isset($_GET['controller']) ? $_GET['controller'] : 'Index';
-$method = isset($_GET['method']) ? $_GET['method'] : 'index';
+$controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : 'cobaltech';
+$method = isset($_REQUEST['method']) ? $_REQUEST['method'] : 'index';
 
 require_once("controllers/cobaltechController.php");
-$controller = "{$controller}Controller";
+$controller=$controller.'Controller';
 
-call_user_func([new $controller(), $method]);
+call_user_func(array($controller,$method));
+
+?>

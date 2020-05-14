@@ -1,20 +1,20 @@
 <?php 
 
-class IndexController{
+class cobaltechController{
       
     public function index(){
-       require_once('views/layer/header.php');
-       require_once('views/layer/navbar.php');
-       require_once('views/layer/sidebar.php');
+       require_once('views/layout_user/header.php');
+       require_once('views/layout_user/navbar.php');
+       require_once('views/layout_user/sidebar.php');
        require_once('views/index/index.php');
-       require_once('views/layer/footer.php');
+       require_once('views/layout_user/footer.php');
     }
 
     public function admin(){
-        require_once('views/layout/header.php');
-        require_once('views/layout/navbar.php');
-        require_once('views/layout/sidebar.php');
+        require_once('views/layout_admin/header.php');
+        require_once('views/layout_admin/navbar.php');
+        require_once('views/layout_admin/sidebar.php');
         require_once('views/admin/admin.php');
-        require_once('views/layout/footer.php');
+        require_once('views/layout_admin/footer.php');
      }
 }
