@@ -2,20 +2,28 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Listado de las ciudades</h1>
+            <h1>Productos</h1>
         </div>
         <div class="section-body">
             <table class="table">
                 <tr>
                     <td>ID</td>
-                    <td>CIUDAD</td>
+                    <td>NOMBRE</td>
+                    <td>DESCRIPCIÓN</td>
+                    <td>EXISTENCIAS</td>
+                    <td>IMAGEN</td>
+                    <td>PRECIO</td>
                 </tr>
                 <?php
                     foreach(parent::get_all() as $result){
                 ?>
                 <tr>
-                    <td><?php echo $result->Id_ciudad ?></td>
-                    <td><?php echo $result->Nombre_ciudad ?></td>
+                    <td><?php echo $result->Id_producto ?></td>
+                    <td><?php echo $result->Nombre_producto ?></td>
+                    <td><?php echo $result->Descripcion ?></td>
+                    <td><?php echo $result->Existencia ?></td>
+                    <td><?php echo $result->Imagen ?></td>
+                    <td><?php echo $result->Precio ?></td>
                 </tr>
                 <?php  } ?>
             </table>
