@@ -5,7 +5,7 @@
        
     public function get_all(){
         try {
-            $query=parent::connect()->prepare("SELECT * FROM usuario ");
+            $query=parent::connect()->prepare("SELECT * FROM usuario");
             $query->execute();
             return  $query->fetchAll(PDO::FETCH_OBJ);
         } catch (Exception $e) {
