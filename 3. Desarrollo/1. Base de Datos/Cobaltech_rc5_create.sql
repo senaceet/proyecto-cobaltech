@@ -182,7 +182,7 @@ CREATE TABLE Tipo_documento(
 -- Tabla USUARIO
 CREATE TABLE Usuario(
 	Id_usuario int(10) NOT NULL AUTO_INCREMENT comment 'Id usuario',
-    Doc_Usuario varchar (15) NOT NULL comment 'Documento del Usuario',
+    Doc_usuario varchar (15) NOT NULL UNIQUE comment 'Documento del Usuario',
 	Primer_nombre varchar(20) NOT NULL comment 'Primer nombre de usuario',
 	Segundo_nombre varchar(20) comment 'Segundo nombre de usuario',
 	Primer_apellido varchar(20) NOT NULL comment 'Primer apellido de usuario',
