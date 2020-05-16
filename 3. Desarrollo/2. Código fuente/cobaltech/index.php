@@ -14,8 +14,13 @@
 */
 require_once('models/database/DB.php');
 require_once('models/Ciudad.php');
+require_once('models/Factura.php');
+require_once('models/Garantia.php');
 require_once('models/Marca.php');
+require_once('models/Pago.php');
+require_once('models/Producto.php');
 require_once('models/Proveedor.php');
+require_once('models/Rol.php');
 require_once('models/TarjetaCredito.php');
 
 $controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : 'cobaltech';
