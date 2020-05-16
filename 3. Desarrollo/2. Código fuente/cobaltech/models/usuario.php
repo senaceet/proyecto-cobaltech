@@ -1,17 +1,17 @@
 <?php
 
- class Usuario extends DB {
-
-    public function get_all(){
-        try {
-            $query=parent::connect()->prepare("SELECT * FROM usuario");
-            $query->execute();
-            return  $query->fetchAll(PDO::FETCH_OBJ);
-        } catch (Exception $e) {
-            die($e->getMessage());
+    class Usuario extends DB {
+  
+        public function get_all(){
+            try {
+                $query=parent::connect()->prepare("SELECT * FROM usuario");
+                $query->execute();
+                return  $query->fetchAll(PDO::FETCH_OBJ);
+            } catch (Exception $e) {
+                die($e->getMessage());
+            }
         }
     }
-}
 
    /* public function create_usuario($Doc_usuario,$Primer_nombre,$Segundo_nombre,$Primer_apellido,
     $Segundo_apellido,$Correo_electronico,$Contrasena,$Direccion,$Telefono,$Movil){
@@ -84,4 +84,5 @@
     }
  }
 */
+
 ?>
