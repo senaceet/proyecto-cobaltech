@@ -8,10 +8,18 @@
 
 <?php
 
+/** 
+ * Todos lo que este en la carpeta modelos
+ * se debe requerir aqui
+*/
+require_once('models/database/DB.php');
+require_once('models/Ciudad.php');
+require_once('models/Marca.php');
+
 $controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : 'cobaltech';
 $method = isset($_REQUEST['method']) ? $_REQUEST['method'] : 'index';
 
-require_once("controllers/cobaltechController.php");
+require_once("controllers/".$controller.'Controller.php');
 $controller = $controller.'Controller';
 
 call_user_func(array($controller,$method));

@@ -1,6 +1,20 @@
 <?php
 
- class ciudad extends DB {
+class Ciudad extends DB{
+   
+    public function get_all(){
+        try {
+            $query=parent::connect()->prepare("SELECT * FROM ciudad ");
+            $query->execute();
+            return  $query->fetchAll(PDO::FETCH_OBJ);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+}
+
+/*
+ class Ciudad extends DB {
 
     public function create_ciudad($Nombre_ciudad){
         try {
@@ -48,16 +62,6 @@
         }
     }
  }
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 ?>
