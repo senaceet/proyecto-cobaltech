@@ -8,6 +8,28 @@
           </div>
           <ul class="sidebar-menu">
               <li class="menu-header">Menu header</li>
+              <!-- Inicio dropdown-->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown">
+                <i class="far fa-square"></i><span>Categorias</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="?controller=Categorias&method=index">Listar</a></li>
+                  <li><a class="nav-link" href="#!">Crear</a></li>
+                </ul>
+              </li>
+              <!-- Inicio dropdown-->
+
+              <!-- Inicio dropdown-->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Ciudades</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="?controller=Ciudades&method=index">Listar</a></li>
+                  <li><a class="nav-link" href="#!">Crear</a></li>
+                </ul>
+              </li>
+              <!-- Inicio dropdown-->
+
+              <!-- Inicio dropdown-->
               <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Dropdown</span></a>
                 <ul class="dropdown-menu">
@@ -15,6 +37,7 @@
                   <li><a class="nav-link" href="#!">Item #2</a></li>
                 </ul>
               </li>
+              <!-- Inicio dropdown-->
               <li class="menu-header">Menu header</li>
               <li class="active"><a class="nav-link" href="#!"><i class="far fa-square"></i> <span>Item #2</span></a></li>              
             </ul>
