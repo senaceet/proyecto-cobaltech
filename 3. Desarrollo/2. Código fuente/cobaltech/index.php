@@ -23,6 +23,8 @@ require_once('models/Proveedor.php');
 require_once('models/Rol.php');
 require_once('models/TarjetaCredito.php');
 require_once('models/TarjetaDebito.php');
+require_once('models/Tipodoc.php');
+require_once('models/Usuario.php');
 
 $controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : 'cobaltech';
 $method = isset($_REQUEST['method']) ? $_REQUEST['method'] : 'index';

@@ -1,8 +1,20 @@
 <?php
 
- class tipo_documento extends DB {
+class Tipodoc extends DB{
+   
+    public function get_all(){
+        try {
+            $query=parent::connect()->prepare("SELECT * FROM tipo_documento ");
+            $query->execute();
+            return  $query->fetchAll(PDO::FETCH_OBJ);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+}
 
-    public function create_tipodoc($Tipodoc){
+/*
+public function create_tipodoc($Tipodoc){
         try {
             $query=parent::connect->prepare("INSERT INTO tipo_documento (Tipodoc, Abreviatura) VALUES (?, ?)");
             $query->bindParam(1,$Tipodoc,PDO::PARAM_STR);
@@ -51,5 +63,7 @@
         }
     }
  }
+
+ */
 
 ?>
