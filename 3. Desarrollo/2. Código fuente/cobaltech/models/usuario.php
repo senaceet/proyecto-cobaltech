@@ -2,7 +2,6 @@
 
  class Usuario extends DB {
 
-       
     public function get_all(){
         try {
             $query=parent::connect()->prepare("SELECT * FROM usuario");
