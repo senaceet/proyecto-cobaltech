@@ -1,11 +1,11 @@
 <?php
 
- class ciudad extends DB {
+ class rol extends DB {
 
-    public function create_ciudad($Nombre_ciudad){
+    public function create_rol($Tipo_rol){
         try {
-            $query=parent::connect->prepare("INSERT INTO ciudad (Nombre_ciudad) VALUES (?)");
-            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
+            $query=parent::connect->prepare("INSERT INTO rol (Tipo_rol) VALUES (?)");
+            $query->bindParam(1,$Tipo_rol,PDO::PARAM_STR);
             $query->execute(); 
 
         } catch (Exception $e) {
@@ -14,10 +14,10 @@
 
     }
 
-    public function read_ciudad($Nombre_ciudad){
+    public function read_rol($Tipo_rol){
         try {
-            $query=parent::connect->prepare("SELECT * FROM ciudad WHERE Nombre_ciudad= ? "); 
-            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
+            $query=parent::connect->prepare("SELECT * FROM rol WHERE Tipo_rol= ? "); 
+            $query->bindParam(1,$Tipo_rol,PDO::PARAM_STR);
             return $query->fetchAll(PDO::FETCH_OBJ);
             $query->execute(); 
 
@@ -26,10 +26,10 @@
         } 
     }
 
-    public function update_ciudad($Nombre_ciudad){
+    public function update_rol($Tipo_rol){
         try {
-            $query=parent::connect->prepare("UPDATE ciudad(Nombre_ciudad) VALUES (?)"); 
-            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
+            $query=parent::connect->prepare("UPDATE rol(Tipo_rol) VALUES (?)"); 
+            $query->bindParam(1,$Tipo_rol,PDO::PARAM_STR);
             $query->execute(); 
 
         } catch (Exception $e) {
@@ -37,10 +37,10 @@
         }
     }
 
-    public function delete_ciudad($Nombre_ciudad){
+    public function delete_rol($Tipo_rol){
         try {
-            $query=parent::connect->prepare("DELETE FROM ciudad WHERE Nombre_ciudad= ? "); 
-            $quey->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
+            $query=parent::connect->prepare("DELETE FROM rol WHERE Tipo_rol= ? "); 
+            $quey->bindParam(1,$Tipo_rol,PDO::PARAM_STR);
             $query->execute(); 
 
         } catch (Exception $e) {
