@@ -31,7 +31,6 @@ CREATE TABLE Categoria(
 CREATE TABLE Ciudad(
 	Id_ciudad int(5) NOT NULL AUTO_INCREMENT comment 'Id ciudad',
 	Nombre_ciudad varchar(20) NOT NULL comment 'Nombre de la Ciudad',
-    Indicativo char(5) NOT NULL comment 'Indicativo telefónico nacional',
 	PRIMARY KEY (Id_ciudad)
 );
 
@@ -116,7 +115,7 @@ CREATE TABLE Producto(
 	Id_producto int(10) NOT NULL AUTO_INCREMENT comment 'Id producto',
 	Nombre_producto varchar(30) NOT NULL comment 'Nombre del producto',
 	Descripcion varchar(255) NOT NULL comment 'Descripción del producto',
-	Existencias int(3) NOT NULL comment 'Stock de existencias del producto',
+	Existencia int(3) NOT NULL comment 'Stock de existencias del producto',
 	Imagen blob NOT NULL comment 'Imagen del producto',
 	Precio float NOT NULL comment 'Precio del producto',
 	CategoriaId_categoria int(3) NOT NULL,

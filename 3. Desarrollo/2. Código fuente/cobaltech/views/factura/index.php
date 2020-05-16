@@ -2,20 +2,22 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Listado de las ciudades</h1>
+            <h1>Facturas</h1>
         </div>
         <div class="section-body">
             <table class="table">
                 <tr>
                     <td>ID</td>
-                    <td>CIUDAD</td>
+                    <td>FECHA</td>
+                    <td>TOTAL</td>
                 </tr>
                 <?php
                     foreach(parent::get_all() as $result){
                 ?>
                 <tr>
-                    <td><?php echo $result->Id_ciudad ?></td>
-                    <td><?php echo $result->Nombre_ciudad ?></td>
+                    <td><?php echo $result->Id_factura ?></td>
+                    <td><?php echo $result->Fecha_venta ?></td>
+                    <td><?php echo $result->Total ?></td>
                 </tr>
                 <?php  } ?>
             </table>
