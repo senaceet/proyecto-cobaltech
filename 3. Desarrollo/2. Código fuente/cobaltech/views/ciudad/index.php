@@ -23,7 +23,7 @@
                 </tr>
                 <?php  } ?>
                 <tr>
-                <td colspan="2" class="text-center">8 Ciudades registradas</td>
+                <td colspan="2" class="text-center"> 8 Ciudades registradas</td>
                 </tr>
             </table>
             </div>
