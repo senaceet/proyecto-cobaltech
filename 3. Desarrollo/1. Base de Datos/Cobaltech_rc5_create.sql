@@ -21,9 +21,9 @@ USE COBALTECH;
 -- Tabla CATEGORIA
 
 CREATE TABLE Categoria(
-	Id_Categoria int(3) NOT NULL AUTO_INCREMENT comment 'IdCategoria',
-	Nombre_Categoria varchar(40) NOT NULL comment 'Nombre Categoria de productos',
-	PRIMARY KEY (Id_Categoria)
+	Id_categoria int(3) NOT NULL AUTO_INCREMENT comment 'IdCategoria',
+	Nombre_categoria varchar(40) NOT NULL comment 'Nombre Categoria de productos',
+	PRIMARY KEY (Id_categoria)
 );
 
 -- Tabla CIUDAD
@@ -201,15 +201,15 @@ CREATE TABLE Usuario(
   -- TABLAS DE SISTEMA
 
 CREATE TABLE ServidorCorreo(
-	Id_Servidor int(10) NOT NULL AUTO_INCREMENT,
-	Tipo_Servidor_Web varchar(255) NOT NULL,
-	Nombre_Servidor   varchar(10) NOT NULL,
+	Id_servidor int(10) NOT NULL AUTO_INCREMENT,
+	Tipo_servidor_Web varchar(255) NOT NULL,
+	Nombre_servidor   varchar(10) NOT NULL,
 	PRIMARY KEY (Id_Servidor));
   
   CREATE TABLE Error(
-	Id_Error int(10) NOT NULL AUTO_INCREMENT comment 'IdError',
-	Descripcion_Error varchar(255) NOT NULL comment 'Descripción del error',
-	Fecha_Error date NOT NULL comment 'Fecha de error',
+	Id_error int(10) NOT NULL AUTO_INCREMENT comment 'IdError',
+	Descripcion_error varchar(255) NOT NULL comment 'Descripción del error',
+	Fecha_error date NOT NULL comment 'Fecha de error',
 	PRIMARY KEY (Id_Error)
 );
 
