@@ -25,7 +25,7 @@
               <?php  } ?>
              </table>
              <tr>
-                  <td colspan="2"><?php echo count(parent::Get_All())?> Marcas Registradas </td>
+                  <td colspan="2"><?php echo count(parent::Get_All())?> Marcas registradas </td>
             </tr>
           </div>
         </section>

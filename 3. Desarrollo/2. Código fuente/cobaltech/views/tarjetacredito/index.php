@@ -31,7 +31,7 @@
                     <?php  } ?>
                 </table>
                 <tr>
-                  <td colspan="5"><?php echo count(parent::Get_All())?> Tarjetas Credito Registrados </td>
+                  <td colspan="5"><?php echo count(parent::Get_All())?> Tarjetas crédito registradas </td>
                 </tr>
               </div>
             </div>

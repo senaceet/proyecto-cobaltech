@@ -25,7 +25,7 @@
               <?php  } ?>
              </table>
              <tr>
-                  <td colspan="2"><?php echo count(parent::Get_All())?> Envíos Registrados </td>
+                  <td colspan="2"><?php echo count(parent::Get_All())?> Envíos registrados </td>
                 </tr>
           </div>
         </section>

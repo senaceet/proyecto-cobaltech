@@ -25,7 +25,7 @@
                          <?php  } ?>
                 </table>
                 <tr>
-                  <td colspan="2"><?php echo count(parent::Get_All())?> Tarjetas Debito Registrados </td>
+                  <td colspan="2"><?php echo count(parent::Get_All())?> Tarjetas débito registradas </td>
                 </tr>
                 </div>
               </div>

@@ -43,7 +43,7 @@
                     <?php  } ?>
                 </table>
                 <tr>
-                   <td colspan="11"><?php echo count(parent::Get_All())?> Usuarios Registrados </td>
+                   <td colspan="11"><?php echo count(parent::Get_All())?> Usuarios registrados </td>
                </tr>
                 </div>
               </div>
