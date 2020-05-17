@@ -22,6 +22,7 @@
           <td><?php echo $result->Nombre_categoria ?></td>
         </tr>
         <?php  } ?>
+        <td colspan="2" class="text-center"><?php echo count(parent::get_all()) ?> Categorías registradas</td>
       </table>
     </div>
   </section>
