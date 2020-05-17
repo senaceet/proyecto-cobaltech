@@ -15,6 +15,20 @@ class CategoriasController extends Categoria{
         require_once('views/layout_admin/footer.php');
     }
 
+    public function create(){
+        require_once('views/layout_admin/header.php');
+        require_once('views/layout_admin/navbar.php');
+        require_once('views/layout_admin/sidebar.php');
+         
+        require_once('views/categoria/create.php');
+
+        require_once('views/layout_admin/footer.php');
+    }
+    public function store(){
+      parent::store_categoria($_POST['Nombre_categoria']);
+      header("location:?controller=Categorias&method=index");
+    }
+
 }
 
 ?>
