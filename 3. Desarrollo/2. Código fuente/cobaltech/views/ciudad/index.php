@@ -5,7 +5,6 @@
             <h1>Listado de las ciudades</h1>
         </div>
         <div class="section-body">
-
         <div class="card">
            <div class="card-body">
            <a href="" class="btn btn-info">Crear nueva ciudad</a> <br><br>
