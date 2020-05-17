@@ -53,6 +53,7 @@ CREATE TABLE Envio(
 );
 
 -- Tabla ESTADO DE GARANTIA
+
 CREATE TABLE Estado_garantia(
 	Id_estado_garantia int(2) NOT NULL AUTO_INCREMENT comment 'Id estado garantía',
 	Tipo_estado varchar(12) comment 'Tipo estado de la garantía',
@@ -79,7 +80,6 @@ CREATE TABLE Factura(
 );
 
 -- Tabla GARANTIA
-
 
 CREATE TABLE Garantia(
 	Id_garantia int(10) NOT NULL AUTO_INCREMENT comment 'Id garantía',
@@ -125,7 +125,6 @@ CREATE TABLE Producto(
 );
 
 -- Tabla PROVEEDOR
-
 
 CREATE TABLE Proveedor(
 	Id_proveedor int(3) NOT NULL AUTO_INCREMENT comment 'Id proveedor',
