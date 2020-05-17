@@ -27,7 +27,8 @@ require_once('models/Categoria.php');
 require_once('models/Tipodoc.php');
 require_once('models/Usuario.php');
 require_once('models/Envio.php');
-
+require_once('models/EstadoEnvio.php');
+require_once('models/EstadoGarantia.php');
 
 $controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : 'cobaltech';
 $method = isset($_REQUEST['method']) ? $_REQUEST['method'] : 'index';
