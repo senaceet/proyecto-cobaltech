@@ -6,10 +6,10 @@
             try {
                 $query=parent::connect()->prepare("SELECT * FROM usuario");
                 $query->execute();
-                return  $query->fetchAll(PDO::FETCH_OBJ);
+            return  $query->fetchAll(PDO::FETCH_OBJ);
             } catch (Exception $e) {
                 die($e->getMessage());
-            }
+            }  
         }
     }
 
