@@ -20,6 +20,7 @@
                     <td><?php echo $result->Total ?></td>
                 </tr>
                 <?php  } ?>
+                <td colspan="2" class="text-center"><?php echo count(parent::get_all()) ?> Facturas registrados</td>
             </table>
         </div>
     </section>
