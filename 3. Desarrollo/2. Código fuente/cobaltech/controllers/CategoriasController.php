@@ -2,8 +2,8 @@
 
 class CategoriasController extends Categoria{
 
-        /*
-       Reporte de todos los datos de la entidad
+    /*
+        Reporte de todos los datos de la entidad
     */
     public function index(){
         require_once('views/layout_admin/header.php');
