@@ -26,13 +26,10 @@
                               <td><?php echo $result->Titular ?></td>
                               <td><?php echo $result->Numero ?></td>
                               <td><?php echo $result->Fecha_vencimiento ?></td>
-                              <td><?php echo $result->CVV ?></td>
+                              <td><?php echo $result->Cvv ?></td>
                             </tr>
                     <?php  } ?>
                 </table>
-                <tr>
-                  <td colspan="5" Class="text-center"> <?php echo count(parent::Get_All())?> Tarjetas Registradas </td>
-                </tr>
               </div>
             </div>
           </div>

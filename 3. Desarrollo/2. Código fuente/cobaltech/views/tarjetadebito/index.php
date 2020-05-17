@@ -13,20 +13,17 @@
                       <table class="table table-sm table-hover table-striped table-bordered">
                           <tr class="bg-info text-white ">
                             <td>ID</td>
-                            <td>TRANSACCION</td>
+                            <td>TRANSACION</td>
                               </tr>
                           <?php
                           foreach(parent::get_all() as $result){
                           ?>
                             <tr>
                                 <td><?php echo $result->Id_tarjeta_debito ?></td>
-                                <td><?php echo $result->Transaccion ?></td>
+                                <td><?php echo $result->Transacion ?></td>
                             </tr>
                          <?php  } ?>
                 </table>
-                <tr>
-                 <td colspan="2" Class="text-center"><?php echo count(parent::Get_All())?> Tarjetas Debito Registrados </td>
-                </tr>
                 </div>
               </div>
             </div>

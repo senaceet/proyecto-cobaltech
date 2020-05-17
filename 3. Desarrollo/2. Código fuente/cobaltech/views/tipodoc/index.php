@@ -26,9 +26,6 @@
                     </tr>
                     <?php  } ?>
                 </table>
-                  <tr>
-                    <td colspan="2" Class="text-center"><?php echo count(parent::Get_All())?> Tipos Documento Registrados </td>
-                  </tr>
               </div>
               </div>
             </div>

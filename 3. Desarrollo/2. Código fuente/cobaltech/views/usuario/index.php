@@ -42,9 +42,6 @@
                     </tr>
                     <?php  } ?>
                 </table>
-                <tr>
-                  <td colspan="11" Class="text-center"><?php echo count(parent::Get_All())?> Usuarios Registrados </td>
-                </tr>
                 </div>
               </div>
             </div>
