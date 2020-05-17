@@ -15,7 +15,7 @@
                                     <input type="text" name="Nombre_marca" class="form-control">
                                 </div>
                                 <hr>
-                                <button class="btn btn-primary" type="submit">Registrar</button>
+                                <button class="btn btn-primary" type="submit">Guardar</button>
                                 <a class="btn btn-primary" href="?controller=Marcas&method=index">Cancelar</a>
                             </form>
                         </div>
