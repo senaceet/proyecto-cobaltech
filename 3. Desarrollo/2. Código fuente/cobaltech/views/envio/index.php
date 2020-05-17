@@ -4,15 +4,15 @@
         <section class="section">
           <div class="section-header">
             <h1>Envíos</h1>
-          </div>
+            </div>
+        <div class="section-body">
 
-          <div class="section-body">
-
-
-             <table class="table">
-              <tr>
+        <div class="card">
+           <div class="card-body">
+            <table class="table table-sm table-hover table-striped table-bordered">
+                <tr class="bg-success text-white ">
                <td>ID</td>
-               <td>Código de Rastreo</td>
+               <td>Cdigo de Rastreo</td>
               </tr>
               <?php
               foreach(parent::get_all() as $result){

@@ -4,13 +4,13 @@
         <section class="section">
           <div class="section-header">
             <h1>Garantías</h1>
-          </div>
+            </div>
+        <div class="section-body">
 
-          <div class="section-body">
-
-
-             <table class="table">
-              <tr>
+        <div class="card">
+           <div class="card-body">
+            <table class="table table-sm table-hover table-striped table-bordered">
+                <tr class="bg-success text-white ">
                <td>ID</td>
                <td>Estado de garantía del producto</td>
               </tr>
