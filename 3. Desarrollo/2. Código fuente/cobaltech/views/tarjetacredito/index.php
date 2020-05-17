@@ -3,30 +3,36 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Lista Tarjetas Credito de la base de datos</h1>
-          </div> 
+            <h1>Tarjetas Credito</h1>
+          </div>
           <div class="section-body">
-                <table class="table">
-                    <tr>
-                        <td>ID</td>
-                        <td>TITULAR</td>
-                        <td>NUMERO</td>
-                        <td>FECHA VENCIMIENTO</td>
-                        <td>CVV</td>
-                    </tr>
-                 <?php
-                 foreach(parent::get_all() as $result){
-                 ?>
-                    <tr>
-                        <td><?php echo $result->Id_tarjeta_credito ?></td>
-                        <td><?php echo $result->Titular ?></td>
-                        <td><?php echo $result->Numero ?></td>
-                        <td><?php echo $result->Fecha_vencimiento ?></td>
-                        <td><?php echo $result->Cvv ?></td>
-                    </tr>
+                <div class="card">
+                    <div class="card-body">
+                        <a href="" class="btn btn-success">Agregar Tarjeta Credito</a><br><br>
+                        <div class="section-body">
+                      <table class="table table-sm table-hover table-striped table-bordered">
+                          <tr class="bg-info text-white ">
+                            <td>ID</td>
+                            <td>TITULAR</td>
+                            <td>NUMERO</td>
+                            <td>FECHA VENCIMIENTO</td>
+                            <td>CVV</td>
+                          </tr>
+                          <?php
+                            foreach(parent::get_all() as $result){
+                            ?>
+                            <tr>
+                              <td><?php echo $result->Id_tarjeta_credito ?></td>
+                              <td><?php echo $result->Titular ?></td>
+                              <td><?php echo $result->Numero ?></td>
+                              <td><?php echo $result->Fecha_vencimiento ?></td>
+                              <td><?php echo $result->Cvv ?></td>
+                            </tr>
                     <?php  } ?>
                 </table>
+              </div>
             </div>
+          </div>
         </section>
       </div>
       <footer class="main-footer">

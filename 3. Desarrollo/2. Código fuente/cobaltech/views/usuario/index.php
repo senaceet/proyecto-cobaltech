@@ -6,8 +6,12 @@
             <h1>Usuarios</h1>
           </div> 
           <div class="section-body">
-                <table class="table">
-                    <tr>
+                <div class="card">
+                    <div class="card-body">
+                        <a href="" class="btn btn-success">Agregar Usuario</a><br><br>
+                        <div class="section-body">
+                      <table class="table table-sm table-hover table-striped table-bordered">
+                          <tr class="bg-info text-white ">
                         <td>ID</td>
                         <td>DOC USUARIO</td>
                         <td>PRIMER NOMBRE</td>
@@ -38,6 +42,8 @@
                     </tr>
                     <?php  } ?>
                 </table>
+                </div>
+              </div>
             </div>
         </section>
       </div>
