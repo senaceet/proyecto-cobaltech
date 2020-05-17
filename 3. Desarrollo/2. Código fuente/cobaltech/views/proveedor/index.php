@@ -3,12 +3,15 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Proveedores de la base de datos</h1>
+            <h1>Proveedores</h1>
           </div>
-
           <div class="section-body">
-                <table class="table">
-                <tr>
+            <div class="card">
+            <div class="card-body">
+              <a href="" class="btn btn-success">Agregar Proveedor</a> <br><br>
+              <div class="section-body">
+                <table class="table table-sm table-hover table-striped table-bordered">
+                <tr class="bg-info text-white ">
                     <td>ID</td>
                     <td>RAZON SOCIAL</td>
                     <td>CONTACTO</td>
@@ -39,7 +42,8 @@
                 </tr>
               <?php  } ?>
             </table>
-
+            </div>
+           </div>
           </div>
         </section>
       </div>

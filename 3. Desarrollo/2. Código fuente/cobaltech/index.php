@@ -31,6 +31,7 @@ require_once('models/EstadoEnvio.php');
 require_once('models/EstadoGarantia.php');
 require_once('models/Efectivo.php');
 
+
 $controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : 'cobaltech';
 $method = isset($_REQUEST['method']) ? $_REQUEST['method'] : 'index';
 

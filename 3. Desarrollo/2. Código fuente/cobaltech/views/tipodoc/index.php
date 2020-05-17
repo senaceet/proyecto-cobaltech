@@ -6,8 +6,12 @@
             <h1>Tipo Documento</h1>
           </div> 
           <div class="section-body">
-                <table class="table">
-                    <tr>
+                <div class="card">
+                    <div class="card-body">
+                        <a href="" class="btn btn-success">Agregar Tipo Documento</a><br><br>
+                        <div class="section-body">
+                      <table class="table table-sm table-hover table-striped table-bordered">
+                          <tr class="bg-info text-white ">
                         <td>ID</td>
                         <td>ABREVIATURA</td>
                         <td>TIPO DOCUMENTO</td>
@@ -22,6 +26,8 @@
                     </tr>
                     <?php  } ?>
                 </table>
+              </div>
+              </div>
             </div>
         </section>
       </div>

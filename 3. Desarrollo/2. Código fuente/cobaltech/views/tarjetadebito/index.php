@@ -3,23 +3,29 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Lista Tarjetas Credito de la base de datos</h1>
+            <h1>Tarjetas Debito</h1>
           </div> 
           <div class="section-body">
-                <table class="table">
-                    <tr>
-                        <td>ID</td>
-                        <td>TRANSACION</td>
-                    </tr>
-                 <?php
-                 foreach(parent::get_all() as $result){
-                 ?>
-                    <tr>
-                        <td><?php echo $result->Id_tarjeta_debito ?></td>
-                        <td><?php echo $result->Transacion ?></td>
-                    </tr>
-                    <?php  } ?>
+                <div class="card">
+                    <div class="card-body">
+                        <a href="" class="btn btn-success">Agregar Tarjeta Debito</a><br><br>
+                        <div class="section-body">
+                      <table class="table table-sm table-hover table-striped table-bordered">
+                          <tr class="bg-info text-white ">
+                            <td>ID</td>
+                            <td>TRANSACION</td>
+                              </tr>
+                          <?php
+                          foreach(parent::get_all() as $result){
+                          ?>
+                            <tr>
+                                <td><?php echo $result->Id_tarjeta_debito ?></td>
+                                <td><?php echo $result->Transacion ?></td>
+                            </tr>
+                         <?php  } ?>
                 </table>
+                </div>
+              </div>
             </div>
         </section>
       </div>
