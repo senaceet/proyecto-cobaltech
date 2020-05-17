@@ -20,7 +20,9 @@
               <td><?php echo $result->Descripcion ?></td>
             </tr>
             <?php } ?>
-            <td colspan="2" class="text-center"><?php echo count(parent::get_all()) ?> Pagos efectivos registrados</td>
+            <tr>
+              <td colspan="2" class="text-center"><?php echo count(parent::get_all()) ?> Pagos efectivos registrados</td>
+            </tr>
           </table>
         </div>
       </div>
@@ -36,5 +38,5 @@
   </div>
 </footer>
 
-    </div>
   </div>
+</div>

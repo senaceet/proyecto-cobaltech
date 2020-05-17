@@ -5,23 +5,30 @@
             <h1>Facturas</h1>
         </div>
         <div class="section-body">
-            <table class="table">
-                <tr>
-                    <td>ID</td>
-                    <td>FECHA</td>
-                    <td>TOTAL</td>
-                </tr>
-                <?php
-                    foreach(parent::get_all() as $result){
-                ?>
-                <tr>
-                    <td><?php echo $result->Id_factura ?></td>
-                    <td><?php echo $result->Fecha_venta ?></td>
-                    <td><?php echo $result->Total ?></td>
-                </tr>
-                <?php  } ?>
-                <td colspan="2" class="text-center"><?php echo count(parent::get_all()) ?> Facturas registradas</td>
-            </table>
+            <div class="card">
+                <div class="card-body">
+                    <a href="" class="btn btn-info">Crear nueva ciudad</a> <br><br>
+                    <table class="table table-sm table-hover table-striped table-bordered">
+                        <tr class="bg-success text-white ">
+                            <td>ID</td>
+                            <td>FECHA</td>
+                            <td>TOTAL</td>
+                        </tr>
+                        <?php
+                            foreach(parent::get_all() as $result){
+                        ?>
+                        <tr>
+                            <td><?php echo $result->Id_factura ?></td>
+                            <td><?php echo $result->Fecha_venta ?></td>
+                            <td><?php echo $result->Total ?></td>
+                        </tr>
+                        <?php } ?>
+                        <tr>
+                            <td colspan="2"><?php echo count(parent::Get_All())?> Facturas </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
 </div>
