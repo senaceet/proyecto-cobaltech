@@ -11,6 +11,16 @@ class Ciudad extends DB{
             die($e->getMessage());
         }
     }
+
+    public function store_ciudad($Nombre_ciudad){
+        try {
+            $query=parent::connect()->prepare("INSERT INTO ciudad (Nombre_ciudad) VALUES (?)");
+            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
+            $query->execute();
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
 }
 
 
