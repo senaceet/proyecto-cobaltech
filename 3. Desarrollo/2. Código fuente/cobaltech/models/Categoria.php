@@ -11,6 +11,18 @@ class Categoria extends DB{
            die($e->getMessage());
         }
     }
-}
 
+    public function store_categoria($Nombre_categoria){
+        try {
+            $query=parent::connect()->prepare("INSERT INTO categoria (Nombre_categoria) VALUES (?)");
+            $query->bindParam(1,$Nombre_categoria,PDO::PARAM_STR);
+            $query->execute();
+        } catch (Exception $e) {
+            die($e->getMessage());
+
+        }
+
+       
+    }
+}
 ?>
