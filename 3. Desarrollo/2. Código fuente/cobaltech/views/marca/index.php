@@ -3,7 +3,7 @@
       <div class="main-content">
         <section class="section">
           <div class="section-header">
-            <h1>Listado de las marcas de la base de datos</h1>
+            <h1> marcas </h1>
           </div>
 
           <div class="section-body">
@@ -23,10 +23,10 @@
                 </tr>
 
               <?php  } ?>
-               
-
              </table>
-
+             <tr>
+                  <td colspan="2"><?php echo count(parent::Get_All())?> Marcas Registradas </td>
+            </tr>
           </div>
         </section>
       </div>

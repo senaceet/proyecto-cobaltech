@@ -21,6 +21,9 @@
                 </tr>
                 <?php  } ?>
             </table>
+            <tr>
+                <td colspan="3"><?php echo count(parent::Get_All())?> Garantias Registrados </td>
+            </tr>
         </div>
     </section>
 </div>

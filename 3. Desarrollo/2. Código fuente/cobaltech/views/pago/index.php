@@ -17,6 +17,9 @@
                 </tr>
                 <?php } ?>
             </table>
+            <tr>
+                <td colspan="1"><?php echo count(parent::Get_All())?> Pagos Registrados </td>
+            </tr>
         </div>
     </section>
 </div>

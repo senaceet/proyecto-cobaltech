@@ -42,6 +42,9 @@
                 </tr>
               <?php  } ?>
             </table>
+            <tr>
+              <td colspan="11"><?php echo count(parent::Get_All())?> Proveedores Registrados </td>
+            </tr>
             </div>
            </div>
           </div>

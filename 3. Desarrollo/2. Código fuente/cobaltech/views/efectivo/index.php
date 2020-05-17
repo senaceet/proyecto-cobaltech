@@ -20,7 +20,7 @@
               <td><?php echo $result->Descripcion ?></td>
             </tr>
             <?php } ?>
-            <td colspan="2" class="text-center"><?php echo count(parent::get_all()) ?> Productos registrados</td>
+            <td colspan="2" class="text-center"><?php echo count(parent::get_all()) ?> Pagos Efectivos registrados</td>
           </table>
         </div>
       </div>
