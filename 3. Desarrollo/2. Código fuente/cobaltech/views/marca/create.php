@@ -2,21 +2,21 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Crear ciudad</h1>
+            <h1>Crear marca</h1>
         </div>
         <div class="section-body">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <form action="?controller=Ciudades&method=store" method="POST">
+                            <form action="?controller=Marcas&method=store" method="POST">
                                 <div class="form-group">
-                                    <label for="">Nombre de la ciudad</label>
-                                    <input type="text" name="Nombre_ciudad" class="form-control">
+                                    <label for="">Nombre de la marca</label>
+                                    <input type="text" name="Nombre_marca" class="form-control">
                                 </div>
                                 <hr>
                                 <button class="btn btn-primary" type="submit">Registrar</button>
-                                <a href="?controller=Ciudades&method=index">Cancelar</a>
+                                <a class="btn btn-primary" href="?controller=Marcas&method=index">Cancelar</a>
                             </form>
                         </div>
                     </div>
