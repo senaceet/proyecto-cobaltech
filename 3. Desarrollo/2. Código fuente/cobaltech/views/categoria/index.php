@@ -27,11 +27,11 @@
                 <a class="btn btn-danger btn-sm">Eliminar</a>
               </td>
             </tr>
-            <?php  } ?>
-            <tr>
-              <td colspan="3" class="text-center"><?php echo count(parent::get_all()) ?> Categorías registradas</td>
-            </tr>
+            <?php } ?>
           </table>
+          <tr>
+            <td colspan="3" class="text-center"><?php echo count(parent::get_all()) ?> Categorías registradas</td>
+          </tr>
         </div>
       </div>
     </div>

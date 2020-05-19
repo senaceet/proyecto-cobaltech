@@ -2,28 +2,40 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Garantias</h1>
+            <h1>Garantías</h1>
         </div>
         <div class="section-body">
-            <table class="table">
-                <tr>
-                    <td>ID</td>
-                    <td>FECHA INGRESO</td>
-                    <td>DESCRIPCIÓN</td>
-                </tr>
-                <?php
-                    foreach(parent::get_all() as $result){
-                ?>
-                <tr>
-                    <td><?php echo $result->Id_garantia ?></td>
-                    <td><?php echo $result->Fecha_ingreso ?></td>
-                    <td><?php echo $result->Descripcion ?></td>
-                </tr>
-                <?php  } ?>
-            </table>
-            <tr>
-                <td colspan="3"><?php echo count(parent::Get_All())?> Garantías registradas </td>
-            </tr>
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-hover table-striped table-bordered">
+                            <tr class="bg-success text-white ">
+                                <td>ID</td>
+                                <td>FECHA INGRESO</td>
+                                <td>DESCRIPCIÓN</td>
+                                <td>OPCIONES</td>
+                            </tr>
+                            <?php
+                                foreach(parent::get_all() as $result){
+                            ?>
+                            <tr>
+                                <td><?php echo $result->Id_garantia ?></td>
+                                <td><?php echo $result->Fecha_ingreso ?></td>
+                                <td><?php echo $result->Descripcion ?></td>
+                                <td class="text-white">
+                                    <a class="btn btn-info btn-sm">Detalles</a>
+                                    <a class="btn btn-warning btn-sm">Editar</a>
+                                    <a class="btn btn-danger btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                            <?php } ?>
+                        </table>
+                        <tr>
+                            <td colspan="4"><?php echo count(parent::get_all())?> Garantías registradas </td>
+                        </tr>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </div>

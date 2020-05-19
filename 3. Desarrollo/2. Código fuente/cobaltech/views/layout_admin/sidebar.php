@@ -9,98 +9,94 @@
     <ul class="sidebar-menu">
       <li class="menu-header">Menú administrador</li>
 
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown CATEGORÍAS-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown">
           <i class="far fa-square"></i><span>Categorias</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Categorias&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Categorias&method=create">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
 
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown CIUDADES-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Ciudades</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Ciudades&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Ciudades&method=create">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
 
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown ENVÍOS-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Envios</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Envios&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
 
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown FACTURAS-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Facturas</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Facturas&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
       
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown GARANTÍAS-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Garantias</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Garantias&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
       
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown MARCAS-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Marcas</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Marcas&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Marcas&method=create">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
       
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown PAGOS-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Pagos</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Pagos&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
       
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown PRODUCTOS-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Productos</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Productos&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Productos&method=create">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
       
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown PROVEEDORES-->
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Proveedores</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Proveedores&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Proveedores&method=create">Crear</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
       
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Roles</span></a>
           <ul class="dropdown-menu">
@@ -108,9 +104,9 @@
             <li><a class="nav-link" href="#!">Crear</a></li>
           </ul>
         </li>
-        <!-- Fin dropdown-->
+        Fin dropdown-->
       
-        <!-- Inicio dropdown-->
+        <!-- Inicio dropdown
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="far fa-square"></i><span>Tipo Documento</span></a>
           <ul class="dropdown-menu">
@@ -118,7 +114,7 @@
             <li><a class="nav-link" href="#!">Crear</a></li>
           </ul>
         </li>
-        <!-- Fin dropdown-->
+        Fin dropdown-->
       
         <!-- Inicio dropdown-->
         <li class="nav-item dropdown">
