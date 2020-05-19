@@ -7,12 +7,12 @@
         <div class="section-body">
             <div class="card">
                 <div class="card-body">
-                    <a href="" class="btn btn-info">Crear nueva ciudad</a> <br><br>
                     <table class="table table-sm table-hover table-striped table-bordered">
                         <tr class="bg-success text-white ">
                             <td>ID</td>
                             <td>FECHA</td>
                             <td>TOTAL</td>
+                            <td>OPCIONES</td>
                         </tr>
                         <?php
                             foreach(parent::get_all() as $result){
@@ -21,12 +21,17 @@
                             <td><?php echo $result->Id_factura ?></td>
                             <td><?php echo $result->Fecha_venta ?></td>
                             <td><?php echo $result->Total ?></td>
+                            <td class="text-white">
+                                <a class="btn btn-info btn-sm">Detalles</a>
+                                <a class="btn btn-warning btn-sm">Editar</a>
+                                <a class="btn btn-danger btn-sm">Eliminar</a>
+                            </td>
                         </tr>
                         <?php } ?>
-                        <tr>
-                            <td colspan="2"><?php echo count(parent::Get_All())?> Facturas </td>
-                        </tr>
                     </table>
+                    <tr>
+                        <td colspan="4"><?php echo count(parent::get_all())?> Facturas </td>
+                    </tr>
                 </div>
             </div>
         </div>

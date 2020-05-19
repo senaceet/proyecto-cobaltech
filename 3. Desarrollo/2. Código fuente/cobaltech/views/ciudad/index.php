@@ -21,17 +21,17 @@
                             <tr>
                                 <td><?php echo $result->Id_ciudad ?></td>
                                 <td><?php echo $result->Nombre_ciudad ?></td>
-                                <td>
+                                <td class="text-white">
                                     <a class="btn btn-info btn-sm">Detalles</a>
                                     <a class="btn btn-warning btn-sm">Editar</a>
                                     <a class="btn btn-danger btn-sm">Eliminar</a>
                                 </td>
                             </tr>
                             <?php } ?>
-                            <tr>
-                                <td colspan="2" class="text-center"><?php echo count(parent::get_all()) ?> Ciudades registradas</td>
-                            </tr>
                         </table>
+                        <tr>
+                            <td colspan="3" class="text-center"><?php echo count(parent::get_all()) ?> Ciudades registradas</td>
+                        </tr>
                     </div>
                 </div>
             </div>

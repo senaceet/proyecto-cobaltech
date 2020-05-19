@@ -10,7 +10,8 @@
           <table class="table table-sm table-hover table-striped table-bordered">
             <tr class="bg-success text-white ">
               <td>ID</td>
-              <td>Código de Rastreo</td>
+              <td>CÓDIGO DE RASTREO</td>
+              <td>OPCIONES</td>
             </tr>
             <?php
               foreach(parent::get_all() as $result){
@@ -18,11 +19,16 @@
             <tr>
               <td><?php echo $result->Id_envio ?></td>
               <td><?php echo $result->Codigo_rastreo ?></td>
+              <td class="text-white">
+                <a class="btn btn-info btn-sm">Detalles</a>
+                <a class="btn btn-warning btn-sm">Editar</a>
+                <a class="btn btn-danger btn-sm">Eliminar</a>
+              </td>
             </tr>
             <?php } ?>
           </table>
           <tr>
-            <td colspan="2"><?php echo count(parent::Get_All())?> Envíos registrados </td>
+            <td colspan="3"><?php echo count(parent::Get_All())?> Envíos registrados </td>
           </tr>
         </div>
       </div>
