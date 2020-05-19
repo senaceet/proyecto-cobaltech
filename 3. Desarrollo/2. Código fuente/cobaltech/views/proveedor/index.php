@@ -50,7 +50,7 @@
               </table>
             </div>
             <tr>
-              <td colspan="12"><?php echo count(parent::get_all())?> Proveedores registrados </td>
+              <td colspan="12" class="text-center"><?php echo count(parent::get_all())?> Proveedores registrados </td>
             </tr>
           </div>
         </div>
