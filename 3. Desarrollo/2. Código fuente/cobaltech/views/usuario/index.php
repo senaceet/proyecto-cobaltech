@@ -8,8 +8,9 @@
           <div class="section-body">
                 <div class="card">
                     <div class="card-body">
-                        <a href="" class="btn btn-success">Agregar Usuario</a><br><br>
+                        <a href="?controller=Usuarios&method=create" class="btn btn-success">Agregar Usuario</a><br><br>
                         <div class="section-body">
+                        <div class="table-responsive">
                       <table class="table table-sm table-hover table-striped table-bordered">
                           <tr class="bg-info text-white ">
                         <td>ID</td>
@@ -23,6 +24,7 @@
                         <td>DIRECCION</td>
                         <td>TELEFONO</td>
                         <td>MOVIL</td>
+                        <td>OPCIONES</td>
                     </tr>
                         <?php
                         foreach(parent::get_all() as $result){
@@ -39,11 +41,17 @@
                         <td><?php echo $result->Direccion?></td>
                         <td><?php echo $result->Telefono?></td>
                         <td><?php echo $result->Movil?></td>
+                        <td>
+                          <a class="btn btn-info btn-sm">Detalles</a>
+                          <a class="btn btn-warning btn-sm">Editar</a>
+                          <a class="btn btn-danger btn-sm">Eliminar</a>
+                        </td>
                     </tr>
                     <?php  } ?>
                 </table>
+                </div>
                 <tr>
-                   <td colspan="11"><?php echo count(parent::Get_All())?> Usuarios registrados </td>
+                   <td colspan="11" class="text-center"><?php echo count(parent::Get_All())?> Usuarios registrados </td>
                </tr>
                 </div>
               </div>

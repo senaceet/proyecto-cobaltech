@@ -11,7 +11,34 @@
                 die($e->getMessage());
             }  
         }
+        public function store_usuario($Doc_usuario,$Primer_nombre,$Segundo_nombre,$Primer_apellido,
+                                    $Segundo_apellido,$Correo_electronico,$Contrasena,$Direccion,$Telefono,
+                                    $Movil,$RolId_rol,$CiudadId_ciudad,$Tipo_documentoId_tipodoc,$ProductoId_producto){
+            try {
+                $query=parent::connect()->prepare("INSERT INTO usuario (Doc_usuario,Primer_nombre,
+                Segundo_nombre,Primer_apellido,Segundo_apellido,Correo_electronico,Contrasena,Direccion,Telefono,
+                Movil,RolId_rol,CiudadId_ciudad,Tipo_documentoId_tipodoc,ProductoId_producto)
+                 VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,)");
+                $query->bindParam(2,$Doc_usuario,PDO::PARAM_STR);
+                $query->bindParam(3,$Primer_nombre,PDO::PARAM_STR);
+                $query->bindParam(4,$Segundo_nombre,PDO::PARAM_STR);
+                $query->bindParam(5,$Primer_apellido,PDO::PARAM_STR);
+                $query->bindParam(6,$Segundo_apellido,PDO::PARAM_STR);
+                $query->bindParam(7,$Correo_electronico,PDO::PARAM_STR);
+                $query->bindParam(8,$Contrasena,PDO::PARAM_STR);
+                $query->bindParam(9,$Direccion,PDO::PARAM_STR);
+                $query->bindParam(10,$Telefono,PDO::PARAM_STR);
+                $query->bindParam(11,$Movil,PDO::PARAM_STR);
+                $query->bindParam(11,$RolId_rol,PDO::PARAM_STR);
+                $query->bindParam(11,$CiudadId_ciudad,PDO::PARAM_STR);
+                $query->bindParam(11,$Tipo_documentoId_tipodoc,PDO::PARAM_STR);
+                $query->bindParam(11,$ProductoId_producto,PDO::PARAM_STR);
+                $query->execute();
+            } catch (Exception $e) {
+                die($e->getMessage());
+            }
     }
+}
 
    /* public function create_usuario($Doc_usuario,$Primer_nombre,$Segundo_nombre,$Primer_apellido,
     $Segundo_apellido,$Correo_electronico,$Contrasena,$Direccion,$Telefono,$Movil){
