@@ -24,11 +24,19 @@ class ProveedoresController extends Proveedor{
         require_once('views/layout_admin/footer.php');
     }
     public function store(){
-      parent::store_proveedor($_POST['Id_proveedor'],$_POST['Razon_social'],$_POST['Contacto'],
-      $_POST['Cargo'],$_POST['Telefono'],$_POST['Extension'],$_POST['Movil'],$_POST['Direccion'],
-      $_POST['Bodega'],$_POST['Website'],$_POST['Email']);
-      
-      header("location:?controller=Proveedores&method=index");
+      parent::store_proveedor($_POST['Id_proveedor'],
+                              $_POST['Razon_social'],
+                              $_POST['Contacto'],
+                              $_POST['Cargo'],
+                              $_POST['Telefono'],
+                              $_POST['Extension'],
+                              $_POST['Movil'],
+                              $_POST['Direccion'],
+                              $_POST['Bodega'],
+                              $_POST['Website'],
+                              $_POST['Email']);
+
+        header("location:?controller=Proveedores&method=index");
     }
 }
 
