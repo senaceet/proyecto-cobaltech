@@ -25,14 +25,14 @@ class ProductosController extends Producto{
         require_once('views/layout_admin/footer.php');
     }
 
-
     public function store(){
-        parent::store_producto($_POST['Id_producto'],
-                               $_POST['Nombre_producto'],
-                               $_POST['Descripcion'],
-                               $_POST['Existencia'],
-                               $_POST['Imagen'],
-                               $_POST['Precio']);
+        parent::store_producto
+                            ($_POST['Id_producto'],
+                            $_POST['Nombre_producto'],
+                            $_POST['Descripcion'],
+                            $_POST['Existencia'],
+                            $_POST['Imagen'],
+                            $_POST['Precio']);
 
 
             header("location:?controller=Productos&method=index");
