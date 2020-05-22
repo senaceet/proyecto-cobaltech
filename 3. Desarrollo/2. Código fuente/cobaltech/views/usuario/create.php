@@ -13,7 +13,7 @@
                         <div 
                             class="form-group">
                             <label for="">DOCUMENTO USUARIO</label>
-                            <input type="text" name="Doc_usuario" class="form-control">
+                            <input type="numb" name="Doc_usuario" class="form-control">
                         </div>
                         <div 
                             class="form-group">
@@ -64,7 +64,7 @@
                             class="form-group">
                             <label for="">ROL</label>
                             <select name="RolId_rol" id="" class="form-control">
-                            <option value="">SELECCIONAR...</option>
+                            <option value="">Seleccionar...</option>
                             <?php foreach (Rol::get_all() as $result){ ?>
                                 <option value="<?php echo $result->Id_rol ?>"><?php echo $result->Tipo_rol?></option>
 
@@ -75,7 +75,7 @@
                             class="form-group">
                             <label for="">CIUDAD</label>
                             <select name="CiudadId_ciudad" id="" class="form-control">
-                            <option value="">SELECCIONAR...</option>
+                            <option value="">Seleccionar...</option>
                             <?php foreach (Ciudad::get_all() as $result){ ?>
                                 <option value="<?php echo $result->Id_ciudad ?>"><?php echo $result->Nombre_ciudad?></option>
 
@@ -86,7 +86,7 @@
                             class="form-group">
                             <label for="">TIPO DOCUMENTO</label>
                             <select name="Tipo_documentoId_tipodoc" id="" class="form-control">
-                            <option value="">SELECCIONAR...</option>
+                            <option value="">Seleccionar...</option>
                             <?php foreach (Tipodoc::get_all() as $result){ ?>
                                 <option value="<?php echo $result->Id_tipodoc ?>"><?php echo $result->Tipodoc?></option>
 
