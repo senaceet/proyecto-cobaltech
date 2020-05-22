@@ -29,6 +29,11 @@ class CategoriasController extends Categoria{
       header("location:?controller=Categorias&method=index");
     }
 
+    public function delete(){
+        parent::delete_categoria($_GET['Id_categoria']);
+        header("location:?controller=Categorias&method=index");
+    }
+
 }
 
 ?>

@@ -21,7 +21,18 @@ class Categoria extends DB{
             die($e->getMessage());
 
         }
+       
+    }
 
+    public function delete_categoria($Id_categoria){
+        try {
+            $query=parent::connect()->prepare("DELETE FROM categoria WHERE Id_categoria=?");
+            $query->bindParam(1,$Id_categoria,PDO::PARAM_INT);
+            $query->execute();
+        } catch (Exception $e) {
+            die($e->getMessage());
+
+        }
        
     }
 }
