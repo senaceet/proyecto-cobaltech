@@ -29,10 +29,10 @@
                 $query->bindParam(9,$Direccion,PDO::PARAM_STR);
                 $query->bindParam(10,$Telefono,PDO::PARAM_STR);
                 $query->bindParam(11,$Movil,PDO::PARAM_STR);
-                $query->bindParam(11,$RolId_rol,PDO::PARAM_STR);
-                $query->bindParam(11,$CiudadId_ciudad,PDO::PARAM_STR);
-                $query->bindParam(11,$Tipo_documentoId_tipodoc,PDO::PARAM_STR);
-                $query->bindParam(11,$ProductoId_producto,PDO::PARAM_STR);
+                $query->bindParam(12,$RolId_rol,PDO::PARAM_STR);
+                $query->bindParam(13,$CiudadId_ciudad,PDO::PARAM_STR);
+                $query->bindParam(14,$Tipo_documentoId_tipodoc,PDO::PARAM_STR);
+                $query->bindParam(15,$ProductoId_producto,PDO::PARAM_STR);
                 $query->execute();
             } catch (Exception $e) {
                 die($e->getMessage());

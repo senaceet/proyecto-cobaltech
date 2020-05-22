@@ -29,7 +29,11 @@ class CiudadesController extends Ciudad{
       parent::store_ciudad($_POST['Nombre_ciudad']);
       header("location:?controller=Ciudades&method=index");
     }
-
+    public function delete(){
+        parent::delete_ciudad($_GET['Id_ciudad']);
+        header("location:?controller=Ciudades&method=index");
+      }
+    
 }
 
 ?>

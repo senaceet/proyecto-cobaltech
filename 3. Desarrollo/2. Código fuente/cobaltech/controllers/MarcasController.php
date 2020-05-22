@@ -19,7 +19,7 @@ class MarcasController extends Marca{
         require_once('views/layout_admin/header.php');
         require_once('views/layout_admin/navbar.php');
         require_once('views/layout_admin/sidebar.php');
-         
+          
         require_once('views/marca/create.php');
 
         require_once('views/layout_admin/footer.php');
@@ -29,7 +29,7 @@ class MarcasController extends Marca{
         parent::store_marca($_POST['Nombre_marca']);
         header("location:?controller=Marcas&method=index");
     }
-
+    
 }
 
 ?>
