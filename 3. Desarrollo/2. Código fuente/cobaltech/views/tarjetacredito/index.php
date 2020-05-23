@@ -8,7 +8,6 @@
           <div class="section-body">
                 <div class="card">
                     <div class="card-body">
-                        <a href="" class="btn btn-info">Agregar Tarjeta Credito</a>
                         <a href="?controller=Pagos&method=index" class="btn btn-info">Volver a Pagos</a><br><br>
                         <div class="section-body">
                       <table class="table table-sm table-hover table-striped table-bordered">
