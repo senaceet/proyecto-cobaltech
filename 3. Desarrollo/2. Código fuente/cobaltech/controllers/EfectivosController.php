@@ -1,6 +1,6 @@
 <?php
 
-class EfectivoController extends Efectivo{
+class EfectivosController extends Efectivo{
     /*
        Reporte de todos los datos de la entidad
     */
