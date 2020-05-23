@@ -20,7 +20,7 @@
         </li>
         <!-- Fin dropdown-->
 
-        <!-- Inicio dropdown CIUDADES-->
+        <!-- Inicio dropdown CIUDADES
         <li class="nav-item dropdown">
           <a href="#" class="nav-link has-dropdown">
           <i class="far fa-square"></i><span>Ciudades</span></a>
@@ -29,7 +29,7 @@
             <li><a class="nav-link" href="?controller=Ciudades&method=create">Crear</a></li>
           </ul>
         </li>
-        <!-- Fin dropdown-->
+        -- Fin dropdown-->
 
         <!-- Inicio dropdown ENVÍOS-->
         <li class="nav-item dropdown">
@@ -135,7 +135,10 @@
           <i class="far fa-square"></i><span>Usuarios</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Usuarios&method=index">Listar</a></li>
-            <li><a class="nav-link" href="#!">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Usuarios&method=create">Crear usuario</a></li>
+            <li><a class="nav-link" href="?controller=Ciudades&method=index">Ciudades</a></li>
+            <li><a class="nav-link" href="?controller=Roles&method=index">Roles</a></li>
+            <li><a class="nav-link" href="?controller=TipoDocs&method=index">Tipos de Documentos</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
