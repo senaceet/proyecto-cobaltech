@@ -37,7 +37,7 @@
           <i class="far fa-square"></i><span>Envios</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Envios&method=index">Listar</a></li>
-            <li><a class="nav-link" href="?controller-EstadoEnvios&method=index">Estado de envíos</a></li>
+            <li><a class="nav-link" href="?controller=EstadoEnvios&method=index">Estado de envíos</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
