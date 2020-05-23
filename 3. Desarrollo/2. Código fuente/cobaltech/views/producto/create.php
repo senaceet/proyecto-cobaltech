@@ -11,9 +11,6 @@
                <div class="card-body">
                    <form action="?controller=Productos&method=store" method="POST">
                    <div class="form-group">
-                            <label for="">ID PRODUCTO</label>
-                            <input type="text" name="Id_producto" class="form-control">
-                        </div>
                         <div class="form-group">
                             <label for="">NOMBRE PRODUCTO</label>
                             <input type="text" name="Nombre_producto" class="form-control">
