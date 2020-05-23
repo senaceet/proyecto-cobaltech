@@ -38,6 +38,11 @@ class ProveedoresController extends Proveedor{
 
         header("location:?controller=Proveedores&method=index");
     }
+
+    public function delete(){
+        parent::delete_proveedor($_GET['Id_proveedor']);
+        header("location:?controller=Proveedores&method=index");
+    }
 }
 
 ?>

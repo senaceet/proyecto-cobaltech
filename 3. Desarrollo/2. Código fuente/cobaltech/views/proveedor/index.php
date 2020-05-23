@@ -43,7 +43,7 @@
                   <td class="text-white">
                     <a class="btn btn-info btn-sm">Detalles</a>
                     <a class="btn btn-warning btn-sm">Editar</a>
-                    <a class="btn btn-danger btn-sm">Eliminar</a>
+                    <a href="?controller=Proveedores&method=delete&Id_proveedor=<?php echo $result->Id_proveedor ?>" class="btn btn-danger btn-sm">Eliminar</a>
                   </td>
                 </tr>
                 <?php } ?>
