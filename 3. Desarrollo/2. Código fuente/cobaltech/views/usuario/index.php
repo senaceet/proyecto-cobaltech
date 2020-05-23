@@ -14,6 +14,7 @@
                       <table class="table table-sm table-hover table-striped table-bordered">
                           <tr class="bg-info text-white ">
                         <td>ID</td>
+                        <td>TIPO DOC</td>
                         <td>DOC USUARIO</td>
                         <td>PRIMER NOMBRE</td>
                         <td>SEGUNDO NOMBRE</td>
@@ -31,6 +32,7 @@
                         ?>
                     <tr>
                         <td><?php echo $result->Id_usuario ?></td>
+                        <td><?php echo $result->Tipodoc.' - '.$result->Nombre_ciudad  ?></td>
                         <td><?php echo $result->Doc_usuario ?></td>
                         <td><?php echo $result->Primer_nombre?></td>
                         <td><?php echo $result->Segundo_nombre?></td>

@@ -15,7 +15,7 @@
           <i class="far fa-square"></i><span>Categorias</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Categorias&method=index">Listar</a></li>
-            <li><a class="nav-link" href="?controller=Categorias&method=create">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Categorias&method=create">Agregar categoría</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
@@ -69,7 +69,7 @@
           </i><span>Marcas</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Marcas&method=index">Listar</a></li>
-            <li><a class="nav-link" href="?controller=Marcas&method=create">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Marcas&method=create">Agregar marca</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
@@ -93,7 +93,7 @@
           <i class="far fa-square"></i><span>Productos</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Productos&method=index">Listar</a></li>
-            <li><a class="nav-link" href="?controller=Productos&method=create">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Productos&method=create">Agregar producto</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
@@ -104,7 +104,7 @@
           </i><span>Proveedores</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Proveedores&method=index">Listar</a></li>
-            <li><a class="nav-link" href="?controller=Proveedores&method=create">Crear</a></li>
+            <li><a class="nav-link" href="?controller=Proveedores&method=create">Agregar proveedor</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->

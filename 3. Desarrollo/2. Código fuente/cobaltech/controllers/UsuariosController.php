@@ -35,8 +35,7 @@ class UsuariosController extends Usuario{
                             $_POST['Movil'],
                             $_POST['RolId_rol'],
                             $_POST['CiudadId_ciudad'],
-                            $_POST['Tipo_documentoId_tipodoc'],
-                            $_POST['ProductoId_producto']);
+                            $_POST['Tipo_documentoId_tipodoc']);
       
       header("location:?controller=Usuarios&method=index");
     }
