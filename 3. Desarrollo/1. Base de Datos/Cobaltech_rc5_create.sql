@@ -242,5 +242,4 @@ ADD FOREIGN KEY (ProveedorId_Proveedor) REFERENCES Proveedor (Id_Proveedor);
 ALTER TABLE Usuario
 ADD FOREIGN KEY (RolId_Rol) REFERENCES Rol (Id_Rol),
 ADD FOREIGN KEY (CiudadId_Ciudad) REFERENCES Ciudad (Id_Ciudad),
-ADD FOREIGN KEY (Tipo_documentoId_tipodoc) REFERENCES Tipo_documento (Id_tipodoc),
-ADD FOREIGN KEY (ProductoId_Producto) REFERENCES Producto (Id_Producto);
+ADD FOREIGN KEY (Tipo_documentoId_tipodoc) REFERENCES Tipo_documento (Id_tipodoc);
