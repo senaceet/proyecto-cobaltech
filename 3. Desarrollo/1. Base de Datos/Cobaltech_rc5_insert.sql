@@ -189,7 +189,7 @@ Values (NULL,'Entregado'),
        
 -- Insert into Tabla Estado_garantia
 
-insert into Estado_garantia(Id_estado_garantia,Tipo_estado)
+insert into Estado_garantia(Id_estado_garantia,Estado_garantia)
 Values (NULL,'Abierto'),
        (NULL,'En proceso'),
        (NULL,'Resuelto');

@@ -17,7 +17,7 @@
             ?>
             <tr>
               <td><?php echo $result->Id_estado_garantia ?></td>
-              <td><?php echo $result->Tipo_estado ?></td>
+              <td><?php echo $result->Estado_garantia ?></td>
             </tr>
             <?php } ?>
             <tr>
