@@ -27,15 +27,16 @@ class ProductosController extends Producto{
 
     public function store(){
         parent::store_producto
-                            ($_POST['Id_producto'],
-                            $_POST['Nombre_producto'],
+                            ($_POST['Nombre_producto'],
                             $_POST['Descripcion'],
                             $_POST['Existencia'],
                             $_POST['Imagen'],
-                            $_POST['Precio']);
+                            $_POST['Precio'],
+                            $_POST['CategoriaId_categoria'],
+                            $_POST['MarcaId_marca'],
+                            $_POST['ProveedorId_proveedor']);
 
-
-            header("location:?controller=Productos&method=index");
+        header("location:?controller=Productos&method=index");
 }
 }
 ?>

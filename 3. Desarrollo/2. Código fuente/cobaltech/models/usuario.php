@@ -4,10 +4,11 @@
   
         public function get_all(){
             try {
-                $query=parent::connect()->prepare("SELECT * FROM usuario INNER JOIN tipo_documento INNER JOIN ciudad
-                                                WHERE usuario.Tipo_documentoId_tipodoc=tipo_documento.Id_tipodoc and
-                                                      usuario.CiudadId_ciudad=ciudad.Id_ciudad
-                                                ORDER BY usuario.Id_usuario desc");
+                $query=parent::connect()->prepare(
+                    "SELECT * FROM usuario INNER JOIN tipo_documento INNER JOIN ciudad
+                    WHERE usuario.Tipo_documentoId_tipodoc=tipo_documento.Id_tipodoc 
+                    AND usuario.CiudadId_ciudad=ciudad.Id_ciudad
+                    ORDER BY usuario.Id_usuario desc");
                 $query->execute();
             return  $query->fetchAll(PDO::FETCH_OBJ);
             } catch (Exception $e) {
@@ -15,8 +16,8 @@
             }  
         }
         public function store_usuario($Doc_usuario,$Primer_nombre,$Segundo_nombre,$Primer_apellido,
-                                    $Segundo_apellido,$Correo_electronico,$Contrasena,$Direccion,$Telefono,
-                                    $Movil,$RolId_rol,$CiudadId_ciudad,$Tipo_documentoId_tipodoc){
+                        $Segundo_apellido,$Correo_electronico,$Contrasena,$Direccion,$Telefono,
+                        $Movil,$RolId_rol,$CiudadId_ciudad,$Tipo_documentoId_tipodoc){
             try {
                 $query=parent::connect()->prepare("INSERT INTO usuario (Doc_usuario,Primer_nombre,
                 Segundo_nombre,Primer_apellido,Segundo_apellido,Correo_electronico,Contrasena,Direccion,Telefono,
