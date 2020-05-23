@@ -11,6 +11,25 @@ class Rol extends DB{
             die($e->getMessage());
         }
     }
+    public function store_rol($Nombre_rol){
+        try {
+            $query=parent::connect()->prepare("INSERT INTO rol (Nombre_rol) VALUES (?)");
+            $query->bindParam(1,$Nombre_rol,PDO::PARAM_STR);
+            $query->execute();
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+    public function delete_rol($Id_rol){
+        try {
+           $p= parent::connect()->prepare("DELETE FROM rol WHERE Id_rol=?");
+           $p->bindParam(1,$Id_rol,PDO::PARAM_INT);
+           $p->execute();
+           
+        } catch (Exception $e) {
+           die ($e->getMessage());
+        }
+}
 }
 
 /*
