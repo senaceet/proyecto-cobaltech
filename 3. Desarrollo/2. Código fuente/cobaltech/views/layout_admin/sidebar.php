@@ -135,10 +135,10 @@
           <i class="far fa-square"></i><span>Usuarios</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="?controller=Usuarios&method=index">Listar</a></li>
-            <li><a class="nav-link" href="?controller=Usuarios&method=create">Crear usuario</a></li>
+            <li><a class="nav-link" href="?controller=Usuarios&method=create">Agregar usuario</a></li>
             <li><a class="nav-link" href="?controller=Ciudades&method=index">Ciudades</a></li>
             <li><a class="nav-link" href="?controller=Roles&method=index">Roles</a></li>
-            <li><a class="nav-link" href="?controller=TipoDocs&method=index">Tipos de Documentos</a></li>
+            <li><a class="nav-link" href="?controller=TiposDocs&method=index">Tipos de Documentos</a></li>
           </ul>
         </li>
         <!-- Fin dropdown-->
