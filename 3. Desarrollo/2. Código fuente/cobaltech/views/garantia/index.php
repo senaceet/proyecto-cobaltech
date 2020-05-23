@@ -7,6 +7,7 @@
         <div class="section-body">
             <div class="card">
                 <div class="card-body">
+                <a href="?controller=EstadoGarantias&method=index" class="btn btn-info">Modificar estados de garantía</a><br><br>
                     <div class="table-responsive">
                         <table class="table table-sm table-hover table-striped table-bordered">
                             <tr class="bg-success text-white ">
