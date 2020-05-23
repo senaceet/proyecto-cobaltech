@@ -8,15 +8,17 @@
           <div class="section-body">
                 <div class="card">
                     <div class="card-body">
-                        <a href="" class="btn btn-success">Agregar Tarjeta Credito</a><br><br>
+                        <a href="" class="btn btn-info">Agregar Tarjeta Credito</a>
+                        <a href="?controller=Pagos&method=index" class="btn btn-info">Volver a Pagos</a><br><br>
                         <div class="section-body">
                       <table class="table table-sm table-hover table-striped table-bordered">
-                          <tr class="bg-info text-white ">
+                          <tr class="bg-success text-white ">
                             <td>ID</td>
                             <td>TITULAR</td>
                             <td>NUMERO</td>
                             <td>FECHA VENCIMIENTO</td>
                             <td>CVV</td>
+                            <td>OPCIONES</td>
                           </tr>
                           <?php
                             foreach(parent::get_all() as $result){
@@ -27,6 +29,9 @@
                               <td><?php echo $result->Numero ?></td>
                               <td><?php echo $result->Fecha_vencimiento ?></td>
                               <td><?php echo $result->CVV?></td>
+                              <td class="text-white">
+                               <a class="btn btn-info btn-sm">Detalles</a>
+                              </td>
                             </tr>
                     <?php  } ?>
                 </table>

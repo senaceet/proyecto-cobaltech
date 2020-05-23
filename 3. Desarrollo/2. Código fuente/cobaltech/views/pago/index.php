@@ -7,6 +7,9 @@
         <div class="section-body">
             <div class="card">
                 <div class="card-body">
+                    <a href="?controller=Efectivos&method=index" class="btn btn-info">Pagos en Efectivo</a>
+                    <a href="?controller=TarjetasCredito&method=index" class="btn btn-info">Pagos Tarjeta Credito</a>
+                    <a href="?controller=TarjetasDebito&method=index" class="btn btn-info">Pagos Tarjeta Debito</a><br><br>
                     <div class="table-responsive">
                         <table class="table table-sm table-hover table-striped table-bordered">
                             <tr class="bg-success text-white ">
