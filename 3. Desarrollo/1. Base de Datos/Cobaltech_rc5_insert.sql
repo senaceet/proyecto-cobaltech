@@ -216,22 +216,22 @@ VALUES ('Monitor Acer Sb220q', 'Bi 215 full HD 1920 X 1080 ips monitor con y rad
 -- Insert into Tabla USUARIO
 
 INSERT INTO Usuario(Doc_usuario,Primer_nombre,Segundo_nombre,Primer_apellido,Segundo_apellido,Correo_electronico,Contrasena,Direccion,Telefono,
-            Movil,RolId_rol,CiudadId_ciudad,Tipo_documentoId_tipodoc,ProductoId_producto)
-VALUES ('1452687125','Rosaura','','Lozano','Diaz','rosld@gmail.com','null','Cll 10 #2-35',4562589,3124587956,1,1,1,1),
-	('4526987851-1','Maria','Pilar','Diaz','Lopez','Mardi@gmail.com','null','Cra 30 #52-38',7856321,3003214569,2,2,4,3),
-       ('78969872','Rosa','Liseth','Romero','Rosales','Rosmr@outlook.com','null','Cll 43 #22-85',14569823,3218574255,2,3,2,4),
-	('45820231','Carlos','','Parra','Ceballos','Capa_pu@gmail.com','null','Cll 35 #16-84',17859611,3224125879,3,4,1,12),
-	('8759641','Marcos','','Martinez','Rosas','Marom01@outlook.com','null','Cra 88 #11-42',55869123,3054785623,3,5,1,15),
-	('45012201','Jose','Maria','Gomez','Diaz','Josm89@gamil.com','null','Cll 35 #16-84',52639871,3145896732,3,6,2,5),
-	('AR2457892','Eliza','','Rojas','Mora','Eliro65@gamil.com','null','Cll 54 #88-84',68962143,3051426982,3,7,3,8),
-	('1485698541','Jorge','','Angarita','Rojas','Joran_32@gmail.com','null','Cll 100 #16-82',6892135,3125863654,3,1,1,3),
-	('42587632','Mauricio','Dario','Hernandez','','Mauheer01@gmail.com','null','Cra 10 #10-45',36985414,3012569834,3,3,1,2),
-	('1056974110-5','Eliana','Rosa','Ramirez','Pedraza','Elira34@outlook.com','null','Cll 73 #88-84',35896414,NULL,3,5,4,8),
-	('1012358879','Mariana','','Burgos','Perez','Mariba_@outlook','null','Cll 32 #97-09',34589210,3105698214,3,7,1,10),
-       ('CH569712249','Hernando','Alonso','Puertas','Moreno','Hernanp02@gmail.com','null','Av 50 #22-80',32105497,3054789124,3,6,3,11),
-	('1012458962','James','Isaac','Botero','Ruiz','James09@gamil.com','null','Cll 21 #56-44',25682347,3225698412,3,4,1,14),
-       ('10224561012-3','Luis','Jose','Gomez','','lugo_@gmail.com','null','Cll 44 #16-84',7834152,3112569874,3,3,4,8),
-       ('54789636','Lina','Maria','Rodriguez','Perez','lmape98@outlook.com','null','Av 68 #67-92',7635892,3216598720,3,1,1,9);
+            Movil,RolId_rol,CiudadId_ciudad,Tipo_documentoId_tipodoc)
+VALUES ('1452687125','Rosaura','','Lozano','Diaz','rosld@gmail.com','null','Cll 10 #2-35',4562589,3124587956,1,1,1),
+	('4526987851-1','Maria','Pilar','Diaz','Lopez','Mardi@gmail.com','null','Cra 30 #52-38',7856321,3003214569,2,2,4),
+       ('78969872','Rosa','Liseth','Romero','Rosales','Rosmr@outlook.com','null','Cll 43 #22-85',14569823,3218574255,2,3,2),
+	('45820231','Carlos','','Parra','Ceballos','Capa_pu@gmail.com','null','Cll 35 #16-84',17859611,3224125879,3,4,1),
+	('8759641','Marcos','','Martinez','Rosas','Marom01@outlook.com','null','Cra 88 #11-42',55869123,3054785623,3,5,1),
+	('45012201','Jose','Maria','Gomez','Diaz','Josm89@gamil.com','null','Cll 35 #16-84',52639871,3145896732,3,6,2),
+	('AR2457892','Eliza','','Rojas','Mora','Eliro65@gamil.com','null','Cll 54 #88-84',68962143,3051426982,3,7,3),
+	('1485698541','Jorge','','Angarita','Rojas','Joran_32@gmail.com','null','Cll 100 #16-82',6892135,3125863654,3,1,1),
+	('42587632','Mauricio','Dario','Hernandez','','Mauheer01@gmail.com','null','Cra 10 #10-45',36985414,3012569834,3,3,1),
+	('1056974110-5','Eliana','Rosa','Ramirez','Pedraza','Elira34@outlook.com','null','Cll 73 #88-84',35896414,NULL,3,5,4),
+	('1012358879','Mariana','','Burgos','Perez','Mariba_@outlook','null','Cll 32 #97-09',34589210,3105698214,3,7,1),
+       ('CH569712249','Hernando','Alonso','Puertas','Moreno','Hernanp02@gmail.com','null','Av 50 #22-80',32105497,3054789124,3,6,3),
+	('1012458962','James','Isaac','Botero','Ruiz','James09@gamil.com','null','Cll 21 #56-44',25682347,3225698412,3,4,1),
+       ('10224561012-3','Luis','Jose','Gomez','','lugo_@gmail.com','null','Cll 44 #16-84',7834152,3112569874,3,3,4),
+       ('54789636','Lina','Maria','Rodriguez','Perez','lmape98@outlook.com','null','Av 68 #67-92',7635892,3216598720,3,1,1);
 
 -- Insert into Factura --
   
