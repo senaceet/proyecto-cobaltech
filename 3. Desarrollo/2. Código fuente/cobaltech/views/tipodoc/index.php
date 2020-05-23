@@ -23,6 +23,7 @@
                                 <td><?php echo $result->Id_tipodoc?></td>
                                 <td><?php echo $result->Abreviatura ?></td>
                                 <td><?php echo $result->Tipodoc ?></td>
+                                <td>
                                     <a class="btn btn-warning btn-sm">Editar</a>
                                     <a href= "?controller=TiposDocs&method=delete&Id_tipodoc= <?php echo $result->Id_ciudad ?>" class="btn btn-danger btn-sm">Eliminar</a>
                                 </td>
