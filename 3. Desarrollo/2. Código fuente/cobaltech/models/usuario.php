@@ -38,6 +38,16 @@
                 die($e->getMessage());
             }
     }
+        public function delete_usuario($Id_usuario){
+              try {
+                 $p= parent::connect()->prepare("DELETE FROM usuario WHERE Id_usuario=?");
+                 $p->bindParam(1,$Id_usuario,PDO::PARAM_INT);
+                 $p->execute();
+                    
+            } catch (Exception $e) {
+            die ($e->getMessage());
+            }
+        }
 }
 
    /* public function create_usuario($Doc_usuario,$Primer_nombre,$Segundo_nombre,$Primer_apellido,

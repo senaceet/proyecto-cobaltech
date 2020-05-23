@@ -40,6 +40,10 @@ class UsuariosController extends Usuario{
       
       header("location:?controller=Usuarios&method=index");
     }
+    public function delete(){
+        parent::delete_usuario($_GET['Id_usuario']);
+        header("location:?controller=Usuarios&method=index");
+      }
 }
 
 ?>

@@ -20,8 +20,8 @@
                         <td>PRIMER APELLIDO</td>
                         <td>SEGUNDO APELLIDO</td>
                         <td>CORREO ELECTRONICO</td>
-                        <td>CONTRASENA</td>
-                        <td>DIRECCION</td>
+                        <td>CONTRASEÑA</td>
+                        <td>DIRECCIÓN</td>
                         <td>TELEFONO</td>
                         <td>MOVIL</td>
                         <td>OPCIONES</td>
@@ -41,10 +41,10 @@
                         <td><?php echo $result->Direccion?></td>
                         <td><?php echo $result->Telefono?></td>
                         <td><?php echo $result->Movil?></td>
-                        <td>
-                          <a class="btn btn-info btn-sm">Detalles</a>
-                          <a class="btn btn-warning btn-sm">Editar</a>
-                          <a class="btn btn-danger btn-sm">Eliminar</a>
+                        <td class="text-white">
+                          <a href= "" class="btn btn-info btn-sm">Detalles</a>
+                          <a href= "" class="btn btn-warning btn-sm">Editar</a>
+                          <a href="?controller=Usuarios&method=delete&Id_usuario= <?php echo $result->Id_usuario ?>" class="btn btn-danger btn-sm">Eliminar</a>
                         </td>
                     </tr>
                     <?php  } ?>
