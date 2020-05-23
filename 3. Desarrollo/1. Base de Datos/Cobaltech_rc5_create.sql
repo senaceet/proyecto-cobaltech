@@ -193,7 +193,6 @@ CREATE TABLE Usuario(
 	RolId_rol int(2) NOT NULL,
 	CiudadId_ciudad int(5) NOT NULL,
 	Tipo_documentoId_tipodoc int(3) NOT NULL,
-	ProductoId_producto int(10) NOT NULL,
 	PRIMARY KEY (Id_usuario, Tipo_documentoId_tipodoc))
     ;
   -- -------------------------------------------------------------------------------
