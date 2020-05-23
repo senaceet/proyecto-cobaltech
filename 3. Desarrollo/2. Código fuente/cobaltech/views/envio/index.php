@@ -1,13 +1,15 @@
 <!-- Main Content -->
 <div class="main-content">
-  <section class="section">
-    <div class="section-header">
-      <h1>Envíos</h1>
-    </div>
-    <div class="section-body">
-      <div class="card">
-        <div class="card-body">
-          <table class="table table-sm table-hover table-striped table-bordered">
+    <section class="section">
+        <div class="section-header">
+            <h1>Envíos</h1>
+        </div>
+        <div class="section-body">
+            <div class="card">
+                <div class="card-body">
+                <a href="?controller=EstadoEnvios&method=index" class="btn btn-info">Modificar estados de envíos</a><br><br>
+                    <div class="table-responsive">
+                        <table class="table table-sm table-hover table-striped table-bordered">
             <tr class="bg-success text-white ">
               <td>ID</td>
               <td>CÓDIGO DE RASTREO</td>
