@@ -17,7 +17,7 @@ class Proveedor extends DB{
         try {
             $query=parent::connect()->prepare("INSERT INTO proveedor (Id_proveedor,Razon_social,Contacto,
             Cargo,Telefono,Extension,Movil,Direccion,Bodega,Website,Email) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
-            $query->bindParam(1,$Id_proveedor,PDO::PARAM_STR);
+            $query->bindParam(1,$Id_proveedor,PDO::PARAM_INT);
             $query->bindParam(2,$Razon_social,PDO::PARAM_STR);
             $query->bindParam(3,$Contacto,PDO::PARAM_STR);
             $query->bindParam(4,$Cargo,PDO::PARAM_STR);
@@ -32,6 +32,18 @@ class Proveedor extends DB{
         } catch (Exception $e) {
             die($e->getMessage());
         }
+    }
+
+    public function delete_proveedor($Id_proveedor){
+        try {
+            $query=parent::connect()->prepare("DELETE FROM Proveedor WHERE Id_proveedor=?");
+            $query->bindParam(1,$Id_proveedor,PDO::PARAM_INT);
+            $query->execute();
+        } catch (Exception $e) {
+            die($e->getMessage());
+
+        }
+       
     }
 }
 
