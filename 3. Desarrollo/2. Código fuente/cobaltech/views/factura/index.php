@@ -12,6 +12,8 @@
                             <td>ID</td>
                             <td>FECHA</td>
                             <td>TOTAL</td>
+                            <td>USUARIO</td>
+                            <td>PRODUCTO</td>
                             <td>OPCIONES</td>
                         </tr>
                         <?php
@@ -21,6 +23,8 @@
                             <td><?php echo $result->Id_factura ?></td>
                             <td><?php echo $result->Fecha_venta ?></td>
                             <td><?php echo $result->Total ?></td>
+                            <td><?php echo $result->Primer_nombre.' '.$result->Segundo_nombre.' '.$result->Primer_apellido.' '.$result->Segundo_apellido?></td>
+                            <td><?php echo $result->Nombre_producto ?></td>
                             <td class="text-white">
                                 <a class="btn btn-info btn-sm">Detalles</a>
                                 <a class="btn btn-warning btn-sm">Editar</a>
