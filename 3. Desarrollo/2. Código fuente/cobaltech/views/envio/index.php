@@ -13,6 +13,8 @@
             <tr class="bg-success text-white ">
               <td>ID</td>
               <td>CÓDIGO DE RASTREO</td>
+              <td>FACTURA</td>
+              <td>ESTADO DE ENVÍO</td>
               <td>OPCIONES</td>
             </tr>
             <?php
@@ -21,6 +23,8 @@
             <tr>
               <td><?php echo $result->Id_envio ?></td>
               <td><?php echo $result->Codigo_rastreo ?></td>
+              <td><?php echo $result->Id_factura ?></td>
+              <td><?php echo $result->Estado_envio?></td>
               <td class="text-white">
                 <a class="btn btn-info btn-sm">Detalles</a>
                 <a class="btn btn-warning btn-sm">Editar</a>
