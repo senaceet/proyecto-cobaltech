@@ -14,6 +14,8 @@
                                 <td>ID</td>
                                 <td>FECHA INGRESO</td>
                                 <td>DESCRIPCIÓN</td>
+                                <td>FACTURA</td>
+                                <td>ESTADO DE GARANTÍA</td>
                                 <td>OPCIONES</td>
                             </tr>
                             <?php
@@ -23,6 +25,9 @@
                                 <td><?php echo $result->Id_garantia ?></td>
                                 <td><?php echo $result->Fecha_ingreso ?></td>
                                 <td><?php echo $result->Descripcion ?></td>
+                                <td><?php echo $result->Id_factura ?></td>
+                                <td><?php echo $result->Estado_garantia ?></td>
+                                
                                 <td class="text-white">
                                     <a class="btn btn-info btn-sm">Detalles</a>
                                     <a class="btn btn-warning btn-sm">Editar</a>
