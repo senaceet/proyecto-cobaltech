@@ -29,6 +29,11 @@ class MarcasController extends Marca{
         parent::store_marca($_POST['Nombre_marca']);
         header("location:?controller=Marcas&method=index");
     }
+
+    public function delete(){
+        parent::delete_marca($_GET['Id_marca']);
+        header("location:?controller=Marcas&method=index");
+    }
     
 }
 
