@@ -5,10 +5,12 @@
         public function get_all(){
             try {
                 $query=parent::connect()->prepare(
-                    "SELECT * FROM usuario INNER JOIN tipo_documento INNER JOIN ciudad
+                    "SELECT * FROM usuario INNER JOIN tipo_documento INNER JOIN ciudad INNER JOIN rol
                     WHERE usuario.Tipo_documentoId_tipodoc=tipo_documento.Id_tipodoc 
                     AND usuario.CiudadId_ciudad=ciudad.Id_ciudad
+                    AND usuario.RolId_rol=rol.Id_rol
                     ORDER BY usuario.Id_usuario desc");
+
                 $query->execute();
             return  $query->fetchAll(PDO::FETCH_OBJ);
             } catch (Exception $e) {

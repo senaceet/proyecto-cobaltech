@@ -15,15 +15,15 @@
                   <td>ID</td>
                   <td>TIPO DOC</td>
                   <td>DOC USUARIO</td>
-                  <td>PRIMER NOMBRE</td>
-                  <td>SEGUNDO NOMBRE</td>
-                  <td>PRIMER APELLIDO</td>
-                  <td>SEGUNDO APELLIDO</td>
+                  <td>NOMBRES</td>
+                  <td>APELLIDOS</td>
                   <td>CORREO ELECTRONICO</td>
                   <td>CONTRASEÑA</td>
                   <td>DIRECCIÓN</td>
                   <td>TELEFONO</td>
                   <td>MOVIL</td>
+                  <td>ROL</td>
+                  <td>CIUDAD</td>
                   <td>OPCIONES</td>
                 </tr>
                 <?php
@@ -31,17 +31,17 @@
                 ?>
                 <tr>
                   <td><?php echo $result->Id_usuario ?></td>
-                  <td><?php echo $result->Tipodoc.' - '.$result->Nombre_ciudad  ?></td>
+                  <td><?php echo $result->Tipodoc?></td>
                   <td><?php echo $result->Doc_usuario ?></td>
-                  <td><?php echo $result->Primer_nombre?></td>
-                  <td><?php echo $result->Segundo_nombre?></td>
-                  <td><?php echo $result->Primer_apellido?></td>
-                  <td><?php echo $result->Segundo_apellido?></td>
+                  <td><?php echo $result->Primer_nombre.' '.$result->Segundo_nombre?></td>
+                  <td><?php echo $result->Primer_apellido.' '.$result->Segundo_apellido?></td>
                   <td><?php echo $result->Correo_electronico?></td>
                   <td><?php echo $result->Contrasena?></td>
                   <td><?php echo $result->Direccion?></td>
                   <td><?php echo $result->Telefono?></td>
                   <td><?php echo $result->Movil?></td>
+                  <td><?php echo $result->Tipo_rol?></td>
+                  <td><?php echo $result->Nombre_ciudad?></td>
                   <td class="text-white">
                     <a href= "" class="btn btn-info btn-sm">Detalles</a>
                     <a href= "" class="btn btn-warning btn-sm">Editar</a>

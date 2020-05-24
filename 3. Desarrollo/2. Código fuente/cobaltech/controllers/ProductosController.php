@@ -36,7 +36,6 @@ class ProductosController extends Producto{
                             $_POST['MarcaId_marca'],
                             $_POST['ProveedorId_proveedor']);
 
-        header("location:?controller=Productos&method=index");
-}
+        header("location:?controller=Productos&method=index"); }
 }
 ?>

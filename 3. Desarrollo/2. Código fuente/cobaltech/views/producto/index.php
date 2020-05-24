@@ -18,6 +18,9 @@
                     <td>EXISTENCIAS</td>
                     <td>IMAGEN</td>
                     <td>PRECIO</td>
+                    <td>CATEGORIA</td>
+                    <td>MARCA</td>
+                    <td>PROVEEDOR</td>  
                     <td>OPCIONES</td>
                 </tr>
                 <?php
@@ -30,6 +33,9 @@
                     <td><?php echo $result->Existencia ?></td>
                     <td><?php echo $result->Imagen ?></td>
                     <td><?php echo $result->Precio ?></td>
+                    <td><?php echo $result->Nombre_categoria?></td>
+                    <td><?php echo $result->Nombre_marca ?></td>
+                    <td><?php echo $result->Razon_social?></td>
                     <td class="text-white">
                     <a class="btn btn-info btn-sm">Detalles</a>
                     <a class="btn btn-warning btn-sm">Editar</a>
@@ -40,7 +46,7 @@
             </table>
         </div>
         <tr>
-        <td colspan="6" class="text-center"><?php echo count(parent::get_all()) ?> Categorías registradas</td>
+        <td colspan="6" class="text-center"><?php echo count(parent::get_all()) ?> Productos registrados</td>
         </tr>
     </section>
 </div>
