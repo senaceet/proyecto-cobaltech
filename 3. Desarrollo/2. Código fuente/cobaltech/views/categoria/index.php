@@ -22,7 +22,7 @@
               <td><?php echo $result->Id_categoria ?></td>
               <td><?php echo $result->Nombre_categoria ?></td>
               <td class="text-white">
-                <a class="btn btn-warning btn-sm">Editar</a>
+                <a href="?controller=Categorias&method=update&Nombre_categoria=<?php echo $result->Nombre_categoria ?> "class="btn btn-warning btn-sm">Editar</a>
                 <a href="?controller=Categorias&method=delete&Id_categoria=<?php echo $result->Id_categoria ?>" class="btn btn-danger btn-sm">Eliminar</a>
               </td>
             </tr>

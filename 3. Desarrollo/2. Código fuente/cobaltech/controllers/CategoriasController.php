@@ -33,7 +33,10 @@ class CategoriasController extends Categoria{
         parent::delete_categoria($_GET['Id_categoria']);
         header("location:?controller=Categorias&method=index");
     }
-
+    public function update(){
+        parent::update_categoria($_GET['Id_categoria'],$_GET['Nombre_categoria']);
+        header ("location:?controller=Categorias&method=index");
+    }
 }
 
 ?>
