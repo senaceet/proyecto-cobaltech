@@ -14,6 +14,10 @@
                         <table class="table table-sm table-hover table-striped table-bordered">
                             <tr class="bg-success text-white ">
                                 <td>ID</td>
+                                <td>FACTURA</td>
+                                <td>TARJETA CRÉDITO</td>
+                                <td>TARJETA DÉBITO</td>
+                                <td>EFECTIVO</td>
                                 <td>OPCIONES</td>
                             </tr>
                             <?php
@@ -21,6 +25,10 @@
                             ?>
                             <tr>
                                 <td><?php echo $result->Id_pago ?></td>
+                                <td><?php echo $result->Id_factura ?></td>
+                                <td><?php echo $result->Id_tarjeta_credito ?></td>
+                                <td><?php echo $result->Id_tarjeta_debito ?></td>
+                                <td><?php echo $result->Id_efectivo ?></td>
                                 <td class="text-white">
                                     <a class="btn btn-info btn-sm">Detalles</a>
                                     <a class="btn btn-warning btn-sm">Editar</a>
@@ -30,7 +38,7 @@
                             <?php } ?>
                         </table>
                     <tr>
-                        <td colspan="2"><?php echo count(parent::get_all())?> Pagos registrados </td>
+                        <td colspan="6"><?php echo count(parent::get_all())?> Pagos registrados </td>
                     </tr>
                 </div>
             </div>
