@@ -7,19 +7,15 @@
     <div class="section-body">
       <div class="card">
         <div class="card-body">
-          <a href="?controller=Categorias&method=update" class="btn btn-info">Cambiar categoría</a> <br><br>
-          <div class="table-responsive">
-          <table class="table table-sm table-hover table-striped table-bordered">
-            <tr class="bg-success text-white ">
-              <td>ID</td>
-              <td>CATEGORIA</td>
-            </tr>
-            <?php
-              foreach(parent::get_all() as $result){
-            ?>
-            <tr>
-              <td><?php echo $result->Id_categoria ?></td>
-              <td><?php echo $result->Nombre_categoria ?></td>
+                <form action="?controller=Categorias&method=update" method="POST">
+                        <div class="form-group">
+                            <label for="">Editar categoría</label>
+                            <input type="text" name="Nombre_categoria" class="form-control">
+                        </div>
+                        <hr>
+                        <button class="btn btn-primary" type="submit">Guardar</button>
+                        <a class="btn btn-primary" href="?controller=Categorias&method=index">Cancelar</a>
+                </form>
               <td class="text-white">
                 <a href= "?controller=Categorias&method=update&Id_categoria"class="btn btn-warning btn-sm">Editar</a>
               </td>

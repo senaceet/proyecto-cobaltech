@@ -24,6 +24,15 @@ class CiudadesController extends Ciudad{
 
         require_once('views/layout_admin/footer.php');
     }
+    public function edit(){
+      require_once('views/layout_admin/header.php');
+      require_once('views/layout_admin/navbar.php');
+      require_once('views/layout_admin/sidebar.php');
+       
+      require_once('views/ciudad/edit.php');
+
+      require_once('views/layout_admin/footer.php');
+  }
 
     public function store(){
       parent::store_ciudad($_POST['Nombre_ciudad']);

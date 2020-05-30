@@ -72,18 +72,6 @@ class Ciudad extends DB{
             die ($e->getMessage()); 
         }
     }
-
-    public function delete_ciudad($Nombre_ciudad){
-        try {
-            $query=parent::connect->prepare("DELETE FROM ciudad WHERE Nombre_ciudad= ? "); 
-            $quey->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
-            $query->execute(); 
-
-        } catch (Exception $e) {
-            die ($e->getMessage()); 
-        }
-    }
- }
  */
 
 ?>
