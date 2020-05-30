@@ -22,6 +22,16 @@ class Marca extends DB{
         }
     }
 
+    public function delete_marca($Id_marca){
+        try{
+            $query=parent::connect()->prepare("DELETE FROM marca WHERE Id_marca=?");
+            $query->bindParam(1,$Id_marca,PDO::PARAM_INT);
+            $query->execute();
+        }catch (Exception $e) {
+                die($e->getMessage());
+            }
+        
+    }
 }
 
 ?>
