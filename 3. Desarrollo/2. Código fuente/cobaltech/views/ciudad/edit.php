@@ -2,7 +2,7 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Crear ciudad</h1>
+            <h1>Actualizar ciudad</h1>
         </div>
         <?php $ciudad=parent::get_id($_GET['Id_ciudad']); ?>
         <div class="section-body">
@@ -17,7 +17,7 @@
                                     <input type="text" name="Nombre_ciudad" class="form-control" value="<?php echo $ciudad->Nombre_ciudad ?>">
                                 </div>
                                 <hr>
-                                <button class="btn btn-primary" type="submit">Registrar</button>
+                                <button class="btn btn-primary" type="submit">Guardar</button>
                                 <a class="btn btn-primary" href="?controller=Ciudades&method=index">Cancelar</a>
                             </form>
                         </div>

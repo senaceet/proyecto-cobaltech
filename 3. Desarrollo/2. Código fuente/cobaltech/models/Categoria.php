@@ -33,11 +33,7 @@ class Categoria extends DB{
     }
     public function update_categoria($Id_categoria){
         try {
-<<<<<<< HEAD
             $query=parent::connect()->prepare("UPDATE categoria SET Nombre_categoria='?' WHERE id=?"); 
-=======
-            $query=parent::connect()->prepare("UPDATE categoria SET Nombre_categoria='?' WHERE id='?'");
->>>>>>> 0fa5673c934d0243f5ccc0067ca21f3d74b8c7bb
             $query->bindParam(1,$Id_categoria,PDO::PARAM_STR);
             $query->execute(); 
         } catch (Exception $e) {
