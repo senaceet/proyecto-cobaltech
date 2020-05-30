@@ -11,6 +11,16 @@ class Ciudad extends DB{
             die($e->getMessage());
         }
     }
+    public function get_id($id){
+        try {
+            $query=parent::connect()->prepare("SELECT * FROM ciudad  WHERE Id_ciudad=?");
+            $query->bindParam(1,$id,PDO::PARAM_STR);
+            $query->execute();
+            return  $query->fetch(PDO::FETCH_OBJ);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
 
     public function store_ciudad($Nombre_ciudad){
         try {
@@ -30,6 +40,17 @@ class Ciudad extends DB{
         } catch (Exception $e) {
            die ($e->getMessage());
         }
+}
+public function update_ciudad($id,$Nombre_ciudad){
+    try {
+        $query=parent::connect()->prepare("UPDATE ciudad SET Nombre_ciudad = ? WHERE Id_ciudad = ?"); 
+        $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
+        $query->bindParam(2,$id,PDO::PARAM_INT);
+        $query->execute(); 
+
+    } catch (Exception $e) {
+        die ($e->getMessage()); 
+    }
 }
 
 }

@@ -4,15 +4,17 @@
         <div class="section-header">
             <h1>Crear ciudad</h1>
         </div>
+        <?php $ciudad=parent::get_id($_GET['Id_ciudad']); ?>
         <div class="section-body">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <form action="?controller=Ciudades&method=store" method="POST">
+                            <form action="?controller=Ciudades&method=update" method="POST">
+                            <input name="id" type="hidden" value="<?php echo $ciudad->Id_ciudad ?>">
                                 <div class="form-group">
                                     <label for="">Nombre de la ciudad</label>
-                                    <input type="text" name="Nombre_ciudad" class="form-control">
+                                    <input type="text" name="Nombre_ciudad" class="form-control" value="<?php echo $ciudad->Nombre_ciudad ?>">
                                 </div>
                                 <hr>
                                 <button class="btn btn-primary" type="submit">Registrar</button>

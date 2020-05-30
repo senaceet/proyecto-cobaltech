@@ -6,6 +6,11 @@
         </div>
         <div class="section-body">
             <div class="card">
+                <?php  if(isset($_GET['process'])){ ?>
+                <button class="alert alert-success"> 
+                   <?php echo $_GET['process'] ?>
+                </button>
+                <?php } ?>
                 <div class="card-body">
                     <a href="?controller=Ciudades&method=create" class="btn btn-info">Crear nueva ciudad</a> <br><br>
                     <div class="table-responsive">
@@ -22,8 +27,7 @@
                                 <td><?php echo $result->Id_ciudad ?></td>
                                 <td><?php echo $result->Nombre_ciudad ?></td>
                                 <td class="text-white">
-                                    <a  href="?controller=Ciudades&method=edit&Id_ciudad=<?php echo $result->Id_ciudad ?>" class="btn btn-danger btn-sm">Eliminar</a>
-                                    <a  class="btn btn-warning btn-sm">Editar</a>
+                                    <a href="?controller=Ciudades&method=edit&Id_ciudad=<?php echo $result->Id_ciudad ?>" class="btn btn-warning btn-sm">Editar</a>
                                     <a href="?controller=Ciudades&method=delete&Id_ciudad=<?php echo $result->Id_ciudad ?>" class="btn btn-danger btn-sm">Eliminar</a>
                                 </td>
                             </tr>

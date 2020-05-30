@@ -42,6 +42,11 @@ class CiudadesController extends Ciudad{
         parent::delete_ciudad($_GET['Id_ciudad']);
         header("location:?controller=Ciudades&method=index");
       }
+      public function update(){
+         
+        parent::update_ciudad($_POST['id'],$_POST['Nombre_ciudad']);
+        header("location:?controller=Ciudades&method=index&process=Su ciudad se actualizo correctamente!!!");
+      }
     
 }
 
