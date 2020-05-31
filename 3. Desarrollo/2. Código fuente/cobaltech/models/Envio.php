@@ -15,6 +15,17 @@ class Envio extends DB{
            die($e->getMessage());
         }
     }
+    public function update_state_envio($id_estado, $id){
+        try {
+            $query=parent::connect()->prepare("UPDATE envio SET Estado_envioId_estado_envio= ? WHERE Id_envio= ? ");
+            $query->bindParam(1,$id_estado,PDO::PARAM_INT);
+            $query->bindParam(2,$id,PDO::PARAM_INT);
+            $query->execute();
+           
+            } catch (Exception $e) {
+               die($e->getMessage());
+            }  
+    }
 
 }
 

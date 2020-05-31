@@ -35,6 +35,11 @@ class MarcasController extends Marca{
         header("location:?controller=Marcas&method=index");
     }
     
+    public function update(){
+         parent::update_marca($_POST['id'],$_POST['Nombre_marca']);
+        header("location:?controller=Marcas&method=index&process=La marca se actualizo correctamente!!!");
+      }
+    
 }
 
 ?>

@@ -13,6 +13,10 @@ class EnviosController extends Envio{
 
         require_once('views/layout_admin/footer.php');
     }
+    public function update_st_envio(){
+        parent::update_state_envio($_POST['Id_estado_envio'],$_POST['Id_envio']);
+        header("location:?controller=Envios&method=index");
+    }
 }
 
 ?>
