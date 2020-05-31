@@ -31,13 +31,26 @@ class Categoria extends DB{
 
         } 
     }
-    public function update_categoria($Id_categoria){
+    
+    public function update_categoria($id,$Nombre_categoria){
         try {
-            $query=parent::connect()->prepare("UPDATE categoria SET Nombre_categoria='?' WHERE id=?"); 
-            $query->bindParam(1,$Id_categoria,PDO::PARAM_STR);
-            $query->execute(); 
+            $query=parent::connect()->prepare("UPDATE categoria SET Nombre_categoria= ? WHERE Id_categoria= ?"); 
+            $query->bindParam(1,$Nombre_categoria,PDO::PARAM_STR);
+            $query->bindParam(2,$id,PDO::PARAM_INT);
+            $query->execute();
+             
         } catch (Exception $e) {
             die ($e->getMessage()); 
+        }
+    }
+    public function get_id($id){
+        try {
+            $query=parent::connect()->prepare("SELECT * FROM categoria WHERE Id_categoria= ?");
+            $query->bindParam(1,$id,PDO::PARAM_INT);
+            $query->execute();
+            return $query->fetch(PDO::FETCH_OBJ);
+        } catch (Exception $e) {
+           die($e->getMessage());
         }
     }
 }

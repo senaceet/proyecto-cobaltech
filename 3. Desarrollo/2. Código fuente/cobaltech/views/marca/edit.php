@@ -2,23 +2,23 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Actualizar Categoria</h1>
+            <h1>Actualizar marca</h1>
         </div>
-        <?php $categoria=parent::get_id($_GET['Id_categoria']); ?>
+        <?php $marca=parent::get_id($_GET['Id_marca']); ?>
         <div class="section-body">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <form action="?controller=Categorias&method=update" method="POST">
-                            <input name="id" type="hidden" value="<?php echo $categoria->Id_categoria ?>">
+                            <form action="?controller=Marcas&method=update" method="POST">
+                            <input name="id" type="hidden" value="<?php echo $marca->Id_marca ?>">
                                 <div class="form-group">
-                                    <label for="">Nombre de la categoria</label>
-                                    <input type="text" name="Nombre_categoria" class="form-control" value="<?php echo $categoria->Nombre_categoria ?>">
+                                    <label for="">Nombre de la marca</label>
+                                    <input type="text" name="Nombre_marca" class="form-control" value="<?php echo $marca->Nombre_marca ?>">
                                 </div>
                                 <hr>
                                 <button class="btn btn-primary" type="submit">Guardar</button>
-                                <a class="btn btn-primary" href="?controller=Ciudades&method=index">Cancelar</a>
+                                <a class="btn btn-primary" href="?controller=Marcas&method=index">Cancelar</a>
                             </form>
                         </div>
                     </div>
@@ -38,5 +38,3 @@
 
     </div>
 </div>
-
-

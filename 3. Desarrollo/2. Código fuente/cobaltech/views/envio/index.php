@@ -21,15 +21,24 @@
                         foreach(parent::get_all() as $result){
                      ?>
                      <tr>
+                     <form action="?controller=Envios&method=update_st_envio" method="post">
                         <td><?php echo $result->Id_envio ?></td>
                         <td><?php echo $result->Codigo_rastreo ?></td>
                         <td><?php echo $result->Id_factura ?></td>
-                        <td><?php echo $result->Estado_envio?></td>
+                        <td>
+                        <input type="hidden" value="<?php echo $result->Id_envio ?>" name="Id_envio">
+                          <select name="Id_estado_envio" id="Id_estado_envio" class="form-control">
+                              <?php foreach(EstadoEnvio::get_all() as $r){ ?>
+                                 <option <?php echo $r->Id_estado_envio==$result->Estado_envioId_estado_envio ? 'selected' : '' ?> value="<?php echo $r->Id_estado_envio ?>"><?php echo $r->Estado_envio ?></option>
+                              <?php } ?>
+                          </select>
+                          <button type="submit" class="btn btn-warning btn-sm">Actualizar</button>
+                        </td>
                         <td class="text-white">
                            <a class="btn btn-info btn-sm">Detalles</a>
                            <a class="btn btn-warning btn-sm">Editar</a>
-                           <a class="btn btn-danger btn-sm">Eliminar</a>
                         </td>
+                        </form>
                      </tr>
                      <?php } ?>
                   </table>

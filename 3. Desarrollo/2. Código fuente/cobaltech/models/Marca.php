@@ -32,6 +32,19 @@ class Marca extends DB{
             }
         
     }
+
+    public function update_marca($id,$Nombre_marca){
+        try {
+            $query=parent::connect()->prepare("UPDATE marca SET Nombre_marca = ? WHERE Id_marca = ?"); 
+            $query->bindParam(1,$Nombre_marca,PDO::PARAM_STR);
+            $query->bindParam(2,$id,PDO::PARAM_INT);
+            $query->execute(); 
+    
+        } catch (Exception $e) {
+            die ($e->getMessage()); 
+        }
+    }
+    
 }
 
 ?>
