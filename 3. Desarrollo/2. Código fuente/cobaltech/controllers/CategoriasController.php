@@ -24,6 +24,16 @@ class CategoriasController extends Categoria{
 
         require_once('views/layout_admin/footer.php');
     }
+    public function edit(){
+        require_once('views/layout_admin/header.php');
+        require_once('views/layout_admin/navbar.php');
+        require_once('views/layout_admin/sidebar.php');
+         
+        require_once('views/categoria/edit.php');
+  
+        require_once('views/layout_admin/footer.php');
+    }
+
     public function store(){
       parent::store_categoria($_POST['Nombre_categoria']);
       header("location:?controller=Categorias&method=index");
@@ -34,8 +44,8 @@ class CategoriasController extends Categoria{
         header("location:?controller=Categorias&method=index");
     }
     public function update(){
-        parent::update_categoria($_GET['Id_categoria'],$_GET['Nombre_categoria']);
-        header ("location:?controller=Categorias&method=index");
+        parent::update_categoria($_POST['id'],$_POST['Nombre_categoria']);
+        header ("location:?controller=Categorias&method=index&process=Su categoría se actualizo correctamente");
     }
 }
 

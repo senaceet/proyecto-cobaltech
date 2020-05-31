@@ -40,18 +40,18 @@ class Ciudad extends DB{
         } catch (Exception $e) {
            die ($e->getMessage());
         }
-}
-public function update_ciudad($id,$Nombre_ciudad){
+    }
+    public function update_ciudad($id,$Nombre_ciudad){
     try {
         $query=parent::connect()->prepare("UPDATE ciudad SET Nombre_ciudad = ? WHERE Id_ciudad = ?"); 
         $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
         $query->bindParam(2,$id,PDO::PARAM_INT);
         $query->execute(); 
 
-    } catch (Exception $e) {
+        } catch (Exception $e) {
         die ($e->getMessage()); 
+        }
     }
-}
 
 }
 
