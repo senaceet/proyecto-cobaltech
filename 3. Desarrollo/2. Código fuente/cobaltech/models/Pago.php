@@ -2,24 +2,32 @@
 
 class Pago extends DB{
    
-    public function get_all(){
-        try {
-            $query=parent::connect()->prepare("SELECT * FROM pago 
-                INNER JOIN factura
-                INNER JOIN tarjeta_credito
-                INNER JOIN tarjeta_debito
-                INNER JOIN efectivo
-                WHERE   pago.FacturaId_factura=factura.Id_factura
-                AND     pago.Tarjeta_creditoId_tarjeta_credito=tarjeta_credito.Id_tarjeta_credito
-                AND     pago.Tarjeta_debitoId_tarjeta_debito=tarjeta_debito.Id_tarjeta_debito
-                AND     pago.EfectivoId_efectivo=efectivo.Id_efectivo
-                ORDER BY pago.Id_pago asc");
-            $query->execute();
-            return  $query->fetchAll(PDO::FETCH_OBJ);
-        } catch (Exception $e) {
+   public function get_all(){
+      try {
+         $query=parent::connect()->prepare(
+         "SELECT DISTINCT p.Id_pago, 
+                        p.FacturaId_factura, 
+                        p.Tarjeta_creditoId_tarjeta_credito, 
+                        p.Tarjeta_debitoId_tarjeta_debito, 
+                        p.EfectivoId_efectivo
+            FROM pago p
+            INNER JOIN factura f
+            INNER JOIN tarjeta_credito tc
+            INNER JOIN tarjeta_debito td
+            INNER JOIN efectivo e
+            WHERE p.FacturaId_factura=f.Id_factura AND (
+                  p.Tarjeta_creditoId_tarjeta_credito=tc.Id_tarjeta_credito OR
+                  p.Tarjeta_debitoId_tarjeta_debito=td.Id_tarjeta_debito OR
+                  p.EfectivoId_efectivo=e.Id_efectivo
+            )
+            ORDER BY p.Id_pago ASC
+         ");
+         $query->execute();
+         return  $query->fetchAll(PDO::FETCH_OBJ);
+      } catch (Exception $e) {
             die($e->getMessage());
-        }
-    }
+      }
+   }
 }
 
 ?>
