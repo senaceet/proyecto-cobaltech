@@ -26,9 +26,7 @@
                      <td><?php echo $result->Primer_nombre.' '.$result->Segundo_nombre.' '.$result->Primer_apellido.' '.$result->Segundo_apellido?></td>
                      <td><?php echo $result->Nombre_producto ?></td>
                      <td class="text-white">
-                        <a class="btn btn-info btn-sm">Detalles</a>
-                        <a class="btn btn-warning btn-sm">Editar</a>
-                        <a class="btn btn-danger btn-sm">Eliminar</a>
+                        <a href="?controller=Facturas&method=show&Id_factura=<?php echo $result->Id_factura ?>" class="btn btn-info btn-sm">Detalles</a>                        
                      </td>
                   </tr>
                   <?php } ?>

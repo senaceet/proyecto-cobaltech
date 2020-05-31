@@ -24,6 +24,7 @@
                         foreach(parent::get_all() as $result){
                      ?>
                      <tr>
+                        <td><?php print_r($result); ?></td>
                         <td><?php echo $result->Id_pago ?></td>
                         <td><?php echo $result->Id_factura ?></td>
                         <td><?php echo $result->Id_tarjeta_credito ?></td>
