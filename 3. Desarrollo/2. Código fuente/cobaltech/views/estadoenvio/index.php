@@ -21,8 +21,8 @@
                      <td><?php echo $result->Id_estado_envio ?></td>
                      <td><?php echo $result->Estado_envio ?></td>
                      <td class="text-white">
-                        <a class="btn btn-info btn-sm">Detalles</a>
                         <a class="btn btn-warning btn-sm">Editar</a>
+                        <a class="btn btn-danger btn-sm">Eliminar</a>
                      </td>
                   </tr>
                   <?php } ?>
