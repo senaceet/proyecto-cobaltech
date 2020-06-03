@@ -36,9 +36,21 @@ class MarcasController extends Marca{
     }
     
     public function update(){
-         parent::update_marca($_POST['id'],$_POST['Nombre_marca']);
+         parent::update_marca($_POST['id'],
+                              $_POST['Nombre_marca']);
         header("location:?controller=Marcas&method=index&process=La marca se actualizo correctamente!!!");
       }
+
+      public function edit(){
+        require_once('views/layout_admin/header.php');
+        require_once('views/layout_admin/navbar.php');
+        require_once('views/layout_admin/sidebar.php');
+         
+        require_once('views/marca/edit.php');
+  
+        require_once('views/layout_admin/footer.php');
+    }
+  
     
 }
 
