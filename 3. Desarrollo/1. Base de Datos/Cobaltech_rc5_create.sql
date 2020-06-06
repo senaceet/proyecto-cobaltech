@@ -103,9 +103,9 @@ CREATE TABLE Marca(
 CREATE TABLE Pago(
 	Id_pago int(10) NOT NULL AUTO_INCREMENT comment 'Id pago',
 	FacturaId_factura int(10) NOT NULL,
-    Tarjeta_creditoId_tarjeta_credito int(10),
-    Tarjeta_debitoId_tarjeta_debito int(10),
-    EfectivoId_efectivo int(10),
+   Tarjeta_creditoId_tarjeta_credito int(10),
+   Tarjeta_debitoId_tarjeta_debito int(10),
+   EfectivoId_efectivo int(10),
 	PRIMARY KEY (Id_pago, FacturaId_factura)
 ) comment='Método de pago seleccionado por el usuario';
 
@@ -130,13 +130,13 @@ CREATE TABLE Proveedor(
 	Id_proveedor int(3) NOT NULL AUTO_INCREMENT comment 'Id proveedor',
 	Razon_social varchar(25) NOT NULL comment 'Nombre razón social del proveedor',
 	Contacto varchar(50) comment 'Nombre persona contacto del proveedor',
-    Cargo varchar(25) comment 'Cargo del contacto',
-    Telefono varchar(50) comment 'Teléfono del proveedor',
+   Cargo varchar(25) comment 'Cargo del contacto',
+   Telefono varchar(50) comment 'Teléfono del proveedor',
 	Extension varchar(25) comment 'Extensión del teléfono del proveedor',
-    Movil varchar(60) comment 'Teléfono Móvil del proveedor',
+   Movil varchar(60) comment 'Teléfono Móvil del proveedor',
 	Direccion varchar(100) comment 'Dirección del proveedor',
-    -- Bodega = Dirección de Bodega o dirección de despachos
-    Bodega varchar(150) comment 'Dirección Bodega del proveedor',
+   -- Bodega = Dirección de Bodega o dirección de despachos
+   Bodega varchar(150) comment 'Dirección Bodega del proveedor',
 	Website varchar(50) comment 'WebSite del proveedor',
 	Email varchar(40) comment 'Email del proveedor',
 	PRIMARY KEY (Id_proveedor)
@@ -169,18 +169,18 @@ CREATE TABLE Tarjeta_debito(
 );
 
 -- Tabla TIPO DE DOCUMENTO  
-  
+
 CREATE TABLE Tipo_documento(
 	Id_tipodoc int(3) NOT NULL AUTO_INCREMENT comment 'Id tipo de documento',
 	Abreviatura varchar(3) NOT NULL comment 'Abreviatura del tipo de documento',
-    Tipodoc varchar(50) NOT NULL comment 'Nombre del tipo de documento',
+   Tipodoc varchar(50) NOT NULL comment 'Nombre del tipo de documento',
 	PRIMARY KEY (Id_tipodoc)
 );
 
 -- Tabla USUARIO
 CREATE TABLE Usuario(
 	Id_usuario int(10) NOT NULL AUTO_INCREMENT comment 'Id usuario',
-    Doc_usuario varchar (15) NOT NULL UNIQUE comment 'Documento del Usuario',
+   Doc_usuario varchar (15) NOT NULL UNIQUE comment 'Documento del Usuario',
 	Primer_nombre varchar(20) NOT NULL comment 'Primer nombre de usuario',
 	Segundo_nombre varchar(20) comment 'Segundo nombre de usuario',
 	Primer_apellido varchar(20) NOT NULL comment 'Primer apellido de usuario',
@@ -188,24 +188,24 @@ CREATE TABLE Usuario(
 	Correo_electronico varchar(40) NOT NULL UNIQUE comment 'Correo electrónico de usuario',
 	Contrasena varchar(20) NOT NULL comment 'Contraseña de usuario',
 	Direccion varchar(50) comment 'Dirección residencia de usuario, opcional',
-    Telefono char(10) comment 'Teléfono de envío del usuario, opcional',
-    Movil char(12) comment 'Teléfono de envío del usuario, opcional',
+   Telefono char(10) comment 'Teléfono de envío del usuario, opcional',
+   Movil char(12) comment 'Teléfono de envío del usuario, opcional',
 	RolId_rol int(2) NOT NULL,
 	CiudadId_ciudad int(5) NOT NULL,
 	Tipo_documentoId_tipodoc int(3) NOT NULL,
 	PRIMARY KEY (Id_usuario, Tipo_documentoId_tipodoc))
-    ;
-  -- -------------------------------------------------------------------------------
-  
-  -- TABLAS DE SISTEMA
+   ;
+-- -------------------------------------------------------------------------------
+
+-- TABLAS DE SISTEMA
 
 CREATE TABLE ServidorCorreo(
 	Id_servidor int(10) NOT NULL AUTO_INCREMENT,
 	Tipo_servidor_Web varchar(255) NOT NULL,
 	Nombre_servidor   varchar(10) NOT NULL,
 	PRIMARY KEY (Id_Servidor));
-  
-  CREATE TABLE Error(
+
+CREATE TABLE Error(
 	Id_error int(10) NOT NULL AUTO_INCREMENT comment 'IdError',
 	Descripcion_error varchar(255) NOT NULL comment 'Descripción del error',
 	Fecha_error date NOT NULL comment 'Fecha de error',
@@ -215,7 +215,7 @@ CREATE TABLE ServidorCorreo(
 -- -------------------------------------------------------------------------------
 
 -- LLAVES FORANEAS
-  
+
 ALTER TABLE Envio 
 ADD FOREIGN KEY (FacturaId_Factura) REFERENCES Factura (Id_Factura),
 ADD FOREIGN KEY (Estado_EnvioId_Estado_Envio) REFERENCES Estado_Envio(Id_Estado_Envio);
