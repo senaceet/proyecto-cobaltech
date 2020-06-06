@@ -44,6 +44,17 @@ class Marca extends DB{
             die ($e->getMessage()); 
         }
     }
+    public function get_id($id){
+        try {
+           $query=parent::connect()->prepare("SELECT * FROM marca  WHERE Id_marca=?");
+           $query->bindParam(1,$id,PDO::PARAM_STR);
+           $query->execute();
+           return  $query->fetch(PDO::FETCH_OBJ);
+        } catch (Exception $e) {
+           die($e->getMessage());
+        }
+     }
+  
     
 }
 
