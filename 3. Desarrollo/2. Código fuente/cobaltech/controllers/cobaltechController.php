@@ -1,6 +1,6 @@
 <?php 
 
-class cobaltechController{
+class CobaltechController{
       
    public function index(){
       require_once('views/layout_user/header.php');
