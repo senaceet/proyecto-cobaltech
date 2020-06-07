@@ -18,3 +18,5 @@ class CobaltechController{
       require_once('views/layout_admin/footer.php');
    }
 }
+
+?>
