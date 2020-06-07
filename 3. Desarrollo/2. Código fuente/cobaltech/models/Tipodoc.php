@@ -13,7 +13,7 @@ class Tipodoc extends DB{
     }
     public function store_tipodoc($Tipodoc){
         try {
-            $query=parent::connect()->prepare("INSERT INTO rol (Tipodoc) VALUES (?)");
+            $query=parent::connect()->prepare("INSERT INTO tipo_documento (Tipodoc) VALUES (?)");
             $query->bindParam(1,$Tipodoc,PDO::PARAM_STR);
             $query->execute();
         } catch (Exception $e) {
@@ -22,14 +22,38 @@ class Tipodoc extends DB{
     }
     public function delete_tipodoc($Id_tipodoc){
         try {
-           $p= parent::connect()->prepare("DELETE FROM tipodoc WHERE Id_tipodoc=?");
+           $p= parent::connect()->prepare("DELETE FROM tipo_documento WHERE Id_tipodoc=?");
            $p->bindParam(1,$Id_tipodoc,PDO::PARAM_INT);
            $p->execute();
            
         } catch (Exception $e) {
            die ($e->getMessage());
         }
-}
+    }
+    public function update_tipodoc($id,$Abreviatura,$Tipodoc){
+        try {
+            $query=parent::connect()->prepare("UPDATE tipo_documento SET Abreviatura= ?,Tipodoc=? 
+                                                WHERE Id_tipodoc=?"); 
+            $query->bindParam(1,$Abreviatura,PDO::PARAM_STR);
+            $query->bindParam(2,$Tipodoc,PDO::PARAM_STR);
+            $query->bindParam(3,$id,PDO::PARAM_INT);
+            $query->execute();
+             
+        } catch (Exception $e) {
+            die ($e->getMessage()); 
+        }
+    }
+    public function get_id($id){
+        try {
+            $query=parent::connect()->prepare("SELECT * FROM tipo_documento WHERE Id_tipodoc= ?");
+            $query->bindParam(1,$id,PDO::PARAM_INT);
+            $query->execute();
+            return $query->fetch(PDO::FETCH_OBJ);
+            
+        } catch (Exception $e) {
+           die($e->getMessage());
+        }
+    }
 }
 
 ?>

@@ -11,10 +11,10 @@ class Rol extends DB{
             die($e->getMessage());
         }
     }
-    public function store_rol($Nombre_rol){
+    public function store_rol($Tipo_rol){
         try {
-            $query=parent::connect()->prepare("INSERT INTO rol (Nombre_rol) VALUES (?)");
-            $query->bindParam(1,$Nombre_rol,PDO::PARAM_STR);
+            $query=parent::connect()->prepare("INSERT INTO rol (Tipo_rol) VALUES (?)");
+            $query->bindParam(1,$Tipo_rol,PDO::PARAM_STR);
             $query->execute();
         } catch (Exception $e) {
             die($e->getMessage());
@@ -29,7 +29,29 @@ class Rol extends DB{
         } catch (Exception $e) {
            die ($e->getMessage());
         }
-}
+    }
+    public function update_rol($id,$Tipo_rol){
+        try {
+            $query=parent::connect()->prepare("UPDATE rol SET Tipo_rol= ? WHERE Id_rol= ?"); 
+            $query->bindParam(1,$Tipo_rol,PDO::PARAM_STR);
+            $query->bindParam(2,$id,PDO::PARAM_INT);
+            $query->execute();
+             
+        } catch (Exception $e) {
+            die ($e->getMessage()); 
+        }
+    }
+    public function get_id($id){
+            try {
+                $query=parent::connect()->prepare("SELECT * FROM rol WHERE Id_rol= ?");
+                $query->bindParam(1,$id,PDO::PARAM_INT);
+                $query->execute();
+                return $query->fetch(PDO::FETCH_OBJ);
+                
+            } catch (Exception $e) {
+               die($e->getMessage());
+            }
+        }
 }
 
 /*
@@ -59,27 +81,7 @@ class Rol extends DB{
         } 
     }
 
-    public function update_rol($Tipo_rol){
-        try {
-            $query=parent::connect->prepare("UPDATE rol(Tipo_rol) VALUES (?)"); 
-            $query->bindParam(1,$Tipo_rol,PDO::PARAM_STR);
-            $query->execute(); 
-
-        } catch (Exception $e) {
-            die ($e->getMessage()); 
-        }
-    }
-
-    public function delete_rol($Tipo_rol){
-        try {
-            $query=parent::connect->prepare("DELETE FROM rol WHERE Tipo_rol= ? "); 
-            $quey->bindParam(1,$Tipo_rol,PDO::PARAM_STR);
-            $query->execute(); 
-
-        } catch (Exception $e) {
-            die ($e->getMessage()); 
-        }
-    }
+   
  }
 */
 

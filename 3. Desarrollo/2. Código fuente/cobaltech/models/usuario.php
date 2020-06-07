@@ -18,8 +18,8 @@
             }  
         }
         public function store_usuario($Doc_usuario,$Primer_nombre,$Segundo_nombre,$Primer_apellido,
-                        $Segundo_apellido,$Correo_electronico,$Contrasena,$Direccion,$Telefono,
-                        $Movil,$RolId_rol,$CiudadId_ciudad,$Tipo_documentoId_tipodoc){
+                                    $Segundo_apellido,$Correo_electronico,$Contrasena,$Direccion,$Telefono,
+                                    $Movil,$RolId_rol,$CiudadId_ciudad,$Tipo_documentoId_tipodoc){
             try {
                 $query=parent::connect()->prepare("INSERT INTO usuario (Doc_usuario,Primer_nombre,
                 Segundo_nombre,Primer_apellido,Segundo_apellido,Correo_electronico,Contrasena,Direccion,Telefono,
@@ -51,6 +51,44 @@
                     
             } catch (Exception $e) {
             die ($e->getMessage());
+            }
+        }
+        public function update_usuario($id,$Doc_usuario,$Primer_nombre,$Segundo_nombre,$Primer_apellido,
+                                        $Segundo_apellido,$Correo_electronico,$Contrasena,$Direccion,$Telefono,
+                                        $Movil,$RolId_rol,$CiudadId_ciudad,$Tipo_documentoId_tipodoc){
+            try {
+                $query=parent::connect()->prepare("UPDATE usuario SET Doc_usuario=?,Primer_nombre=?,Segundo_nombre=?,
+                                                                    Primer_apellido=?,Segundo_apellido=?,Correo_electronico=?,
+                                                                    Contrasena=?,Direccion=?,Telefono=?,Movil=?
+                                                                    WHERE Doc_usuario=?,Primer_nombre=?,Segundo_nombre=?,
+                                                                    Primer_apellido=?,Segundo_apellido=?,Correo_electronico=?,
+                                                                    Contrasena=?,Direccion=?,Telefono=?,Movil=?"); 
+                        $query->bindParam(1,$Doc_usuario,PDO::PARAM_STR);
+                        $query->bindParam(2,$Primer_nombre,PDO::PARAM_STR);
+                        $query->bindParam(3,$Segundo_nombre,PDO::PARAM_STR);
+                        $query->bindParam(4,$Primer_apellido,PDO::PARAM_STR);
+                        $query->bindParam(5,$Segundo_apellido,PDO::PARAM_STR);
+                        $query->bindParam(6,$Correo_electronico,PDO::PARAM_STR);
+                        $query->bindParam(7,$Contrasena,PDO::PARAM_STR);
+                        $query->bindParam(8,$Direccion,PDO::PARAM_STR);
+                        $query->bindParam(9,$Telefono,PDO::PARAM_STR);
+                        $query->bindParam(10,$Movil,PDO::PARAM_STR);
+                        $query->bindParam(11,$id,PDO::PARAM_INT);
+                        $query->execute();
+                        
+                    } catch (Exception $e) {
+                        die ($e->getMessage()); 
+                    }
+        }
+        public function get_id($id){
+            try {
+                $query=parent::connect()->prepare("SELECT * FROM usuario WHERE Id_usuario= ?");
+                $query->bindParam(1,$id,PDO::PARAM_INT);
+                $query->execute();
+                return $query->fetch(PDO::FETCH_OBJ);
+                
+            } catch (Exception $e) {
+               die($e->getMessage());
             }
         }
 }
@@ -114,16 +152,6 @@
         }
     }
 
-    public function delete_usuario($Doc_usuario){
-        try {
-            $query=parent::connect->prepare("DELETE FROM usuario WHERE Doc_usuario= ? "); 
-            $quey->bindParam(1,$Doc_usuario,PDO::PARAM_STR);
-            $query->execute(); 
-
-        } catch (Exception $e) {
-            die ($e->getMessage()); 
-        }
-    }
  }
 */
 

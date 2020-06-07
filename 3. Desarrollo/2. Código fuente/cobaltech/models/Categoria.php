@@ -49,6 +49,7 @@ class Categoria extends DB{
             $query->bindParam(1,$id,PDO::PARAM_INT);
             $query->execute();
             return $query->fetch(PDO::FETCH_OBJ);
+            
         } catch (Exception $e) {
            die($e->getMessage());
         }

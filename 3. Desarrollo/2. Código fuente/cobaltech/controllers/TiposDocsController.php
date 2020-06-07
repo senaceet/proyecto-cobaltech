@@ -30,6 +30,19 @@ class TiposDocsController extends Tipodoc{
           parent::delete_tipodoc($_GET['Id_tipodoc']);
           header("location:?controller=TiposDocs&method=index");
         }
+     public function edit(){
+        require_once('views/layout_admin/header.php');
+        require_once('views/layout_admin/navbar.php');
+        require_once('views/layout_admin/sidebar.php');
+             
+        require_once('views/tipodoc/edit.php');
+      
+        require_once('views/layout_admin/footer.php');
+    }
+    public function update(){
+        parent::update_tipodoc($_POST['id'],$_POST['Abreviatura'],$_POST['Tipodoc']);
+        header ("location:?controller=TiposDocs&method=index&process=Su tipo de documento se actualizo correctamente");
+    }
       
 }
 

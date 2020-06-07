@@ -13,6 +13,8 @@
                         <div class="form-group">
                            <label for="">Nombre de Tipo Documento</label>
                            <input type="text" name="Tipodoc" class="form-control">
+                           <label for="">Abreviatura Tipo Documento</label>
+                           <input type="text" name="Abreviatura" class="form-control">
                         </div>
                         <hr>
                         <button class="btn btn-primary" type="submit">Registrar</button>

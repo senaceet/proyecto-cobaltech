@@ -24,7 +24,7 @@
                         <td><?php echo $result->Abreviatura ?></td>
                         <td><?php echo $result->Tipodoc ?></td>
                         <td class="text-white">
-                           <a class="btn btn-warning btn-sm">Editar</a>
+                           <a href="?controller=TiposDocs&method=edit&Id_tipodoc= <?php echo $result->Id_tipodoc ?>"class="btn btn-warning btn-sm">Editar</a>
                            <a href= "?controller=TiposDocs&method=delete&Id_tipodoc= <?php echo $result->Id_tipodoc ?>" class="btn btn-danger btn-sm">Eliminar</a>
                         </td>
                      </tr>

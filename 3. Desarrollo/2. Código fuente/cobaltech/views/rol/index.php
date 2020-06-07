@@ -6,6 +6,11 @@
       </div>
       <div class="section-body">
          <div class="card">
+         <?php  if(isset($_GET['process'])){ ?>
+                <button class="alert alert-success"> 
+                   <?php echo $_GET['process'] ?>
+                </button>
+                <?php } ?>
             <div class="card-body">
                <a href="?controller=Roles&method=create" class="btn btn-info">Agregar Rol</a> <br><br>
                <div class="table-responsive">
@@ -22,7 +27,7 @@
                         <td><?php echo $result->Id_rol ?></td>
                         <td><?php echo $result->Tipo_rol ?></td>
                         <td class="text-white">
-                           <a href= "" class="btn btn-warning btn-sm">Editar</a>
+                           <a  href="?controller=Roles&method=edit&Id_rol=<?php echo $result->Id_rol ?> " class="btn btn-warning btn-sm">Editar</a>
                            <a href="?controller=Roles&method=delete&Id_rol= <?php echo $result->Id_rol ?>" class="btn btn-danger btn-sm">Eliminar</a>
                         </td>
                      </tr>
