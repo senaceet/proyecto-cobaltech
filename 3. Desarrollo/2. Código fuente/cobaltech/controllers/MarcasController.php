@@ -51,7 +51,7 @@ class MarcasController extends Marca{
         require_once('views/layout_admin/footer.php');
     }
   
-    
+        
 }
 
 ?>

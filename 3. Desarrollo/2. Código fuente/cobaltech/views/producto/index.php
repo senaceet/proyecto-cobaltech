@@ -36,9 +36,9 @@
                            <td><?php echo $result->Nombre_categoria?></td>
                            <td><?php echo $result->Nombre_marca ?></td>
                            <td><?php echo $result->Razon_social?></td>
-                           <td class="text-white">
+                           <td class="text-  white">
                               <a class="btn btn-info btn-sm">Detalles</a>
-                              <a class="btn btn-warning btn-sm">Editar</a>
+                              <a href="?controller=Productos&method=edit&Id_producto=<?php echo $result->Id_producto ?>"  class="btn btn-warning btn-sm">Editar</a>
                               <a class="btn btn-danger btn-sm">Eliminar</a>
                            </td>
                         </tr>
