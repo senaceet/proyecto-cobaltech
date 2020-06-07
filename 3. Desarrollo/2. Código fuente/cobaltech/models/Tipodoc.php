@@ -11,10 +11,11 @@ class Tipodoc extends DB{
             die($e->getMessage());
         }
     }
-    public function store_tipodoc($Tipodoc){
+    public function store_tipodoc($Abreviatura,$Tipodoc){
         try {
-            $query=parent::connect()->prepare("INSERT INTO tipo_documento (Tipodoc) VALUES (?)");
-            $query->bindParam(1,$Tipodoc,PDO::PARAM_STR);
+            $query=parent::connect()->prepare("INSERT INTO tipo_documento (Abreviatura,Tipodoc) VALUES (?,?)");
+            $query->bindParam(1,$Abreviatura,PDO::PARAM_STR);
+            $query->bindParam(2,$Tipodoc,PDO::PARAM_STR);
             $query->execute();
         } catch (Exception $e) {
             die($e->getMessage());

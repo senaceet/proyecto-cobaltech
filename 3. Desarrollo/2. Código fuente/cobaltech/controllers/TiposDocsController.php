@@ -23,7 +23,7 @@ class TiposDocsController extends Tipodoc{
         require_once('views/layout_admin/footer.php');
     }
     public function store(){
-        parent::store_tipodoc($_POST['Tipodoc']);
+        parent::store_tipodoc($_POST['Abreviatura'],$_POST['Tipodoc']);
         header("location:?controller=TiposDocs&method=index");
       }
       public function delete(){
