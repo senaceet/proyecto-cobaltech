@@ -36,10 +36,12 @@ class RolesController extends Rol{
         parent::store_rol($_POST['Tipo_rol']);
         header("location:?controller=Roles&method=index");
     }
+
     public function delete(){
           parent::delete_rol($_GET['Id_rol']);
           header("location:?controller=Roles&method=index");
     }
+    
     public function update(){
             parent::update_rol($_POST['id'],$_POST['Tipo_rol']);
             header ("location:?controller=Roles&method=index&process=Su Rol se actualizo correctamente");

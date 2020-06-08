@@ -11,6 +11,16 @@ class Efectivo extends DB{
            die($e->getMessage());
         }
     }
+    public function show_id($id){
+        try {
+           $p= parent::connect()->prepare("SELECT * FROM efectivo WHERE Id_efectivo = ?");
+           $p->bindParam(1,$id,PDO::PARAM_INT);
+           $p->execute();
+           return $p->fetch(PDO::FETCH_OBJ);
+        } catch (Exception $e) {
+           die ($e->getMessage());
+        }
+     }
 }
 
 ?>

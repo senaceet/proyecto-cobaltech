@@ -28,7 +28,7 @@
                         <td><?php echo $result->Fecha_vencimiento ?></td>
                         <td><?php echo $result->CVV?></td>
                         <td class="text-white">
-                           <a class="btn btn-info btn-sm">Detalles</a>
+                           <a href="?controller=TarjetasCredito&method=show&Id_tarjeta_credito=<?php echo $result->Id_tarjeta_credito ?> "class="btn btn-info btn-sm">Detalles</a>
                         </td>
                      </tr>
                      <?php  } ?>

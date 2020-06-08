@@ -22,7 +22,7 @@
                         <td><?php echo $result->Id_tarjeta_debito ?></td>
                         <td><?php echo $result->Transaccion ?></td>
                         <td class="text-white">
-                           <a class="btn btn-info btn-sm">Detalles</a>
+                           <a href="?controller=TarjetasDebito&method=show&Id_tarjeta_debito=<?php echo $result->Id_tarjeta_debito ?> "class="btn btn-info btn-sm">Detalles</a>
                         </td>
                      </tr>
                      <?php  } ?>

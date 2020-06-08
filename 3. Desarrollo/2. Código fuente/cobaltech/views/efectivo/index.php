@@ -22,7 +22,7 @@
                         <td><?php echo $result->Id_efectivo ?></td>
                         <td><?php echo $result->Descripcion ?></td>
                         <td class="text-white">
-                           <a class="btn btn-info btn-sm">Detalles</a>
+                           <a href="?controller=Efectivos&method=show&Id_efectivo=<?php echo $result->Id_efectivo ?>" class="btn btn-info btn-sm">Detalles</a>
                         </td>
                      </tr>
                      <?php } ?>

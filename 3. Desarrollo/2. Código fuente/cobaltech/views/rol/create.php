@@ -12,7 +12,7 @@
                      <form action="?controller=Roles&method=store" method="POST">
                         <div class="form-group">
                            <label for="">Nombre del Rol</label>
-                           <input type="text" name="Nombre_rol" class="form-control">
+                           <input type="text" name="Tipo_rol" class="form-control">
                         </div>
                         <hr>
                         <button class="btn btn-primary" type="submit">Registrar</button>
