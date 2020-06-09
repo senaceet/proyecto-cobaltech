@@ -43,6 +43,28 @@ class ProveedoresController extends Proveedor{
         parent::delete_proveedor($_GET['Id_proveedor']);
         header("location:?controller=Proveedores&method=index");
     }
+    public function update(){
+        parent::update_proveedor($_POST['id'],$_POST['Razon_social']);
+        header ("location:?controller=Proveedores&method=index&process=Su proveedor se actualizo correctamente");
+    }
+    public function edit(){
+        require_once('views/layout_admin/header.php');
+        require_once('views/layout_admin/navbar.php');
+        require_once('views/layout_admin/sidebar.php');
+         
+        require_once('views/proveedor/edit.php');
+  
+        require_once('views/layout_admin/footer.php');
+    }
+    public function show(){
+        require_once('views/layout_admin/header.php');
+        require_once('views/layout_admin/navbar.php');
+        require_once('views/layout_admin/sidebar.php');
+
+        require_once('views/proveedor/show.php');
+
+        require_once('views/layout_admin/footer.php');
+     }
 }
 
 ?>

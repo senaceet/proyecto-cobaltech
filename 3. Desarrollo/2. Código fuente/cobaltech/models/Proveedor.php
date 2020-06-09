@@ -36,68 +36,48 @@ class Proveedor extends DB{
 
     public function delete_proveedor($Id_proveedor){
         try {
-            $query=parent::connect()->prepare("DELETE FROM Proveedor WHERE Id_proveedor=?");
+            $query=parent::connect()->prepare("DELETE FROM proveedor WHERE Id_proveedor=?");
             $query->bindParam(1,$Id_proveedor,PDO::PARAM_INT);
             $query->execute();
         } catch (Exception $e) {
             die($e->getMessage());
-
+        } 
+    }
+    public function update_proveedor($id,$Razon_social){
+        try {
+            $query=parent::connect()->prepare("UPDATE proveedor SET Razon_social = ? WHERE Id_proveedor= ?"); 
+            $query->bindParam(1,$Razon_social,PDO::PARAM_STR);
+            $query->bindParam(2,$id,PDO::PARAM_INT);
+            $query->execute();
+             
+        } catch (Exception $e) {
+            die ($e->getMessage()); 
         }
-       
+    }
+    public function get_id($id){
+        try {
+            $query=parent::connect()->prepare("SELECT * FROM proveedor WHERE Id_proveedor= ?");
+            $query->bindParam(1,$id,PDO::PARAM_INT);
+            $query->execute();
+            return $query->fetch(PDO::FETCH_OBJ);
+            
+        } catch (Exception $e) {
+           die($e->getMessage());
+        }
+    }
+    
+   public function show_id($id){
+    try {
+        $p= parent::connect()->prepare("SELECT * FROM proveedor WHERE Id_proveedor = ?");
+        $p->bindParam(1,$id,PDO::PARAM_INT);
+        $p->execute();
+        return $p->fetch(PDO::FETCH_OBJ);
+        } catch (Exception $e) {
+        die ($e->getMessage());
+        }
     }
 }
 
 
-
-/*
- class Ciudad extends DB {
-
-    public function create_ciudad($Nombre_ciudad){
-        try {
-            $query=parent::connect->prepare("INSERT INTO ciudad (Nombre_ciudad) VALUES (?)");
-            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
-            $query->execute(); 
-
-        } catch (Exception $e) {
-            die ($e->getMessage()); 
-        }
-
-    }
-
-    public function read_ciudad($Nombre_ciudad){
-        try {
-            $query=parent::connect->prepare("SELECT * FROM ciudad WHERE Nombre_ciudad= ? "); 
-            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
-            return $query->fetchAll(PDO::FETCH_OBJ);
-            $query->execute(); 
-
-        } catch (Exception $e) {
-            die ($e->getMessage()); 
-        } 
-    }
-
-    public function update_ciudad($Nombre_ciudad){
-        try {
-            $query=parent::connect->prepare("UPDATE ciudad(Nombre_ciudad) VALUES (?)"); 
-            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
-            $query->execute(); 
-
-        } catch (Exception $e) {
-            die ($e->getMessage()); 
-        }
-    }
-
-    public function delete_ciudad($Nombre_ciudad){
-        try {
-            $query=parent::connect->prepare("DELETE FROM ciudad WHERE Nombre_ciudad= ? "); 
-            $quey->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
-            $query->execute(); 
-
-        } catch (Exception $e) {
-            die ($e->getMessage()); 
-        }
-    }
- }
- */
 
 ?>
