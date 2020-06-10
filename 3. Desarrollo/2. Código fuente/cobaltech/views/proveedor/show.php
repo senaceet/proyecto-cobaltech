@@ -6,7 +6,7 @@
       </div>
       <div class="section-body">
          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                <div class="card">
                   <div class="card-body">
                      <a class="btn btn-primary" href="?controller=Proveedores&method=index">Volver</a>
@@ -20,7 +20,7 @@
                            </tr>
                            <tr>
                               <th class="bg-secundary">RAZON SOCIAL</th>
-                              <td>$<?php echo $id->Razon_social?></td>
+                              <td><?php echo $id->Razon_social?></td>
                            </tr>
                            <tr>
                               <th class="bg-secundary">CONTACTO</th>
