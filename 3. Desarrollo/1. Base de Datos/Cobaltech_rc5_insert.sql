@@ -18,44 +18,44 @@ USE COBALTECH;
 -- De varchar(10) a varchar(40)
 
 INSERT INTO Categoria (Nombre_categoria)
-VALUES ('Adaptadores y cables'),
-       ('Cámaras'),
-       ('Chasis/cajas/torres'),
-       ('Controles para juegos'),
-       ('Diademas'),
-       ('Discos duros HDD'),
-       ('Enfriadores CPU Cooler'),
-       ('Fuentes de poder PSU'),
-	('Impresoras'),
-       ('Monitores'),
-       ('Memorias RAM'),
-       ('Microfonos'),
-       ('Mouse y padmouse'),
-       ('Parlantes'),
-       ('Pasta térmica'),
-       ('PC de escritorio'),
-       ('Portátiles'),
-       ('Procesadores CPU'),
-       ('Servidores'),
-       ('Tarjetas de sonido'),
-       ('Tarjetas de video GPU'),
-       ('Tarjetas madre MainBoard'),
-       ('Teclados'),
-       ('Tiras LED'),
-       ('Unidades de estado solido SSD'),
-       ('Ventiladores');
+VALUES 	('Adaptadores y cables'),
+		('Cámaras'),
+		('Chasis/cajas/torres'),
+		('Controles para juegos'),
+		('Diademas'),
+		('Discos duros HDD'),
+		('Enfriadores CPU Cooler'),
+		('Fuentes de poder PSU'),
+		('Impresoras'),
+		('Monitores'),
+		('Memorias RAM'),
+		('Microfonos'),
+		('Mouse y padmouse'),
+		('Parlantes'),
+		('Pasta térmica'),
+		('PC de escritorio'),
+		('Portátiles'),
+		('Procesadores CPU'),
+		('Servidores'),
+		('Tarjetas de sonido'),
+		('Tarjetas de video GPU'),
+		('Tarjetas madre MainBoard'),
+		('Teclados'),
+		('Tiras LED'),
+		('Unidades de estado solido SSD'),
+		('Ventiladores');
 
 -- Insert Into Tabla CIUDAD
 -- Se cambio de int de 
 
 insert into Ciudad (Nombre_ciudad)
-values ('Bogota'),
-	('medellin'),
-       ('Cali'),
-       ('Barranquilla'),
-       ('Cartagena'),
-       ('Villavicencio'),
-       ('Armenia');
+values 	('Bogota'),
+		('medellin'),
+		('Cali'),
+		('Barranquilla'),
+		('Cartagena'),
+		('Villavicencio'),
+		('Armenia');
 
 -- Insert into Tabla ROL
  
@@ -70,8 +70,7 @@ insert into Tipo_documento(Abreviatura,Tipodoc)
 Values ('CC','Cedula de ciudadania'),
        ('CE','Cedula de extranjeria'),
        ('TP','Pasaporte'),
-       ('NIT','Número de Identificación Tributaria')
-       ;
+       ('NIT','Número de Identificación Tributaria');
 
 -- Inserción de datos MARCA
 
@@ -120,7 +119,7 @@ VALUES ('ACER'),
        ('Thermaltake'),
        ('VTA'),
        ('Western Digital'),
-	('XFX'),
+	   ('XFX'),
        ('Zotac');
 
 -- Inserción de datos PROVEEDOR
@@ -128,15 +127,15 @@ VALUES ('ACER'),
 INSERT INTO Proveedor(Razon_social,Contacto,Cargo,Telefono,Extension,Movil,Direccion,Bodega,Website,Email)
 VALUES
 (
-       'INGRAM MICRO Colombia',NULL,'Servicio al cliente','8985361',NULL,'3178943767',
+	'INGRAM MICRO Colombia',NULL,'Servicio al cliente','8985361',NULL,'3178943767',
 	'Calle 103 # 14A-53 Oficina 506','Parque industrial La Florida Bodega 27 Km 1.5 
 	Autopista Medellín vía Bogotá - Siberia Costado sur','https://co.ingrammicro.com',
-       'customer.servicecolombia@ingrammicro.com'
+	'customer.servicecolombia@ingrammicro.com'
 ),
 (
-       'Tauret computadores','Esteban Chocontá','Gerente de Cuentas Online','6065852','1124','3195566192',
+	'Tauret computadores','Esteban Chocontá','Gerente de Cuentas Online','6065852','1124','3195566192',
 	'Centro comercial Unilago Cra. 15 78-33 Locales 2-275, 2-274, 2-319', '2-271 Segundo piso',
-       'https://tauretcomputadores.com','ventas@tauretcomputadores.com'
+	'https://tauretcomputadores.com','ventas@tauretcomputadores.com'
 ),
 (
 	'MRPC Store s.a.s.',NULL,NULL,'2187445',NULL,'3105650594','Carrera 15 78-33 Local 2-224',NULL,
@@ -145,7 +144,7 @@ VALUES
 (
 	'Imagen World E.U.',NULL,'Ventas','7440834-6409173-2568944-7458576','102-103-104','3107681442-3143317512',
 	'Carrera 15 77-05 Local 223 Oficina 314-315 Centro de Alta Tecnologia CAT',
-       NULL,'http://www.imagenworld.com','ventas@imagenworld.com'
+	NULL,'http://www.imagenworld.com','ventas@imagenworld.com'
 ),
 (
 	'Makro computo S.A.',NULL,NULL,'8966000',NULL,NULL,'Centro de Alta Tecnologia Oficina 334-A Carrera 15 77-05',
@@ -217,21 +216,21 @@ VALUES ('Monitor Acer Sb220q', 'Bi 215 full HD 1920 X 1080 ips monitor con y rad
 
 INSERT INTO Usuario(Doc_usuario,Primer_nombre,Segundo_nombre,Primer_apellido,Segundo_apellido,Correo_electronico,Contrasena,Direccion,Telefono,
             Movil,RolId_rol,CiudadId_ciudad,Tipo_documentoId_tipodoc)
-VALUES ('1452687125','Rosaura','','Lozano','Diaz','rosld@gmail.com','null','Cll 10 #2-35',4562589,3124587956,1,1,1),
-	('4526987851-1','Maria','Pilar','Diaz','Lopez','Mardi@gmail.com','null','Cra 30 #52-38',7856321,3003214569,2,2,4),
-       ('78969872','Rosa','Liseth','Romero','Rosales','Rosmr@outlook.com','null','Cll 43 #22-85',14569823,3218574255,2,3,2),
-	('45820231','Carlos','','Parra','Ceballos','Capa_pu@gmail.com','null','Cll 35 #16-84',17859611,3224125879,3,4,1),
-	('8759641','Marcos','','Martinez','Rosas','Marom01@outlook.com','null','Cra 88 #11-42',55869123,3054785623,3,5,1),
-	('45012201','Jose','Maria','Gomez','Diaz','Josm89@gamil.com','null','Cll 35 #16-84',52639871,3145896732,3,6,2),
-	('AR2457892','Eliza','','Rojas','Mora','Eliro65@gamil.com','null','Cll 54 #88-84',68962143,3051426982,3,7,3),
-	('1485698541','Jorge','','Angarita','Rojas','Joran_32@gmail.com','null','Cll 100 #16-82',6892135,3125863654,3,1,1),
-	('42587632','Mauricio','Dario','Hernandez','','Mauheer01@gmail.com','null','Cra 10 #10-45',36985414,3012569834,3,3,1),
-	('1056974110-5','Eliana','Rosa','Ramirez','Pedraza','Elira34@outlook.com','null','Cll 73 #88-84',35896414,NULL,3,5,4),
-	('1012358879','Mariana','','Burgos','Perez','Mariba_@outlook','null','Cll 32 #97-09',34589210,3105698214,3,7,1),
-       ('CH569712249','Hernando','Alonso','Puertas','Moreno','Hernanp02@gmail.com','null','Av 50 #22-80',32105497,3054789124,3,6,3),
-	('1012458962','James','Isaac','Botero','Ruiz','James09@gamil.com','null','Cll 21 #56-44',25682347,3225698412,3,4,1),
-       ('10224561012-3','Luis','Jose','Gomez','','lugo_@gmail.com','null','Cll 44 #16-84',7834152,3112569874,3,3,4),
-       ('54789636','Lina','Maria','Rodriguez','Perez','lmape98@outlook.com','null','Av 68 #67-92',7635892,3216598720,3,1,1);
+VALUES 	('1452687125','Rosaura','','Lozano','Diaz','rosld@gmail.com','null','Cll 10 #2-35',4562589,3124587956,1,1,1),
+		('4526987851-1','Maria','Pilar','Diaz','Lopez','Mardi@gmail.com','null','Cra 30 #52-38',7856321,3003214569,2,2,4),
+		('78969872','Rosa','Liseth','Romero','Rosales','Rosmr@outlook.com','null','Cll 43 #22-85',14569823,3218574255,2,3,2),
+		('45820231','Carlos','','Parra','Ceballos','Capa_pu@gmail.com','null','Cll 35 #16-84',17859611,3224125879,3,4,1),
+		('8759641','Marcos','','Martinez','Rosas','Marom01@outlook.com','null','Cra 88 #11-42',55869123,3054785623,3,5,1),
+		('45012201','Jose','Maria','Gomez','Diaz','Josm89@gamil.com','null','Cll 35 #16-84',52639871,3145896732,3,6,2),
+		('AR2457892','Eliza','','Rojas','Mora','Eliro65@gamil.com','null','Cll 54 #88-84',68962143,3051426982,3,7,3),
+		('1485698541','Jorge','','Angarita','Rojas','Joran_32@gmail.com','null','Cll 100 #16-82',6892135,3125863654,3,1,1),
+		('42587632','Mauricio','Dario','Hernandez','','Mauheer01@gmail.com','null','Cra 10 #10-45',36985414,3012569834,3,3,1),
+		('1056974110-5','Eliana','Rosa','Ramirez','Pedraza','Elira34@outlook.com','null','Cll 73 #88-84',35896414,NULL,3,5,4),
+		('1012358879','Mariana','','Burgos','Perez','Mariba_@outlook','null','Cll 32 #97-09',34589210,3105698214,3,7,1),
+		('CH569712249','Hernando','Alonso','Puertas','Moreno','Hernanp02@gmail.com','null','Av 50 #22-80',32105497,3054789124,3,6,3),
+		('1012458962','James','Isaac','Botero','Ruiz','James09@gamil.com','null','Cll 21 #56-44',25682347,3225698412,3,4,1),
+		('10224561012-3','Luis','Jose','Gomez','','lugo_@gmail.com','null','Cll 44 #16-84',7834152,3112569874,3,3,4),
+		('54789636','Lina','Maria','Rodriguez','Perez','lmape98@outlook.com','null','Av 68 #67-92',7635892,3216598720,3,1,1);
 
 -- Insert into Factura --
   
@@ -277,7 +276,7 @@ VALUES (1, 1, null, null),
 
 INSERT INTO Envio(Codigo_rastreo,FacturaId_factura,Estado_envioId_estado_envio)
 VALUES ('458DDFT784T',001,02),
-	('FGHT5678D3E',002,01),
+	   ('FGHT5678D3E',002,01),
        ('DTU456ON67G',003,03),
        ('45GHY678NAS',004,04),
        ('TREF721261J',005,03),
@@ -285,7 +284,7 @@ VALUES ('458DDFT784T',001,02),
        ('R651BT340NJ',007,01),
        ('756BHF4Y5UQ',008,02),
        ('SKJHFHIURTH',009,03),
-	('FDF759FDEFU',010,01),
+	   ('FDF759FDEFU',010,01),
        ('84N56N3N566',011,04),
        ('48920GHURT8',012,02),
        ('987LJXC450M',013,01),
