@@ -68,6 +68,27 @@ class Producto extends DB{
             die($e->getMessage());
         }
     }
+
+    public function delete_producto($Id_producto){
+        try {
+           $p= parent::connect()->prepare("DELETE FROM producto WHERE Id_producto=?");
+           $p->bindParam(1,$Id_producto,PDO::PARAM_INT);
+           $p->execute();
+        } catch (Exception $e) {
+           die ($e->getMessage());
+        }
+     }
+
+     public function show_id($id){
+        try {
+            $p= parent::connect()->prepare("SELECT * FROM producto WHERE Id_producto = ?");
+            $p->bindParam(1,$id,PDO::PARAM_INT);
+            $p->execute();
+            return $p->fetch(PDO::FETCH_OBJ);
+            } catch (Exception $e) {
+            die ($e->getMessage());
+            }
+        }
 }
 
 ?>
