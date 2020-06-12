@@ -13,6 +13,11 @@ class EstadoGarantiasController extends EstadoGarantia{
 
         require_once('views/layout_admin/footer.php');
     }
+
+        public function store(){
+            parent::store_estado_garantia($_POST["Estado_garantia"]);
+            header("location:?controller=EstadoGarantias&method=index");
+            }
 }
 
 ?>

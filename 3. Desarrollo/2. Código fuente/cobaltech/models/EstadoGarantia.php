@@ -11,6 +11,16 @@ class EstadoGarantia extends DB{
            die($e->getMessage());
         }
     }
+
+    public function store_estado_garantia(){
+        try {
+        $query=parent::connect()->prepare("INSERT INTO estado_garantia (Estado_garantia) VALUES (?)");
+        $query->bindParam(1,$Estado_garantia, PDO::PARAM_STR);
+        $query->execute();
+        } catch (Exception $e) {
+           die($e->getMessage());
+}
+    }
 }
 
 ?>

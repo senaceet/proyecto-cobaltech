@@ -36,7 +36,6 @@
                         </td>
                         <td class="text-white">
                            <a class="btn btn-info btn-sm">Detalles</a>
-                           <a class="btn btn-warning btn-sm">Editar</a>
                         </td>
                         </form>
                      </tr>

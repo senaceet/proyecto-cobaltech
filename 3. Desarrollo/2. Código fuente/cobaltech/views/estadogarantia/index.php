@@ -22,7 +22,6 @@
                         <td><?php echo $result->Id_estado_garantia ?></td>
                         <td><?php echo $result->Estado_garantia ?></td>
                         <td class="text-white">
-                           <a class="btn btn-info btn-sm">Detalles</a>
                            <a class="btn btn-warning btn-sm">Editar</a>
                            <a class="btn btn-danger btn-sm">Eliminar</a>
                         </td>
