@@ -18,7 +18,7 @@
             <ul class="dropdown-menu">
                <li><a class="nav-link" href="?controller=Categorias&method=index">Listar</a></li>
                <li><a class="nav-link" href="?controller=Categorias&method=create">Agregar categoría</a></li>
-               <li><a class="nav-link" href="?controller=Categorias&method=update">Editar categoría</a></li>
+               <!-- <li><a class="nav-link" href="?controller=Categorias&method=update">Editar categoría</a></li>-->
             </ul>
          </li>
          <!-- Fin dropdown-->
