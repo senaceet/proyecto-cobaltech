@@ -87,7 +87,7 @@
                 $query=parent::connect()->prepare("SELECT * FROM usuario WHERE Id_usuario= ?");
                 $query->bindParam(1,$id,PDO::PARAM_INT);
                 $query->execute();
-                
+            return $query->fetch(PDO::FETCH_OBJ);
             } catch (Exception $e) {
                die($e->getMessage());
             }
