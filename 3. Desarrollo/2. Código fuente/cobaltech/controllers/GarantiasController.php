@@ -13,6 +13,11 @@ class GarantiasController extends Garantia{
 
         require_once('views/layout_admin/footer.php');
     }
+
+    public function update_st_garantia(){
+      parent::update_state_garantia($_POST['Id_estado_garantia'],$_POST['Id_garantia']);
+      header("location:?controller=Garantias&method=index&process=El estado de la garantía se actualizó correctamente!!!");
+  }
 }
 
 ?>

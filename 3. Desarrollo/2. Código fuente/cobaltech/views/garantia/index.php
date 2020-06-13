@@ -6,6 +6,11 @@
       </div>
       <div class="section-body">
          <div class="card">
+         <?php  if(isset($_GET['process'])){ ?>
+                <button class="alert alert-success"> 
+                   <?php echo $_GET['process'] ?>
+                </button>
+                <?php } ?>
             <div class="card-body">
                <a href="?controller=EstadoGarantias&method=index" class="btn btn-info">Modificar estados de garantía</a><br><br>
                <div class="table-responsive">
@@ -22,6 +27,7 @@
                         foreach(parent::get_all() as $result){
                      ?>
                      <tr>
+                     <form action="?controller=Garantias&method=update_st_garantia" method="post">
                         <td><?php echo $result->Id_garantia ?></td>
                         <td><?php echo $result->Fecha_ingreso ?></td>
                         <td><?php echo $result->Descripcion ?></td>
@@ -30,7 +36,7 @@
                         <input type="hidden" value="<?php echo $result->Id_garantia ?>" name="Id_garantia">
                           <select name="Id_estado_garantia" id="Id_estado_garantia" class="form-control">
                               <?php foreach(EstadoGarantia::get_all() as $r){ ?>
-                                 <option <?php echo $r->Id_estado_garantia==$result->Estado_garantiaId_estado_garantia? 'selected' : '' ?> value="<?php echo $r->Id_estado_garantia ?>"><?php echo $r->Estado_garantia ?></option>
+                                 <option <?php echo $r->Id_estado_garantia==$result->Estado_garantiaId_estado_garantia ? 'selected' : '' ?> value="<?php echo $r->Id_estado_garantia ?>"><?php echo $r->Estado_garantia ?></option>
                               <?php } ?>
                           </select>
                           <button type="submit" class="btn btn-warning btn-sm">Actualizar</button>
@@ -38,6 +44,7 @@
                         <td class="text-white">
                            <a class="btn btn-info btn-sm">Detalles</a>
                         </td>
+                        </form>
                      </tr>
                      <?php } ?>
                   </table>

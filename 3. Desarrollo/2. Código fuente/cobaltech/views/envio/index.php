@@ -6,6 +6,11 @@
       </div>
       <div class="section-body">
          <div class="card">
+         <?php  if(isset($_GET['process'])){ ?>
+                <button class="alert alert-success"> 
+                   <?php echo $_GET['process'] ?>
+                </button>
+                <?php } ?>
             <div class="card-body">
                <a href="?controller=EstadoEnvios&method=index" class="btn btn-info">Modificar estados de envíos</a><br><br>
                <div class="table-responsive">

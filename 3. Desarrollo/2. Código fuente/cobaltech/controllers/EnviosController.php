@@ -15,7 +15,7 @@ class EnviosController extends Envio{
     }
     public function update_st_envio(){
         parent::update_state_envio($_POST['Id_estado_envio'],$_POST['Id_envio']);
-        header("location:?controller=Envios&method=index");
+        header("location:?controller=Envios&method=index&process=Su estado de envío se actualizo correctamente!!!");
     }
 }
 
