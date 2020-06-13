@@ -3,7 +3,7 @@
 <div class="main-sidebar">
    <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
-         <a href="">Cobaltech</a>
+         <a href="?=controller=Cobaltech&method=admin">Cobaltech</a>
       </div>
       <div class="sidebar-brand sidebar-brand-sm">
          <!--<a href="index.html"><img class="logo" src="assets/img/icons/logo.png" alt="Logo Cobaltech"></a>-->
@@ -18,7 +18,7 @@
             <ul class="dropdown-menu">
                <li><a class="nav-link" href="?controller=Categorias&method=index">Listar</a></li>
                <li><a class="nav-link" href="?controller=Categorias&method=create">Agregar categoría</a></li>
-               <li><a class="nav-link" href="?controller=Categorias&method=update">Editar categoría</a></li>
+               <!-- <li><a class="nav-link" href="?controller=Categorias&method=update">Editar categoría</a></li>-->
             </ul>
          </li>
          <!-- Fin dropdown-->
