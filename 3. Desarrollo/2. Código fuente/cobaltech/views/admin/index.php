@@ -8,7 +8,7 @@
          <div class="card">
             <div class="card-body">
                <div class="row">
-                  <div class="col-4">
+                  <div class="col-sm">
                      <div class="list-group">
                         <a href="?controller=Categorias&method=index" class="btn btn-primary btn-block">Categorías</a>
                         <a href="?controller=Categorias&method=create" class="list-group-item list-group-item-action">Agregar categoría</a>
@@ -29,7 +29,7 @@
                         <a href="?controller=Marcas&method=create" class="list-group-item list-group-item-action">Agregar Marca</a>
                      </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-sm">
                      <div class="list-group">
                         <a href="?controller=Pagos&method=index" class="btn btn-primary btn-block">Pagos</a>
                         <a href="?controller=Efectivos&method=index" class="list-group-item list-group-item-action">Efectivo</a>
@@ -45,7 +45,7 @@
                         <a href="?controller=Proveedores&method=create" class="list-group-item list-group-item-action">Agregar proveedor</a>
                      </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-sm">
                      <div class="list-group">
                         <a href="?controller=Usuarios&method=index" class="btn btn-primary btn-block">Usuarios</a>
                         <a href="?controller=Usuarios&method=create" class="list-group-item list-group-item-action">Agregar usuario</a>
