@@ -18,6 +18,14 @@ class GarantiasController extends Garantia{
       parent::update_state_garantia($_POST['Id_estado_garantia'],$_POST['Id_garantia']);
       header("location:?controller=Garantias&method=index&process=El estado de la garantía se actualizó correctamente!!!");
   }
+
+  public function show(){
+   require_once('views/layout_admin/header.php');
+   require_once('views/layout_admin/navbar.php');
+   require_once('views/layout_admin/sidebar.php');       
+   require_once('views/garantia/show.php');
+   require_once('views/layout_admin/footer.php');
+}
 }
 
 ?>

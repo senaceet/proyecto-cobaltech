@@ -42,7 +42,7 @@
                           <button type="submit" class="btn btn-warning btn-sm">Actualizar</button>
                         </td>
                         <td class="text-white">
-                           <a class="btn btn-info btn-sm">Detalles</a>
+                           <a  href="?controller=Garantias&method=show&Id_garantia=<?php echo $result->Id_garantia ?>"  class="btn btn-info btn-sm">Detalles</a>
                         </td>
                         </form>
                      </tr>
