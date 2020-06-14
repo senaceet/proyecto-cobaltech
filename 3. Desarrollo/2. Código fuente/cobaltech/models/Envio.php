@@ -24,9 +24,29 @@ class Envio extends DB{
            
             } catch (Exception $e) {
                die($e->getMessage());
-            }  
+            }
+         }
+         public function get_id($id){
+               try {
+                  $query=parent::connect()->prepare("SELECT * FROM envio WHERE Id_envio= ?");
+                  $query->bindParam(1,$id,PDO::PARAM_INT);
+                  $query->execute();
+               return $query->fetch(PDO::FETCH_OBJ);
+               } catch (Exception $e) {
+               die($e->getMessage());
+               }
+         }
+         public function show_id($id){
+               try {
+                  $p= parent::connect()->prepare("SELECT * FROM envio WHERE Id_envio = ?");
+                  $p->bindParam(1,$id,PDO::PARAM_INT);
+                  $p->execute();
+                  return $p->fetch(PDO::FETCH_OBJ);
+               } catch (Exception $e) {
+                  die ($e->getMessage());
+               }
+    
     }
-
 }
 
 ?>

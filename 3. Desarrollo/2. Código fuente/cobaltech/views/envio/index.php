@@ -40,7 +40,7 @@
                           <button type="submit" class="btn btn-warning btn-sm">Actualizar</button>
                         </td>
                         <td class="text-white">
-                           <a class="btn btn-info btn-sm">Detalles</a>
+                           <a href="?controller=Envios&method=show&Id_envio=<?php echo $result->Id_envio ?>"  class="btn btn-info btn-sm">Detalles</a>
                         </td>
                         </form>
                      </tr>

@@ -26,6 +26,7 @@ class GarantiasController extends Garantia{
    require_once('views/garantia/show.php');
    require_once('views/layout_admin/footer.php');
 }
+
 }
 
 ?>
