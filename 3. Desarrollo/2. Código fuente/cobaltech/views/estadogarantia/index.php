@@ -7,6 +7,7 @@
       <div class="section-body">
          <div class="card">
             <div class="card-body">
+               <a href="?controller=Garantias&method=create" class="btn btn-info">Agregar Estado Garantia</a>
                <a href="?controller=Garantias&method=index" class="btn btn-info">Volver a garantías</a><br><br>
                <div class="table-responsive">
                   <table class="table table-sm table-hover table-striped table-bordered">
@@ -22,8 +23,8 @@
                         <td><?php echo $result->Id_estado_garantia ?></td>
                         <td><?php echo $result->Estado_garantia ?></td>
                         <td class="text-white">
-                           <a class="btn btn-warning btn-sm">Editar</a>
-                           <a class="btn btn-danger btn-sm">Eliminar</a>
+                           <a href="?controller=EstadoGarantias&method=edit&Id_estado_garantia= <?php echo $result->Id_estado_garantia ?> " class="btn btn-warning btn-sm">Editar</a>
+                           <a href="?controller=EstadoGarantias&method=delete&Id_estado_garantia= <?php echo $result->Id_estado_garantia ?>"class="btn btn-danger btn-sm">Eliminar</a>
                         </td>
                      </tr>
                      <?php } ?>

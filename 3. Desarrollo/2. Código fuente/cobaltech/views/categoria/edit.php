@@ -18,7 +18,7 @@
                                 </div>
                                 <hr>
                                 <button class="btn btn-primary" type="submit">Guardar</button>
-                                <a class="btn btn-primary" href="?controller=Ciudades&method=index">Cancelar</a>
+                                <a class="btn btn-primary" href="?controller=Categorias&method=index">Cancelar</a>
                             </form>
                         </div>
                     </div>

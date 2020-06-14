@@ -7,10 +7,10 @@
       <div class="section-body">
          <div class="card">
          <?php  if(isset($_GET['process'])){ ?>
-                <button class="alert alert-success"> 
-                   <?php echo $_GET['process'] ?>
-                </button>
-                <?php } ?>
+               <button class="alert alert-success"> 
+                  <?php echo $_GET['process'] ?>
+               </button>
+               <?php } ?>
             <div class="card-body">
                <a href="?controller=Categorias&method=create" class="btn btn-info">Agregar categoría</a> <br><br>
                <div class="table-responsive">

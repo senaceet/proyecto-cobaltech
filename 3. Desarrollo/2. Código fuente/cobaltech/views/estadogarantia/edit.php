@@ -2,23 +2,23 @@
 <div class="main-content">
    <section class="section">
       <div class="section-header">
-         <h1>Actualizar Categoria</h1>
+         <h1>Actualizar Estado Garantía</h1>
       </div>
-      <?php $categoria=parent::get_id($_GET['Id_categoria']); ?>
+      <?php $estgarantia=parent::get_id($_GET['Id_estado_garantia']); ?>
          <div class="section-body">
             <div class="row">
                <div class="col-md-4">
                   <div class="card">
                      <div class="card-body">
-                        <form action="?controller=Categorias&method=update" method="POST">
-                           <input name="id" type="hidden" value="<?php echo $categoria->Id_categoria ?>">
+                        <form action="?controller=EstadoGarantias&method=update" method="POST">
+                           <input name="id" type="hidden" value="<?php echo $estgarantia->Id_estado_garantia ?>">
                               <div class="form-group">
-                                 <label for="">Nombre de la categoria</label>
-                                 <input type="text" name="Nombre_categoria" class="form-control" value="<?php echo $categoria->Nombre_categoria ?>">
+                                 <label for="">Nombre Estado Garantía</label>
+                                 <input type="text" name="Estado_garantia" class="form-control" value="<?php echo $estgarantia->Estado_garantia ?>">
                               </div>
                               <hr>
                               <button class="btn btn-primary" type="submit">Guardar</button>
-                           <a class="btn btn-primary" href="?controller=Ciudades&method=index">Cancelar</a>
+                           <a class="btn btn-primary" href="?controller=EstadoGarantias&method=index">Cancelar</a>
                         </form>
                      </div>
                   </div>

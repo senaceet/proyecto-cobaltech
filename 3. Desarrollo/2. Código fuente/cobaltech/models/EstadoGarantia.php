@@ -20,6 +20,7 @@ class EstadoGarantia extends DB{
       } catch (Exception $e) {
       die($e->getMessage());
    }
+   }
    public function delete_estado_garantia($Id_estado_garantia){
       try {
          $query=parent::connect()->prepare("DELETE FROM estado_garantia WHERE Id_estado_garantia=?");

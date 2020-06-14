@@ -23,18 +23,19 @@ class EstadoGarantiasController extends EstadoGarantia{
       require_once('views/layout_admin/navbar.php');
       require_once('views/layout_admin/sidebar.php');
          
-      require_once('views/estadograntia/edit.php');
+      require_once('views/estadogarantia/edit.php');
 
       require_once('views/layout_admin/footer.php');
    }
    public function delete(){
       parent::delete_estado_garantia($_GET['Id_estado_garantia']);
-      header("location:?controller=EstadosGarantias&method=index");
+      header("location:?controller=EstadoGarantias&method=index");
    }
    public function update(){
       parent::update_estado_garantia($_POST['id'],$_POST['Estado_garantia']);
-      header ("location:?controller=EstadosGarantias&method=index&process=Su estado de garantia se actualizo correctamente");
+      header ("location:?controller=EstadoGarantias&method=index&process=Su estado de garantia se actualizo correctamente");
    }
+
 }
 
 ?>
