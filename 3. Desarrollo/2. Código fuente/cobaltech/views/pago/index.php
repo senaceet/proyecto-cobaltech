@@ -26,10 +26,10 @@
                      <tr>
                         <td><?php print_r($result); ?></td>
                         <td><?php echo $result->Id_pago ?></td>
-                        <td><?php echo $result->Id_factura ?></td>
-                        <td><?php echo $result->Id_tarjeta_credito ?></td>
-                        <td><?php echo $result->Id_tarjeta_debito ?></td>
-                        <td><?php echo $result->Id_efectivo ?></td>
+                        <td><?php echo $result->FacturaId_factura ?></td>
+                        <td><?php echo $result->Tarjeta_creditoId_tarjeta_credito ?></td>
+                        <td><?php echo $result->Tarjeta_debitoId_tarjeta_debito ?></td>
+                        <td><?php echo $result->EfectivoId_efectivo ?></td>
                         <td class="text-white">
                            <a class="btn btn-info btn-sm">Detalles</a>
                            <a class="btn btn-warning btn-sm">Editar</a>
