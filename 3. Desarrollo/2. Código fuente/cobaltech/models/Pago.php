@@ -23,7 +23,7 @@ class Pago extends DB{
             ORDER BY p.Id_pago ASC
          ");
          $query->execute();
-         return  $query->fetchAll(PDO::FETCH_OBJ);
+      return  $query->fetchAll(PDO::FETCH_OBJ);
       } catch (Exception $e) {
             die($e->getMessage());
       }
