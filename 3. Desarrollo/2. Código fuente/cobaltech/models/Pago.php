@@ -14,7 +14,7 @@ class Pago extends DB{
             GROUP BY p.Id_pago
          ");
          $query->execute();
-         return  $query->fetchAll(PDO::FETCH_OBJ);
+      return  $query->fetchAll(PDO::FETCH_OBJ);
       } catch (Exception $e) {
             die($e->getMessage());
       }
