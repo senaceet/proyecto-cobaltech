@@ -7,7 +7,8 @@
       <div class="section-body">
          <div class="card">
             <div class="card-body">
-               <a href="?controller=Envios&method=index" class="btn btn-info">Volver a estado de envíos</a><br><br>
+               <a href="?controller=Envios&method=index" class="btn btn-info">Volver a estado de envíos</a>
+               <a href="?controller=EstadoEnvios&method=create" class="btn btn-info">Crear nuevo estado de envío</a><br><br>
                <table class="table table-sm table-hover table-striped table-bordered">
                   <tr class="bg-success text-white ">
                      <th>ID</th>
@@ -21,8 +22,8 @@
                      <td><?php echo $result->Id_estado_envio ?></td>
                      <td><?php echo $result->Estado_envio ?></td>
                      <td class="text-white">
-                        <a class="btn btn-warning btn-sm">Editar</a>
-                        <a class="btn btn-danger btn-sm">Eliminar</a>
+                     <a href="?controller=EstadoEnvios&method=edit&Id_estado_envio= <?php echo $result->Id_estado_envio ?> " class="btn btn-warning btn-sm">Editar</a>
+                     <a href="?controller=EstadoEnvios&method=delete&Id_estado_envio= <?php echo $result->Id_estado_envio ?>"class="btn btn-danger btn-sm">Eliminar</a>
                      </td>
                   </tr>
                   <?php } ?>
