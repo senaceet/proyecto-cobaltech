@@ -56,7 +56,7 @@ CREATE TABLE Envio(
 
 CREATE TABLE Estado_garantia(
 	Id_estado_garantia int(2) NOT NULL AUTO_INCREMENT comment 'Id estado garantía',
-	Estado_garantia varchar(12) comment 'Tipo estado de la garantía',
+	Estado_garantia varchar(15) comment 'Tipo estado de la garantía',
 	PRIMARY KEY (Id_estado_garantia)
 );
 
