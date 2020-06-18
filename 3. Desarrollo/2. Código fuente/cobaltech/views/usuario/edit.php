@@ -15,8 +15,15 @@
                         <div class="form-group">
                            <label for="">Documento Usuario</label>
                            <input type="text" name="Doc_usuario" class="form-control" value="<?php echo $usuario->Doc_usuario ?>">
-                           <label for="">Nombres Usuario</label>
-                           <input type="text" name="Primer_nombre,Segundo_nombre" class="form-control" value="<?php echo $usuario->Primer_nombre.' '.$usuario->Segundo_nombre?>">
+                           <label for="">Nombres Usuario</label>  
+                           <input type="text" name="nombres" class="form-control" value=
+                           "<?php
+                              $usuario = "Primer_nombre,Segundo_nombre";
+                              // positive limit
+                              $nombres= explode(' ',$usuario);  
+                              echo $nombres[0],[1];
+                           ?> 
+                           ">
                            <label for="">Apellidos Usuario</label>
                            <input type="text" name="Primer_apellido,Segundo_apellido" class="form-control" value="<?php echo $usuario->Primer_apellido.' '.$usuario->Segundo_apellido?>">
                            <label for="">Correo Usuario</label>
