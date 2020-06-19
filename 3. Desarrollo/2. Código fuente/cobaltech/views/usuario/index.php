@@ -44,8 +44,8 @@
                         <td><?php echo $result->Nombre_ciudad?></td>
                         <td class="text-white">
                            <a href= "?controller=Usuarios&method=show&Id_usuario=<?php echo $result->Id_usuario ?>" class="btn btn-info btn-sm">Detalles</a>
-                           <a href= "?controller=Usuarios&method=edit&Id_usuario= <?php echo $result->Id_usuario ?>" class="btn btn-warning btn-sm">Editar</a>
-                           <a href="?controller=Usuarios&method=delete&Id_usuario= <?php echo $result->Id_usuario ?>" class="btn btn-danger btn-sm">Eliminar</a>
+                           <a href= "?controller=Usuarios&method=edit&Id_usuario=<?php echo $result->Id_usuario ?>" class="btn btn-warning btn-sm">Editar</a>
+                           <a href="?controller=Usuarios&method=delete&Id_usuario=<?php echo $result->Id_usuario ?>" class="btn btn-danger btn-sm">Eliminar</a>
                         </td>
                      </tr>
                      <?php } ?>

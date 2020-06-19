@@ -44,12 +44,15 @@ class UsuariosController extends Usuario{
       header("location:?controller=Usuarios&method=index");
    }
    public function update(){
+
+      $nombres = explode(" ", trim($_POST['nombres']));
+      $apellidos = explode(" ", trim($_POST['apellidos']));
       parent::update_usuario($_POST['id'],
                            $_POST['Doc_usuario'],
-                           $_POST['Primer_nombre'],
-                           $_POST['Segundo_nombre'],
-                           $_POST['Primer_apellido'],
-                           $_POST['Segundo_apellido'],
+                           $nombres[0],
+                           $nombres[1],
+                           $apellidos[0],
+                           $apellidos[1],
                            $_POST['Correo_electronico'],
                            $_POST['Direccion'],
                            $_POST['Telefono'],

@@ -16,16 +16,9 @@
                            <label for="">Documento Usuario</label>
                            <input type="text" name="Doc_usuario" class="form-control" value="<?php echo $usuario->Doc_usuario ?>">
                            <label for="">Nombres Usuario</label>  
-                           <input type="text" name="nombres" class="form-control" value=
-                           "<?php
-                              $usuario = "Primer_nombre,Segundo_nombre";
-                              // positive limit
-                              $nombres= explode(' ',$usuario);  
-                              echo $nombres[0],[1];
-                           ?> 
-                           ">
+                           <input type="text" name="nombres" class="form-control" value="<?php echo $usuario->Primer_nombre." ".$usuario->Segundo_nombre;?>">
                            <label for="">Apellidos Usuario</label>
-                           <input type="text" name="Primer_apellido,Segundo_apellido" class="form-control" value="<?php echo $usuario->Primer_apellido.' '.$usuario->Segundo_apellido?>">
+                           <input type="text" name="apellidos" class="form-control" value="<?php echo $usuario->Primer_apellido." ".$usuario->Segundo_apellido?>">
                            <label for="">Correo Usuario</label>
                            <input type="email" name="Correo_electronico" class="form-control" value="<?php echo $usuario->Correo_electronico?>">
                            <!--<input type="password" name="Contrasena" class="form-control" value="//<?php// echo $usuario->Contrasena?>">-->
