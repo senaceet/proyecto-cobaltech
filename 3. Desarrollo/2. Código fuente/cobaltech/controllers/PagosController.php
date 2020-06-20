@@ -12,6 +12,14 @@ class PagosController extends Pago{
       require_once('views/pago/index.php');
       require_once('views/layout_admin/footer.php');
    }
+
+   public function show(){
+      require_once('views/layout_admin/header.php');
+      require_once('views/layout_admin/navbar.php');
+      require_once('views/layout_admin/sidebar.php');       
+      require_once('views/pago/show.php');
+      require_once('views/layout_admin/footer.php');
+  }  
 }
 
 ?>
