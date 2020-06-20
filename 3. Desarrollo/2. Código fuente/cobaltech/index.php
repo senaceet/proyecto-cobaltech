@@ -8,10 +8,7 @@
 
 <?php
 
-/** 
- * Todos lo que este en la carpeta modelos
- * se debe requerir aqui
-*/
+// Modelos requeridos
 require_once('models/database/DB.php');
 require_once('models/Ciudad.php');
 require_once('models/Factura.php');
@@ -30,7 +27,6 @@ require_once('models/Envio.php');
 require_once('models/EstadoEnvio.php');
 require_once('models/EstadoGarantia.php');
 require_once('models/Efectivo.php');
-
 
 $controller = isset($_REQUEST['controller']) ? $_REQUEST['controller'] : 'cobaltech';
 $method = isset($_REQUEST['method']) ? $_REQUEST['method'] : 'index';
