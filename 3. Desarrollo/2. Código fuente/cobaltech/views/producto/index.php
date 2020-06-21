@@ -11,7 +11,7 @@
                <div class="section-body">
                   <div class="table-responsive">
                      <table class="table table-sm table-hover table-striped table-bordered">
-                        <tr class="bg-info text-white">
+                        <tr class="bg-success text-white">
                            <th>ID</th>
                            <th>NOMBRE</th>
                            <th>DESCRIPCIÓN</th>
