@@ -7,10 +7,10 @@
       <div class="section-body">
          <div class="card">
          <?php  if(isset($_GET['process'])){ ?>
-                <button class="alert alert-success"> 
-                   <?php echo $_GET['process'] ?>
-                </button>
-                <?php } ?>
+               <button class="alert alert-success"> 
+                  <?php echo $_GET['process'] ?>
+               </button>
+               <?php } ?>
             <div class="card-body">
                <a href="?controller=EstadoEnvios&method=index" class="btn btn-info">Modificar estados de envíos</a><br><br>
                <div class="table-responsive">
@@ -32,12 +32,15 @@
                         <td><?php echo $result->Id_factura ?></td>
                         <td>
                         <input type="hidden" value="<?php echo $result->Id_envio ?>" name="Id_envio">
-                          <select name="Id_estado_envio" id="Id_estado_envio" class="form-control">
-                              <?php foreach(EstadoEnvio::get_all() as $r){ ?>
-                                 <option <?php echo $r->Id_estado_envio==$result->Estado_envioId_estado_envio ? 'selected' : '' ?> value="<?php echo $r->Id_estado_envio ?>"><?php echo $r->Estado_envio ?></option>
-                              <?php } ?>
-                          </select>
-                          <button type="submit" class="btn btn-warning btn-sm">Actualizar</button>
+                        
+                        <select name="Id_estado_envio" id="Id_estado_envio" class="form-control">
+                           <?php foreach(EstadoEnvio::get_all() as $r){ ?>
+                           <option <?php echo $r->Id_estado_envio==$result->Estado_envioId_estado_envio ? 'selected' : '' ?>
+                           value="<?php echo $r->Id_estado_envio ?>"><?php echo $r->Estado_envio ?>
+                           </option>
+                           <?php } ?>
+                        </select>
+                        <button type="submit" class="btn btn-warning btn-sm">Actualizar</button>
                         </td>
                         <td class="text-white">
                            <a href="?controller=Envios&method=show&Id_envio=<?php echo $result->Id_envio ?>"  class="btn btn-info btn-sm">Detalles</a>

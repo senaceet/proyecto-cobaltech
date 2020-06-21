@@ -9,6 +9,7 @@
             <div class="col-md-5">
                <div class="card">
                   <div class="card-body">
+                  <a class="btn btn-info" href="?controller=Garantias&method=index">Volver</a>
                      <form action="?controller=Garantias&method=show" method="GET">
                         <?php $id=parent::show_id($_GET['Id_garantia']); ?>
                         <table class="table table bordered">
@@ -33,7 +34,6 @@
                               <td><?php echo $id->Estado_garantiaId_estado_garantia?></td>
                            </tr> 
                         </table>
-                        <a class="btn btn-primary" href="?controller=Garantias&method=index">Volver</a>
                      </form>
                   </div>
                </div>

@@ -29,7 +29,7 @@
                               <td><?php echo $id->Estado_envioId_estado_envio ?></td>
                            </tr> 
                         </table>
-                        <a class="btn btn-primary" href="?controller=Envios&method=index">Volver</a>
+                        <a class="btn btn-info" href="?controller=Envios&method=index">Volver</a>
                      </form>
                   </div>
                </div>

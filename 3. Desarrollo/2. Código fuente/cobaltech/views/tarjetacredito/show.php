@@ -9,7 +9,7 @@
             <div class="col-md-4">
                <div class="card">
                   <div class="card-body">
-                     <a class="btn btn-primary" href="?controller=TarjetasCredito&method=index">Volver</a>
+                     <a class="btn btn-info" href="?controller=TarjetasCredito&method=index">Volver</a>
                      <form action="?controller=TarjetasCredito&method=show" method="GET">
                         <?php $id=parent::show_id($_GET['Id_tarjeta_credito']); ?>
                         <table class="table table bordered">

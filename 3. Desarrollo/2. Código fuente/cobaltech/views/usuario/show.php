@@ -9,6 +9,7 @@
             <div class="col-md-5">
                <div class="card">
                   <div class="card-body">
+                  <a class="btn btn-info" href="?controller=Usuarios&method=index">Volver</a>
                      <form action="?controller=Usuarios&method=show" method="GET">
                         <?php $id=parent::show_id($_GET['Id_usuario']); ?>
                         <table class="table table bordered">
@@ -61,7 +62,7 @@
                               <td><?php echo $id->Tipo_documentoId_tipodoc?></td>
                            </tr>  
                         </table>
-                        <a class="btn btn-primary" href="?controller=Usuarios&method=index">Volver</a>
+                      
                      </form>
                   </div>
                </div>

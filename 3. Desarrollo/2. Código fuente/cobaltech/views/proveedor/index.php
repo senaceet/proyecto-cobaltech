@@ -7,11 +7,11 @@
       <div class="section-body">
          <div class="card">
             <div class="card-body">
-               <a href="?controller=Proveedores&method=create" class="btn btn-success">Agregar Proveedor</a> <br><br>
+               <a href="?controller=Proveedores&method=create" class="btn btn-info">Agregar Proveedor</a> <br><br>
                <div class="section-body">
                   <div class="table-responsive">
                      <table class="table table-sm table-hover table-striped table-bordered">
-                        <tr class="bg-info text-white">
+                        <tr class="bg-success text-white">
                            <th>ID</th>
                            <th>RAZON SOCIAL</th>
                            <th>CONTACTO</th>
