@@ -1239,7 +1239,7 @@ h6 .badge {
   color: #fff !important; }
 
 .btn-success, .btn-success.disabled {
-  box-shadow: 0 2px 6px #81d694;
+  box-shadow: 0 2px 6px #008eff;
   background-color: #1c68ce;
   border-color: #1c68ce;
   color: #fff; }
@@ -2132,7 +2132,7 @@ pre {
   box-shadow: 0 2px 6px #e1e5e8; }
 
 .shadow-success {
-  box-shadow: 0 2px 6px #81d694; }
+  box-shadow: 0 2px 6px #008eff; }
 
 .shadow-warning {
   box-shadow: 0 2px 6px #ffc473; }
