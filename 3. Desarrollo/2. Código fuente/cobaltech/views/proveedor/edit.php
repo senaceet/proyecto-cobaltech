@@ -35,8 +35,8 @@
                            <input type="email" name="Email" class="form-control" value="<?php echo $proveedor->Email?>">
                         </div>
                         <hr>
-                        <button class="btn btn-primary" type="submit">Guardar</button>
-                        <a class="btn btn-primary" href="?controller=Proveedores&method=index">Cancelar</a>
+                        <button class="btn btn-info" type="submit">Guardar</button>
+                        <a class="btn btn-info" href="?controller=Proveedores&method=index">Cancelar</a>
                      </form>
                   </div>
                </div>
