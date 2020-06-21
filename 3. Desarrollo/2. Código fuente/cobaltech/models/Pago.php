@@ -22,25 +22,25 @@ class Pago extends DB{
 
    public function show_id($id){
       try {
-          $p= parent::connect()->prepare("SELECT * FROM pago WHERE Id_pago = ?");
-          $p->bindParam(1,$id,PDO::PARAM_INT);
-          $p->execute();
-          return $p->fetchAll(PDO::FETCH_OBJ);
-          } catch (Exception $e) {
-          die ($e->getMessage());
-          }
+         $p= parent::connect()->prepare("SELECT * FROM pago WHERE Id_pago = ?");
+         $p->bindParam(1,$id,PDO::PARAM_INT);
+         $p->execute();
+         return $p->fetch(PDO::FETCH_OBJ);
+         } catch (Exception $e) {
+         die ($e->getMessage());
+         }
       }
 
       public function get_id($id){
          try {
-             $query=parent::connect()->prepare("SELECT * FROM pago WHERE Id_pago=?");
-             $query->bindParam(1,$id,PDO::PARAM_STR);
-             $query->execute();
-             return  $query->fetch(PDO::FETCH_OBJ);
+            $query=parent::connect()->prepare("SELECT * FROM pago WHERE Id_pago=?");
+            $query->bindParam(1,$id,PDO::PARAM_STR);
+            $query->execute();
+            return  $query->fetch(PDO::FETCH_OBJ);
          } catch (Exception $e) {
-             die($e->getMessage());
+            die($e->getMessage());
          }
-     }
+      }
    }
 
 ?>
