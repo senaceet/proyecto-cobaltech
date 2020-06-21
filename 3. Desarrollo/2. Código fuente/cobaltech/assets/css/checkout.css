@@ -397,7 +397,7 @@ section
 }
 .hamburger:hover i
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .main_nav
 {
@@ -416,7 +416,7 @@ section
 .main_nav ul li.active a,
 .main_nav ul li a:hover
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .header_search
 {
@@ -447,8 +447,8 @@ section
 .search_input:focus,
 .search_input:hover
 {
-	border-color: #008EFF;
-	box-shadow: 0 0 1px 0px #008EFF inset, 0 0 1px 0px #008EFF;
+	border-color: #1c68ce;
+	box-shadow: 0 0 1px 0px #1c68ce inset, 0 0 1px 0px #1c68ce;
 }
 .search_input::-webkit-input-placeholder
 {
@@ -519,7 +519,7 @@ section
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
-	background: #008EFF;
+	background: #1c68ce;
 	text-align: center;
 	line-height: 24px;
 	color: #FFFFFF;
@@ -565,7 +565,7 @@ section
 .svg:hover rect,
 .svg:hover polygon
 {
-	fill: #008EFF;
+	fill: #1c68ce;
 }
 
 /*********************************
@@ -608,7 +608,7 @@ section
 }
 .menu_nav ul li a:hover
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .menu_nav ul li a::after
 {
@@ -618,7 +618,7 @@ section
 	left: 0;
 	width: 0%;
 	height: 2px;
-	background: #008EFF;
+	background: #1c68ce;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -693,11 +693,11 @@ section
 }
 .menu_social_list li:hover
 {
-	border-color: #008EFF;
+	border-color: #1c68ce;
 }
 .menu_social_list li:hover a i
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .menu_search
 {
@@ -781,7 +781,7 @@ section
 }
 .breadcrumbs ul li a:hover
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 
 /*********************************
@@ -854,7 +854,7 @@ section
 .checkout_input:hover,
 .checkout_input:focus
 {
-	border-bottom: solid 2px #008EFF;
+	border-bottom: solid 2px #1c68ce;
 }
 .checkout_input::-webkit-input-placeholder
 {
@@ -988,7 +988,7 @@ section
 }
 .billing_checkbox:checked ~ .checkbox_mark
 {
-	border-color: #008EFF;
+	border-color: #1c68ce;
 }
 .checkbox_text
 {
@@ -1069,7 +1069,7 @@ section
 	width: 100%;
 	height: 44px;
 	text-align: center;
-	background: #008EFF;
+	background: #1c68ce;
 	border-radius: 3px;
 	margin-top: 32px;
 }
@@ -1153,14 +1153,14 @@ section
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #008EFF;
+	background: #1c68ce;
 	content: '';
 	visibility: hidden;
 	opacity: 0;
 }
 .radio_container input:checked ~ .radio_mark
 {
-	border-color: #008EFF;
+	border-color: #1c68ce;
 }
 .radio_container input:checked ~ .radio_mark::after
 {
@@ -1169,7 +1169,7 @@ section
 }
 .radio_container input:checked ~ .radio_text
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .radio_text
 {
@@ -1269,7 +1269,7 @@ section
 }
 .footer_list li a:hover
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .footer_list li a > div::after
 {
@@ -1289,7 +1289,7 @@ section
 }
 .footer_list li a:hover > div::after
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .footer_list li a > div
 {
@@ -1316,7 +1316,7 @@ section
 .footer_tag_1
 {
 	left: calc(100% + 5px);
-	background: #008EFF;
+	background: #1c68ce;
 }
 .footer_tag_2
 {
@@ -1384,7 +1384,7 @@ section
 	width: 53px;
 	height: 53px;
 	border-radius: 50%;
-	background: #008EFF;
+	background: #1c68ce;
 	border: none;
 	outline: none;
 	font-size: 24px;
@@ -1443,12 +1443,12 @@ section
 }
 .footer_social_list li:hover
 {
-	border-color: #008EFF;
+	border-color: #1c68ce;
 	transform: translateY(-5px);
 }
 .footer_social_list li a:hover i
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .footer_bar
 {
@@ -1471,7 +1471,7 @@ section
 }
 .footer_nav ul li a:hover
 {
-	color: #008EFF;
+	color: #1c68ce;
 }
 .copyright
 {

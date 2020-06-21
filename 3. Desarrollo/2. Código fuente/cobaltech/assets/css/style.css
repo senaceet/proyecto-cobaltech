@@ -86,7 +86,7 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
   background-color: #1c68ce !important; }
 
 .bg-info {
-  background-color: #008eff !important; }
+  background-color: #1c68ce !important; }
 
 .bg-warning {
   background-color: #ffa426 !important; }
@@ -110,7 +110,7 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
   color: #1c68ce !important; }
 
 .text-info, .text-info-all *, .text-info-all *:before, .text-info-all *:after {
-  color: #008eff !important; }
+  color: #1c68ce !important; }
 
 .text-warning, .text-warning-all *, .text-warning-all *:before, .text-warning-all *:after {
   color: #ffa426 !important; }
@@ -543,7 +543,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff; }
 
 .list-group-item-info {
-  background-color: #008eff;
+  background-color: #1c68ce;
   color: #fff; }
 
 .list-group-item-light {
@@ -587,7 +587,7 @@ select.form-control:not([size]):not([multiple]) {
   .alert.alert-success {
     background-color: #1c68ce; }
   .alert.alert-info {
-    background-color: #008eff; }
+    background-color: #1c68ce; }
   .alert.alert-warning {
     background-color: #ffa426; }
   .alert.alert-danger {
@@ -733,7 +733,7 @@ select.form-control:not([size]):not([multiple]) {
   .card.card-warning {
     border-top: 2px solid #ffa426; }
   .card.card-info {
-    border-top: 2px solid #008eff; }
+    border-top: 2px solid #1c68ce; }
   .card.card-dark {
     border-top: 2px solid #191d21; }
   .card.card-hero .card-header {
@@ -1097,7 +1097,7 @@ table tr:hover .table-links {
   .badge.badge-success {
     background-color: #1c68ce; }
   .badge.badge-info {
-    background-color: #008eff; }
+    background-color: #1c68ce; }
   .badge.badge-danger {
     background-color: #fc544b; }
   .badge.badge-light {
@@ -1305,8 +1305,8 @@ h6 .badge {
 
 .btn-info, .btn-info.disabled {
   box-shadow: 0 2px 6px #82d3f8;
-  background-color: #008eff;
-  border-color: #008eff;
+  background-color: #1c68ce;
+  border-color: #1c68ce;
   color: #fff; }
   .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active {
     background-color: #0da8ee !important; }
@@ -1934,7 +1934,7 @@ a.dropdown-item {
   --primary:  #13468b;
   --secondary:  #34395e;
   --success:  #1c68ce;
-  --info:  #008eff;
+  --info:  #1c68ce;
   --warning:  #ffa426;
   --danger:  #fc544b;
   --light:  #e3eaef;

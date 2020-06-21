@@ -1700,10 +1700,10 @@ tr:first-child > td > .fc-day-grid-event {
         background-color: #ffa426;
         color: #fff; }
     .wizard-steps .wizard-step.wizard-step-info {
-      background-color: #008eff;
+      background-color: #1c68ce;
       color: #fff; }
       .wizard-steps .wizard-step.wizard-step-info:before {
-        background-color: #008eff;
+        background-color: #1c68ce;
         color: #fff; }
     .wizard-steps .wizard-step .wizard-step-icon .fas, .wizard-steps .wizard-step .wizard-step-icon .far, .wizard-steps .wizard-step .wizard-step-icon .fab, .wizard-steps .wizard-step .wizard-step-icon .fal, .wizard-steps .wizard-step .wizard-step-icon .ion {
       font-size: 34px;
