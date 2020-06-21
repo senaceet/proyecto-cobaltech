@@ -15,8 +15,8 @@
                            <input type="text" name="Nombre_ciudad" class="form-control">
                         </div>
                         <hr>
-                        <button class="btn btn-info" type="submit">Registrar</button>
-                        <a class="btn btn-info" href="?controller=Ciudades&method=index">Cancelar</a>
+                        <button class="btn btn-primary" type="submit">Registrar</button>
+                        <a class="btn btn-primary" href="?controller=Ciudades&method=index">Cancelar</a>
                      </form>
                   </div>
                </div>

@@ -9,7 +9,7 @@
             <div class="col-md-6">
                <div class="card">
                   <div class="card-body">
-                     <a class="btn btn-info" href="?controller=Productos&method=index">Volver</a>
+                     <a class="btn btn-primary" href="?controller=Productos&method=index">Volver</a>
                      <form action="?controller=Proveedores&method=show" method="GET">
                         <?php $id=parent::show_id($_GET['Id_producto']); ?>
                         <table class="table table bordered">
