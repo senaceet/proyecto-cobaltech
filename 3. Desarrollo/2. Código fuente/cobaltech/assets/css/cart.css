@@ -395,8 +395,8 @@ section
 }
 .hamburger:hover i
 {
-   /*color: #1c68ce;*/
-   color: #1c68ce;
+   /*color: #008EFF;*/
+   color: #008EFF;
 }
 .main_nav
 {
@@ -415,7 +415,7 @@ section
 .main_nav ul li.active a,
 .main_nav ul li a:hover
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .header_search
 {
@@ -446,8 +446,8 @@ section
 .search_input:focus,
 .search_input:hover
 {
-	border-color: #1c68ce;
-	box-shadow: 0 0 1px 0px #1c68ce inset, 0 0 1px 0px #1c68ce;
+	border-color: #008EFF;
+	box-shadow: 0 0 1px 0px #008EFF inset, 0 0 1px 0px #008EFF;
 }
 .search_input::-webkit-input-placeholder
 {
@@ -518,7 +518,7 @@ section
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
-	background: #1c68ce;
+	background: #008EFF;
 	text-align: center;
 	line-height: 24px;
 	color: #FFFFFF;
@@ -564,7 +564,7 @@ section
 .svg:hover rect,
 .svg:hover polygon
 {
-	fill: #1c68ce;
+	fill: #008EFF;
 }
 
 /*********************************
@@ -607,7 +607,7 @@ section
 }
 .menu_nav ul li a:hover
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .menu_nav ul li a::after
 {
@@ -617,7 +617,7 @@ section
 	left: 0;
 	width: 0%;
 	height: 2px;
-	background: #1c68ce;
+	background: #008EFF;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -692,11 +692,11 @@ section
 }
 .menu_social_list li:hover
 {
-	border-color: #1c68ce;
+	border-color: #008EFF;
 }
 .menu_social_list li:hover a i
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .menu_search
 {
@@ -780,7 +780,7 @@ section
 }
 .breadcrumbs ul li a:hover
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 
 /*********************************
@@ -881,7 +881,7 @@ section
 }
 .product_name a:hover
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .product_text
 {
@@ -990,7 +990,7 @@ section
 }
 .button_continue
 {
-	background: #1c68ce;
+	background: #008EFF;
 }
 .button_continue:hover
 {
@@ -1064,7 +1064,7 @@ section
 	right: 0;
 	width: 90px;
 	height: 44px;
-	background: #1c68ce;
+	background: #008EFF;
 	border-radius: 3px;
 	color: #FFFFFF;
 	text-transform: uppercase;
@@ -1149,14 +1149,14 @@ section
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #1c68ce;
+	background: #008EFF;
 	content: '';
 	visibility: hidden;
 	opacity: 0;
 }
 .radio_container input:checked ~ .radio_mark
 {
-	border-color: #1c68ce;
+	border-color: #008EFF;
 }
 .radio_container input:checked ~ .radio_mark::after
 {
@@ -1165,7 +1165,7 @@ section
 }
 .radio_container input:checked ~ .radio_text
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .radio_text
 {
@@ -1238,7 +1238,7 @@ section
 	width: 100%;
 	height: 44px;
 	text-align: center;
-	background: #1c68ce;
+	background: #008EFF;
 	border-radius: 3px;
 	margin-top: 70px;
 }
@@ -1341,7 +1341,7 @@ section
 }
 .footer_list li a:hover
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .footer_list li a > div::after
 {
@@ -1361,7 +1361,7 @@ section
 }
 .footer_list li a:hover > div::after
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .footer_list li a > div
 {
@@ -1388,7 +1388,7 @@ section
 .footer_tag_1
 {
 	left: calc(100% + 5px);
-	background: #1c68ce;
+	background: #008EFF;
 }
 .footer_tag_2
 {
@@ -1456,7 +1456,7 @@ section
 	width: 53px;
 	height: 53px;
 	border-radius: 50%;
-	background: #1c68ce;
+	background: #008EFF;
 	border: none;
 	outline: none;
 	font-size: 24px;
@@ -1515,12 +1515,12 @@ section
 }
 .footer_social_list li:hover
 {
-	border-color: #1c68ce;
+	border-color: #008EFF;
 	transform: translateY(-5px);
 }
 .footer_social_list li a:hover i
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .footer_bar
 {
@@ -1543,7 +1543,7 @@ section
 }
 .footer_nav ul li a:hover
 {
-	color: #1c68ce;
+	color: #008EFF;
 }
 .copyright
 {

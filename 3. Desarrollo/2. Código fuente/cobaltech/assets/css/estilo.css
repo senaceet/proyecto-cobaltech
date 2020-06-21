@@ -12,7 +12,7 @@
 }
 /*Colores*/
 #cobaltech{
-   background-color: #1c68ce;
+   background-color: #008eff;
    color: #fff;
 }
 
@@ -75,7 +75,7 @@ li{
    position:relative;
 }
 ul li{
-   background-color: #1c68ce;
+   background-color: #008eff;
    color: #fff;
    display: inline-block;
    padding: 5px;
