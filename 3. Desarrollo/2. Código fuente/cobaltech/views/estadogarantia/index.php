@@ -8,7 +8,7 @@
          <div class="card">
             <div class="card-body">
                <a href="?controller=EstadoGarantias&method=create" class="btn btn-info">Agregar Estado Garantia</a>
-               <a href="?controller=EstadosGarantias&method=index" class="btn btn-info">Volver a garantías</a><br><br>
+               <a href="?controller=Garantias&method=index" class="btn btn-info">Volver a garantías</a><br><br>
                <div class="table-responsive">
                   <table class="table table-sm table-hover table-striped table-bordered">
                      <tr class="bg-success text-white ">
