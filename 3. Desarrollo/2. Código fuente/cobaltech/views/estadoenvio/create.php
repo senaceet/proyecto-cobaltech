@@ -15,8 +15,8 @@
                            <input type="text" name="Estado_envio" class="form-control">
                         </div>
                         <hr>
-                        <button class="btn btn-primary" type="submit">Guardar</button>
-                        <a class="btn btn-primary" href="?controller=EstadoEnvios&method=index">Cancelar</a>
+                        <button class="btn btn-info" type="submit">Guardar</button>
+                        <a class="btn btn-info" href="?controller=EstadoEnvios&method=index">Cancelar</a>
                      </form>
                   </div>
                </div>

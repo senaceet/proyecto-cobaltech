@@ -7,7 +7,7 @@
       <div class="section-body">
          <div class="card">
             <div class="card-body">
-               <a href="?controller=Productos&method=create" class="btn btn-success">Agregar Producto</a><br><br>
+               <a href="?controller=Productos&method=create" class="btn btn-info">Agregar Producto</a><br><br>
                <div class="section-body">
                   <div class="table-responsive">
                      <table class="table table-sm table-hover table-striped table-bordered">
