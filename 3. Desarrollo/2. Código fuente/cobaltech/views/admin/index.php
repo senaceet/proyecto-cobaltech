@@ -18,7 +18,7 @@
                         <a href="?controller=EstadoEnvios&method=index" class="list-group-item list-group-item-action">Estados de envío</a>
                      </div>
                      <div class="list-group">
-                        <a href="?controller=Facturas&method=index" class="btn btn-primary btn-block">Facturas</a>
+                        <a href="?controller=Facturas&method=index" class="btn btn-primary btn-block">Facturas</a><br>
                      </div>
                      <div class="list-group">
                         <a href="?controller=Garantias&method=index" class="btn btn-primary btn-block">Garantías</a>
