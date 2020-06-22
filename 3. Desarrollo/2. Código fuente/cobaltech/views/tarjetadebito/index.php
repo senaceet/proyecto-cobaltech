@@ -2,7 +2,7 @@
 <div class="main-content">
    <section class="section">
       <div class="section-header">
-         <h1>Tarjetas Debito</h1>
+         <h1>Pagos Tarjeta Débito</h1>
       </div> 
       <div class="section-body">
          <div class="card">

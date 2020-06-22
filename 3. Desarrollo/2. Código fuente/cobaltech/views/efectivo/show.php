@@ -2,7 +2,7 @@
 <div class="main-content">
    <section class="section">
       <div class="section-header">
-         <h1>Detalles Efectivo</h1>
+         <h1>Detalles de pago en efectivo</h1>
       </div>
       <div class="section-body">
          <div class="row">
