@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoriesStatusTable extends Migration
+class CreateWarrantiesstatusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCategoriesStatusTable extends Migration
      */
     public function up()
     {
-        Schema::create('categories_status', function (Blueprint $table) {
+        Schema::create('warrantiesstatus', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateCategoriesStatusTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categories_status');
+        Schema::dropIfExists('warrantiesstatus');
     }
 }

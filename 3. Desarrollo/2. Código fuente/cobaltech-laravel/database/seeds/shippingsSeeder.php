@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class shippingsSeeder extends Seeder
+class ShippingsSeeder extends Seeder
 {
     /**
      * Run the database seeds.

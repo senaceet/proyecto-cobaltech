@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class delivery_statusSeeder extends Seeder
+class DocTypesSeeder extends Seeder
 {
     /**
      * Run the database seeds.

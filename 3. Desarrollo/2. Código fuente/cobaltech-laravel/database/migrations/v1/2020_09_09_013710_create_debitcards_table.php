@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDebitCardsTable extends Migration
+class CreateDebitcardsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDebitCardsTable extends Migration
      */
     public function up()
     {
-        Schema::create('debit_cards', function (Blueprint $table) {
+        Schema::create('debitcards', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateDebitCardsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('debit_cards');
+        Schema::dropIfExists('debitcards');
     }
 }

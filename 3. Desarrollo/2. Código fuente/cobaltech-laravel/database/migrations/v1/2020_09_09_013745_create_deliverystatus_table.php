@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWarrantiesStatusTable extends Migration
+class CreateDeliverystatusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateWarrantiesStatusTable extends Migration
      */
     public function up()
     {
-        Schema::create('warranties_status', function (Blueprint $table) {
+        Schema::create('deliverystatus', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateWarrantiesStatusTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('warranties_status');
+        Schema::dropIfExists('deliverystatus');
     }
 }
