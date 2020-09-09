@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class rolSeeder extends Seeder
+class shippingsSeeder extends Seeder
 {
     /**
      * Run the database seeds.

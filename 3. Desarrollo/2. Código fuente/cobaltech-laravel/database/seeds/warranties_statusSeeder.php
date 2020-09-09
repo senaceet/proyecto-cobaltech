@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class facturaSeeder extends Seeder
+class warranties_statusSeeder extends Seeder
 {
     /**
      * Run the database seeds.

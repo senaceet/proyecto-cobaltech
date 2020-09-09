@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class garantiaSeeder extends Seeder
+class delivery_statusSeeder extends Seeder
 {
     /**
      * Run the database seeds.

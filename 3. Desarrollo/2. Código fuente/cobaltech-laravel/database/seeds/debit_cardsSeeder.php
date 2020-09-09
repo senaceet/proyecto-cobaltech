@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class proveedorSeeder extends Seeder
+class debit_cardsSeeder extends Seeder
 {
     /**
      * Run the database seeds.

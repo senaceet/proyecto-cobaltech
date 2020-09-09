@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class errorSeeder extends Seeder
+class doc_typesSeeder extends Seeder
 {
     /**
      * Run the database seeds.

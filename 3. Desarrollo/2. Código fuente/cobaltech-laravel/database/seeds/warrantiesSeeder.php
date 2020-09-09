@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class tipo_documentoSeeder extends Seeder
+class warrantiesSeeder extends Seeder
 {
     /**
      * Run the database seeds.

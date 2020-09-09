@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class ciudadSeeder extends Seeder
+class citiesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
