@@ -5,7 +5,7 @@ namespace App\Http\Controllers\DocType;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DocsTypesController extends Controller
+class DocTypesController extends Controller
 {
     /**
      * Display a listing of the resource.
