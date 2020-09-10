@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class WarrantiesSeeder extends Seeder
+class WarrantyStatusSeeder extends Seeder
 {
     /**
      * Run the database seeds.
