@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Warrantytatus;
+namespace App\Http\Controllers\WarrantyStatus;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class WarrantyStatusController extends Controller
+class WarrantiesStatusController extends Controller
 {
     /**
      * Display a listing of the resource.
