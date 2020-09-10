@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Warranty;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Warranty;
 
 class WarrantyController extends Controller
 {
@@ -14,7 +15,7 @@ class WarrantyController extends Controller
      */
     public function index()
     {
-        //
+        return warranties::all();
     }
 
     /**
@@ -35,7 +36,8 @@ class WarrantyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $warranty=Warranty::create($request->all());
+        return $warranty;
     }
 
     /**
@@ -46,7 +48,7 @@ class WarrantyController extends Controller
      */
     public function show($id)
     {
-        //
+        return Warranty::find(id);
     }
 
     /**
@@ -69,7 +71,8 @@ class WarrantyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $warranty=Warranty::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
     }
 
     /**
@@ -80,6 +83,7 @@ class WarrantyController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $warranty=Warranty::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

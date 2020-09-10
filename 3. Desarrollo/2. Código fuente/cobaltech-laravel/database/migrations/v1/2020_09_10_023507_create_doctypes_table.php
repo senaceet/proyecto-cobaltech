@@ -15,6 +15,8 @@ class CreateDoctypesTable extends Migration
     {
         Schema::create('doctypes', function (Blueprint $table) {
             $table->id();
+            $table->string('abbreviation',3);
+            $table->string('doctype',50);
             $table->timestamps();
         });
     }
