@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\WarrantiesStatus;
+namespace App\Http\Controllers\Warrantytatus;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
