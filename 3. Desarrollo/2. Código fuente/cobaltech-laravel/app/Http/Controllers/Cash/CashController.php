@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Cash;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Cash;
 
 class CashController extends Controller
 {
@@ -14,7 +15,8 @@ class CashController extends Controller
      */
     public function index()
     {
-        //
+        $cash=Cash::all();
+        return view('cash.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class CashController extends Controller
      */
     public function create()
     {
-        //
+        $cash=Cash::all();
+        return view('cash.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class CashController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cash=Cash::create($request->all());
+        return redirect()->route('cash.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class CashController extends Controller
      */
     public function show($id)
     {
-        //
+        $cash=Cash::find($id);
+        return view('cash.show',compact ('cash'));
+        
+        return redirect()->route('cash.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class CashController extends Controller
      */
     public function edit($id)
     {
-        //
+        $cash=Cash::find($id);
+        return view('cash.edit');
+
+        return redirect()->route('cash.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,10 @@ class CashController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $cash=Cash::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('cash.index');
     }
 
     /**
@@ -80,6 +93,7 @@ class CashController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $cash=Cash::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

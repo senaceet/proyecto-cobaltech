@@ -4,6 +4,7 @@ namespace App\Http\Controllers\DebitCard;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\DebitCard;
 
 class DebitCardsController extends Controller
 {
@@ -14,7 +15,8 @@ class DebitCardsController extends Controller
      */
     public function index()
     {
-        //
+        $debitcard=DebitCard::all();
+        return view('credit.index');
     }
 
     /**

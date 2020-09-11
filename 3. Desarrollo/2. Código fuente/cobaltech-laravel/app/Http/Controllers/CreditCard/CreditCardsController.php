@@ -4,6 +4,7 @@ namespace App\Http\Controllers\CreditCard;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\CreditCard;
 
 class CreditCardsController extends Controller
 {
@@ -14,7 +15,8 @@ class CreditCardsController extends Controller
      */
     public function index()
     {
-        //
+        $creditcard=CreditCard::all();
+        return view('creditcard.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class CreditCardsController extends Controller
      */
     public function create()
     {
-        //
+        $creditcard=CreditCard::all();
+        return view('creditcard.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class CreditCardsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $creditcard=CreditCard::create($request->all());
+        return redirect()->route('creditcard.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class CreditCardsController extends Controller
      */
     public function show($id)
     {
-        //
+        $creditcard=CreditCard::find($id);
+        return view('creditcard.show',compact ('creditcard'));
+        
+        return redirect()->route('creditcard.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class CreditCardsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $creditcard=CreditCard::find($id);
+        return view('creditcard.edit');
+
+        return redirect()->route('creditcard.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,10 @@ class CreditCardsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $creditcard=CreditCard::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('creditcard.index');
     }
 
     /**
@@ -80,6 +93,7 @@ class CreditCardsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $creditcard=CreditCard::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

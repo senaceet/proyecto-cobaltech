@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Brand;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Brand;
 
 class BrandsController extends Controller
 {
@@ -14,7 +15,8 @@ class BrandsController extends Controller
      */
     public function index()
     {
-        //
+        $brand=Brandy::all();
+        return view('brand.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class BrandsController extends Controller
      */
     public function create()
     {
-        //
+        $brand=Brand::all();
+        return view('brand.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class BrandsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $brand=Brand::create($request->all());
+        return redirect()->route('brand.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class BrandsController extends Controller
      */
     public function show($id)
     {
-        //
+        $brand=Brand::find($id);
+        return view('brand.show',compact ('brand'));
+        
+        return redirect()->route('brand.index');
     }
 
     /**
@@ -57,8 +64,12 @@ class BrandsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $brand=Brand::find($id);
+        return view('brand.edit');
+
+        return redirect()->route('brand.index')->with('mensaje','se actualizo correctamente!!!');
     }
+    
 
     /**
      * Update the specified resource in storage.
@@ -69,7 +80,10 @@ class BrandsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $brand=Brand::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('brand.index');
     }
 
     /**
@@ -80,6 +94,7 @@ class BrandsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $brand=Brand::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

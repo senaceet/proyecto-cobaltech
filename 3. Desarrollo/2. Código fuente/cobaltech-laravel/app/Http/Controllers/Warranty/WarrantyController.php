@@ -15,7 +15,8 @@ class WarrantyController extends Controller
      */
     public function index()
     {
-        return warranties::all();
+        $warranty=Warranty::all();
+        return view('warranty.index');
     }
 
     /**
@@ -25,7 +26,8 @@ class WarrantyController extends Controller
      */
     public function create()
     {
-        //
+        $warranty=Warranty::all();
+        return view('warranty.create');
     }
 
     /**
@@ -37,7 +39,7 @@ class WarrantyController extends Controller
     public function store(Request $request)
     {
         $warranty=Warranty::create($request->all());
-        return $warranty;
+        return redirect()->route('warranty.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -48,7 +50,10 @@ class WarrantyController extends Controller
      */
     public function show($id)
     {
-        return Warranty::find(id);
+        $warranty=Warranty::find($id);
+      return view('warranty.show',compact ('warranty'));
+      
+      return redirect()->route('warranty.index');
     }
 
     /**
@@ -59,7 +64,10 @@ class WarrantyController extends Controller
      */
     public function edit($id)
     {
-        //
+        $warranty=Warranty::find($id);
+        return view('warranty.edit');
+
+        return redirect()->route('warranty.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -73,6 +81,8 @@ class WarrantyController extends Controller
     {
         $warranty=Warranty::find($id)->update($request->all());
         Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('warranty.index');
     }
 
     /**

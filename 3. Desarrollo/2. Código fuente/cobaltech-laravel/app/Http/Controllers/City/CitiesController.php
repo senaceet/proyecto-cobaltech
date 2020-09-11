@@ -4,6 +4,7 @@ namespace App\Http\Controllers\City;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\City;
 
 class CitiesController extends Controller
 {
@@ -14,7 +15,8 @@ class CitiesController extends Controller
      */
     public function index()
     {
-        //
+        $city=City::all();
+        return view('city.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class CitiesController extends Controller
      */
     public function create()
     {
-        //
+        $city=City::all();
+        return view('city.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class CitiesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $city=City::create($request->all());
+        return redirect()->route('city.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class CitiesController extends Controller
      */
     public function show($id)
     {
-        //
+        $city=City::find($id);
+        return view('city.show',compact ('city'));
+        
+        return redirect()->route('city.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class CitiesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $city=City::find($id);
+        return view('city.edit');
+
+        return redirect()->route('city.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,10 @@ class CitiesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $city=City::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('city.index');
     }
 
     /**
@@ -80,6 +93,7 @@ class CitiesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $city=City::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

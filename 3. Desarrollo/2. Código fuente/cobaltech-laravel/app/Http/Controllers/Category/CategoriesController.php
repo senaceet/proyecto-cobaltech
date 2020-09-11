@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Category;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Category;
+ 
 class CategoriesController extends Controller
 {
     /**
@@ -14,7 +15,8 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        //
+        $category=Category::all();
+        return view('category.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        //
+        $category=Category::all();
+        return view('category.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class CategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $category=Category::create($request->all());
+        return redirect()->route('category.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class CategoriesController extends Controller
      */
     public function show($id)
     {
-        //
+        $category=Category::find($id);
+        return view('category.show',compact ('category'));
+        
+        return redirect()->route('category.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class CategoriesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category=Category::find($id);
+        return view('category.edit');
+
+        return redirect()->route('category.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,10 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $category=Category::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('category.index');
     }
 
     /**
@@ -80,6 +93,7 @@ class CategoriesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category=Category::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

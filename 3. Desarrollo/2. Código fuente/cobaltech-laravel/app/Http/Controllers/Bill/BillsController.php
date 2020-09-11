@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Bill;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Bill;
 
 class BillsController extends Controller
 {
@@ -14,7 +15,8 @@ class BillsController extends Controller
      */
     public function index()
     {
-        //
+        $bill=Bill::all();
+        return view('bill.index');
     }
 
     /**
@@ -24,7 +26,9 @@ class BillsController extends Controller
      */
     public function create()
     {
-        //
+        $bill=Bill::all();
+        return view('bill.create');
+        
     }
 
     /**
@@ -35,8 +39,10 @@ class BillsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $bill=Bill::create($request->all());
+        return redirect()->route('bill.index')->with('Mensaje','Se creo correctamente ');
     }
+    
 
     /**
      * Display the specified resource.
@@ -46,8 +52,12 @@ class BillsController extends Controller
      */
     public function show($id)
     {
-        //
+        return Bill::find(id);
+        return view('bill.show',compact ('bill'));
+      
+      return redirect()->route('bill.index');
     }
+    
 
     /**
      * Show the form for editing the specified resource.
@@ -57,7 +67,10 @@ class BillsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $bill=Bill::find($id);
+        return view('bill.edit');
+
+        return redirect()->route('bill.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +82,8 @@ class BillsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $bill=Bill::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
     }
 
     /**
@@ -80,6 +94,7 @@ class BillsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $bill=Bill::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }
