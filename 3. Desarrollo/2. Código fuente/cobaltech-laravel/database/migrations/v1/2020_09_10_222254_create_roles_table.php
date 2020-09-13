@@ -13,6 +13,10 @@ class CreateRolesTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla ROLES
+        - ROL = Nombre del rol de usuario
+        */
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
             $table->string('rol',15);

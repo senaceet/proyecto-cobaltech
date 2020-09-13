@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Payment;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Payment;
 
 class PaymentsController extends Controller
 {
@@ -14,7 +15,8 @@ class PaymentsController extends Controller
      */
     public function index()
     {
-        //
+        $payment=Payment::all();
+        return view('payment.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class PaymentsController extends Controller
      */
     public function create()
     {
-        //
+        $payment=Payment::all();
+        return view('payment.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class PaymentsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $payment=Payment::create($request->all());
+        return redirect()->route('payment.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class PaymentsController extends Controller
      */
     public function show($id)
     {
-        //
+        $payment=Payment::find($id);
+        return view('payment.show',compact ('payment'));
+        
+        return redirect()->route('payment.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class PaymentsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $payment=Payment::find($id);
+        return view('payment.edit');
+
+        return redirect()->route('payment.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,9 +79,14 @@ class PaymentsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $payment=Payment::find($id)->update([
+            'bills_id'=>$request->input('bills_id'),
+            'creditcards_id'=>$request->input('creditcards_id'),
+            'debitcards_id'=>$request->input('debitcards_id'),
+            'cash_id'=>$request->input('cash_id'),
+            ]);
+            return redirect()->route('payment.index')->whit('Su campo se actualizo correctamente');
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -80,6 +95,7 @@ class PaymentsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $payment=Payment::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

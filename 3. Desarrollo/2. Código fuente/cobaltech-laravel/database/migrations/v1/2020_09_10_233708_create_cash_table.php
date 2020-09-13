@@ -13,6 +13,10 @@ class CreateCashTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla EFECTIVO
+        - DESCRIPTION = Número de l afactura que describe la trasacción
+        */
         Schema::create('cash', function (Blueprint $table) {
             $table->id();
             $table->string('description',30);

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\User;
 
 class UsersController extends Controller
 {
@@ -14,7 +15,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        $user=User::all();
+        return view('user.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        $user=User::all();
+        return view('user.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user=User::create($request->all());
+        return redirect()->route('user.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        //
+        $user=User::find($id);
+        return view('user.show',compact ('user'));
+        
+        return redirect()->route('user.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user=User::find($id);
+        return view('user.edit');
+
+        return redirect()->route('user.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,10 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user=User::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('user.index');
     }
 
     /**
@@ -80,6 +93,7 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user=User::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

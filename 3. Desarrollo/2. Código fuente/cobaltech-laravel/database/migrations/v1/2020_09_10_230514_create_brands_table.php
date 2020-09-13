@@ -13,6 +13,10 @@ class CreateBrandsTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla MARCAS
+        - NAME = Nombre de la marca
+        */
         Schema::create('brands', function (Blueprint $table) {
             $table->id();
             $table->string('name',20);

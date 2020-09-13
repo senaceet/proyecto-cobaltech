@@ -13,6 +13,10 @@ class CreateWarrantystatusTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla ESTADO DE GARANTÍA
+        - STATUS = Listado, cada estado describé brevemente el estado de la garantía
+        */
         Schema::create('warrantystatus', function (Blueprint $table) {
             $table->id();
             $table->string('status',12);

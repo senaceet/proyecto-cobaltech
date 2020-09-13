@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\DeliveryStatus;
+use Faker\Factary as Faker;
 
 class DeliveryStatusSeeder extends Seeder
 {
@@ -11,6 +13,12 @@ class DeliveryStatusSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $faker=Faker::create();
+        // 500 envíos
+        for ($i=1 ; $i <= 500 ; $i++) {
+            $deliverystatus=DeliveryStatus::create([
+                'status'=>$faker->randomElement(['En trámite','Enviado','Entregado'])
+            ]);
+        }
     }
 }

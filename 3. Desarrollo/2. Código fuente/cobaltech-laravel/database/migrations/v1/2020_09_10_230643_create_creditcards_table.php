@@ -13,6 +13,13 @@ class CreateCreditcardsTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla TARJETA DE CRÉDITO
+        - OMNER = Nombre del titular de la tarjeta de crédito
+        - NUMBER = Número de la tarjeta de crédito
+        - DUEDATE = Fecha de vencimiento de tarjeta de crédito
+        - CVV = Código de verificación de la tarjeta de crédito
+        */
         Schema::create('creditcards', function (Blueprint $table) {
             $table->id();
             $table->string('owner',25);

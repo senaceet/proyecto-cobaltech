@@ -80,10 +80,10 @@ class BrandsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $brand=Brand::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('brand.index');
+        $brand=Brand::find($id)->update([
+        'name'=>$request->input('name')
+        ]);
+        Return redirect()->route('brand.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**

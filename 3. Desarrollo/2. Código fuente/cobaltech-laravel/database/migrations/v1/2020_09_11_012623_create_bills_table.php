@@ -13,6 +13,11 @@ class CreateBillsTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla FACTURAS
+        - SALE = Fecha de venta (creación de la factura)
+        - TOTAL = Almacena el monto total de la venta
+        */
         Schema::create('bills', function (Blueprint $table) {
             $table->id();
             $table->date('sale');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\DocType;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\DocType;
 
 class DocTypesController extends Controller
 {
@@ -14,7 +15,8 @@ class DocTypesController extends Controller
      */
     public function index()
     {
-        //
+        $doctype=DocType::all();
+        return view('doctype.index');
     }
 
     /**
@@ -24,8 +26,10 @@ class DocTypesController extends Controller
      */
     public function create()
     {
-        //
+        $doctype=DocType::all();
+        return view('doctype.create');
     }
+    
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +39,8 @@ class DocTypesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $doctype=DocType::create($request->all());
+        return redirect()->route('doctype.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +51,10 @@ class DocTypesController extends Controller
      */
     public function show($id)
     {
-        //
+        $doctype=DocType::find($id);
+        return view('doctype.show',compact ('doctype'));
+        
+        return redirect()->route('doctype.index');
     }
 
     /**
@@ -57,7 +65,10 @@ class DocTypesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $doctype=Doctype::find($id);
+        return view('doctype.edit');
+
+        return redirect()->route('doctype.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +80,11 @@ class DocTypesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $doctype=Doctype::find($id)->update([
+            'abbreviation'=>$request->input('abbreviation'),
+            'doctype'=>$request->input('doctype')
+            ]);
+            return redirect()->route('doctype.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**
@@ -80,6 +95,7 @@ class DocTypesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $doctype=Doctype::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

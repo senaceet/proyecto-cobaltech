@@ -54,8 +54,8 @@ class BillsController extends Controller
     {
         return Bill::find(id);
         return view('bill.show',compact ('bill'));
-      
-      return redirect()->route('bill.index');
+        
+        return redirect()->route('bill.index');
     }
     
 
@@ -82,8 +82,12 @@ class BillsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $bill=Bill::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
+        $bill=Bill::find($id)->update([
+            'creditcards_id'=>$request->input('creditcards_id'),
+            'debitcards_id'=>$request->input('debitcards_id'),
+            'cash_id'=>$request->input('cash_id')
+        ]);
+        Return redirect()->route('bill.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Shipping;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Shipping;
 
 class ShippingsController extends Controller
 {
@@ -14,7 +15,8 @@ class ShippingsController extends Controller
      */
     public function index()
     {
-        //
+        $shipping=Shipping::all();
+        return view('shipping.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class ShippingsController extends Controller
      */
     public function create()
     {
-        //
+        $shipping=Shipping::all();
+        return view('shipping.create');
     }
 
     /**
@@ -35,7 +38,9 @@ class ShippingsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $shipping=Shipping::create($request->all());
+        return redirect()->route('shipping.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +51,11 @@ class ShippingsController extends Controller
      */
     public function show($id)
     {
-        //
+        $shipping=Shipping::find($id);
+        return view('shipping.show',compact ('shipping'));
+        
+        return redirect()->route('shipping.index');
+    
     }
 
     /**
@@ -57,7 +66,10 @@ class ShippingsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $shipping=Shipping::find($id);
+        return view('shipping.edit');
+
+        return redirect()->route('shipping.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +81,10 @@ class ShippingsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $shipping=Shipping::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('shipping.index');
     }
 
     /**
@@ -80,6 +95,7 @@ class ShippingsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $shipping=Shipping::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

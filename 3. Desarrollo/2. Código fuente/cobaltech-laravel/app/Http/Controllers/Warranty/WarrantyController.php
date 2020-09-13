@@ -51,9 +51,9 @@ class WarrantyController extends Controller
     public function show($id)
     {
         $warranty=Warranty::find($id);
-      return view('warranty.show',compact ('warranty'));
-      
-      return redirect()->route('warranty.index');
+        return view('warranty.show',compact ('warranty'));
+    
+        return redirect()->route('warranty.index');
     }
 
     /**

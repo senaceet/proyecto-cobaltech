@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Product;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Product;
 
 class ProductsController extends Controller
 {
@@ -14,7 +15,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        //
+        $product=Product::all();
+        return view('product.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        $product=Product::all();
+        return view('product.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product=Product::create($request->all());
+        return redirect()->route('product.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class ProductsController extends Controller
      */
     public function show($id)
     {
-        //
+        $product=Product::find($id);
+        return view('product.show',compact ('product'));
+        
+        return redirect()->route('product.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class ProductsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product=Product::find($id);
+        return view('product.edit');
+
+        return redirect()->route('product.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,17 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $payment=Payment::find($id)->update([
+            'name'=>$request->input('name'),
+            'description'=>$request->input('description'),
+            'stock'=>$request->input('stock'),
+            'picture'=>$request->input('picture'),
+            'price'=>$request->input('price'),
+            'providers_id'=>$request->input('providers_id'),
+            'categories_id'=>$request->input('categories_id'),
+            'brands_id'=>$request->input('brands_id')
+            ]);
+            return redirect()->route('payment.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**
@@ -80,6 +100,7 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product=Product::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

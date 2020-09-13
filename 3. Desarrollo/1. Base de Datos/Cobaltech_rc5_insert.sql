@@ -58,14 +58,14 @@ values 	('Bogota'),
 		('Armenia');
 
 -- Insert into Tabla ROL
- 
+
 insert into Rol (Tipo_rol)
 values ('Super Administrador'),
        ('Administrador'),
        ('Usuario');
 
 -- Insert into Tabla TIPO DE DOCUMENTO  
-  
+
 insert into Tipo_documento(Abreviatura,Tipodoc)
 Values ('CC','Cedula de ciudadania'),
        ('CE','Cedula de extranjeria'),
@@ -89,13 +89,13 @@ VALUES ('ACER'),
        ('Creative'),
        ('EPSON'),
        ('EVGA'),
-       ('FactalDesign'),
+       ('FractalDesign'),
        ('G.Skill'),
-       ('Generica'),
+       ('Generico'),
        ('Genius'),
        ('HP'),
        ('HyperX'),
-       ('In Win'),
+       ('InWin'),
        ('Intel'),
        ('Kingston'),
        ('Lenovo'),
@@ -115,11 +115,10 @@ VALUES ('ACER'),
        ('Sapphire'),
        ('Sennheiser'),
        ('StarTek'),
-       ('Steren'),
+       ('Seasonic'),
        ('Thermaltake'),
-       ('VTA'),
        ('Western Digital'),
-	   ('XFX'),
+	('XFX'),
        ('Zotac');
 
 -- Inserción de datos PROVEEDOR

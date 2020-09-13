@@ -13,9 +13,13 @@ class CreateCitiesTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla CIUDADES
+        - NAME = Nombre de la ciudad
+        */
         Schema::create('cities', function (Blueprint $table) {
             $table->id();
-            $table->string('name',20);
+            $table->string('name',20)->unique();
             $table->timestamps();
         });
     }

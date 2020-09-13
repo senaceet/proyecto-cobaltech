@@ -13,9 +13,20 @@ class CrBeateUsersTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla USUARIOS
+        - DOCUMENT = Número documento de identificación del usuario
+        - NAME = Nombre(s) del usuario
+        - LASTNAME = Apellido(s) del usuario
+        - EMAIL = Correo electrónico del usuario
+        - PASSWORD = Contraseña de acceso del usuario
+        - ADDRESS = Dirección de envío del usuario
+        - PHONE = Número telefónico del usuario
+        - MOBILE = Número celular del usuario
+        */
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('document',15);
+            $table->string('document',15)->unique();
             $table->string('name',40);
             $table->string('lastname',40);
             $table->string('email',40)->unique();

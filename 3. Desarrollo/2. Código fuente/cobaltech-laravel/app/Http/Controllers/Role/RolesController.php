@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Rol;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Role;
 
 class RolesController extends Controller
 {
@@ -14,7 +15,8 @@ class RolesController extends Controller
      */
     public function index()
     {
-        //
+        $role=Role::all();
+        return view('role.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class RolesController extends Controller
      */
     public function create()
     {
-        //
+        $role=Role::all();
+        return view('role.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class RolesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $role=Role::create($request->all());
+        return redirect()->route('role.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class RolesController extends Controller
      */
     public function show($id)
     {
-        //
+        $role=Role::find($id);
+        return view('role.show',compact ('provider'));
+        
+        return redirect()->route('role.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class RolesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $role=Role::find($id);
+        return view('role.edit');
+
+        return redirect()->route('role.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,10 @@ class RolesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $role=Role::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('role.index');
     }
 
     /**
@@ -80,6 +93,7 @@ class RolesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $role=Role::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

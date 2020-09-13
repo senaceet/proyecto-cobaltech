@@ -79,10 +79,10 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $category=Category::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('category.index');
+        $category=Category::find($id)->update([
+            'name'=>$request->input('name')
+            ]);
+            Return redirect()->route('category.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**

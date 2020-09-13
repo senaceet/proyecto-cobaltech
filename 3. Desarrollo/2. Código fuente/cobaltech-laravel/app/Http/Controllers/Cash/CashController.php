@@ -79,10 +79,10 @@ class CashController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $cash=Cash::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('cash.index');
+        $cash=Cash::find($id)->update([
+            'description'=>$request->input('description')
+            ]);
+            Return redirect()->route('cash.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**

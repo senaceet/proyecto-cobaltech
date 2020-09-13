@@ -79,10 +79,10 @@ class CitiesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $city=City::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('city.index');
+        $city=City::find($id)->update([
+            'name'=>$request->input('name')
+            ]);
+            Return redirect()->route('city.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**

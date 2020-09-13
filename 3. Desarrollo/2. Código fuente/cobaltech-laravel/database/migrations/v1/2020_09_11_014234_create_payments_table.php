@@ -13,6 +13,9 @@ class CreatePaymentsTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla PAGOS
+        */
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('bills_id')->unsigned();

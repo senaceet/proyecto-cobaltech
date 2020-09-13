@@ -4,6 +4,7 @@ namespace App\Http\Controllers\WarrantyStatus;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\WarrantyStatus;
 
 class WarrantyStatusController extends Controller
 {
@@ -14,7 +15,8 @@ class WarrantyStatusController extends Controller
      */
     public function index()
     {
-        //
+        $warrantystatus=WarrantyStatus::all();
+        return view('warrantystatus.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class WarrantyStatusController extends Controller
      */
     public function create()
     {
-        //
+        $warrantystatus=WarrantyStatus::all();
+        return view('warrantystatus.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class WarrantyStatusController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $warrantystatus=WarrantyStatus::create($request->all());
+        return redirect()->route('warrantystatus.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class WarrantyStatusController extends Controller
      */
     public function show($id)
     {
-        //
+        $warrantystatus=WarrantyStatus::find($id);
+        return view('warrantystatus.show',compact ('warrantystatus'));
+    
+        return redirect()->route('warrantystatus.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class WarrantyStatusController extends Controller
      */
     public function edit($id)
     {
-        //
+        $warrantystatus=WarrantyStatus::find($id);
+        return view('warrantystatus.edit');
+
+        return redirect()->route('warrantystatus.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,10 @@ class WarrantyStatusController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $warrantystatus=WarrantyStatus::find($id)->update($request->all());
+        Return 'Su campo se actualizo correctamente';
+
+        return redirect()->route('warrantystatus.index');
     }
 
     /**
@@ -80,6 +93,7 @@ class WarrantyStatusController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $warrantystatus=WarrantyStatus::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }

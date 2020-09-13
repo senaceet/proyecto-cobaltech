@@ -13,6 +13,14 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla PRODUCTOS
+        - NAME = Nombre del producto
+        - DESCRIPTION = Descripción de las caracteristicas del producto
+        - STOCK = Inventario, conteo, existencias del producto
+        - PICTURE = Fotografía(s) del producto
+        - PRICE = Precio de venta por unidad del producto
+        */
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name',30);

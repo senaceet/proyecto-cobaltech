@@ -13,9 +13,13 @@ class CreateDeliverystatusTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla ESTADO DE ENVÍO
+        - STATUS = Listado, cada estado describé brevemente el estado del envío
+        */
         Schema::create('deliverystatus', function (Blueprint $table) {
             $table->id();
-            $table->string('status',10);
+            $table->enum('status',['En trámite','Enviado','Entregado']);
             $table->timestamps();
         });
     }

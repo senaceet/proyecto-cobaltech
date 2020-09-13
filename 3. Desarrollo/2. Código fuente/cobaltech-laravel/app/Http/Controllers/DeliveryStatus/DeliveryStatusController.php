@@ -4,6 +4,7 @@ namespace App\Http\Controllers\DeliveryStatus;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\DeliveryStatus;
 
 class DeliveryStatusController extends Controller
 {
@@ -14,7 +15,8 @@ class DeliveryStatusController extends Controller
      */
     public function index()
     {
-        //
+        $deliverystatus=DeliveryStatus::all();
+        return view('deliverystatus.index');
     }
 
     /**
@@ -24,7 +26,8 @@ class DeliveryStatusController extends Controller
      */
     public function create()
     {
-        //
+        $deliverystatus=DeliveryStatus::all();
+        return view('deliverystatus.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class DeliveryStatusController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $deliverystatus=DeliveryStatus::create($request->all());
+        return redirect()->route('deliverystatus.index')->with('Mensaje','Se creo correctamente ');
     }
 
     /**
@@ -46,7 +50,10 @@ class DeliveryStatusController extends Controller
      */
     public function show($id)
     {
-        //
+        $deliverystatus=DeliveryStatus::find($id);
+        return view('deliverystatus.show',compact ('deliverystatus'));
+        
+        return redirect()->route('deliverystatus.index');
     }
 
     /**
@@ -57,7 +64,10 @@ class DeliveryStatusController extends Controller
      */
     public function edit($id)
     {
-        //
+        $deliverystatus=DeliveryStatus::find($id);
+        return view('deliverystatus.edit');
+
+        return redirect()->route('deliverystatus.index')->with('mensaje','se actualizo correctamente!!!');
     }
 
     /**
@@ -69,7 +79,10 @@ class DeliveryStatusController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $deliverystatus=DeliveryStatus::find($id)->update([
+            'status'=>$request->input('status')
+            ]);
+            return redirect()->route('deliverystatus.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**
@@ -80,6 +93,8 @@ class DeliveryStatusController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $deliverystatus=DeliveryStatus::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
-}
+    }
+

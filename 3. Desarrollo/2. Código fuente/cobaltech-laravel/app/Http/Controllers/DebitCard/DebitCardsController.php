@@ -16,7 +16,7 @@ class DebitCardsController extends Controller
     public function index()
     {
         $debitcard=DebitCard::all();
-        return view('credit.index');
+        return view('debitcard.index');
     }
 
     /**
@@ -26,7 +26,8 @@ class DebitCardsController extends Controller
      */
     public function create()
     {
-        //
+        $debitcard=DebitCard::all();
+        return view('debitcard.create');
     }
 
     /**
@@ -37,7 +38,8 @@ class DebitCardsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $debitcard=DebitCard::create($request->all());
+        return redirect()->route('debitcard.index')->with('Mensaje', 'Se creo correctamente ');
     }
 
     /**
@@ -48,7 +50,10 @@ class DebitCardsController extends Controller
      */
     public function show($id)
     {
-        //
+        $debitcard=DebitCard::find($id);
+        return view('debitcard.show', compact('debitcard'));
+        
+        return redirect()->route('debitcard.index');
     }
 
     /**
@@ -59,7 +64,10 @@ class DebitCardsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $debitcard=DebitCard::find($id);
+        return view('debitcard.edit');
+
+        return redirect()->route('debitcard.index')->with('mensaje', 'se actualizo correctamente!!!');
     }
 
     /**
@@ -71,7 +79,10 @@ class DebitCardsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $debitcard=DebitCard::find($id)->update([
+        'transaction'=>$request->input('transaction')
+        ]);
+        return redirect()->route('debitcard.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**
@@ -82,6 +93,8 @@ class DebitCardsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $debitcard=DebitCard::find($id)->delete();
+        return "Se ha eliminado su registro";
     }
 }
+

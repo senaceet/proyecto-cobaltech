@@ -13,6 +13,10 @@ class CreateDebitcardsTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla TARJETA DÉBITO
+        - TRANSACTION = Número de identificación de la trasacción PSE
+        */
         Schema::create('debitcards', function (Blueprint $table) {
             $table->id();
             $table->string('transaction',16);

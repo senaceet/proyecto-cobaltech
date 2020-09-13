@@ -13,6 +13,11 @@ class CreateDoctypesTable extends Migration
      */
     public function up()
     {
+        /* 
+        Tabla TIPO DE DOCUMENTO
+        - ABBREVIATION = Abreviación conocida de ese tipo de documento
+        - DOCTYPE = Nombre completo del tipo documento
+        */
         Schema::create('doctypes', function (Blueprint $table) {
             $table->id();
             $table->string('abbreviation',3);

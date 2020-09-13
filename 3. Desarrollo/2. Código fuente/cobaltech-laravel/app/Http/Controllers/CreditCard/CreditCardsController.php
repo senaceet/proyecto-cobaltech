@@ -79,10 +79,13 @@ class CreditCardsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $creditcard=CreditCard::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('creditcard.index');
+        $creditcard=CreditCard::find($id)->update([
+            'owner'=>$request->input('owner'),
+            'owner'=>$request->input('number'),
+            'owner'=>$request->input('duedate'),
+            'owner'=>$request->input('cvv'),
+            ]);
+            Return redirect()->route('creditcard.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**
