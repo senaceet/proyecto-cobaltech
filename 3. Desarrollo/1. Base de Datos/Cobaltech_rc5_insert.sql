@@ -188,11 +188,13 @@ Values (NULL,'Entregado'),
 -- Insert into Tabla Estado_garantia
 
 insert into Estado_garantia(Id_estado_garantia,Estado_garantia)
-Values (NULL,'Abierto'),
-       (NULL,'En proceso'),
-       (NULL,'Resuelto');
+Values (NULL,'En proceso'),
+       (NULL,'Garantía rechazada'),
+       (NULL,'Producto reparado'),
+       (NULL,'Se cambio el producto'),
+       (NULL,'Reembolso');
 
- -- Insert into Producto -- 
+-- Insert into Producto -- 
 
 INSERT INTO Producto (Nombre_producto, Descripcion, Existencia, Imagen, Precio, CategoriaId_categoria, MarcaId_marca, ProveedorId_proveedor)
 VALUES ('ACER SB220Q', 'Bi 215 full HD 1920 X 1080 ips monitor con y rad', 3,'', '453900',9,1,1),
@@ -214,7 +216,7 @@ VALUES ('ACER SB220Q', 'Bi 215 full HD 1920 X 1080 ips monitor con y rad', 3,'',
 -- Insert into Tabla USUARIO
 
 INSERT INTO Usuario(Doc_usuario,Primer_nombre,Segundo_nombre,Primer_apellido,Segundo_apellido,Correo_electronico,Contrasena,Direccion,Telefono,
-            Movil,RolId_rol,CiudadId_ciudad,Tipo_documentoId_tipodoc)
+       Movil,RolId_rol,CiudadId_ciudad,Tipo_documentoId_tipodoc)
 VALUES 	('1452687125','Rosaura','','Lozano','Diaz','rosld@gmail.com','null','Cll 10 #2-35',4562589,3124587956,1,1,1),
 		('4526987851-1','Maria','Pilar','Diaz','Lopez','Mardi@gmail.com','null','Cra 30 #52-38',7856321,3003214569,2,2,4),
 		('78969872','Rosa','Liseth','Romero','Rosales','Rosmr@outlook.com','null','Cll 43 #22-85',14569823,3218574255,2,3,2),
@@ -232,7 +234,7 @@ VALUES 	('1452687125','Rosaura','','Lozano','Diaz','rosld@gmail.com','null','Cll
 		('54789636','Lina','Maria','Rodriguez','Perez','lmape98@outlook.com','null','Av 68 #67-92',7635892,3216598720,3,1,1);
 
 -- Insert into Factura --
-  
+
 INSERT INTO Factura(Fecha_venta,Total,UsuarioId_usuario,ProductoId_producto)
 VALUES ('2019-01-15', '149000',1,1),
        ('2019-01-15', '60000','2',3),

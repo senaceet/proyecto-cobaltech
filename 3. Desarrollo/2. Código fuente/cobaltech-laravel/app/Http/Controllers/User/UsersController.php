@@ -79,10 +79,21 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user=User::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('user.index');
+        $user=User::find($id)->update([
+            'document'=>$request->input('document'),
+            'name'=>$request->input('name'),
+            'lastname'=>$request->input('lastname'),
+            'email'=>$request->input('email'),
+            'password'=>$request->input('password'),
+            'address'=>$request->input('address'),
+            'phone'=>$request->input('phone'),
+            'mobile'=>$request->input('mobile'),
+            'roles_id'=>$request->input('roles_id'),
+            'cities_id'=>$request->input('cities_id'),
+            'doctypes_id'=>$request->input('doctypes_id'),
+            'products_id'=>$request->input('products_id')
+            ]);
+            return redirect()->route('user.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**

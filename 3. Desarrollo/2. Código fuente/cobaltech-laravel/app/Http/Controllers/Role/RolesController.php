@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Rol;
+namespace App\Http\Controllers\Role;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -39,7 +39,7 @@ class RolesController extends Controller
     public function store(Request $request)
     {
         $role=Role::create($request->all());
-        return redirect()->route('role.index')->with('Mensaje','Se creo correctamente ');
+        return redirect()->route('role.index')->with('Mensaje','Se creó correctamente ');
     }
 
     /**
@@ -67,7 +67,7 @@ class RolesController extends Controller
         $role=Role::find($id);
         return view('role.edit');
 
-        return redirect()->route('role.index')->with('mensaje','se actualizo correctamente!!!');
+        return redirect()->route('role.index')->with('mensaje','se actualizó correctamente!!!');
     }
 
     /**
@@ -79,10 +79,10 @@ class RolesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $role=Role::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('role.index');
+        $role=Role::find($id)->update([
+            'rol'=>$request->input('rol')
+            ]);
+            Return redirect()->route('role.index')->whit('Su campo se actualizó correctamente');
     }
 
     /**

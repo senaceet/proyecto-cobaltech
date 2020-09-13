@@ -14,7 +14,7 @@ class DeliveryStatusSeeder extends Seeder
     public function run()
     {
         $faker=Faker::create();
-        // 500 envíos
+        // 3 estados de envíos
         for ($i=1 ; $i <= 500 ; $i++) {
             $deliverystatus=DeliveryStatus::create([
                 'status'=>$faker->randomElement(['En trámite','Enviado','Entregado'])

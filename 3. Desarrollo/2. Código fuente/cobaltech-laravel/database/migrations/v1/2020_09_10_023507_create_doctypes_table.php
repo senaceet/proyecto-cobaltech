@@ -20,8 +20,18 @@ class CreateDoctypesTable extends Migration
         */
         Schema::create('doctypes', function (Blueprint $table) {
             $table->id();
-            $table->string('abbreviation',3);
-            $table->string('doctype',50);
+            $table->enum('abbreviation',[
+                'CC',
+                'CE',
+                'TP',
+                'NIT'
+            ]);
+            $table->enum('doctype',[
+                'Cédula de Ciudadanía',
+                'Cédula de Extranjería',
+                'Pasaporte',
+                'Número de Identificación Tributaria'
+            ]);
             $table->timestamps();
         });
     }

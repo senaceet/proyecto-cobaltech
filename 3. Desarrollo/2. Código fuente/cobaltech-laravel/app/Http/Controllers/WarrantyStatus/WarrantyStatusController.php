@@ -79,10 +79,10 @@ class WarrantyStatusController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $warrantystatus=WarrantyStatus::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('warrantystatus.index');
+        $warrantystatus=WarrantyStatus::find($id)->update([
+            'status'=>$request->input('status')
+            ]);
+            Return redirect()->route('warranty.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**

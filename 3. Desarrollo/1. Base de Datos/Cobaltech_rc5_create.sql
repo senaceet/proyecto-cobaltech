@@ -64,7 +64,7 @@ CREATE TABLE Estado_garantia(
 
 CREATE TABLE Estado_envio(
 	Id_estado_envio int(5) NOT NULL AUTO_INCREMENT comment 'Id estado envío',
-	Estado_envio varchar(15) NOT NULL comment 'Estado de envío del producto',
+	Estado_envio varchar(25) NOT NULL comment 'Estado de envío del producto',
 	PRIMARY KEY (Id_estado_envio)
 );
 

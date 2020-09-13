@@ -25,7 +25,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name',30);
             $table->string('description',255);
-            $table->integer('stock',5)->unsigned();
+            $table->integer('stock',3)->unsigned();
             $table->string('picture',255);
             $table->float('price',8,2)->unsigned();
             $table->bigInteger('providers_id')->unsigned();

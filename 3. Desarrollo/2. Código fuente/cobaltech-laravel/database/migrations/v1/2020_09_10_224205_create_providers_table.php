@@ -28,16 +28,16 @@ class CreateProvidersTable extends Migration
         */
         Schema::create('providers', function (Blueprint $table) {
             $table->id();
-            $table->string('businessname',25);
-            $table->string('contact',50)->nullable();
-            $table->string('position',25)->nullable();
-            $table->string('phone',50)->nullable();
-            $table->string('extension',25)->nullable();
-            $table->string('mobile',60)->nullable();
+            $table->string('businessname',50);
+            $table->string('contact',60)->nullable();
+            $table->string('position',30)->nullable();
+            $table->string('phone',20)->nullable();
+            $table->string('extension',5)->nullable();
+            $table->string('mobile',20)->nullable();
             $table->string('address',100)->nullable();
             $table->string('warehouse',150)->nullable();
-            $table->string('website',50)->nullable();
-            $table->string('email',40)->nullable();
+            $table->string('website',100)->nullable();
+            $table->string('email',75)->nullable();
             $table->timestamps();
         });
     }

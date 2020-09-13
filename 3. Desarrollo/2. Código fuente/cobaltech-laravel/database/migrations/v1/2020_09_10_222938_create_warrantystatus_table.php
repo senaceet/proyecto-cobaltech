@@ -19,7 +19,13 @@ class CreateWarrantystatusTable extends Migration
         */
         Schema::create('warrantystatus', function (Blueprint $table) {
             $table->id();
-            $table->string('status',12);
+            $table->enum('status',[
+                'En proceso',
+                'Garantía rechazada',
+                'Producto reparado',
+                'Se cambio el producto',
+                'Reembolso'
+            ]);
             $table->timestamps();
         });
     }

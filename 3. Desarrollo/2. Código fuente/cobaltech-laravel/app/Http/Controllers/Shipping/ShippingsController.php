@@ -81,10 +81,12 @@ class ShippingsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $shipping=Shipping::find($id)->update($request->all());
-        Return 'Su campo se actualizo correctamente';
-
-        return redirect()->route('shipping.index');
+        $shipping=Shipping::find($id)->update([
+            'trackingcode'=>$request->input('trackingcode'),
+            'bills_id'=>$request->input('bills_id'),
+            'deliverystatus_id'=>$request->input('deliverystatus_id'),
+            ]);
+            Return redirect()->route('shipping.index')->whit('Su campo se actualizo correctamente');
     }
 
     /**
