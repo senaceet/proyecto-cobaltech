@@ -27,6 +27,7 @@ Route::prefix('v1')->group(function(){
     Route::resource('debitcard', 'DebitCard\DebitCardsController');
     Route::resource('deliverystatus', 'DeliveryStatus\DeliveryStatusController');
     Route::resource('doctypes', 'DocType\DocTypesController');
+    Route::resource('landing', 'LandingController');
     Route::resource('payment', 'Payment\PaymentsController');
     Route::resource('product', 'Product\ProductsController');
     Route::resource('provider', 'Provider\ProvidersController');
