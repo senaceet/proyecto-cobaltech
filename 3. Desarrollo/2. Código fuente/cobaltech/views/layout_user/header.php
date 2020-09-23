@@ -134,7 +134,7 @@
                   <!-- Search -->
                   <div class="header_search">
                      <form action="#" id="header_search_form">
-                        <input type="text" class="search_input" placeholder="Search Item" required="required" autofocus>
+                        <input type="text" class="search_input" placeholder="Buscar" required="required" autofocus>
                         <button class="header_search_button">
                            <img src="assets/img/icons/search.png" alt="search.png">
                         </button>
@@ -143,7 +143,7 @@
 
                   <!-- User -->
                   <div class="user">
-                     <a href="?controller=seguridad&method=form_auth">
+                     <a href="?controller=seguridad&method=login">
                         <div>
                            <img src="assets/img/icons/user.svg" alt="user.svg">
                            <!-- Icon autor: https://www.flaticon.com/authors/freepik -->

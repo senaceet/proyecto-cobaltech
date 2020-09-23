@@ -62,7 +62,6 @@
                               <td><?php echo $id->Tipo_documentoId_tipodoc?></td>
                            </tr>  
                         </table>
-                      
                      </form>
                   </div>
                </div>

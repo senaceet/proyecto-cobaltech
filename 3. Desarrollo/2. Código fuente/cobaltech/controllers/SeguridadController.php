@@ -2,28 +2,31 @@
 
     class SeguridadController extends Seguridad{
 
-        public function form_auth() {
+        // control de vistas
+        public function login() {
             require_once('views/layout_user/header.php');
-            require_once('views/seguridad/form_auth.php');
+            require_once('views/landing/login.php');
             require_once('views/layout_user/footer.php');
         }
 
-        public function auth_user(){
+        // autentificación de usuario
+        public function permiso(){
             $usuario=Usuario::get_email($_POST['correo_electronico']);
             if(!$usuario){
-                header("location:?controller=seguridad&method=form_auth");
+                header("location:?controller=seguridad&method=login");
             }
             if($usuario->contrasena==$_POST['contrasena']){
                 $_SESSION['USUARIO']=$usuario; 
                 header("location:?controller=cobaltech&method=admin");
             }
             else{
-                header("location:?controller=seguridad&method=form_auth");
+                header("location:?controller=seguridad&method=login");
             }
             // var_dump($usuario);
         }
 
-        public function destroy(){
+        // destrucción de la sesión
+        public function logout(){
             unset($_SESSION['USUARIO']);
             session_destroy();
             header("location:?controller=cobaltech&method=index");
