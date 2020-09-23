@@ -8,6 +8,8 @@
 
 <?php
 
+session_start();
+
 // Modelos requeridos
 require_once('models/database/DB.php');
 require_once('models/Categoria.php');

@@ -6,16 +6,16 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">INICIO DE SESIÓN</h5>
-                    <form action="" method="post">
+                    <form action="?controller=seguridad&method=auth_user" method="post">
                         <div class="form-group">
                             <label for="">Correo</label>
-                            <input id="" class="form-control" type="text" name="email">
+                            <input id="" class="form-control" type="text" name="correo_electronico">
                         </div>
                         <div class="form-group">
                             <label for="">Contraseña</label>
-                            <input id="" class="form-control" type="password" name="password">
+                            <input id="" class="form-control" type="password" name="contrasena">
                         </div>
-                        <button class="btn btn-primary" type="submit">Ingresar</button>
+                        <button class="button ml-auto mr-auto" type="submit">Ingresar</button>
                     </form>
                     <!-- <p class="card-text">Content</p> -->
                 </div>

@@ -49,6 +49,7 @@ class CobaltechController{
 
    // Función landing administrador
    public function admin(){
+      // Seguridad::validate();
       require_once('views/layout_admin/header.php');
       require_once('views/layout_admin/navbar.php');
       require_once('views/layout_admin/sidebar.php');

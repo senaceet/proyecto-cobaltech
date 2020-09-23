@@ -4,7 +4,7 @@
       
       public function get_email(){
          try {
-            $query=parent::connect()->prepare("SELECT * FROM usuario WHERE email = ?");
+            $query=parent::connect()->prepare("SELECT * FROM usuario WHERE correo_electronico = ?");
             $query->bindParam(1,$email,PDO::PARAM_STR);
             $query->execute();
             return $query->fetch(PDO::FETCH_OBJ);

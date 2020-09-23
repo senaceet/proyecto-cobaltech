@@ -180,7 +180,9 @@
       </li>
       <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
       <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-      <div class="d-sm-none d-lg-inline-block">Hola, Angie Clavijo</div></a>
+      <div class="d-sm-none d-lg-inline-block">
+         <!-- <?php echo $_SESSION['USUARIO']->Primer_nombre.' '.$_SESSION['USUARIO']->Primer_apellido ?> -->
+      </div></a>
       <div class="dropdown-menu dropdown-menu-right">
          <div class="dropdown-title">Logged in 5 min ago</div>
          <a href="#!" class="dropdown-item has-icon">
@@ -193,7 +195,7 @@
             <i class="fas fa-cog"></i> Configuraciones
          </a>
          <div class="dropdown-divider"></div>
-         <a href="#!" class="dropdown-item has-icon text-danger">
+         <a href="?controller=Seguridad&method=destroy" class="dropdown-item has-icon text-danger">
             <i class="fas fa-sign-out-alt"></i> Cerrar sesión
          </a>
       </div>
