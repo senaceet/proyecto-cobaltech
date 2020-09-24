@@ -22,7 +22,6 @@
             else{
                 header("location:?controller=seguridad&method=login");
             }
-            // var_dump($usuario);
         }
 
         // destrucción de la sesión

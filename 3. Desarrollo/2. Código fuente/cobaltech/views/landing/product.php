@@ -2,10 +2,10 @@
 
 			<div class="home_container d-flex flex-column align-items-center justify-content-end">
 				<div class="home_content text-center">
-					<div class="home_title">Product Page</div>
+					<div class="home_title">Categorías Favoritas</div>
 					<div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
 						<ul class="d-flex flex-row align-items-start justify-content-start text-center">
-							<li><a href="#">Home</a></li>
+							<li><a href="?controller=cobaltech&method=index">Inicio</a></li>
 							<li><a href="category.html">Woman</a></li>
 							<li>New Products</li>
 						</ul>

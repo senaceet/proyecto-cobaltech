@@ -7,10 +7,10 @@
       <div class="section-body">
          <div class="card">
          <?php  if(isset($_GET['process'])){ ?>
-                <button class="alert alert-success"> 
-                   <?php echo $_GET['process'] ?>
-                </button>
-                <?php } ?>
+               <button class="alert alert-success"> 
+                  <?php echo $_GET['process'] ?>
+               </button>
+               <?php } ?>
             <div class="card-body">
                <a href="?controller=EstadoGarantias&method=index" class="btn btn-info">Modificar estados de garantía</a><br><br>
                <div class="table-responsive">
@@ -34,12 +34,12 @@
                         <td><?php echo $result->Id_factura ?></td>
                         <td>
                         <input type="hidden" value="<?php echo $result->Id_garantia ?>" name="Id_garantia">
-                          <select name="Id_estado_garantia" id="Id_estado_garantia" class="form-control">
+                        <select name="Id_estado_garantia" id="Id_estado_garantia" class="form-control">
                               <?php foreach(EstadoGarantia::get_all() as $r){ ?>
                                  <option <?php echo $r->Id_estado_garantia==$result->Estado_garantiaId_estado_garantia ? 'selected' : '' ?> value="<?php echo $r->Id_estado_garantia ?>"><?php echo $r->Estado_garantia ?></option>
                               <?php } ?>
-                          </select>
-                          <button type="submit" class="btn btn-warning btn-sm">Actualizar</button>
+                        </select>
+                        <button type="submit" class="btn btn-warning btn-sm">Actualizar</button>
                         </td>
                         <td class="text-white">
                            <a  href="?controller=Garantias&method=show&Id_garantia=<?php echo $result->Id_garantia ?>"  class="btn btn-info btn-sm">Detalles</a>

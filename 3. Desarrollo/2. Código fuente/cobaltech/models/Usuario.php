@@ -19,7 +19,7 @@
          }
       }
 
-      // listar usuarios (solo administrador)
+      // listar usuarios
       public function get_all(){
          try {
             $query=parent::connect()->prepare(

@@ -23,16 +23,16 @@
 														<div class="product home_item_large">
 															<div class="product_tag d-flex flex-column align-items-center justify-content-center">
 																<div>
-																	<div>from</div>
-																	<div>$3<span>.99</span></div>
+																	<div>Oferta</div>
+																	<div>$4<span>.999</span></div>
 																</div>
 															</div>
-															<div class="product_image"><img src="images/home_2.jpg" alt=""></div>
+															<div class="product_image"><img src="assets/img/products/product-1.jpg" alt=""></div>
 															<div class="product_content">
 																<div class="product_info d-flex flex-row align-items-start justify-content-start">
 																	<div>
 																		<div>
-																			<div class="product_name"><a href="product.html">Cool Clothing with Brown Stripes</a></div>
+																			<div class="product_name"><a href="product.html">Categorias Favoritas</a></div>
 																			<div class="product_category">In <a href="category.html">Category</a></div>
 																		</div>
 																	</div>
@@ -117,7 +117,7 @@
 														</div>
 													</div>
 													<div class="col-sm-3">
-														<div class="home_item_side"><a href="product.html"><img src="images/home_3.jpg" alt=""></a></div>
+														<div class="home_item_side"><a href="?controller=cobaltech&method=product"><img src="images/home_3.jpg" alt=""></a></div>
 													</div>
 												</div>
 											</div>
@@ -284,7 +284,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-6 offset-lg-3">
-                  <div class="section_title text-center">Popular on Little Closet</div>
+                  <div class="section_title text-center">Categorias Favoritas</div>
                </div>
             </div>
             <div class="row page_nav_row">
@@ -292,9 +292,9 @@
                   <div class="page_nav">
                      <ul class="d-flex flex-row align-items-start justify-content-center">
                         <li class="active"><a href="category.html">Women</a></li>
-                        <li><a href="category.html">Men</a></li>
-                        <li><a href="category.html">Kids</a></li>
-                        <li><a href="category.html">Home Deco</a></li>
+                        <li><a href="category.html">Pcs</a></li>
+                        <li><a href="category.html">Mouses</a></li>
+                        <li><a href="category.html">Playgame</a></li>
                      </ul>
                   </div>
                </div>
