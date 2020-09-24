@@ -18,14 +18,20 @@
       }
 
       // ver ciudad por ID
-      public function get_id($id){
+      public function get_id(
+         $id
+         ){
          try {
             $query=parent::connect()->prepare(
                "SELECT *
                FROM ciudad
                WHERE Id_ciudad=?"
             );
-            $query->bindParam(1,$id,PDO::PARAM_STR);
+            $query->bindParam(
+               1,
+               $id,
+               PDO::PARAM_STR
+            );
             $query->execute();
             return $query->fetch(PDO::FETCH_OBJ);
          } 
@@ -35,13 +41,19 @@
       }
 
       // guardar ciudad
-      public function store_ciudad($Nombre_ciudad){
+      public function store_ciudad(
+         $Nombre_ciudad
+         ){
          try {
             $query=parent::connect()->prepare(
                "INSERT INTO ciudad (Nombre_ciudad) 
                VALUES (?)"
             );
-            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
+            $query->bindParam(
+               1,
+               $Nombre_ciudad,
+               PDO::PARAM_STR
+            );
             $query->execute();
          } 
          catch (Exception $e) {
@@ -50,13 +62,19 @@
       }
 
       // eliminar ciudad
-      public function delete_ciudad($Id_ciudad){
+      public function delete_ciudad(
+         $Id_ciudad
+         ){
          try {
             $query= parent::connect()->prepare(
                "DELETE FROM ciudad 
                WHERE Id_ciudad=?"
             );
-            $query->bindParam(1,$Id_ciudad,PDO::PARAM_INT);
+            $query->bindParam(
+               1,
+               $Id_ciudad,
+               PDO::PARAM_INT
+            );
             $query->execute();
          } 
          catch (Exception $e) {
@@ -65,15 +83,26 @@
       }
 
       // actualizar ciudad
-      public function update_ciudad($id,$Nombre_ciudad){
+      public function update_ciudad(
+         $id,
+         $Nombre_ciudad
+         ){
          try {
             $query=parent::connect()->prepare(
                "UPDATE ciudad 
                SET Nombre_ciudad = ? 
                WHERE Id_ciudad = ?"
             ); 
-            $query->bindParam(1,$Nombre_ciudad,PDO::PARAM_STR);
-            $query->bindParam(2,$id,PDO::PARAM_INT);
+            $query->bindParam(
+               1,
+               $Nombre_ciudad,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               2,
+               $id,
+               PDO::PARAM_INT
+            );
             $query->execute(); 
          } 
          catch (Exception $e) {

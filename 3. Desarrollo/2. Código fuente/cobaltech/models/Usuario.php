@@ -10,7 +10,11 @@
                FROM usuario 
                WHERE correo_electronico = ?"
             );
-            $query->bindParam(1,$email,PDO::PARAM_STR);
+            $query->bindParam(
+               1,
+               $email,
+               PDO::PARAM_STR
+            );
             $query->execute();
             return $query->fetch(PDO::FETCH_OBJ);
          } 
@@ -75,19 +79,71 @@
                   Tipo_documentoId_tipodoc
                )
                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
-            $query->bindParam(1,$Doc_usuario,PDO::PARAM_STR);
-            $query->bindParam(2,$Primer_nombre,PDO::PARAM_STR);
-            $query->bindParam(3,$Segundo_nombre,PDO::PARAM_STR);
-            $query->bindParam(4,$Primer_apellido,PDO::PARAM_STR);
-            $query->bindParam(5,$Segundo_apellido,PDO::PARAM_STR);
-            $query->bindParam(6,$Correo_electronico,PDO::PARAM_STR);
-            $query->bindParam(7,$Contrasena,PDO::PARAM_STR);
-            $query->bindParam(8,$Direccion,PDO::PARAM_STR);
-            $query->bindParam(9,$Telefono,PDO::PARAM_STR);
-            $query->bindParam(10,$Movil,PDO::PARAM_STR);
-            $query->bindParam(11,$RolId_rol,PDO::PARAM_STR);
-            $query->bindParam(12,$CiudadId_ciudad,PDO::PARAM_STR);
-            $query->bindParam(13,$Tipo_documentoId_tipodoc,PDO::PARAM_STR);
+            $query->bindParam(
+               1,
+               $Doc_usuario,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               2,
+               $Primer_nombre,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               3,
+               $Segundo_nombre,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               4,
+               $Primer_apellido,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               5,
+               $Segundo_apellido,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               6,
+               $Correo_electronico,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               7,
+               $Contrasena,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               8,
+               $Direccion,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               9,
+               $Telefono,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               10,
+               $Movil,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               11,
+               $RolId_rol,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               12,
+               $CiudadId_ciudad,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               13,
+               $Tipo_documentoId_tipodoc,
+               PDO::PARAM_STR
+            );
             $query->execute();
          } 
          catch (Exception $e) {
@@ -96,13 +152,19 @@
       }
 
       // eliminar usuario
-      public function delete_usuario($Id_usuario){
+      public function delete_usuario(
+         $Id_usuario
+         ){
          try {
             $p= parent::connect()->prepare(
                "DELETE FROM usuario 
                WHERE Id_usuario=?"
             );
-            $p->bindParam(1,$Id_usuario,PDO::PARAM_INT);
+            $p->bindParam(
+               1,
+               $Id_usuario,
+               PDO::PARAM_INT
+            );
             $p->execute();   
          } 
          catch (Exception $e) {
@@ -143,20 +205,78 @@
                Tipo_documentoId_tipodoc=?
                WHERE Id_usuario= ?"
             ); 
-            $query->bindParam(1,$Doc_usuario,PDO::PARAM_INT);
-            $query->bindParam(2,$Primer_nombre,PDO::PARAM_STR);
-            $query->bindParam(3,$Segundo_nombre,PDO::PARAM_STR);
-            $query->bindParam(4,$Primer_apellido,PDO::PARAM_STR);
-            $query->bindParam(5,$Segundo_apellido,PDO::PARAM_STR);
-            $query->bindParam(6,$Correo_electronico,PDO::PARAM_STR);
-            //$query->bindParam(7,$Contrasena,PDO::PARAM_STR);
-            $query->bindParam(7,$Direccion,PDO::PARAM_STR);
-            $query->bindParam(8,$Telefono,PDO::PARAM_STR);
-            $query->bindParam(9,$Movil,PDO::PARAM_STR);
-            $query->bindParam(10,$RolId_rol,PDO::PARAM_INT);
-            $query->bindParam(11,$CiudadId_ciudad,PDO::PARAM_INT);
-            $query->bindParam(12,$Tipo_documentoId_tipodoc,PDO::PARAM_INT);
-            $query->bindParam(13,$id,PDO::PARAM_INT);
+            $query->bindParam(
+               1,
+               $Doc_usuario,
+               PDO::PARAM_INT
+            );
+            $query->bindParam(
+               2,
+               $Primer_nombre,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               3,
+               $Segundo_nombre,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               4,
+               $Primer_apellido,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               5,
+               $Segundo_apellido,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               6,
+               $Correo_electronico,
+               PDO::PARAM_STR
+            );
+            /* 
+            $query->bindParam(
+               7,
+               $Contrasena,
+               PDO::PARAM_STR
+            ); 
+            */
+            $query->bindParam(
+               7,
+               $Direccion,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               8,
+               $Telefono,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               9,
+               $Movil,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               10,
+               $RolId_rol,
+               PDO::PARAM_INT
+            );
+            $query->bindParam(
+               11,
+               $CiudadId_ciudad,
+               PDO::PARAM_INT
+            );
+            $query->bindParam(
+               12,
+               $Tipo_documentoId_tipodoc,
+               PDO::PARAM_INT
+            );
+            $query->bindParam(
+               13,
+               $id,
+               PDO::PARAM_INT
+            );
             $query->execute();
          } 
          catch (Exception $e) {
@@ -172,7 +292,11 @@
                FROM usuario 
                WHERE Id_usuario= ?"
             );
-            $query->bindParam(1,$id,PDO::PARAM_INT);
+            $query->bindParam(
+               1,
+               $id,
+               PDO::PARAM_INT
+            );
             $query->execute();
             return $query->fetch(PDO::FETCH_OBJ);
          } 
