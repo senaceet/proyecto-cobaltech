@@ -17,8 +17,8 @@
                                     <input type="text" name="Nombre_marca" class="form-control" value="<?php echo $marca->Nombre_marca ?>">
                                 </div>
                                 <hr>
-                                <button class="btn btn-primary" type="submit">Guardar</button>
-                                <a class="btn btn-primary" href="?controller=Marcas&method=index">Cancelar</a>
+                                <button class="btn btn-info" type="submit">Guardar</button>
+                                <a class="btn btn-info" href="?controller=Marcas&method=index">Cancelar</a>
                             </form>
                         </div>
                     </div>

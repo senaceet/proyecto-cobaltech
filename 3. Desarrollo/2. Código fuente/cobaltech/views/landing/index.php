@@ -27,13 +27,13 @@
 																	<div>$4<span>.999</span></div>
 																</div>
 															</div>
-															<div class="product_image"><img src="assets/img/products/product-1.jpg" alt=""></div>
+															<div class="product_image"><img src="assets/img/products/product-1-50.png" alt=""></div>
 															<div class="product_content">
 																<div class="product_info d-flex flex-row align-items-start justify-content-start">
 																	<div>
 																		<div>
-																			<div class="product_name"><a href="product.html">Categorias Favoritas</a></div>
-																			<div class="product_category">In <a href="category.html">Category</a></div>
+																			<div class="product_name"><a href="product.html">Categorías Favoritas</a></div>
+																			<div class="product_category">In <a href="category.html">Categorías</a></div>
 																		</div>
 																	</div>
 																	<div class="ml-auto text-right">
@@ -284,17 +284,17 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-6 offset-lg-3">
-                  <div class="section_title text-center">Categorias Favoritas</div>
+                  <div class="section_title text-center">Categorías Favoritas</div>
                </div>
             </div>
             <div class="row page_nav_row">
                <div class="col">
                   <div class="page_nav">
                      <ul class="d-flex flex-row align-items-start justify-content-center">
-                        <li class="active"><a href="category.html">Women</a></li>
+                        <li class="active"><a href="category.html">Gameplay</a></li>
                         <li><a href="category.html">Pcs</a></li>
                         <li><a href="category.html">Mouses</a></li>
-                        <li><a href="category.html">Playgame</a></li>
+                        <li><a href="category.html">Diademas</a></li>
                      </ul>
                   </div>
                </div>
@@ -304,18 +304,18 @@
                <!-- Product -->
                <div class="col-xl-4 col-md-6">
                   <div class="product">
-                     <div class="product_image"><img src="images/product_1.jpg" alt=""></div>
+                     <div class="product_image"><img src="assets/img/products/product-2.jpg" alt=""></div>
                      <div class="product_content">
                         <div class="product_info d-flex flex-row align-items-start justify-content-start">
                            <div>
                               <div>
-                                 <div class="product_name"><a href="product.html">Cool Clothing with Brown Stripes</a></div>
-                                 <div class="product_category">In <a href="category.html">Category</a></div>
+                                 <div class="product_name"><a href="product.html">Pc Gaming Only one</a></div>
+                                 <div class="product_category"><a href="category.html">Gameplay</a></div>
                               </div>
                            </div>
                            <div class="ml-auto text-right">
                               <div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                              <div class="product_price text-right">$3<span>.99</span></div>
+                              <div class="product_price text-right">$1<span>.999.999</span></div>
                            </div>
                         </div>
                         <div class="product_buttons">
