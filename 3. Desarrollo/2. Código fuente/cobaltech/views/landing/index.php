@@ -17,7 +17,7 @@
 											<div class="home_items">
 												<div class="row">
 													<div class="col-sm-3 offset-lg-1">
-														<div class="home_item_side"><a href="product.html"><img src="images/home_1.jpg" alt=""></a></div>
+														<div class="home_item_side"><a href="product.html"><img src="files/oferta.jpg" alt=""></a></div>
 													</div>
 													<div class="col-lg-4 col-md-6 col-sm-8 offset-sm-2 offset-md-0">
 														<div class="product home_item_large">
@@ -304,18 +304,51 @@
                <!-- Product -->
                <div class="col-xl-4 col-md-6">
                   <div class="product">
-                     <div class="product_image"><img src="assets/img/products/product-2.jpg" alt=""></div>
+                     <div class="product_image"><img src="files/acer-215-full-hd.jpg" alt=""></div>
                      <div class="product_content">
                         <div class="product_info d-flex flex-row align-items-start justify-content-start">
                            <div>
                               <div>
-                                 <div class="product_name"><a href="product.html">Pc Gaming Only one</a></div>
-                                 <div class="product_category"><a href="category.html">Gameplay</a></div>
+                                 <div class="product_name"><a href="product.html">ACER SB220Q
+                                          Bi 215 full HD 1920 X 1080 ips monitor con y rad</a></div>
+                                 <div class="product_category"><a href="category.html">Pcs</a></div>
                               </div>
                            </div>
                            <div class="ml-auto text-right">
                               <div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                              <div class="product_price text-right">$1<span>.999.999</span></div>
+                              <div class="product_price text-right">$493<span>.900</span></div>
+                           </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="text-right d-flex flex-row align-items-start justify-content-start">
+                              <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+                                 <div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+                              </div>
+                              <div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+                                 <div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <!-- Product -->
+               <div class="col-xl-3 col-md-5">
+                  <div class="product">
+                     <div class="product_image"><img src="files/amd-Ryzen-3-3200g-.jpg" alt=""></div>
+                     <div class="product_content">
+                        <div class="product_info d-flex flex-row align-items-start justify-content-start">
+                           <div>
+                              <div>
+                                 <div class="product_name"><a href="product.html">AMD Ryzen 3 2200G
+                                             2200g 3.7 Ghz Radeon Vega 8 Am4 2018</a></div>
+                                 <div class="product_category"> <a href="category.html">Gameplay</a></div>
+                              </div>
+                           </div>
+                           <div class="ml-auto text-right">
+                              <div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                              <div class="product_price text-right">$3<span>.99</span></div>
                            </div>
                         </div>
                         <div class="product_buttons">
@@ -335,7 +368,7 @@
                <!-- Product -->
                <div class="col-xl-4 col-md-6">
                   <div class="product">
-                     <div class="product_image"><img src="images/product_2.jpg" alt=""></div>
+                     <div class="product_image"><img src="files/Asus_Vivobook_15_X542UF.jpg" alt=""></div>
                      <div class="product_content">
                         <div class="product_info d-flex flex-row align-items-start justify-content-start">
                            <div>
@@ -366,7 +399,7 @@
                <!-- Product -->
                <div class="col-xl-4 col-md-6">
                   <div class="product">
-                     <div class="product_image"><img src="images/product_3.jpg" alt=""></div>
+                     <div class="product_image"><img src="files/Keyboard gaming led rgb.jpg" alt=""></div>
                      <div class="product_content">
                         <div class="product_info d-flex flex-row align-items-start justify-content-start">
                            <div>
@@ -397,7 +430,7 @@
                <!-- Product -->
                <div class="col-xl-4 col-md-6">
                   <div class="product">
-                     <div class="product_image"><img src="images/product_4.jpg" alt=""></div>
+                     <div class="product_image"><img src="files/ssd-.jpg" alt=""></div>
                      <div class="product_content">
                         <div class="product_info d-flex flex-row align-items-start justify-content-start">
                            <div>
@@ -428,38 +461,7 @@
                <!-- Product -->
                <div class="col-xl-4 col-md-6">
                   <div class="product">
-                     <div class="product_image"><img src="images/product_5.jpg" alt=""></div>
-                     <div class="product_content">
-                        <div class="product_info d-flex flex-row align-items-start justify-content-start">
-                           <div>
-                              <div>
-                                 <div class="product_name"><a href="product.html">Cool Clothing with Brown Stripes</a></div>
-                                 <div class="product_category">In <a href="category.html">Category</a></div>
-                              </div>
-                           </div>
-                           <div class="ml-auto text-right">
-                              <div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                              <div class="product_price text-right">$3<span>.99</span></div>
-                           </div>
-                        </div>
-                        <div class="product_buttons">
-                           <div class="text-right d-flex flex-row align-items-start justify-content-start">
-                              <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
-                                 <div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-                              </div>
-                              <div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-                                 <div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <!-- Product -->
-               <div class="col-xl-4 col-md-6">
-                  <div class="product">
-                     <div class="product_image"><img src="images/product_6.jpg" alt=""></div>
+                     <div class="product_image"><img src="files/evga dark 2066.jpg" alt=""></div>
                      <div class="product_content">
                         <div class="product_info d-flex flex-row align-items-start justify-content-start">
                            <div>
