@@ -23,14 +23,20 @@
       }
 
       // ver factura por ID
-      public function show_id($id){
+      public function show_id(
+         $id
+         ){
          try {
             $query= parent::connect()->prepare(
                "SELECT * 
                FROM factura 
                WHERE Id_factura = ?"
             );
-            $query->bindParam(1,$id,PDO::PARAM_INT);
+            $query->bindParam(
+               1,
+               $id,
+               PDO::PARAM_INT
+            );
             $query->execute();
             return $query->fetch(PDO::FETCH_OBJ);
          } 

@@ -48,14 +48,46 @@
                         ProveedorId_proveedor)
                     VALUES (?,?,?,?,?,?,?,?)"
                 );
-                $query->bindParam(1,$Nombre_producto,PDO::PARAM_STR);
-                $query->bindParam(2,$Descripcion,PDO::PARAM_STR);
-                $query->bindParam(3,$Existencia,PDO::PARAM_STR);
-                $query->bindParam(4,$Imagen,PDO::PARAM_STR);
-                $query->bindParam(5,$Precio,PDO::PARAM_STR);
-                $query->bindParam(6,$CategoriaId_categoria,PDO::PARAM_INT);
-                $query->bindParam(7,$MarcaId_marca,PDO::PARAM_INT);
-                $query->bindParam(8,$ProveedorId_proveedor,PDO::PARAM_INT);
+                $query->bindParam(
+                    1,
+                    $Nombre_producto,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    2,
+                    $Descripcion,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    3,
+                    $Existencia,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    4,
+                    $Imagen,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    5,
+                    $Precio,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    6,
+                    $CategoriaId_categoria,
+                    PDO::PARAM_INT
+                );
+                $query->bindParam(
+                    7,
+                    $MarcaId_marca,
+                    PDO::PARAM_INT
+                );
+                $query->bindParam(
+                    8,
+                    $ProveedorId_proveedor,
+                    PDO::PARAM_INT
+                );
                 $query->execute();
             } 
             catch (Exception $e) {
@@ -88,15 +120,51 @@
                         ProveedorId_proveedor=?
                     WHERE  Id_producto=?"
                 );
-                $query->bindParam(1,$Nombre_producto,PDO::PARAM_STR);
-                $query->bindParam(2,$Descripcion,PDO::PARAM_STR);
-                $query->bindParam(3,$Existencia,PDO::PARAM_STR);
-                $query->bindParam(4,$Imagen,PDO::PARAM_STR);
-                $query->bindParam(5,$Precio,PDO::PARAM_STR);
-                $query->bindParam(6,$CategoriaId_categoria,PDO::PARAM_INT);
-                $query->bindParam(7,$MarcaId_marca,PDO::PARAM_INT);
-                $query->bindParam(8,$ProveedorId_proveedor,PDO::PARAM_INT);
-                $query->bindParam(9,$id,PDO::PARAM_INT);
+                $query->bindParam(
+                    1,
+                    $Nombre_producto,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    2,
+                    $Descripcion,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    3,
+                    $Existencia,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    4,
+                    $Imagen,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    5,
+                    $Precio,
+                    PDO::PARAM_STR
+                );
+                $query->bindParam(
+                    6,
+                    $CategoriaId_categoria,
+                    PDO::PARAM_INT
+                );
+                $query->bindParam(
+                    7,
+                    $MarcaId_marca,
+                    PDO::PARAM_INT
+                );
+                $query->bindParam(
+                    8,
+                    $ProveedorId_proveedor,
+                    PDO::PARAM_INT
+                );
+                $query->bindParam(
+                    9,
+                    $id,
+                    PDO::PARAM_INT
+                );
                 $query->execute();
             } 
             catch (Exception $e) {
@@ -105,14 +173,20 @@
         }
 
         // ver producto por ID
-        public function show_id($id){
+        public function show_id(
+            $id
+            ){
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
                     FROM producto 
                     WHERE Id_producto=?"
                 );
-                $query->bindParam(1,$id,PDO::PARAM_STR);
+                $query->bindParam(
+                    1,
+                    $id,
+                    PDO::PARAM_STR
+                );
                 $query->execute();
                 return $query->fetch(PDO::FETCH_OBJ);
             } 
@@ -122,13 +196,19 @@
         }
 
         // eliminar producto
-        public function delete_producto($Id_producto){
+        public function delete_producto(
+            $Id_producto
+            ){
             try {
                 $query= parent::connect()->prepare(
                     "DELETE FROM producto 
                     WHERE Id_producto=?"
                 );
-                $query->bindParam(1,$Id_producto,PDO::PARAM_INT);
+                $query->bindParam(
+                    1,
+                    $Id_producto,
+                    PDO::PARAM_INT
+                );
                 $query->execute();
             } 
             catch (Exception $e) {

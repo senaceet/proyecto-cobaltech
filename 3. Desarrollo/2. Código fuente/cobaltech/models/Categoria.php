@@ -18,13 +18,19 @@
       }
 
       // guardar categoría
-      public function store_categoria($Nombre_categoria){
+      public function store_categoria(
+         $Nombre_categoria
+         ){
          try {
             $query=parent::connect()->prepare(
                "INSERT INTO categoria (Nombre_categoria) 
                VALUES (?)"
             );
-            $query->bindParam(1,$Nombre_categoria,PDO::PARAM_STR);
+            $query->bindParam(
+               1,
+               $Nombre_categoria,
+               PDO::PARAM_STR
+            );
             $query->execute();
          } 
          catch (Exception $e) {
@@ -33,13 +39,19 @@
       }
 
       // eliminar categoría
-      public function delete_categoria($Id_categoria){
+      public function delete_categoria(
+         $Id_categoria
+         ){
          try {
             $query=parent::connect()->prepare(
                "DELETE FROM categoria 
                WHERE Id_categoria=?"
             );
-            $query->bindParam(1,$Id_categoria,PDO::PARAM_INT);
+            $query->bindParam(
+               1,
+               $Id_categoria,
+               PDO::PARAM_INT
+            );
             $query->execute();
          } 
          catch (Exception $e) {
@@ -48,15 +60,26 @@
       }
 
       // actualizar categoría
-      public function update_categoria($id,$Nombre_categoria){
+      public function update_categoria(
+         $id,
+         $Nombre_categoria
+         ){
          try {
             $query=parent::connect()->prepare(
                "UPDATE categoria 
                SET Nombre_categoria= ? 
                WHERE Id_categoria= ?"
             ); 
-            $query->bindParam(1,$Nombre_categoria,PDO::PARAM_STR);
-            $query->bindParam(2,$id,PDO::PARAM_INT);
+            $query->bindParam(
+               1,
+               $Nombre_categoria,
+               PDO::PARAM_STR
+            );
+            $query->bindParam(
+               2,
+               $id,
+               PDO::PARAM_INT
+            );
             $query->execute();
          } 
          catch (Exception $e) {
