@@ -87,8 +87,23 @@ public function update(){
  }
 
  public function buscar_productos(){
-    echo "bien";
+    //mysql ::LIKE
+    try {
+      $query=parent::connect()->prepare(
+          "SELECT * 
+          FROM producto
+          WHERE Nombre_producto
+          LIKE value_p%
+          ORDER BY Nombre_producto desc"
+      );
+      $query->execute();
+      return $query->fetchAll(PDO::FETCH_OBJ);
+  } 
+  catch (Exception $e) {
+      die($e->getMessage());
+  }
  }
+ //https://www.anerbarrena.com/mysql-like-5657/
 
 }
 ?>
