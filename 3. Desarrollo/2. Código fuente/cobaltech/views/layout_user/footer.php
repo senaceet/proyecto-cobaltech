@@ -100,5 +100,26 @@
 <script src="assets/plugins/progressbar/progressbar.min.js"></script>
 <script src="assets/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="assets/js/custom.js"></script>
+
+
+
+
+<script>
+const APP_URL="http://localhost/GitHub/proyecto-cobaltech/3.%20Desarrollo/2.%20C%C3%B3digo%20fuente/cobaltech/";
+   $('#search_input').keyup(function(){
+      console.log("bien hasta aqui");
+        var value_p=$(this).attr('value');
+        alert(value_p);
+        $.ajax({
+            type:'GET',
+            url:APP_URL+'?controller=Productos&method=buscar_productos',
+            data:{},
+            success(response){
+            alert(response);            }
+        });
+   });
+</script>
+
+
 </body>
 </html>

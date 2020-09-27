@@ -12,16 +12,25 @@
         // autentificación de usuario
         public function permiso(){
             $usuario=Usuario::get_email($_POST['correo_electronico']);
-            if(!$usuario){
-                header("location:?controller=seguridad&method=login");
-            }
-            if($usuario->contrasena==$_POST['contrasena']){
-                $_SESSION['USUARIO']=$usuario; 
-                header("location:?controller=cobaltech&method=admin");
-            }
+            
+            if($usuario)
+            { 
+              if($usuario->Contrasena==$_POST['contrasena']){
+               $_SESSION['USUARIO']=$usuario; 
+               header("location:?controller=cobaltech&method=admin");
+           }
             else{
                 header("location:?controller=seguridad&method=login");
             }
+                //header("location:?controller=seguridad&method=login");
+            }
+            /*
+
+         
+
+           
+           
+            }*/
         }
 
         // destrucción de la sesión

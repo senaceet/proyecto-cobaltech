@@ -9,7 +9,7 @@
             <div class="card-body">
                <a href="?controller=Productos&method=create" class="btn btn-info">Agregar Producto</a><br><br>
                <div class="section-body">
-               <img src="files/img/ <? echo $result->Imagen ?>" alt="" class='img-fluid'>
+               
                   <div class="table-responsive">
                      <table class="table table-sm table-hover table-striped table-bordered">
                         <tr class="bg-success text-white">
@@ -32,7 +32,7 @@
                            <td><?php echo $result->Nombre_producto ?></td>
                            <td><?php echo $result->Descripcion ?></td>
                            <td><?php echo $result->Existencia ?></td>
-                           <td><?php echo $result->Imagen ?></td>
+                           <td><img src="files/img/<?php echo $result->Imagen ?>" alt="" class='img-fluid'></td>
                            <td><?php echo $result->Precio ?></td>
                            <td><?php echo $result->Nombre_categoria?></td>
                            <td><?php echo $result->Nombre_marca ?></td>

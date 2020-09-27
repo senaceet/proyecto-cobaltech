@@ -19,7 +19,7 @@
                               <td><?php echo $id->Id_producto?></td>
                            </tr>
                            <tr>
-                              <th class="bg-secundary">Nombre del producto/th>
+                              <th class="bg-secundary">Nombre del producto</th>
                               <td><?php echo $id->Nombre_producto?></td>
                            </tr>
                            <tr>
@@ -32,7 +32,7 @@
                            </tr>
                            <tr>
                               <th class="bg-secundary">Imagen</th>
-                              <td><img src="files/img/ <?php echo $id->Imagen ?>" alt="" class="img-fluid"></td>
+                              <td><img src="files/img/<?php echo $id->Imagen ?>" alt="" class="img-fluid"></td>
                            </tr>
                            <tr>
                               <th class="bg-secundary">Precio</th>

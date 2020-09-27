@@ -3,7 +3,7 @@
    class Usuario extends DB {
       
       // para login con correo electronico
-      public function get_email(){
+      public function get_email($email){
          try {
             $query=parent::connect()->prepare(
                "SELECT * 

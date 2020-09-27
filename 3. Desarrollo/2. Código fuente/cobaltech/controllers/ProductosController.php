@@ -86,5 +86,9 @@ public function update(){
     require_once('views/layout_admin/footer.php');
  }
 
+ public function buscar_productos(){
+    echo "bien";
+ }
+
 }
 ?>
