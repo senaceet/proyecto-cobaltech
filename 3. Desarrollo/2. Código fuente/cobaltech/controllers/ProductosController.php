@@ -36,6 +36,12 @@ class ProductosController extends Producto{
                             $_POST['MarcaId_marca'],
                             $_POST['ProveedorId_proveedor']);
 
+                            // Guardar Imagen--
+                            $folder="files/img";
+                            $tmp_name=$_FILES['imagen']['tmp_name'];
+                            $name=basename($_FILES['imagen']['name']);
+                            move_uploaded_file($tmp_name,$imagen.'/'.$name);
+
         header("location:?controller=Productos&method=index");  
 }
 

@@ -32,11 +32,9 @@
 									<li>Total</li>
 								</ul>
 							</div>
-
 							<!-- Cart Items -->
 							<div class="cart_items">
 								<ul class="cart_items_list">
-
 									<!-- Cart Item -->
 									<li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
 										<div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
@@ -61,7 +59,6 @@
 									</li>
 								</ul>
 							</div>
-
 							<!-- Cart Buttons -->
 							<div class="cart_buttons d-flex flex-row align-items-start justify-content-start">
 								<div class="cart_buttons_inner ml-sm-auto d-flex flex-row align-items-start justify-content-start flex-wrap">

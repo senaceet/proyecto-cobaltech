@@ -9,7 +9,7 @@
             <div class="col-md-4">
                <div class="card">
                   <div class="card-body">
-                     <form action="?controller=Productos&method=store" method="POST">
+                     <form action="?controller=Productos&method=store" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                            <div class="form-group">
                               <label for="">NOMBRE PRODUCTO</label>
@@ -25,7 +25,7 @@
                            </div>
                            <div class="form-group">
                               <label for="">IMAGEN</label>
-                              <input type="text" name="Imagen" class="form-control">
+                              <input type="file" name="Imagen" class="form-control">
                            </div>
                            <div class="form-group">
                               <label for="">PRECIO</label>
