@@ -86,22 +86,26 @@ public function update(){
     require_once('views/layout_admin/footer.php');
  }
 
- public function buscar_productos(){
-    //mysql ::LIKE
-    try {
-      $query=parent::connect()->prepare(
-          "SELECT * 
-          FROM producto
-          WHERE Nombre_producto
-          LIKE value_p%
-          ORDER BY Nombre_producto desc"
-      );
-      $query->execute();
-      return $query->fetchAll(PDO::FETCH_OBJ);
-  } 
-  catch (Exception $e) {
-      die($e->getMessage());
-  }
+ public function buscar_productos_ajax(){
+    $productos=parent::buscar_productos('%'.$_GET['query'].'%');
+?>
+    <div class="container-fluid">
+       <?php  foreach($productos as $producto){ ?>
+      <div class="row">
+         <div class="col-md-3">
+            <img src="files/img/<?php echo $producto->Imagen ?>" alt="" class="img-fluid">
+         </div>
+         <div class="col-md-9">
+            <h2 style="font-size: 16px;"><?php echo $producto->Nombre_producto?></h2>
+            <p><?php echo $producto->Descripcion?></p>
+         </div>
+      </div>
+      <hr>
+      <?php } ?>
+    </div>
+
+<?php
+
  }
  //https://www.anerbarrena.com/mysql-like-5657/
 

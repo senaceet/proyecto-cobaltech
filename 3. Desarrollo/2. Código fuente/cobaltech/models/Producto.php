@@ -215,7 +215,26 @@
                 die ($e->getMessage());
             }
         }
-    
+        public function buscar_productos($q){
+         //mysql ::LIKE
+         try {
+           $query=parent::connect()->prepare(
+               "SELECT * 
+               FROM producto
+               WHERE Nombre_producto
+               LIKE ?
+               ORDER BY Nombre_producto desc"
+           );
+           $query->bindParam(1,$q,PDO::PARAM_STR);
+           $query->execute();
+           return $query->fetchAll(PDO::FETCH_OBJ);
+       } 
+       catch (Exception $e) {
+           die($e->getMessage());
+       }
+      }
+
     }
+
 
 ?>

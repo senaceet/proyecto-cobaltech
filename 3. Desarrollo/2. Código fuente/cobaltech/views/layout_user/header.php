@@ -141,7 +141,7 @@
                            <img src="assets/img/icons/search.png" alt="search.png">
                         </button>
                      </form>
-                     <div id="busqueda-productos" style="background-color: red;width: 300px;position: absolute;top:60px;z-index: 99;height: auto;"> 
+                     <div id="busqueda-productos" style="overflow-y: scroll; max-height: 200px; background-color: red;width: 400px;position: absolute;top:60px;z-index: 99;height: auto;"> 
                         
                      </div>
                   </div>

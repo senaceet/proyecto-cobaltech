@@ -105,17 +105,18 @@
 
 
 <script>
-const APP_URL="http://localhost/GitHub/proyecto-cobaltech/3.%20Desarrollo/2.%20C%C3%B3digo%20fuente/cobaltech/";
+const APP_URL="http://localhost/GitHub/proyecto-cobaltech/3. Desarrollo/2. Código fuente/cobaltech";
    $('#search_input').keyup(function(){
-      console.log("bien hasta aqui");
-        var value_p=$(this).attr('value');
-        alert(value_p);
+      
+        var value_p=$('#search_input').val();
+       
         $.ajax({
             type:'GET',
-            url:APP_URL+'?controller=Productos&method=buscar_productos',
-            data:{},
+            url:APP_URL+'?controller=Productos&method=buscar_productos_ajax',
+            data:{query:value_p},
             success(response){
-            alert(response);            }
+             $('#busqueda-productos').html(response);           
+            }
         });
    });
 </script>
