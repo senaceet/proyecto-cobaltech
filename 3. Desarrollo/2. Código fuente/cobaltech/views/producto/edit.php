@@ -20,7 +20,7 @@
                               <label for="">Existencias</label>
                               <input type="num" name="Existencia" class="form-control" value="<?php echo $producto->Existencia ?>">
                               <label for="">Imagen</label>
-                              <input type="text" name="Imagen" class="form-control" value="<?php echo $producto->imagen ?>">
+                              <input type="file" name="Imagen" class="form-control" value="<?php echo $producto->imagen ?>">
                               <label for="">Precio</label>
                               <input type="text" name="Precio" class="form-control" value="<?php echo $producto->Precio ?>">
                               <label for="">Categoria</label>

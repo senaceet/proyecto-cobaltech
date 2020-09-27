@@ -32,7 +32,7 @@
                            </tr>
                            <tr>
                               <th class="bg-secundary">Imagen</th>
-                              <td><?php echo $id->Imagen?></td>
+                              <td><img src="files/img/ <?php echo $id->Imagen ?>" alt="" class="img-fluid"></td>
                            </tr>
                            <tr>
                               <th class="bg-secundary">Precio</th>

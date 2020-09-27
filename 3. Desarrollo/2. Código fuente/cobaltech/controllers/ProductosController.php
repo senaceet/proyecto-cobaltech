@@ -26,21 +26,22 @@ class ProductosController extends Producto{
     }
 
     public function store(){
-        parent::store_producto
-                            ($_POST['Nombre_producto'],
-                            $_POST['Descripcion'],
-                            $_POST['Existencia'],
-                            $_POST['Imagen'],
-                            $_POST['Precio'],
-                            $_POST['CategoriaId_categoria'],
-                            $_POST['MarcaId_marca'],
-                            $_POST['ProveedorId_proveedor']);
+                         // Guardar Imagen-
+                           $folder="files/img";
+                           $tmp_name=$_FILES['Imagen']['tmp_name'];
+                           $name=basename($_FILES['Imagen']['name']);
+                           move_uploaded_file($tmp_name,$folder.'/'.$name);
 
-                            // Guardar Imagen--
-                            $folder="files/img";
-                            $tmp_name=$_FILES['imagen']['tmp_name'];
-                            $name=basename($_FILES['imagen']['name']);
-                            move_uploaded_file($tmp_name,$imagen.'/'.$name);
+        parent::store_producto($_POST['Nombre_producto'],
+                           $_POST['Descripcion'],
+                           $_POST['Existencia'],
+                           $name,
+                           $_POST['Precio'],
+                           $_POST['CategoriaId_categoria'],
+                           $_POST['MarcaId_marca'],
+                           $_POST['ProveedorId_proveedor']);
+
+                        
 
         header("location:?controller=Productos&method=index");  
 }
