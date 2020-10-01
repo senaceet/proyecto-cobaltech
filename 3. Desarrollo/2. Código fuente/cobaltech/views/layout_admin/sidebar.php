@@ -3,7 +3,7 @@
 <div class="main-sidebar">
    <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
-         <a href="?=controller=Cobaltech&method=admin">
+         <a href="?controller=cobaltech&method=admin">
             <img src="assets/img/logos/logo-sm-1.png" alt="Cobaltech logo">
             Cobaltech
          </a>

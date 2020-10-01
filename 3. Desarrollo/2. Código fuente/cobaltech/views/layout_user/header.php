@@ -116,7 +116,7 @@
             <div class="header_overlay"></div>
             <div class="header_content d-flex flex-row align-items-center justify-content-start">
                <div class="logo">
-                  <a href="?=controller=Cobaltech&method=index">
+                  <a href="?controller=cobaltech&method=index">
                      <div class="d-flex flex-row align-items-center justify-content-start">
                         <div>
                            <img src="assets/img/logos/logo-sm-1.png" alt="Cobaltech icon">
