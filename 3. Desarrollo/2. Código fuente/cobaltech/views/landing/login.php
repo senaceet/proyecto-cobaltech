@@ -1,5 +1,11 @@
 <!-- LOGIN CONTENT -->
 
+<div class="super_container_inner">
+   <div class="super_overlay"></div>
+            
+      <!-- Home -->
+      <div class="home">
+
 <div class="container">
     <div class="row">
         <div class="col-md-4">
