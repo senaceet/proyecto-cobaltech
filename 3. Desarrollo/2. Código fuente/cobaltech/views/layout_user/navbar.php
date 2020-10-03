@@ -1,51 +1,94 @@
-<!--menú de navegación-->
-<nav class="menu">
-    <ul>
-        <li>Accesorios
+<!-- Menu -->
+
+<div class="menu">
+
+    <!-- Search -->
+    <div class="menu_search">
+       <form action="#" id="menu_search_form" class="menu_search_form">
+          <input type="text" class="search_input" id="search_input" placeholder="Search Item" required="required">
+          <button class="menu_search_button"><img src="assets/img/logos/search.png" alt=""></button>
+       </form>
+    </div>
+    
+    <!-- Navigation -->
+    <div class="menu_nav">
+        <?php foreach(parent::get_all() as $result) { ?>
             <ul>
-                <li><a href="producto.php">Adaptadores y cables</a></li>
-                <li><a href="producto.php">Cámaras</a></li>
-                <li><a href="producto.php">Tiras LED</a></li>
+               <li><?php echo $result->Nombre_categoria ?></li>
+               <!-- <td class="text-white">
+                  <a href="?controller=Categorias&method=edit&Id_categoria=<?php echo $result->Id_categoria ?> "class="btn btn-warning btn-sm">Editar</a>
+                  <a href="?controller=Categorias&method=delete&Id_categoria=<?php echo $result->Id_categoria ?>" class="btn btn-danger btn-sm">Eliminar</a>
+               </td> -->
             </ul>
-        </li>
-        <li>Almacenamiento
-            <ul>
-                <li><a href="producto.php">Discos duros HDD</a></li>
-                <li><a href="producto.php">Unidades de estado solido SSD</a></li>
-            </ul>
-        </li>
-        <li>Componentes
-            <ul>
-                <li><a href="producto.php">Chasis/cajas/torres</a></li>
-                <li><a href="producto.php">Enfriadores CPU Cooler</a></li>
-                <li><a href="producto.php">Fuentes de poder PSU</a></li>
-                <li><a href="producto.php">Memorias RAM</a></li>
-                <li><a href="producto.php">Pasta térmica</a></li>
-                <li><a href="producto.php">Procesadores CPU</a></li>
-                <li><a href="producto.php">Tarjetas de sonido</a></li>
-                <li><a href="producto.php">Tarjetas de video GPU</a></li>
-                <li><a href="producto.php">Tarjetas madre MainBoard</a></li>
-                <li><a href="producto.php">Ventiladores</a></li>
-            </ul>
-        </li>
-        <li>Computadores
-            <ul>
-                <li><a href="producto.php">PC de escritorio</a></li>
-                <li><a href="producto.php">Portátiles</a></li>
-                <li><a href="producto.php">Servidores</a></li>
-            </ul>
-        </li>
-        <li>Perifericos
-            <ul>
-                <li><a href="producto.php">Controles para juegos</a></li>
-                <li><a href="producto.php">Diademas</a></li>
-                <li><a href="producto.php">Impresoras</a></li>
-                <li><a href="producto.php">Monitores</a></li>
-                <li><a href="producto.php">Microfonos</a></li>
-                <li><a href="producto.php">Mouse y padmouse</a></li>
-                <li><a href="producto.php">Parlante</a></li>
-                <li><a href="producto.php">Teclados</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+        <?php } ?>
+       <!-- <ul class="">
+          <li class="">Accesorios
+             <ul class="">
+                <li><a href="#">Adaptadores y cables</a></li>
+                <li><a href="#">Cámaras</a></li>
+                <li><a href="#">Tiras LED</a></li>
+             </ul>
+          </li>
+          <li>Almacenamiento
+             <ul>
+                <li><a href="#">Discos duros HDD</a></li>
+                <li><a href="#">Unidades de estado solido SSD</a></li>
+             </ul>
+          </li>
+          <li>Componentes
+             <ul>
+                <li><a href="#">Chasis/cajas/torres</a></li>
+                <li><a href="#">Enfriadores CPU Cooler</a></li>
+                <li><a href="#">Fuentes de poder PSU</a></li>
+                <li><a href="#">Memorias RAM</a></li>
+                <li><a href="#">Pasta térmica</a></li>
+                <li><a href="#">Procesadores CPU</a></li>
+                <li><a href="#">Tarjetas de sonido</a></li>
+                <li><a href="#">Tarjetas de video GPU</a></li>
+                <li><a href="#">Tarjetas madre MainBoard</a></li>
+                <li><a href="#">Ventiladores</a></li>
+             </ul>
+          </li>
+          <li>Computadores
+             <ul>
+                <li><a href="#">PC de escritorio</a></li>
+                <li><a href="#">Portátiles</a></li>
+                <li><a href="#">Servidores</a></li>
+             </ul>
+          </li>
+          <li>Perifericos
+             <ul>
+                <li><a href="#">Controles para juegos</a></li>
+                <li><a href="#">Diademas</a></li>
+                <li><a href="#">Impresoras</a></li>
+                <li><a href="#">Monitores</a></li>
+                <li><a href="#">Microfonos</a></li>
+                <li><a href="#">Mouse y padmouse</a></li>
+                <li><a href="#">Parlante</a></li>
+                <li><a href="#">Teclados</a></li>
+             </ul>
+          </li>
+       </ul> -->
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="menu_contact">
+       <div class="menu_phone d-flex flex-row align-items-center justify-content-start">
+          <div>
+             <div>
+                <img src="assets/img/icons/phone.svg" alt="phone icon">
+                <!-- Icon autor: https://www.flaticon.com/authors/freepik -->
+             </div>
+          </div>
+          <div>+57(1)-252-7350</div>
+       </div>
+       <div class="menu_social">
+          <ul class="menu_social_list d-flex flex-row align-items-start justify-content-start">
+             <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+             <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+             <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+             <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+       </div>
+    </div>
+</div>
