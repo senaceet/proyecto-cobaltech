@@ -1,11 +1,3 @@
-<!--
-    PROYECTO COBALTECH
-    Angie Lorena Clavijo Garcia
-    Christian Alfredo León Rodriguez
-    Leidy Patricia Quevedo Barreto
-    ADSI 1786182
--->
-
 <?php
 
 class DB{
