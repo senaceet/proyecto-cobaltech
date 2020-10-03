@@ -5,11 +5,11 @@ class Cobaltech extends DB{
 
    // Funciones carrito de compras
 
-   // Funciones categorias vista usuario
+   // Categorías menú vista usuario 
    public function get_all(){
       try {
          $query=parent::connect()->prepare(
-            "SELECT * 
+            "SELECT Nombre_categoria
             FROM categoria"
          );
          $query->execute();
