@@ -14,6 +14,7 @@ session_start();
 require_once('models/database/DB.php');
 require_once('models/Categoria.php');
 require_once('models/Ciudad.php');
+require_once('models/Cobaltech.php');
 require_once('models/Efectivo.php');
 require_once('models/Envio.php');
 require_once('models/EstadoEnvio.php');

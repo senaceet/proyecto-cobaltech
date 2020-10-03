@@ -23,6 +23,7 @@ class CobaltechController{
    public function category(){
       require_once('views/layout_user/header.php');
       require_once('views/landing/category.php');
+      require_once('views/layout_user/sidebar.php');
       require_once('views/layout_user/footer.php');
    }
 
