@@ -1,6 +1,6 @@
 <?php
 
-    class seguridad {
+    class seguridad extends DB {
         
         // validación de sesión
         public function validar() {
@@ -14,7 +14,10 @@
          $Primer_nombre,
          $Primer_apellido,
          $Correo_electronico,
-         $Contrasena
+         $Contrasena,
+         $RolId_rol,
+         $CiudadId_ciudad,
+         $Tipo_documentoId_tipodoc
          ){
          try {
             $query=parent::connect()->prepare(
@@ -22,9 +25,12 @@
                   Primer_nombre,
                   Primer_apellido,
                   Correo_electronico,
-                  Contrasena
+                  Contrasena,
+                  RolId_rol,
+                  CiudadId_ciudad,
+                  Tipo_documentoId_tipodoc
                )
-               VALUES (?,?,?,?)");
+               VALUES (?,?,?,?,?,?,?)");
             $query->bindParam(
                1,
                $Primer_nombre,
@@ -44,6 +50,21 @@
                4,
                $Contrasena,
                PDO::PARAM_STR
+            );
+            $query->bindParam(
+               5,
+               $RolId_rol,
+               PDO::PARAM_INT
+            );
+            $query->bindParam(
+               6,
+               $CiudadId_ciudad,
+               PDO::PARAM_INT
+            );
+            $query->bindParam(
+               7,
+               $Tipo_documentoId_tipodoc,
+               PDO::PARAM_INT
             );
             $query->execute();
          } 

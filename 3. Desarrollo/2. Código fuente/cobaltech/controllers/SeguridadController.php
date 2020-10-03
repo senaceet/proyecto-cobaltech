@@ -8,22 +8,25 @@
             
             if($usuario)
             { 
-                if($usuario->Contrasena==$_POST['contrasena'])
-                {
-                    $_SESSION['USUARIO']=$usuario; 
-                    header("location:?controller=cobaltech&method=admin");
-                }
-                else{
-                    header("location:?controller=cobaltech&method=login");
-                }
+               if($usuario->Contrasena==$_POST['contrasena'])
+               {
+                  $_SESSION['USUARIO']=$usuario; 
+                  header("location:?controller=cobaltech&method=admin");
+               }
+               else{
+                  header("location:?controller=cobaltech&method=login");
+               }
             }
-        }
+      }
 
-           public function store(){
+      public function store(){
       parent::registro_usuario($_POST['Primer_nombre'],
                            $_POST['Primer_apellido'],
                            $_POST['Correo_electronico'],
-                           $_POST['Contrasena']);
+                           $_POST['Contrasena'],
+                           $_POST['RolId_rol'],
+                           $_POST['CiudadId_ciudad'],
+                           $_POST['Tipo_documentoId_tipodoc']);
       header("location:?controller=cobaltech&method=index");
    }
 

@@ -34,19 +34,28 @@
                     <form action="?controller=seguridad&method=store" method="post">
                     <div class="form-group">
                             <label for="">Nombre</label>
-                            <input id="" class="form-control" type="text" name="Primer_nombre">
+                            <input class="form-control" type="text" name="Primer_nombre">
                         </div>
                         <div class="form-group">
                             <label for="">Apellido</label>
-                            <input id="" class="form-control" type="text" name="Primer_apellido">
+                            <input class="form-control" type="text" name="Primer_apellido">
                         </div>
                         <div class="form-group">
                             <label for="">Correo</label>
-                            <input id="" class="form-control" type="text" name="Correo_electronico">
+                            <input class="form-control" type="text" name="Correo_electronico">
                         </div>
                         <div class="form-group">
                             <label for="">Contraseña</label>
-                            <input id="" class="form-control" type="password" name="Contrasena">
+                            <input class="form-control" type="password" name="Contrasena">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="RolId_rol" value="3">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="CiudadId_ciudad" value="1">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="Tipo_documentoId_tipodoc" value="1">
                         </div>
                         <button class="button ml-auto mr-auto" type="submit">Registrarse</button>
                     </form>
