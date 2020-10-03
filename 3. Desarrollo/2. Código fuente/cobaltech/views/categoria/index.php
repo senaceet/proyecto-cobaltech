@@ -6,11 +6,11 @@
       </div>
       <div class="section-body">
          <div class="card">
-         <?php  if(isset($_GET['process'])){ ?>
+            <?php  if(isset($_GET['process'])){ ?>
                <button class="alert alert-success"> 
                   <?php echo $_GET['process'] ?>
                </button>
-               <?php } ?>
+            <?php } ?>
             <div class="card-body">
                <a href="?controller=Categorias&method=create" class="btn btn-info">Agregar categoría</a> <br><br>
                <div class="table-responsive">
@@ -23,14 +23,14 @@
                      <?php
                         foreach(parent::get_all() as $result){
                      ?>
-                     <tr>
-                        <td><?php echo $result->Id_categoria ?></td>
-                        <td><?php echo $result->Nombre_categoria ?></td>
-                        <td class="text-white">
-                           <a href="?controller=Categorias&method=edit&Id_categoria=<?php echo $result->Id_categoria ?> "class="btn btn-warning btn-sm">Editar</a>
-                           <a href="?controller=Categorias&method=delete&Id_categoria=<?php echo $result->Id_categoria ?>" class="btn btn-danger btn-sm">Eliminar</a>
-                        </td>
-                     </tr>
+                        <tr>
+                           <td><?php echo $result->Id_categoria ?></td>
+                           <td><?php echo $result->Nombre_categoria ?></td>
+                           <td class="text-white">
+                              <a href="?controller=Categorias&method=edit&Id_categoria=<?php echo $result->Id_categoria ?> "class="btn btn-warning btn-sm">Editar</a>
+                              <a href="?controller=Categorias&method=delete&Id_categoria=<?php echo $result->Id_categoria ?>" class="btn btn-danger btn-sm">Eliminar</a>
+                           </td>
+                        </tr>
                      <?php } ?>
                   </table>
                   <tr>

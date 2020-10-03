@@ -195,7 +195,7 @@
             <i class="fas fa-cog"></i> Configuraciones
          </a>
          <div class="dropdown-divider"></div>
-         <a href="?controller=Seguridad&method=destroy" class="dropdown-item has-icon text-danger">
+         <a href="?controller=Seguridad&method=logout" class="dropdown-item has-icon text-danger">
             <i class="fas fa-sign-out-alt"></i> Cerrar sesión
          </a>
       </div>
