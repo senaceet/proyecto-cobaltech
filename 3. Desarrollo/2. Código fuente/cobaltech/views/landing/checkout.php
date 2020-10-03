@@ -1,5 +1,11 @@
 <!-- CHECKOUT CONTENT -->
 
+<div class="super_container_inner">
+   <div class="super_overlay"></div>
+            
+      <!-- Home -->
+      <div class="home">
+
 			<div class="home_container d-flex flex-column align-items-center justify-content-end">
 				<div class="home_content text-center">
 					<div class="home_title">Checkout</div>

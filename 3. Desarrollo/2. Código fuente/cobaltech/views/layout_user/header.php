@@ -179,11 +179,3 @@
                </div>
             </div>
          </header>
-
-         <!-- MAIN SUPER CONTENT START -->
-
-         <div class="super_container_inner">
-            <div class="super_overlay"></div>
-            
-            <!-- Home -->
-            <div class="home">
