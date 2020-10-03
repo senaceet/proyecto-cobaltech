@@ -12,7 +12,7 @@
 								<div class="col fill_height">
 									<div class="home_container d-flex flex-column align-items-center justify-content-start">
 										<div class="home_content">
-											<div class="home_title">Novedades</div>
+											<div class="home_title">Ofertas</div>
 											<!--<div class="home_subtitle">Summer Wear</div>-->
 											<div class="home_items">
 												<div class="row">
@@ -31,7 +31,7 @@
 															<div class="product_content">
 																<div class="product_info d-flex flex-row align-items-start justify-content-start">
 																	<div>
-																		<div>
+																		<!--<div>
 																			<div class="product_name"><a href="product.html">Categorías Favoritas</a></div>
 																			<div class="product_category">In <a href="category.html">Categorías</a></div>
 																		</div>
@@ -39,26 +39,27 @@
 																	<div class="ml-auto text-right">
 																		<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
 																		<div class="product_price text-right">$3<span>.99</span></div>
-																	</div>
+																	</div>-->
 																</div>
 																<div class="product_buttons">
 																	<div class="text-right d-flex flex-row align-items-start justify-content-start">
-																		<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+																		<!--<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 																			<div><div><img src="" alt=""><div>+</div></div></div>
 																		</div>
 																		<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-																			<div><div><img src="images/cart_2.svg" alt=""><div>+</div></div></div>
+																			<div><div><img src="images/cart_2.svg" alt=""><div>+</div></div></div>-->
 																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
-													<div class="col-sm-3">
-														<div class="home_item_side"><a href="product.html"><img src="images/home_3.jpg" alt=""></a></div>
+													<div class="col-sm-3 offset-lg-0" >
+                                       <a href="product.html"><img src="files/img/promo_5.jpg" alt=""></a></div>
 													</div>
 												</div>
 											</div>
+														<div class="home_item_side">
 										</div>
 									</div>
 								</div>
@@ -292,10 +293,10 @@
                <div class="col">
                   <div class="page_nav">
                      <ul class="d-flex flex-row align-items-start justify-content-center">
-                        <li class="active"><a href="category.html">Gameplay</a></li>
-                        <li><a href="category.html">Pcs</a></li>
-                        <li><a href="category.html">Perisfericos</a></li>
-                        <li><a href="category.html">Discos Duros</a></li>
+                        <li class="active"><a href="?controller=Cobaltech&method=category">Gameplay</a></li>
+                        <li><a href="?controller=Cobaltech&method=category">Pcs</a></li>
+                        <li><a href="?controller=Cobaltech&method=category">Perisfericos</a></li>
+                        <li><a href="?controller=Cobaltech&method=category">Discos Duros</a></li>
                      </ul>
                   </div>
                </div>
@@ -321,12 +322,12 @@
                            </div>
                         </div>
                         <div class="product_buttons">
-                           <div class="text-right d-flex flex-row align-items-start justify-content-start">
+                           <div class="text-right d-flex flex-row align-items-start justify-content-start"> 
                               <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
                                  <div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
                               </div>
                               <div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-                                 <div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+                                 <!--<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div> -->
                               </div>
                            </div>
                         </div>
@@ -517,7 +518,7 @@
                         <div class="box_content d-flex flex-row align-items-center justify-content-start">
                            <div class="box_left">
                               <div class="box_image">
-                                 <a href="category.html">
+                                 <a href="?controller=Cobaltech&method=category">
                                     <div class="background_image" style="background-image:url(images/box_1_img.jpg)"></div>
                                  </a>
                               </div>
@@ -534,7 +535,7 @@
                         <div class="box_content d-flex flex-row align-items-center justify-content-start">
                            <div class="box_left">
                               <div class="box_image">
-                                 <a href="category.html">
+                                 <a href="?controller=Cobaltech&method=category">
                                     <div class="background_image" style="background-image:url(images/box_2_img.jpg)"></div>
                                  </a>
                               </div>
@@ -551,7 +552,7 @@
                         <div class="box_content d-flex flex-row align-items-center justify-content-start">
                            <div class="box_left">
                               <div class="box_image">
-                                 <a href="category.html">
+                                 <a href="?controller=Cobaltech&method=category">
                                     <div class="background_image" style="background-image:url(images/box_3_img.jpg)"></div>
                                  </a>
                               </div>
