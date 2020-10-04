@@ -8,7 +8,7 @@ class CobaltechController{
    // inicio publico
    public function index(){
       require_once('views/layout_user/header.php');
-      require_once('views/layout_user/navbar.php');
+     // require_once('views/layout_user/navbar.php');
       require_once('views/landing/index.php');
       require_once('views/layout_user/footer.php');
    }
@@ -41,7 +41,7 @@ class CobaltechController{
    // ingreso de usuarios
    public function login() {
       require_once('views/layout_user/header.php');
-      require_once('views/layout_user/navbar.php');
+     // require_once('views/layout_user/navbar.php');
       require_once('views/landing/login.php');
       require_once('views/layout_user/footer.php');
    }

@@ -19,6 +19,14 @@
             }
         }
 
+           public function store(){
+      parent::registro_usuario($_POST['Primer_nombre'],
+                           $_POST['Primer_apellido'],
+                           $_POST['Correo_electronico'],
+                           $_POST['Contrasena']);
+      header("location:?controller=cobaltech&method=index");
+   }
+
         // destrucción de la sesión
         public function logout(){
             unset($_SESSION['USUARIO']);
