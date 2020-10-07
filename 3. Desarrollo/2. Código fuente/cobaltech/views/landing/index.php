@@ -292,17 +292,18 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-6 offset-lg-3">
-                  <div class="section_title text-center">Categorías Favoritas</div>
+                  <div class="section_title text-center">Categorías</div>
                </div>
             </div>
             <div class="row page_nav_row">
                <div class="col">
                   <div class="page_nav">
                      <ul class="d-flex flex-row align-items-start justify-content-center">
-                        <li class="active"><a href="?controller=Cobaltech&method=category">Gameplay</a></li>
-                        <li><a href="?controller=Cobaltech&method=category">Pcs</a></li>
-                        <li><a href="?controller=Cobaltech&method=category">Perisfericos</a></li>
-                        <li><a href="?controller=Cobaltech&method=category">Discos Duros</a></li>
+                        <li class="active"><a href="?controller=Cobaltech&method=category">Accesorios</a></li>
+                        <li><a href="?controller=Cobaltech&method=category">Almacenamiento</a></li>
+                        <li><a href="?controller=Cobaltech&method=category">Componentes</a></li>
+                        <li><a href="?controller=Cobaltech&method=category">Computadores</a></li>
+                        <li><a href="?controller=Cobaltech&method=category">Perifericos</a></li>
                      </ul>
                   </div>
                </div>
