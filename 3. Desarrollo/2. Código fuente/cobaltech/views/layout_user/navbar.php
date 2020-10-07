@@ -20,7 +20,7 @@
         <?php } */ ?>
        <ul class="">
           <li class="">
-             <a href="">Accesorios</a>
+             <a href="?controller=cobaltech&method=category">Accesorios</a>
              <!-- <ul class="">
                 <li><a href="#">Adaptadores y cables</a></li>
                 <li><a href="#">Cámaras</a></li>
@@ -28,14 +28,14 @@
              </ul> -->
           </li>
           <li>
-             <a href="">Almacenamiento</a>
+             <a href="?controller=cobaltech&method=category">Almacenamiento</a>
              <!-- <ul>
                 <li><a href="#">Discos duros HDD</a></li>
                 <li><a href="#">Unidades de estado solido SSD</a></li>
              </ul> -->
           </li>
           <li>
-             <a href="">Componentes</a>
+             <a href="?controller=cobaltech&method=category">Componentes</a>
              <!-- <ul>
                 <li><a href="#">Chasis/cajas/torres</a></li>
                 <li><a href="#">Enfriadores CPU Cooler</a></li>
@@ -50,7 +50,7 @@
              </ul> -->
           </li>
           <li>
-             <a href="">Computadores</a>
+             <a href="?controller=cobaltech&method=category">Computadores</a>
              <!-- <ul>
                 <li><a href="#">PC de escritorio</a></li>
                 <li><a href="#">Portátiles</a></li>
@@ -58,7 +58,7 @@
              </ul> -->
           </li>
           <li>
-             <a href="">Perifericos</a>
+             <a href="?controller=cobaltech&method=category">Perifericos</a>
              <!-- <ul>
                 <li><a href="#">Controles para juegos</a></li>
                 <li><a href="#">Diademas</a></li>
