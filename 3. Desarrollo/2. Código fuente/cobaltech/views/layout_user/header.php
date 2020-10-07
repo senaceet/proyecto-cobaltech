@@ -80,8 +80,10 @@
                   <!-- Phone -->
                   <div class="header_phone d-flex flex-row align-items-center justify-content-start">
                      <div>
-                        <img src="assets/img/icons/phone.svg" alt="phone.svg">
-                        <!-- Icon autor: https://www.flaticon.com/authors/freepik -->
+                        <div>
+                           <img src="assets/img/icons/phone.svg" alt="phone.svg">
+                           <!-- Icon autor: https://www.flaticon.com/authors/freepik -->
+                        </div>
                      </div>
                      <div>+57(1)-252-7350</div>
                   </div>
