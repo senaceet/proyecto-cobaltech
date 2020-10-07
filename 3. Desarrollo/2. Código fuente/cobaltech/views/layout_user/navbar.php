@@ -3,22 +3,17 @@
 <div class="menu">
 
     <!-- Search -->
-    <!-- <div class="menu_search">
+    <div class="menu_search">
        <form action="#" id="menu_search_form" class="menu_search_form">
           <input type="text" class="search_input" id="search_input" placeholder="Search Item" required="required">
           <button class="menu_search_button"><img src="assets/img/logos/search.png" alt=""></button>
        </form>
-    </div> -->
+    </div>
     
     <!-- Navigation -->
     <div class="menu_nav">
-        <?php foreach(parent::get_all() as $result) { ?>
-            <ul>
-            <!-- <a href="?controller=Categorias&method=edit&Id_categoria=<?php //echo $result->Id_categoria ?> "class="btn btn-warning btn-sm">Editar</a> -->
-                <li><?php echo $result->Nombre_categoria ?></li>
-            </ul>
-        <?php } ?>
-       <!-- <ul class="">
+
+       <ul class="">
           <li class="">Accesorios
              <ul class="">
                 <li><a href="#">Adaptadores y cables</a></li>
@@ -65,7 +60,7 @@
                 <li><a href="#">Teclados</a></li>
              </ul>
           </li>
-       </ul> -->
+       </ul>
     </div>
     
     <!-- Contact Info -->

@@ -26,35 +26,34 @@
 
          <header class="header">
             <div class="header_overlay"></div>
-            <div class="header_content d-flex flex-row align-items-center justify-content-start">
-               <div class="logo">
-                  <a href="?controller=cobaltech&method=index">
-                     <div class="d-flex flex-row align-items-center justify-content-start">
-                        <div>
-                           <img src="assets/img/logos/logo-sm-1.png" alt="Cobaltech icon">
+               <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                  <div class="logo">
+                     <a href="?controller=cobaltech&method=index">
+                        <div class="d-flex flex-row align-items-center justify-content-start">
+                           <div>
+                              <img src="assets/img/logos/logo-sm-1.png" alt="Cobaltech icon">
+                           </div>
+                           <div>Cobaltech</div>
                         </div>
-                        <div>Cobaltech</div>
-                     </div>
-                  </a>
-               </div>
+                     </a>
+                  </div>
 
-               <!-- Menu button -->
-               <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                  <!-- Menu button -->
+                  <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
-               <!-- Header bar -->
+                  <!-- Header bar -->
 
-               <div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
+                  <div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
 
-                  <!-- Search -->
-                  <div class="header_search">
-                     <form action="#" id="header_search_form">
-                        <input type="text" class="search_input" id="search_input" placeholder="Buscar" required="required" autofocus>
-                        <button class="header_search_button">
-                           <img src="assets/img/icons/search.png" alt="search.png">
-                        </button>
-                     </form>
-                     <div id="busqueda-productos" style="overflow-y: scroll; max-height: 200px; background-color: red;width: 400px;position: absolute;top:60px;z-index: 99;height: auto;"> 
-                        
+                     <!-- Search -->
+                     <div class="header_search">
+                        <form action="#" id="header_search_form">
+                           <input type="text" class="search_input" id="search_input" placeholder="Buscar" required="required" autofocus>
+                           <button class="header_search_button">
+                              <img src="assets/img/icons/search.png" alt="search.png">
+                           </button>
+                        </form>
+                        <div id="busqueda-productos" style="overflow-y: scroll; max-height: 200px; background-color: red;width: 400px;position: absolute;top:60px;z-index: 99;height: auto;"> 
                      </div>
                   </div>
 
@@ -81,10 +80,8 @@
                   <!-- Phone -->
                   <div class="header_phone d-flex flex-row align-items-center justify-content-start">
                      <div>
-                        <div>
-                           <img src="assets/img/icons/phone.svg" alt="phone.svg">
-                           <!-- Icon autor: https://www.flaticon.com/authors/freepik -->
-                        </div>
+                        <img src="assets/img/icons/phone.svg" alt="phone.svg">
+                        <!-- Icon autor: https://www.flaticon.com/authors/freepik -->
                      </div>
                      <div>+57(1)-252-7350</div>
                   </div>
