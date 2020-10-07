@@ -12,23 +12,31 @@
     
     <!-- Navigation -->
     <div class="menu_nav">
-
+        <?php /* foreach(parent::get_all() as $result) { ?>
+            <ul>
+            <!-- <a href="?controller=Categorias&method=edit&Id_categoria=<?php //echo $result->Id_categoria ?> "class="btn btn-warning btn-sm">Editar</a> -->
+                <li><?php echo $result->Nombre_categoria ?></li>
+            </ul>
+        <?php } */ ?>
        <ul class="">
-          <li class="">Accesorios
-             <ul class="">
+          <li class="">
+             <a href="">Accesorios</a>
+             <!-- <ul class="">
                 <li><a href="#">Adaptadores y cables</a></li>
                 <li><a href="#">Cámaras</a></li>
                 <li><a href="#">Tiras LED</a></li>
-             </ul>
+             </ul> -->
           </li>
-          <li>Almacenamiento
-             <ul>
+          <li>
+             <a href="">Almacenamiento</a>
+             <!-- <ul>
                 <li><a href="#">Discos duros HDD</a></li>
                 <li><a href="#">Unidades de estado solido SSD</a></li>
-             </ul>
+             </ul> -->
           </li>
-          <li>Componentes
-             <ul>
+          <li>
+             <a href="">Componentes</a>
+             <!-- <ul>
                 <li><a href="#">Chasis/cajas/torres</a></li>
                 <li><a href="#">Enfriadores CPU Cooler</a></li>
                 <li><a href="#">Fuentes de poder PSU</a></li>
@@ -39,17 +47,19 @@
                 <li><a href="#">Tarjetas de video GPU</a></li>
                 <li><a href="#">Tarjetas madre MainBoard</a></li>
                 <li><a href="#">Ventiladores</a></li>
-             </ul>
+             </ul> -->
           </li>
-          <li>Computadores
-             <ul>
+          <li>
+             <a href="">Computadores</a>
+             <!-- <ul>
                 <li><a href="#">PC de escritorio</a></li>
                 <li><a href="#">Portátiles</a></li>
                 <li><a href="#">Servidores</a></li>
-             </ul>
+             </ul> -->
           </li>
-          <li>Perifericos
-             <ul>
+          <li>
+             <a href="">Perifericos</a>
+             <!-- <ul>
                 <li><a href="#">Controles para juegos</a></li>
                 <li><a href="#">Diademas</a></li>
                 <li><a href="#">Impresoras</a></li>
@@ -58,7 +68,7 @@
                 <li><a href="#">Mouse y padmouse</a></li>
                 <li><a href="#">Parlante</a></li>
                 <li><a href="#">Teclados</a></li>
-             </ul>
+             </ul> -->
           </li>
        </ul>
     </div>
