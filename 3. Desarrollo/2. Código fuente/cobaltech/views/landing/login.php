@@ -25,14 +25,14 @@
                     </form>
                     <!-- <p class="card-text">Content</p> -->
                </div>
-               </div>
-               </div>
-               <div class="col-md-4">
-               <div class="card">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">REGISTRO</h5>
                     <form action="?controller=seguridad&method=store" method="post">
-                    <div class="form-group">
+                        <div class="form-group">
                             <label for="">Nombre</label>
                             <input class="form-control" type="text" name="Primer_nombre">
                         </div>

@@ -63,7 +63,7 @@
 							</div>
 						</div>
                
-               </div>
+               		</div>
 				</div>
 			</div>
 			<div class="footer_bar">
@@ -82,9 +82,9 @@
          
       </footer>
    
-   <!-- Close tag <div class="super_container_inner"> from HTML Firts Part -->
-   </div>
-<!-- Close tag <div class="super_container"> from HTML Firts Part -->   
+	<!-- Close tag <div class="super_container"> from HTML Firts Part -->   
+	</div>
+<!-- Close tag <div class="super_container_inner"> from HTML Firts Part -->
 </div>
 
 <!-- Scripts Area -->
