@@ -12,13 +12,17 @@
 					
                <!-- Slide -->
 					<div class="owl-item">
-						<div class="background_image" style="background-image:url()"></div>
+						<!--<div class="background_image" style="background-image:url()"></div>-->
 						<div class="container fill_height">
 							<div class="row fill_height">
 								<div class="col fill_height">
 									<div class="home_container d-flex flex-column align-items-center justify-content-start">
 										<div class="home_content">
-											<div class="home_title">Ofertas</div>
+<<<<<<< HEAD
+											<div class="home_title"><h1>Ofertas</h1></div>
+=======
+											<div class="home_title text-dark">Ofertas</div>
+>>>>>>> 94b3bbe193dfc37cb93025afc5603f19784bcc83
 											<!--<div class="home_subtitle">Summer Wear</div>-->
 											<div class="home_items">
 												<div class="row">
