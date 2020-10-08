@@ -197,21 +197,21 @@ Values (NULL,'En proceso'),
 -- Insert into Producto -- 
 
 INSERT INTO Producto (Nombre_producto, Descripcion, Existencia, Imagen, Precio, CategoriaId_categoria, MarcaId_marca, ProveedorId_proveedor)
-VALUES ('ACER SB220Q', 'Bi 215 full HD 1920 X 1080 ips monitor con y rad', 3,'', '453900',9,1,1),
-       ('SSD ADATA SB800', 'Adata 480 Gb', 5, '', '209900', 6, 2, 1),
-       ('AMD Ryzen 3 2200G', '2200g 3.7 Ghz Radeon Vega 8 Am4 2018', 3, '', '361000', 17,3, 1),
-       ('Asrock H110 Pro Btc+', 'Sexta Y Septima Gen Intel, modelo:H110 Pro BTC+tipo de socket de CPU:LGA 1151', 4, '', '399900',21, 4, 2),
-       ('Asus VivoBook S15 X542UF', 'X542uf Core I5 1tb 8gb Full Hd+nvidia, Ram: DDR4 8GB, disco 1TB, S.O Endless', 3, '', '2010900', 16, 5, 2),
-       ('Cooler Master BladeMaster 92mm', 'Funcionamiento silencioso con hasta 14,7 dB(A) aletas con flujo de aire optimizado, el sistema de montaje antivibración evita la transmisión de vibraciones', 10, '', '159900', 25, 6, 3),
-       ('Belkin Case QODE™', 'Ultimate Lite Keyboard Case for iPad 9.7” 6th Generation (2018)', 8, '', '99900', 3, 7, 1),
-       ('Bitfenix Micro ATX', 'Mini-itx motherboard cases Bfc-prm-300-', 6, '', '655000', 3, 8, 3),
-       ('Cooler Master Masterliquid ML120L RGB', 'Refrigeración Liquida AIO Cooler Master Masterliquid ML120L RGB', 7, '', '279000', 7, 9, 2),
-       ('Corsair Air Series Af140', 'Led Quiet Edition High Airflow Vent', 10, '', '166900', 25, 10, 4),
-       ('Diadema Cougar Phontum gaming', 'Interfaz: 3.5 mm / USB, respuesta de Frecuencia: 20-20000 Hz, impedancia: 32O +/- 15%', 9, '', '170000', 5, 11, 4),
-       ('Redragon KUMARA K552', 'Teclado mecánico para juegos con interruptores de respuesta rápida, 7 modos de colore y función de modo de juego RGB.', 7, '', '231900', 22, 12, 3),
-       ('Evga X299 Dark', 'Lga 2066, Intel X299, Sata 6 Gb / S, Usb 3, soporta Intel Core séptima generación de la familia de procesadores de 2.066 zócalo; Factor de forma EATX; 4 DIMM de canal cuádruple DDR4 hasta 64GB.', 3, '', '3035990',21, 13, 5),
-       ('Fractal Design Nano S Window', 'Define Nano S - Formato Mini Itx Permite instalar hasta 6 discos HDD/SSD, permite instalar GPU de gran Formato', 6, '', '360000', 3, 14, 5),
-       ('G-skill Trident Z F4-3400C16D-16GTZ', 'Trident Z Rgb 16gb 2 X 8 3000mhz. El kit de memoria Trident DDR4 RGB DDR4 combina la barra de luces RGB más brillante con un rendimiento impecable.', 15, '', '449900', 10, 15, 2);
+VALUES ('ACER SB220Q', 'Bi 215 full HD 1920 X 1080 ips monitor con y rad', 3,'ACER SB220Q.jpg', '453900',9,1,1),
+       ('SSD ADATA SB800', 'Adata 480 Gb', 5, 'SSD ADATA SB800.jpg', '209900', 6, 2, 1),
+       ('AMD Ryzen 3 2200G', '2200g 3.7 Ghz Radeon Vega 8 Am4 2018', 3, 'AMD Ryzen 3 2200G.jpg', '361000', 17,3, 1),
+       ('Asrock H110 Pro Btc+', 'Sexta Y Septima Gen Intel, modelo:H110 Pro BTC+tipo de socket de CPU:LGA 1151', 4, 'Asrock H110 Pro Btc+.png', '399900',21, 4, 2),
+       ('Asus VivoBook S15 X542UF', 'X542uf Core I5 1tb 8gb Full Hd+nvidia, Ram: DDR4 8GB, disco 1TB, S.O Endless', 3, 'Asus VivoBook S15 X542UF.jpg', '2010900', 16, 5, 2),
+       ('Cooler Master BladeMaster 92mm', 'Funcionamiento silencioso con hasta 14,7 dB(A) aletas con flujo de aire optimizado, el sistema de montaje antivibración evita la transmisión de vibraciones', 10, 'Cooler Master BladeMaster 92mm.jpg', '159900', 25, 6, 3),
+       ('Belkin Case QODE', 'Ultimate Lite Keyboard Case for iPad 9.7” 6th Generation (2018)', 8, 'Belkin Case QODE.jpg', '99900', 3, 7, 1),
+       ('Bitfenix Micro ATX', 'Mini-itx motherboard cases Bfc-prm-300-', 6, 'Bitfenix Micro ATX.jpg', '655000', 3, 8, 3),
+       ('Cooler Master Masterliquid ML120L RGB', 'Refrigeración Liquida AIO Cooler Master Masterliquid ML120L RGB', 7, 'Cooler Master Masterliquid ML120L RGB.jpg', '279000', 7, 9, 2),
+       ('Corsair Air Series Af140', 'Led Quiet Edition High Airflow Vent', 10, 'Corsair Air Series Af140.png', '166900', 25, 10, 4),
+       ('Diadema Cougar Phontum gaming', 'Interfaz: 3.5 mm / USB, respuesta de Frecuencia: 20-20000 Hz, impedancia: 32O +/- 15%', 9, 'Diadema Cougar Phontum gaming.jpg', '170000', 5, 11, 4),
+       ('Redragon KUMARA K552', 'Teclado mecánico para juegos con interruptores de respuesta rápida, 7 modos de colore y función de modo de juego RGB.', 7, 'Redragon KUMARA K552.jpg', '231900', 22, 12, 3),
+       ('Evga X299 Dark', 'Lga 2066, Intel X299, Sata 6 Gb / S, Usb 3, soporta Intel Core séptima generación de la familia de procesadores de 2.066 zócalo; Factor de forma EATX; 4 DIMM de canal cuádruple DDR4 hasta 64GB.', 3, 'Evga X299 Dark.jpg', '3035990',21, 13, 5),
+       ('Fractal Design Nano S Window', 'Define Nano S - Formato Mini Itx Permite instalar hasta 6 discos HDD/SSD, permite instalar GPU de gran Formato', 6, 'Fractal Design Nano S Window.jpg', '360000', 3, 14, 5),
+       ('G-skill Trident Z F4-3400C16D-16GTZ', 'Trident Z Rgb 16gb 2 X 8 3000mhz. El kit de memoria Trident DDR4 RGB DDR4 combina la barra de luces RGB más brillante con un rendimiento impecable.', 15, 'G-skill Trident Z F4-3400C16D-16GTZ.jpg', '449900', 10, 15, 2);
        
 -- Insert into Tabla USUARIO
 

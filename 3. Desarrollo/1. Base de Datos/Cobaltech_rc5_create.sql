@@ -113,7 +113,7 @@ CREATE TABLE Pago(
 
 CREATE TABLE Producto(
 	Id_producto int(10) NOT NULL AUTO_INCREMENT comment 'Id producto',
-	Nombre_producto varchar(30) NOT NULL comment 'Nombre del producto',
+	Nombre_producto varchar(50) NOT NULL comment 'Nombre del producto',
 	Descripcion varchar(255) NOT NULL comment 'Descripción del producto',
 	Existencia int(3) NOT NULL comment 'Stock de existencias del producto',
 	Imagen varchar(250) NOT NULL comment 'Imagen del producto',
