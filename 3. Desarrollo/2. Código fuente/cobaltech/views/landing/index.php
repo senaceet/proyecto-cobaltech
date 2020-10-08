@@ -18,7 +18,7 @@
 								<div class="col fill_height">
 									<div class="home_container d-flex flex-column align-items-center justify-content-start">
 										<div class="home_content">
-											<div class="home_title">Ofertas</div>
+											<div class="home_title text-dark">Ofertas</div>
 											<!--<div class="home_subtitle">Summer Wear</div>-->
 											<div class="home_items">
 												<div class="row">
