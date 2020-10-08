@@ -56,7 +56,7 @@ CREATE TABLE Envio(
 
 CREATE TABLE Estado_garantia(
 	Id_estado_garantia int(2) NOT NULL AUTO_INCREMENT comment 'Id estado garantía',
-	Estado_garantia varchar(15) comment 'Tipo estado de la garantía',
+	Estado_garantia varchar(25) comment 'Tipo estado de la garantía',
 	PRIMARY KEY (Id_estado_garantia)
 );
 
@@ -219,29 +219,29 @@ CREATE TABLE Error(
 -- LLAVES FORANEAS
 
 ALTER TABLE Envio 
-ADD FOREIGN KEY (FacturaId_Factura) REFERENCES Factura (Id_Factura),
-ADD FOREIGN KEY (Estado_EnvioId_Estado_Envio) REFERENCES Estado_Envio(Id_Estado_Envio);
+ADD FOREIGN KEY (FacturaId_factura) REFERENCES Factura (Id_factura),
+ADD FOREIGN KEY (Estado_envioId_estado_envio) REFERENCES Estado_envio(Id_estado_envio);
 
 ALTER TABLE Factura 
-ADD FOREIGN KEY (UsuarioId_Usuario) REFERENCES Usuario (Id_Usuario),
-ADD FOREIGN KEY (ProductoId_Producto) REFERENCES Producto (Id_Producto);
+ADD FOREIGN KEY (UsuarioId_usuario) REFERENCES Usuario (Id_usuario),
+ADD FOREIGN KEY (ProductoId_producto) REFERENCES Producto (Id_producto);
 
 ALTER TABLE Garantia 
-ADD FOREIGN KEY (FacturaId_Factura) REFERENCES Factura (Id_Factura),
-ADD FOREIGN KEY (Estado_GarantiaId_Estado_Garantia) REFERENCES Estado_Garantia (Id_Estado_Garantia);
+ADD FOREIGN KEY (FacturaId_factura) REFERENCES Factura (Id_factura),
+ADD FOREIGN KEY (Estado_garantiaId_estado_garantia) REFERENCES Estado_garantia (Id_estado_garantia);
 
 ALTER TABLE Pago
 ADD FOREIGN KEY (FacturaId_Factura) REFERENCES Factura (Id_Factura),
-ADD FOREIGN KEY (Tarjeta_CreditoId_Tarjeta_Credito) REFERENCES Tarjeta_Credito (Id_Tarjeta_Credito),
-ADD FOREIGN KEY (Tarjeta_DebitoId_Tarjeta_Debito) REFERENCES Tarjeta_Debito (Id_Tarjeta_Debito),
-ADD FOREIGN KEY (EfectivoId_Efectivo) REFERENCES Efectivo (Id_Efectivo);
+ADD FOREIGN KEY (Tarjeta_creditoId_tarjeta_credito) REFERENCES Tarjeta_credito (Id_tarjeta_credito),
+ADD FOREIGN KEY (Tarjeta_debitoId_tarjeta_debito) REFERENCES Tarjeta_debito (Id_tarjeta_debito),
+ADD FOREIGN KEY (EfectivoId_efectivo) REFERENCES Efectivo (Id_efectivo);
 
 ALTER TABLE Producto 
-ADD FOREIGN KEY (CategoriaId_Categoria) REFERENCES Categoria (Id_Categoria),
-ADD FOREIGN KEY (MarcaId_Marca) REFERENCES Marca (Id_Marca),
-ADD FOREIGN KEY (ProveedorId_Proveedor) REFERENCES Proveedor (Id_Proveedor);
+ADD FOREIGN KEY (CategoriaId_categoria) REFERENCES Categoria (Id_categoria),
+ADD FOREIGN KEY (MarcaId_marca) REFERENCES Marca (Id_marca),
+ADD FOREIGN KEY (ProveedorId_proveedor) REFERENCES Proveedor (Id_proveedor);
 
 ALTER TABLE Usuario
-ADD FOREIGN KEY (RolId_Rol) REFERENCES Rol (Id_Rol),
-ADD FOREIGN KEY (CiudadId_Ciudad) REFERENCES Ciudad (Id_Ciudad),
+ADD FOREIGN KEY (RolId_rol) REFERENCES Rol (Id_rol),
+ADD FOREIGN KEY (CiudadId_ciudad) REFERENCES Ciudad (Id_ciudad),
 ADD FOREIGN KEY (Tipo_documentoId_tipodoc) REFERENCES Tipo_documento (Id_tipodoc);
