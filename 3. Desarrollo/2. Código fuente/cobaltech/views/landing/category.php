@@ -4,21 +4,20 @@
    <div class="super_overlay"></div>
             
       <!-- Home -->
-      <div class="home">
+      <!--<div class="home">-->
 
 			<div class="home_container d-flex flex-column align-items-center justify-content-end">
 				<div class="home_content text-center">
-					<div class="home_title">Categorías Favoritas</div>
+					<!--<div class="home_title">Categorías Favoritas</div>-->
 					<div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
 						<ul class="d-flex flex-row align-items-start justify-content-start text-center">
-							<li><a href="?controller=Cobaltech&method=index">Inicio</a></li>
-							<li><a href="category.html">Categorias</a></li>
-							<li>Otros Productos</li>
+							<li class=""><a href="?controller=Cobaltech&method=index"><h2>Inicio<h2></a></li>
+							<li class=""><a href="category.html"><h2>Accesorios<h2></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
+		
 
 		<!-- Products -->
 
@@ -28,12 +27,12 @@
 					<div class="col">
 						<div class="products_bar d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-start justify-content-center">
 							<div class="products_bar_links">
-								<ul class="d-flex flex-row align-items-start justify-content-start">
+								<!--<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li><a href="#">Gameplay</a></li><br>
 									<li><a href="#">Pcs</a></li><br>
 									<li class="active"><a href="#">Perisfericos</a></li><br>
 									<li><a href="#">Otros productos</a></li><br>
-								</ul>
+								</ul>-->
 							</div>
 							<div class="products_bar_side d-flex flex-row align-items-center justify-content-start ml-lg-auto">
 								<div class="products_dropdown product_dropdown_sorting">
@@ -98,7 +97,7 @@
 					<!-- Product -->
 					<div class="col-xl-4 col-md-6 grid-item hot">
 						<div class="product">
-							<div class="product_image"><img src="files/img/keyboard gaming led rgb.jpg" alt=""></div>
+							<div class="product_image"><img src="files/img/" alt=""></div>
 							<div class="product_content">
 								<div class="product_info d-flex flex-row align-items-start justify-content-start">
 									<div>
