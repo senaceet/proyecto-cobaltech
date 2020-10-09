@@ -1,3 +1,8 @@
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/main_styles.css">
+<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+
 <!-- MAIN CONTENT -->
 
 <div class="super_container_inner">

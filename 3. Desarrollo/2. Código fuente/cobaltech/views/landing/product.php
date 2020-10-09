@@ -1,3 +1,8 @@
+<head>
+<link rel="stylesheet" type="text/css" href="styles/product.css">
+<link rel="stylesheet" type="text/css" href="styles/product_responsive.css">
+</head>
+
 <!-- PRODUCT CONTENT -->
 
 <div class="super_container_inner">

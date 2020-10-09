@@ -1,3 +1,8 @@
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/main_styles.css">
+<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+
 <!-- MAIN CONTENT -->
 <div class="super_container_inner">
     <div class="super_overlay"></div>
@@ -18,7 +23,7 @@
                                 <div class="home_container d-flex flex-column align-items-center justify-content-start">
                                     <div class="home_content">
                                         <div class="home_title"><h1>Ofertas</h1></div>
-                                        <div class="home_subtitle">Summer Wear</div>
+                                        <!-- <div class="home_subtitle">Summer Wear</div> -->
                                         <div class="home_items">
                                             <div class="row">
                                                 <div class="col-sm-3 offset-lg-1">
@@ -47,7 +52,7 @@
                                 <div class="home_container d-flex flex-column align-items-center justify-content-start">
                                     <div class="home_content">
                                         <div class="home_title"><h1>Popular</h1></div>
-                                        <div class="home_subtitle">Summer Wear</div>
+                                        <!-- <div class="home_subtitle">Summer Wear</div> -->
                                         <div class="home_items">
                                             <div class="row">
                                                 <div class="col-sm-3 offset-lg-1">
@@ -76,7 +81,7 @@
                                 <div class="home_container d-flex flex-column align-items-center justify-content-start">
                                     <div class="home_content">
                                         <div class="home_title"><h1>Ofertas 2</h1></div>
-                                        <div class="home_subtitle">Summer Wear</div>
+                                        <!-- <div class="home_subtitle">Summer Wear</div> -->
                                         <div class="home_items">
                                             <div class="row">
                                                 <div class="col-sm-3 offset-lg-1">
@@ -105,7 +110,7 @@
                                 <div class="home_container d-flex flex-column align-items-center justify-content-start">
                                     <div class="home_content">
                                         <div class="home_title"><h1>Ofertas</h1></div>
-                                        <div class="home_subtitle">Summer Wear</div>
+                                        <!-- <div class="home_subtitle">Summer Wear</div> -->
                                         <div class="home_items">
                                             <div class="row">
                                                 <div class="col-sm-3 offset-lg-1">

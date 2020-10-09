@@ -1,3 +1,8 @@
+<head>
+<link rel="stylesheet" type="text/css" href="styles/checkout.css">
+<link rel="stylesheet" type="text/css" href="styles/checkout_responsive.css">
+</head>
+
 <!-- CHECKOUT CONTENT -->
 
 <div class="super_container_inner">

@@ -1,3 +1,8 @@
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/category.css">
+<link rel="stylesheet" type="text/css" href="assets/css/category_responsive.css">
+</head>
+
 <!-- CATEGORY CONTENT -->
 
 <div class="super_container_inner">
@@ -8,7 +13,7 @@
 
 			<div class="home_container d-flex flex-column align-items-center justify-content-end">
 				<div class="home_content text-center">
-					<!--<div class="home_title">Categorías Favoritas</div>-->
+					<div class="home_title">Categorías Favoritas</div>
 					<div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
 						<ul class="d-flex flex-row align-items-start justify-content-start text-center">
 							<li class=""><a href="?controller=Cobaltech&method=index"><h2>Inicio<h2></a></li>

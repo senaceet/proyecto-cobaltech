@@ -1,3 +1,8 @@
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/cart.css">
+<link rel="stylesheet" type="text/css" href="assets/css/cart_responsive.css">
+</head>
+
 <div class="super_container_inner">
     <div class="super_overlay"></div>
 
@@ -6,14 +11,13 @@
     <div class="home">
         <div class="home_container d-flex flex-column align-items-center justify-content-end">
             <div class="home_content text-center">
-            <div class="background_image" style="background-image:url(assets/img/background/background.png); opacity:0.8"></div>
                 <div class="home_title">Carrito de compras</div>
-                <!-- <div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
+                <div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
                     <ul class="d-flex flex-row align-items-start justify-content-start text-center">
-                        <li><a href="#">Home</a></li>
-                        <li>Your Cart</li>
+                        <!-- <li><a href="#">Home</a></li> -->
+                        <!-- <li>Your Cart</li> -->
                     </ul>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
