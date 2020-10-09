@@ -78,7 +78,7 @@
                   <div class="cart">
                      <a href="?controller=Cobaltech&method=cart">
                         <div>
-                           <img class="svg" src="assets/img/icons/cart.svg" alt="cart.svg">
+                           <img src="assets/img/icons/cart.svg" alt="cart.svg">
                            <!-- Icon autor: https://www.flaticon.com/authors/freepik -->
                         </div>
                      </a>
