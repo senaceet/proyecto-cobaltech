@@ -409,7 +409,7 @@ section
 }
 .main_nav ul li a
 {
-	font-size: 15px;
+	font-size: 14px;
 	color: #2e2e2e;
 	font-weight: 400;
 }
@@ -748,7 +748,7 @@ section
 .home_container
 {
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	padding-top: 73px;
 }
 .home_content
@@ -761,7 +761,7 @@ section
 	font-weight: 400;
 	color: #FFFFFF;
 	text-align: center;
-	line-height: 1.2;
+	/* line-height: 1.2; */
 }
 .home_subtitle
 {
