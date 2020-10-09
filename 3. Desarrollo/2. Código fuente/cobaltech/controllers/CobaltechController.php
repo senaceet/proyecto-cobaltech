@@ -55,7 +55,6 @@ class CobaltechController{
    }
    // ---------- fin landing del usuario ----------
 
-
    // Función landing del administrador
 
    // inicio privado del administrador

@@ -1,7 +1,6 @@
 <?php
 
     class Producto extends DB{
-
         // listar productos
         public function get_all(){
             try {

@@ -6,7 +6,7 @@
       <title>Cobaltech</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="Cobaltech usa Little Closet template">
+      <meta name="description" content="Little Closet template">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -28,7 +28,7 @@
             <div class="header_overlay"></div>
                <div class="header_content d-flex flex-row align-items-center justify-content-start">
                   <div class="logo">
-                     <a href="?controller=cobaltech&method=index">
+                     <a href="?controller=Cobaltech&method=index">
                         <div class="d-flex flex-row align-items-center justify-content-start">
                            <div>
                               <img src="assets/img/logos/logo-sm-1.png" alt="Cobaltech icon">
@@ -40,6 +40,15 @@
 
                   <!-- Menu button -->
                   <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                   <nav class="main_nav">
+                       <ul class="d-flex flex-row align-items-start justify-content-start">
+                           <li class="active"><a href="?controller=cobaltech&method=category">Accesorios</a></li>
+                           <li><a href="?controller=cobaltech&method=category">Almacenamiento</a></li>
+                           <li><a href="?controller=cobaltech&method=category">Componentes</a></li>
+                           <li><a href="?controller=cobaltech&method=category">Computadores</a></li>
+                           <li><a href="?controller=cobaltech&method=category">Perifericos</a></li>
+                       </ul>
+                   </nav>
 
                   <!-- Header bar -->
 
@@ -53,13 +62,13 @@
                               <img src="assets/img/icons/search.png" alt="search.png">
                            </button>
                         </form>
-                        <div id="busqueda-productos" style="overflow-y: scroll; max-height: 200px; background-color: red;width: 400px;position: absolute;top:60px;z-index: 99;height: auto;"> 
+                        <div id="busqueda-productos" style="overflow-y: scroll; max-height: 200px; background-color: red;width: 400px;position: absolute;top:60px;z-index: 99;height: auto;">
                      </div>
                   </div>
 
                   <!-- User -->
                   <div class="user">
-                     <a href="?controller=cobaltech&method=login">
+                     <a href="?controller=Cobaltech&method=login">
                         <div>
                            <img src="assets/img/icons/user.svg" alt="user.svg">
                            <!-- Icon autor: https://www.flaticon.com/authors/freepik -->
@@ -69,7 +78,7 @@
 
                   <!-- Cart -->
                   <div class="cart">
-                     <a href="?controller=cobaltech&method=cart">
+                     <a href="?controller=Cobaltech&method=cart">
                         <div>
                            <img class="svg" src="assets/img/icons/cart.svg" alt="cart.svg">
                            <!-- Icon autor: https://www.flaticon.com/authors/freepik -->

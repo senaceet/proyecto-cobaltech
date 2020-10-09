@@ -1,12 +1,12 @@
 <!-- HTML Third and Last Part -->
 
 		<!-- Footer -->
-      
+
       <footer class="footer">
 			<div class="footer_content">
 				<div class="container">
 					<div class="row">
-						
+
 						<!-- About -->
 						<div class="col-lg-4 footer_col">
 							<div class="footer_about">
@@ -16,14 +16,14 @@
 											<div class="footer_logo_icon"><img src="assets/img/logos/logo-sm-2.png" alt=""></div>
 											<div>Cobaltech</div>
 										</div>
-									</a>		
+									</a>
 								</div>
 								<div class="footer_about_text">
                            <p>Tienda virtual de comercio electrónico especializada en tecnología informática, hardware para empresas y consumidor final.</p>
 								</div>
 							</div>
 						</div>
-                  
+
                   <!-- Footer Links -->
 						<div class="col-lg-4 footer_col">
 							<div class="footer_menu">
@@ -47,7 +47,7 @@
 								</ul>
 							</div>
 						</div>
-                  
+
                   <!-- Footer Contact -->
 						<div class="col-lg-4 footer_col">
 							<div class="footer_contact">
@@ -62,7 +62,7 @@
 								</div>
 							</div>
 						</div>
-               
+
                </div>
 				</div>
 			</div>
@@ -79,10 +79,10 @@
 					</div>
 				</div>
 			</div>
-         
+
       </footer>
-   
-	<!-- Close tag <div class="super_container"> from HTML Firts Part -->   
+
+	<!-- Close tag <div class="super_container"> from HTML Firts Part -->
 	</div>
 <!-- Close tag <div class="super_container_inner"> from HTML Firts Part -->
 </div>
@@ -107,15 +107,15 @@
 <script>
 const APP_URL="http://localhost/GitHub/proyecto-cobaltech/3. Desarrollo/2. Código fuente/cobaltech";
    $('#search_input').keyup(function(){
-      
+
         var value_p=$('#search_input').val();
-       
+
         $.ajax({
             type:'GET',
             url:APP_URL+'?controller=Productos&method=buscar_productos_ajax',
             data:{query:value_p},
             success(response){
-             $('#busqueda-productos').html(response);           
+             $('#busqueda-productos').html(response);
             }
         });
    });
