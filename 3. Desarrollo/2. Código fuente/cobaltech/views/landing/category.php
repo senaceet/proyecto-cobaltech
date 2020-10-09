@@ -10,7 +10,6 @@
             
       <!-- Home -->
       <!--<div class="home">-->
-
 			<div class="home_container d-flex flex-column align-items-center justify-content-end">
 				<div class="home_content text-center">
 					<div class="home_title">Categorías Favoritas</div>
@@ -22,10 +21,7 @@
 					</div>
 				</div>
 			</div>
-		
-
 		<!-- Products -->
-
 		<div class="products">
 			<div class="container">
 				<div class="row products_bar_row">
@@ -98,7 +94,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Product -->
 					<div class="col-xl-4 col-md-6 grid-item hot">
 						<div class="product">
@@ -129,7 +124,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Product -->
 					<div class="col-xl-4 col-md-6 grid-item sale">
 						<div class="product">
@@ -160,7 +154,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Product -->
 					<div class="col-xl-4 col-md-6 grid-item sale">
 						<div class="product">
@@ -191,7 +184,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Product -->
 					<div class="col-xl-4 col-md-6 grid-item hot">
 						<div class="product">
