@@ -1,9 +1,23 @@
 <head>
-<link rel="stylesheet" type="text/css" href="assets/css/main_styles.css">
-<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+<link rel="stylesheet" type="text/css" href="assets/css/login_responsive.css">
 </head>
 
 <!-- MAIN CONTENT -->
+
+<div class="home">
+        <div class="home_container d-flex flex-column align-items-center justify-content-end">
+            <div class="home_content text-center">
+                <div class="home_title">Login</div>
+                <div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
+                    <ul class="d-flex flex-row align-items-start justify-content-start text-center">
+                        <!-- <li><a href="#">Home</a></li>
+                        <li>Your Cart</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="super_container_inner">
     <div class="super_overlay"></div>
@@ -32,7 +46,11 @@
                                             <label for="">Contraseña</label>
                                             <input id="" class="form-control" type="password" name="contrasena">
                                         </div>
-                                        <button class="button ml-auto mr-auto" type="submit">Ingresar</button>
+                                        <div class="form-check">
+                                            <input class="" type="checkbox">
+                                            <label for="">Recuperar contraseña</label>
+                                        </div>
+                                        <button class="login_button" type="submit">Ingresar</button>
                                     </form>
                                     <!-- <p class="card-text">Content</p> -->
                                 </div>
@@ -68,7 +86,7 @@
                                         <div class="form-group">
                                             <input class="form-control" type="hidden" name="Tipo_documentoId_tipodoc" value="1">
                                         </div>
-                                        <button class="button ml-auto mr-auto" type="submit">Registrarse</button>
+                                        <button class="login_button" type="submit">Registrarse</button>
                                     </form>
                                     <!-- <p class="card-text">Content</p> -->
                                 </div>
