@@ -22,6 +22,8 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
 		<!-- Products -->
 		<div class="products">
 			<div class="container">
@@ -29,29 +31,29 @@
 					<div class="col">
 						<div class="products_bar d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-start justify-content-center">
 							<div class="products_bar_links">
-								<ul class="d-flex flex-row align-items-start justify-content-start">
+								<!-- <ul class="d-flex flex-row align-items-start justify-content-start">
 									<li><a href="#">Gameplay</a></li><br>
 									<li><a href="#">Pcs</a></li><br>
 									<li class="active"><a href="#">Perisfericos</a></li><br>
 									<li><a href="#">Otros productos</a></li><br>
-								</ul>
+								</ul> -->
 							</div>
 							<div class="products_bar_side d-flex flex-row align-items-center justify-content-start ml-lg-auto">
 								<div class="products_dropdown product_dropdown_sorting">
-									<div class="isotope_sorting_text"><span>Default Sorting</span><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+									<div class="isotope_sorting_text"><span>Organizar por</span><i class="fa fa-caret-down" aria-hidden="true"></i></div>
 									<ul>
-										<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'>Default</li>
-										<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'>Price</li>
-										<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Name</li>
+										<!-- <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'>Default</li> -->
+										<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'>Precio</li>
+										<li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Nombre</li>
 									</ul>
 								</div>
-								<div class="product_view d-flex flex-row align-items-center justify-content-start">
+								<!-- <div class="product_view d-flex flex-row align-items-center justify-content-start">
 									<div class="view_item active"><img src="images/view_1.png" alt=""></div>
 									<div class="view_item"><img src="images/view_2.png" alt=""></div>
 									<div class="view_item"><img src="images/view_3.png" alt=""></div>
-								</div>
+								</div> -->
 								<div class="products_dropdown text-right product_dropdown_filter">
-									<div class="isotope_filter_text"><span>Filter</span><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+									<div class="isotope_filter_text"><span>Filtros</span><i class="fa fa-caret-down" aria-hidden="true"></i></div>
 									<ul>
 										<li class="item_filter_btn" data-filter="*">All</li>
 										<li class="item_filter_btn" data-filter=".hot">Hot</li>
@@ -68,27 +70,27 @@
 					<!-- Product -->
 					<div class="col-xl-4 col-md-6 grid-item new">
 						<div class="product">
-							<div class="product_image"><img src="files/img/cpu-cooler.jpg" alt=""></div>
+							<div class="product_image"><img src="files/img/Cooler Master Masterliquid ML120L RGB.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_info d-flex flex-row align-items-start justify-content-start">
 									<div>
 										<div>
-											<div class="product_name"><a href="product.html">Cpu Cooler</a></div>
-											<div class="product_category"> <a href="category.html">Gameplay</a></div>
+											<div class="product_name"><a href="?controller=Cobaltech&method=product">Cpu Cooler</a></div>
+											<!-- <div class="product_category"> <a href="category.html">Gameplay</a></div> -->
 										</div>
 									</div>
 									<div class="ml-auto text-right">
-										<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
-										<div class="product_price text-right">$497.000<span></span></div>
+										<!-- <div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div> -->
+										<div class="product_price text-right">$497.000</div>
 									</div>
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>
@@ -114,11 +116,11 @@
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>
@@ -144,11 +146,11 @@
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>
@@ -174,11 +176,11 @@
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>
@@ -204,11 +206,11 @@
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>
@@ -235,11 +237,11 @@
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>
@@ -266,11 +268,11 @@
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>
@@ -297,11 +299,11 @@
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>
@@ -328,11 +330,11 @@
 								</div>
 								<div class="product_buttons">
 									<div class="text-right d-flex flex-row align-items-start justify-content-start">
-										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+										<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-										</div>
+										</div> -->
 										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+											<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 										</div>
 									</div>
 								</div>

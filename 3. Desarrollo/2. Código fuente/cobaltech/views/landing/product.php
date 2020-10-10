@@ -102,7 +102,7 @@
 					<div class="col-lg-6 product_col">
 						<div class="product_info">
 							<div class="product_name">ACER SB220Q</div>
-							<!-- <div class="product_category">In <a href="category.html">Category</a></div> -->
+							<div class="product_category">en <a href="category.html">Categoría</a></div>
 							<!-- <div class="product_rating_container d-flex flex-row align-items-center justify-content-start">
 								<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
 								<div class="product_reviews">4.7 out of (3514)</div>
