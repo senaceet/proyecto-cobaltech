@@ -2,7 +2,7 @@
 
     class Producto extends DB{
         // listar productos
-        public function get_all(){
+        public function get_all($limit = ""){
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
@@ -13,7 +13,7 @@
                     WHERE producto.CategoriaId_categoria=categoria.Id_categoria
                     AND producto.MarcaId_marca=marca.Id_marca
                     AND producto.ProveedorId_proveedor=proveedor.Id_proveedor
-                    ORDER BY producto.Id_producto asc"
+                    ORDER BY producto.Id_producto asc $limit "
                 );
                 $query->execute();
                 return $query->fetchAll(PDO::FETCH_OBJ);

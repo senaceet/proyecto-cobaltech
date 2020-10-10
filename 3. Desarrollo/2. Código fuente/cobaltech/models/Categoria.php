@@ -16,6 +16,24 @@
             die($e->getMessage());
          }
       }
+      public function get_id($id){
+         try {
+            $query=parent::connect()->prepare(
+               "SELECT * 
+               FROM categoria WHERE Id_categoria = ?"
+            );
+            $query->bindParam(
+               1,
+               $id,
+               PDO::PARAM_STR
+            );
+            $query->execute();
+            return $query->fetch(PDO::FETCH_OBJ);
+         } 
+         catch (Exception $e) {
+            die($e->getMessage());
+         }
+      }
 
       // guardar categoría
       public function store_categoria(

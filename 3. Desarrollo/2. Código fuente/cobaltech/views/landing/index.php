@@ -184,20 +184,32 @@
                 <?php //$id=parent::show_id($_GET['Id_producto']); ?>
 
                 <!-- Product -->
+                
+            <?php 
+                 $productos= new Producto();
+                 $ps=$productos->get_all("LIMIT 9");
+                 
+
+                 foreach($ps as $p){
+            ?>
                 <div class="col-xl-4 col-md-6">
                     <div class="product">
-                        <div class="product_image"><img src="files/img/ACER SB220Q.jpg" alt="" ></div>
+                        <div class="product_image" style="height:250px;overflow:hidden"><img src="files/img/<?php echo $p->Imagen  ?>" alt=""></div>
                         <div class="product_content">
                             <div class="product_info d-flex flex-row align-items-start justify-content-start">
                                 <div>
                                     <div>
-                                        <div class="product_name"><a href="?controller=Cobaltech&method=product">ACER SB220Q
+                                        <div class="product_name"><a href="?controller=Cobaltech&method=product">
+                                        <?php echo $p->Nombre_producto  ?>
                                             </a></div>
-                                        <div class="product_category"><a href="category.html">Pcs</a></div>
+                                        <div class="product_category"><a href="category.html">
+                                        
+                                        <?php echo $p->Nombre_categoria  ?>
+                                        </a></div>
                                     </div>
                                 </div>
                                 <div class="ml-auto text-right">
-                                    <div class="product_price text-right">$493</div>
+                                    <div class="product_price text-right">$<?php echo $p->Precio  ?></div>
                                 </div>
                             </div>
                             <div class="product_buttons">
@@ -210,146 +222,9 @@
                         </div>
                     </div>
                 </div>
+                <?php  }  ?>
 
-                <!-- Product -->
-                <div class="col-xl-3 col-md-6">
-                    <div class="product">
-                        <div class="product_image"><img src="files/img/AMD Ryzen 3 2200G.jpg" alt=""></div>
-                        <div class="product_content">
-                            <div class="product_info d-flex flex-row align-items-start justify-content-start">
-                                <div>
-                                    <div>
-                                        <div class="product_name"><a href="product.html">AMD Ryzen 3 2200G
-                                                Radeon Vega 8 Am4 2018</a></div>
-                                        <div class="product_category"><a href="category.html">Gameplay</a></div>
-                                    </div>
-                                </div>
-                                <div class="ml-auto text-right">
-                                    <div class="product_price text-right">$361</div>
-                                </div>
-                            </div>
-                            <div class="product_buttons">
-                                <div class="text-right d-flex flex-row align-items-start justify-content-start">
-                                    <div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-                                        <div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product -->
-                <div class="col-xl-4 col-md-6">
-                    <div class="product">
-                        <div class="product_image"><img src="files/img/Asus VivoBook S15 X542UF.jpg" alt=""></div>
-                        <div class="product_content">
-                            <div class="product_info d-flex flex-row align-items-start justify-content-start">
-                                <div>
-                                    <div>
-                                        <div class="product_name"><a href="product.html">
-                                                Asus VivoBook S15 Core I5 1tb 8gb Full Hd+nvidia, Ram: DDR4 8GB</a></div>
-                                        <div class="product_category"> <a href="category.html">Pcs</a></div>
-                                    </div>
-                                </div>
-                                <div class="ml-auto text-right">
-                                    <div class="product_price text-right">$2</div>
-                                </div>
-                            </div>
-                            <div class="product_buttons">
-                                <div class="text-right d-flex flex-row align-items-start justify-content-start">
-                                    <div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-                                        <div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product -->
-                <div class="col-xl-4 col-md-6">
-                    <div class="product">
-                        <div class="product_image"><img src="files/img/Redragon KUMARA K552.jpg" alt=""></div>
-                        <div class="product_content">
-                            <div class="product_info d-flex flex-row align-items-start justify-content-start">
-                                <div>
-                                    <div>
-                                        <div class="product_name"><a href="product.html">Redragon KUMARA K552
-                                                Teclado mecánico para juegos con interruptores de</a></div>
-                                        <div class="product_category"> <a href="category.html">Perísfericos</a></div>
-                                    </div>
-                                </div>
-                                <div class="ml-auto text-right">
-                                    <div class="product_price text-right">$231</div>
-                                </div>
-                            </div>
-                            <div class="product_buttons">
-                                <div class="text-right d-flex flex-row align-items-start justify-content-start">
-                                    <div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-                                        <div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product -->
-                <div class="col-xl-4 col-md-6">
-                    <div class="product">
-                        <div class="product_image"><img src="files/img/SSD ADATA SB800.jpg" alt=""></div>
-                        <div class="product_content">
-                            <div class="product_info d-flex flex-row align-items-start justify-content-start">
-                                <div>
-                                    <div>
-                                        <div class="product_name"><a href="product.html">
-                                                SSD ADATA SB800Adata 480 Gb</a></div>
-                                        <div class="product_category"> <a href="category.html">Discos Duros</a></div>
-                                    </div>
-                                </div>
-                                <div class="ml-auto text-right">
-                                    <div class="product_price text-right">$309</div>
-                                </div>
-                            </div>
-                            <div class="product_buttons">
-                                <div class="text-right d-flex flex-row align-items-start justify-content-start">
-                                    <div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-                                        <div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product -->
-                <div class="col-xl-4 col-md-6">
-                    <div class="product">
-                        <div class="product_image"><img src="files/img/Evga X299 Dark.jpg" alt=""></div>
-                        <div class="product_content">
-                            <div class="product_info d-flex flex-row align-items-start justify-content-start">
-                                <div>
-                                    <div>
-                                        <div class="product_name"><a href="product.html">Evga X299 Dark
-                                                Lga 2066, Intel X299, Sata 6 Gb / S, Usb 3</a></div>
-                                        <div class="product_category"> <a href="category.html">Discos Duros</a></div>
-                                    </div>
-                                </div>
-                                <div class="ml-auto text-right">
-                                    <div class="product_price text-right">$450</div>
-                                </div>
-                            </div>
-                            <div class="product_buttons">
-                                <div class="text-right d-flex flex-row align-items-start justify-content-start">
-                                    <div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-                                        <div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
 
             </div>
             <div class="row load_more_row">
