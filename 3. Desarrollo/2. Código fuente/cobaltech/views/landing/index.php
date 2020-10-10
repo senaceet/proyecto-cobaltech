@@ -191,7 +191,7 @@
                             <div class="product_info d-flex flex-row align-items-start justify-content-start">
                                 <div>
                                     <div>
-                                        <div class="product_name"><a href="product.html">
+                                        <div class="product_name"><a href="?controller=Cobaltech&method=product">ACER SB220Q
                                             </a></div>
                                         <div class="product_category"><a href="category.html">Pcs</a></div>
                                     </div>

@@ -1,6 +1,7 @@
 <head>
-<link rel="stylesheet" type="text/css" href="styles/product.css">
-<link rel="stylesheet" type="text/css" href="styles/product_responsive.css">
+<!-- <link rel="stylesheet" type="text/css" href="assets/plugins/flexslider/flexslider.css"> -->
+<link rel="stylesheet" type="text/css" href="assets/css/product.css">
+<link rel="stylesheet" type="text/css" href="assets/css/product_responsive.css">
 </head>
 
 <!-- PRODUCT CONTENT -->
@@ -13,7 +14,7 @@
 
 			<div class="home_container d-flex flex-column align-items-center justify-content-end">
 				<div class="home_content text-center">
-					<div class="home_title">Productos</div>
+					<div class="home_title">Producto</div>
 					<div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
 						<ul class="d-flex flex-row align-items-start justify-content-start text-center">
 							<!-- <li><a href="?controller=cobaltech&method=index">Inicio</a></li> -->
@@ -33,7 +34,7 @@
 					
 					<!-- Product Image -->
 					<div class="col-lg-6">
-						<img src="images/product_image_1.jpg" />
+						<img src="files/img/ACER SB220Q.jpg" />
 						<!-- <div class="product_image_slider_container">
 							<div id="slider" class="flexslider">
 								<ul class="slides">
@@ -100,15 +101,15 @@
 					<!-- Product Info -->
 					<div class="col-lg-6 product_col">
 						<div class="product_info">
-							<div class="product_name">Cool Clothing with Brown Stripes</div>
-							<div class="product_category">In <a href="category.html">Category</a></div>
-							<div class="product_rating_container d-flex flex-row align-items-center justify-content-start">
+							<div class="product_name">ACER SB220Q</div>
+							<!-- <div class="product_category">In <a href="category.html">Category</a></div> -->
+							<!-- <div class="product_rating_container d-flex flex-row align-items-center justify-content-start">
 								<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
 								<div class="product_reviews">4.7 out of (3514)</div>
 								<div class="product_reviews_link"><a href="#">Reviews</a></div>
-							</div>
-							<div class="product_price">$3<span>.99</span></div>
-							<div class="product_size">
+							</div> -->
+							<div class="product_price">$3</div>
+							<!-- <div class="product_size">
 								<div class="product_size_title">Select Size</div>
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li>
@@ -136,17 +137,17 @@
 										<label for="radio_6">XXL</label>
 									</li>
 								</ul>
-							</div>
+							</div> -->
 							<div class="product_text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec consequat lorem. Maecenas elementum at diam consequat bibendum. Mauris iaculis fringilla ex, sit amet semper libero facilisis sit amet. Nunc ut aliquet metus. Praesent pulvinar justo sed velit tempus bibendum. Quisque dictum lorem id mi viverra, in auctor justo laoreet. Nam at massa malesuada, ullamcorper metus vel, consequat risus. Phasellus ultricies velit vel accumsan porta.</p>
 							</div>
 							<div class="product_buttons">
 								<div class="text-right d-flex flex-row align-items-start justify-content-start">
-									<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+									<!-- <div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
 										<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
-									</div>
+									</div> -->
 									<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-										<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										<div><div><img src="assets/img/icons/cart.svg" class="svg" alt=""><div>+</div></div></div>
 									</div>
 								</div>
 							</div>
@@ -158,7 +159,7 @@
 
 		<!-- Boxes -->
 
-		<div class="boxes">
+		<!-- <div class="boxes">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
@@ -181,4 +182,4 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
