@@ -33,11 +33,11 @@
 					
 					<!-- Product Image -->
 					<div class="col-lg-6">
-						<div class="product_image_slider_container">
+						<img src="images/product_image_1.jpg" />
+						<!-- <div class="product_image_slider_container">
 							<div id="slider" class="flexslider">
 								<ul class="slides">
 									<li>
-										<img src="images/product_image_1.jpg" />
 									</li>
 									<li>
 										<img src="images/product_image_1.jpg" />
@@ -94,7 +94,7 @@
 								<div class="fs_prev fs_nav disabled"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
 								<div class="fs_next fs_nav"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 
 					<!-- Product Info -->
