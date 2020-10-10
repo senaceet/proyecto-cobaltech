@@ -9,12 +9,8 @@
    <div class="super_overlay"></div>
             
       <!-- Home -->
-<<<<<<< HEAD
-      <!--<div class="home">-->
-=======
       <div class="home">
 
->>>>>>> 44e85d92742908f6a1a2e8de74ce42a9a11f3fcd
 			<div class="home_container d-flex flex-column align-items-center justify-content-end">
 				<div class="home_content text-center">
 					<div class="home_title">Categorías</div>
