@@ -16,6 +16,8 @@
             die($e->getMessage());
          }
       }
+
+      // ver categoria por id
       public function get_id($id){
          try {
             $query=parent::connect()->prepare(

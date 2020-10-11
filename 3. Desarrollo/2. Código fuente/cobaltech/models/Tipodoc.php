@@ -10,12 +10,36 @@
                     FROM tipo_documento "
                 );
                 $query->execute();
-                return  $query->fetchAll(PDO::FETCH_OBJ);
+                return  $query->fetchAll(PDO::FETCH_OBJ
+                );
             } 
             catch (Exception $e) {
                 die($e->getMessage());
             }
         }
+
+        // ver tipo de documento por ID
+        public function get_id(
+            $id
+            ){
+            try {
+                $query=parent::connect()->prepare(
+                    "SELECT *
+                    FROM tipo_documento
+                    WHERE Id_tipodoc=?"
+                );
+                $query->bindParam(
+                1,
+                $id,
+                PDO::PARAM_STR
+                );
+                $query->execute();
+                return $query->fetch(PDO::FETCH_OBJ);
+            } 
+            catch (Exception $e) {
+                die($e->getMessage());
+            }
+        }  
 
         // guardar tipo de documento
         public function store_tipodoc(

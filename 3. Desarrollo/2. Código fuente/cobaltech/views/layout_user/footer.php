@@ -8,11 +8,11 @@
 					<div class="row">
 
 						<!-- About -->
-						<div class="col-lg-4 footer_col">
+						<div class="col-lg-6 footer_col">
 							<div class="footer_about">
 								<div class="footer_logo">
-									<a href="#">
-										<div class="d-flex flex-row align-items-center justify-content-start">
+									<a href="?controller=Cobaltech&method=index">
+										<div class="d-flex flex-row align-items-center justify-content-center">
 											<div class="footer_logo_icon"><img src="assets/img/logos/logo-sm-2.png" alt=""></div>
 											<div>Cobaltech</div>
 										</div>
@@ -25,7 +25,7 @@
 						</div>
 
                   <!-- Footer Links -->
-						<div class="col-lg-4 footer_col">
+						<!-- <div class="col-lg-4 footer_col">
 							<div class="footer_menu">
 								<div class="footer_title">Soporte</div>
 								<ul class="footer_list">
@@ -46,24 +46,24 @@
 									</li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 
                   <!-- Footer Contact -->
-						<div class="col-lg-4 footer_col">
+						<div class="col-lg-6 footer_col">
 							<div class="footer_contact">
 								<!-- <div class="footer_social"> -->
-									<div class="footer_title">Redes Sociales</div>
-									<ul class="footer_social_list d-flex flex-row align-items-start justify-content-start">
-                              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                              <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									<div class="footer_title d-flex flex-row align-items-center justify-content-center">Redes Sociales</div>
+									<ul class="footer_social_list d-flex flex-row align-items-center justify-content-center">
+                              			<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              			<li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                              			<li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              			<li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 
-               </div>
+               		</div>
 				</div>
 			</div>
 			<div class="footer_bar">
@@ -71,9 +71,12 @@
 					<div class="row">
 						<div class="col">
 							<div class="footer_bar_content d-flex flex-md-row flex-column align-items-center justify-content-center">
-								<div class="copyright order-md-1 order-2"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+								<div class="copyright order-md-1 order-2">
+									Cobaltech - 2020 - CC BY 3.0 - Versión 1.0
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        			<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+                        			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</div>
 							</div>
 						</div>
 					</div>

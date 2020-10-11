@@ -17,6 +17,29 @@
             }
         }
 
+        // ver rol por ID
+        public function get_id(
+            $id
+            ){
+            try {
+                $query=parent::connect()->prepare(
+                    "SELECT *
+                    FROM rol
+                    WHERE Id_rol=?"
+                );
+                $query->bindParam(
+                    1,
+                    $id,
+                    PDO::PARAM_STR
+                );
+                $query->execute();
+                return $query->fetch(PDO::FETCH_OBJ);
+            } 
+            catch (Exception $e) {
+                die($e->getMessage());
+            }
+        }
+
         // guardar rol
         public function store_rol(
             $Tipo_rol

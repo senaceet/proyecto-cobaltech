@@ -11,10 +11,10 @@
                if($usuario->Contrasena==$_POST['contrasena'])
                {
                   $_SESSION['USUARIO']=$usuario; 
-                  header("location:?controller=cobaltech&method=admin");
+                  header("location:?controller=Cobaltech&method=admin");
                }
                else{
-                  header("location:?controller=cobaltech&method=login");
+                  header("location:?controller=Cobaltech&method=login");
                }
             }
       }
@@ -27,14 +27,14 @@
                            $_POST['RolId_rol'],
                            $_POST['CiudadId_ciudad'],
                            $_POST['Tipo_documentoId_tipodoc']);
-      header("location:?controller=cobaltech&method=index");
+      header("location:?controller=Cobaltech&method=index");
    }
 
         // destrucción de la sesión
         public function logout(){
             unset($_SESSION['USUARIO']);
             session_destroy();
-            header("location:?controller=cobaltech&method=index");
+            header("location:?controller=Cobaltech&method=index");
         }
 
     }

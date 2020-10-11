@@ -6,7 +6,7 @@ class DB{
         try{
             $pdo= new PDO(
                 'mysql:host=localhost;
-                dbname=cobaltech;
+                dbname=Cobaltech;
                 charset=utf8',
                 'root',
                 ''

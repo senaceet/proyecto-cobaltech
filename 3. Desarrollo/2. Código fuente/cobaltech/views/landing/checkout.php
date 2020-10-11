@@ -1,6 +1,6 @@
 <head>
-<link rel="stylesheet" type="text/css" href="styles/checkout.css">
-<link rel="stylesheet" type="text/css" href="styles/checkout_responsive.css">
+<link rel="stylesheet" type="text/css" href="assets/css/checkout.css">
+<link rel="stylesheet" type="text/css" href="assets/css/checkout_responsive.css">
 </head>
 
 <!-- CHECKOUT CONTENT -->
@@ -8,16 +8,16 @@
 <div class="super_container_inner">
    <div class="super_overlay"></div>
             
-      <!-- Home -->
-      <div class="home">
+      	<!-- Home -->
+      	<div class="home">
 
 			<div class="home_container d-flex flex-column align-items-center justify-content-end">
 				<div class="home_content text-center">
-					<div class="home_title">Checkout</div>
+					<div class="home_title">Finalizar compra</div>
 					<div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
 						<ul class="d-flex flex-row align-items-start justify-content-start text-center">
-							<li><a href="#">Home</a></li>
-							<li>Checkout</li>
+							<!-- <li><a href="#">Home</a></li>
+							<li>Checkout</li> -->
 						</ul>
 					</div>
 				</div>
@@ -33,65 +33,68 @@
 					<!-- Billing -->
 					<div class="col-lg-6">
 						<div class="billing">
-							<div class="checkout_title">Billing</div>
+							<div class="checkout_title">Facturación</div>
 							<div class="checkout_form_container">
 								<form action="#" id="checkout_form" class="checkout_form">
-									<div class="row">
-										<div class="col-lg-6">
+									<!-- <div class="row"> -->
+										<!-- <div class="col-lg-6"> -->
+										<div>
 											<!-- Name -->
-											<input type="text" id="checkout_name" class="checkout_input" placeholder="First Name" required="required">
+											<input type="text" id="checkout_name" class="checkout_input" placeholder="Nombres" required="required">
 										</div>
-										<div class="col-lg-6">
+										<!-- <div class="col-lg-6"> -->
+										<div>
 											<!-- Last Name -->
-											<input type="text" id="checkout_last_name" class="checkout_input" placeholder="Last Name" required="required">
+											<input type="text" id="checkout_last_name" class="checkout_input" placeholder="Apellidos" required="required">
 										</div>
-									</div>
-									<div>
+									<!-- </div> -->
+									<!-- <div> -->
 										<!-- Company -->
-										<input type="text" id="checkout_company" placeholder="Company" class="checkout_input">
-									</div>
-									<div>
+										<!-- <input type="text" id="checkout_company" placeholder="Compañia" class="checkout_input"> -->
+									<!-- </div> -->
+									<!-- <div> -->
 										<!-- Country -->
-										<select name="checkout_country" id="checkout_country" class="dropdown_item_select checkout_input" require="required">
+										<!-- <select name="checkout_country" id="checkout_country" class="dropdown_item_select checkout_input" require="required">
 											<option>Country</option>
 											<option>Lithuania</option>
 											<option>Sweden</option>
 											<option>UK</option>
 											<option>Italy</option>
 										</select>
-									</div>
-									<div>
-										<!-- Address -->
-										<input type="text" id="checkout_address" class="checkout_input" placeholder="Address Line 1" required="required">
-										<input type="text" id="checkout_address_2" class="checkout_input checkout_address_2" placeholder="Address Line 2" required="required">
-									</div>
-									<div>
-										<!-- Zipcode -->
-										<input type="text" id="checkout_zipcode" class="checkout_input" placeholder="Zip Code" required="required">
-									</div>
+									</div> -->
 									<div>
 										<!-- City / Town -->
-										<select name="checkout_city" id="checkout_city" class="dropdown_item_select checkout_input" require="required">
+										<input type="text" id="checkout_city" class="checkout_input" placeholder="Ciudad" required="required">
+										<!-- <select name="checkout_city" id="checkout_city" class="dropdown_item_select checkout_input" require="required">
 											<option>City / Town</option>
 											<option>City</option>
 											<option>City</option>
 											<option>City</option>
 											<option>City</option>
-										</select>
+										</select> -->
 									</div>
 									<div>
+										<!-- Address -->
+										<input type="text" id="checkout_address" class="checkout_input" placeholder="Dirección" required="required">
+										<!-- <input type="text" id="checkout_address_2" class="checkout_input checkout_address_2" placeholder="Address Line 2" required="required"> -->
+									</div>
+									<div>
+										<!-- Zipcode -->
+										<input type="text" id="checkout_zipcode" class="checkout_input" placeholder="Código postal" required="required">
+									</div>
+									<!-- <div> -->
 										<!-- Province -->
-										<select name="checkout_province" id="checkout_province" class="dropdown_item_select checkout_input" require="required">
+										<!-- <select name="checkout_province" id="checkout_province" class="dropdown_item_select checkout_input" require="required">
 											<option>Province</option>
 											<option>Province</option>
 											<option>Province</option>
 											<option>Province</option>
 											<option>Province</option>
 										</select>
-									</div>
+									</div> -->
 									<div>
 										<!-- Phone no -->
-										<input type="phone" id="checkout_phone" class="checkout_input" placeholder="Phone No." required="required">
+										<input type="phone" id="checkout_phone" class="checkout_input" placeholder="Teléfono" required="required">
 									</div>
 									<div>
 										<!-- Email -->
@@ -99,27 +102,27 @@
 									</div>
 									<div class="checkout_extra">
 										<ul>
-											<li class="billing_info d-flex flex-row align-items-center justify-content-start">
+											<!-- <li class="billing_info d-flex flex-row align-items-center justify-content-start">
 												<label class="checkbox_container">
 													<input type="checkbox" id="cb_1" name="billing_checkbox" class="billing_checkbox">
 													<span class="checkbox_mark"></span>
 													<span class="checkbox_text">Terms and conditions</span>
 												</label>
-											</li>
+											</li> -->
 											<li class="billing_info d-flex flex-row align-items-center justify-content-start">
 												<label class="checkbox_container">
 													<input type="checkbox" id="cb_2" name="billing_checkbox" class="billing_checkbox">
 													<span class="checkbox_mark"></span>
-													<span class="checkbox_text">Create an account</span>
+													<span class="checkbox_text">Actualizar mis datos</span>
 												</label>
 											</li>
-											<li class="billing_info d-flex flex-row align-items-center justify-content-start">
+											<!-- <li class="billing_info d-flex flex-row align-items-center justify-content-start">
 												<label class="checkbox_container">
 													<input type="checkbox" id="cb_3" name="billing_checkbox" class="billing_checkbox">
 													<span class="checkbox_mark"></span>
 													<span class="checkbox_text">Subscribe to our newsletter</span>
 												</label>
-											</li>
+											</li> -->
 										</ul>
 									</div>
 								</form>
@@ -131,51 +134,51 @@
 					<div class="col-lg-6 cart_col">
 						<div class="cart_total">
 							<div class="cart_extra_content cart_extra_total">
-								<div class="checkout_title">Cart Total</div>
+								<div class="checkout_title">Total Carrito de Compras</div>
 								<ul class="cart_extra_total_list">
-									<li class="d-flex flex-row align-items-center justify-content-start">
+									<!-- <li class="d-flex flex-row align-items-center justify-content-start">
 										<div class="cart_extra_total_title">Subtotal</div>
 										<div class="cart_extra_total_value ml-auto">$29.90</div>
 									</li>
 									<li class="d-flex flex-row align-items-center justify-content-start">
 										<div class="cart_extra_total_title">Shipping</div>
 										<div class="cart_extra_total_value ml-auto">Free</div>
-									</li>
+									</li> -->
 									<li class="d-flex flex-row align-items-center justify-content-start">
 										<div class="cart_extra_total_title">Total</div>
 										<div class="cart_extra_total_value ml-auto">$29.90</div>
 									</li>
 								</ul>
 								<div class="payment_options">
-									<div class="checkout_title">Payment</div>
+									<div class="checkout_title">Método de pago</div>
 									<ul>
 										<li class="shipping_option d-flex flex-row align-items-center justify-content-start">
 											<label class="radio_container">
 												<input type="radio" id="radio_1" name="payment_radio" class="payment_radio">
 												<span class="radio_mark"></span>
-												<span class="radio_text">Paypal</span>
+												<span class="radio_text">Eféctivo contra-entrega</span>
 											</label>
 										</li>
 										<li class="shipping_option d-flex flex-row align-items-center justify-content-start">
 											<label class="radio_container">
 												<input type="radio" id="radio_2" name="payment_radio" class="payment_radio">
 												<span class="radio_mark"></span>
-												<span class="radio_text">Cash on Delivery</span>
+												<span class="radio_text">Tarjeta débito</span>
 											</label>
 										</li>
 										<li class="shipping_option d-flex flex-row align-items-center justify-content-start">
 											<label class="radio_container">
 												<input type="radio" id="radio_3" name="payment_radio" class="payment_radio" checked>
 												<span class="radio_mark"></span>
-												<span class="radio_text">Credit Card</span>
+												<span class="radio_text">Tarjeta crédito</span>
 											</label>
 										</li>
 									</ul>
 								</div>
-								<div class="cart_text">
+								<!-- <div class="cart_text">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integ er bibendum sodales arcu id te mpus. Ut consectetur lacus.</p>
-								</div>
-								<div class="checkout_button trans_200"><a href="checkout.html">place order</a></div>
+								</div> -->
+								<div class="checkout_button trans_200"><a href="#">Procesar orden</a></div>
 							</div>
 						</div>
 					</div>

@@ -17,6 +17,29 @@
          }
       }
 
+      // ver estado del envío por ID
+      public function get_id(
+         $id
+         ){
+         try {
+            $query=parent::connect()->prepare(
+               "SELECT *
+               FROM estado_envio
+               WHERE Id_estado_envio=?"
+            );
+            $query->bindParam(
+               1,
+               $id,
+               PDO::PARAM_STR
+            );
+            $query->execute();
+            return $query->fetch(PDO::FETCH_OBJ);
+         } 
+         catch (Exception $e) {
+            die($e->getMessage());
+         }
+      }
+
       // guardar estado de envío
       public function store_estado_envio(
          $Estado_envio

@@ -45,6 +45,29 @@
          }  
       }
 
+      // ver usuario por ID
+      public function get_id(
+         $id
+         ){
+         try {
+            $query=parent::connect()->prepare(
+               "SELECT *
+               FROM usuario
+               WHERE Id_usuario=?"
+            );
+            $query->bindParam(
+               1,
+               $id,
+               PDO::PARAM_STR
+            );
+            $query->execute();
+            return $query->fetch(PDO::FETCH_OBJ);
+         } 
+         catch (Exception $e) {
+            die($e->getMessage());
+         }
+      }
+
       // crear usuario
       public function store_usuario(
          $Doc_usuario,

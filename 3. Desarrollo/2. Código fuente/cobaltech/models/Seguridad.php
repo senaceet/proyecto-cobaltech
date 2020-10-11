@@ -5,7 +5,7 @@
         // validación de sesión
         public function validar() {
             if(empty($_SESSION['USUARIO'])){
-                header("location:?controller=cobaltech&method=login");
+                header("location:?controller=Cobaltech&method=login");
             }
         }
 

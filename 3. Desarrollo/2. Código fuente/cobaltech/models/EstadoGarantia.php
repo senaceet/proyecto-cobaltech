@@ -17,6 +17,29 @@
          }
       }
 
+      // ver estado de la garantía por ID
+      public function get_id(
+         $id
+         ){
+         try {
+            $query=parent::connect()->prepare(
+               "SELECT *
+               FROM estado_garantia
+               WHERE Id_estado_garantia=?"
+            );
+            $query->bindParam(
+               1,
+               $id,
+               PDO::PARAM_STR
+            );
+            $query->execute();
+            return $query->fetch(PDO::FETCH_OBJ);
+         } 
+         catch (Exception $e) {
+            die($e->getMessage());
+         }
+      }
+
       // guardar estado de garantía
       public function store_estado_garantia(){
          try {

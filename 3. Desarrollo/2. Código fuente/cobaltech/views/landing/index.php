@@ -22,18 +22,51 @@
                             <div class="col fill_height">
                                 <div class="home_container d-flex flex-column align-items-center justify-content-start">
                                     <div class="home_content">
-                                        <div class="home_title"><h1>Ofertas</h1></div>
-                                        <!-- <div class="home_subtitle">Summer Wear</div> -->
-                                        <div class="home_items">
-                                            <div class="row">
-                                                <div class="col-sm-3 offset-lg-1">
+                                        <a href="?controller=Cobaltech&method=product">
+                                            <div class="home_title"><h1>Oferta 1</h1></div>
+                                            <!-- <div class="home_subtitle">Summer Wear</div> -->
+                                            <div class="home_items">
+                                                <div class="row">
+                                                    <div class="col-sm-3 offset-lg-1">
+                                                    </div>
+                                                    <div class="col-lg-8 offset-md-2">
+                                                            <div class="product_image"><img src="files/img/oferta 2.jpg" alt="">
+                                                            </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-8 offset-md-2">
-                                                        <div class="product_image"><img src="files/img/oferta 2.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home_item_side">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide -->
+                <div class="owl-item">
+                    <div class="background_image" style="background-image:url(assets/img/background/background.png); opacity:0.8"></div>
+                    <div class="container fill_height">
+                        <div class="row fill_height">
+                            <div class="col fill_height">
+                                <div class="home_container d-flex flex-column align-items-center justify-content-start">
+                                    <div class="home_content">
+                                        <a href="?controller=Cobaltech&method=product">
+                                            <div class="home_title"><h1>Oferta 2</h1></div>
+                                            <!-- <div class="home_subtitle">Summer Wear</div> -->
+                                            <div class="home_items">
+                                                <div class="row">
+                                                    <div class="col-sm-3 offset-lg-1">
+                                                    </div>
+                                                    <div class="col-lg-8 offset-md-2">
+                                                        <div class="product_image"><img src="files/img/oferta 3.jpg" alt="">
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="home_item_side">
                                     </div>
@@ -51,18 +84,20 @@
                             <div class="col fill_height">
                                 <div class="home_container d-flex flex-column align-items-center justify-content-start">
                                     <div class="home_content">
-                                        <div class="home_title"><h1>Popular</h1></div>
-                                        <!-- <div class="home_subtitle">Summer Wear</div> -->
-                                        <div class="home_items">
-                                            <div class="row">
-                                                <div class="col-sm-3 offset-lg-1">
-                                                </div>
-                                                <div class="col-lg-8 offset-md-2">
-                                                    <div class="product_image"><img src="files/img/oferta 3.jpg" alt="">
+                                        <a href="?controller=Cobaltech&method=product">
+                                            <div class="home_title"><h1>Oferta 3</h1></div>
+                                            <!-- <div class="home_subtitle">Summer Wear</div> -->
+                                            <div class="home_items">
+                                                <div class="row">
+                                                    <div class="col-sm-3 offset-lg-1">
+                                                    </div>
+                                                    <div class="col-lg-8 offset-md-2">
+                                                        <div class="product_image"><img src="files/img/oferta.jpg" alt="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="home_item_side">
                                     </div>
@@ -80,47 +115,20 @@
                             <div class="col fill_height">
                                 <div class="home_container d-flex flex-column align-items-center justify-content-start">
                                     <div class="home_content">
-                                        <div class="home_title"><h1>Ofertas 2</h1></div>
-                                        <!-- <div class="home_subtitle">Summer Wear</div> -->
-                                        <div class="home_items">
-                                            <div class="row">
-                                                <div class="col-sm-3 offset-lg-1">
-                                                </div>
-                                                <div class="col-lg-8 offset-md-2">
-                                                    <div class="product_image"><img src="files/img/oferta.jpg" alt="">
+                                        <a href="?controller=Cobaltech&method=product">
+                                            <div class="home_title"><h1>Oferta 4</h1></div>
+                                            <!-- <div class="home_subtitle">Summer Wear</div> -->
+                                            <div class="home_items">
+                                                <div class="row">
+                                                    <div class="col-sm-3 offset-lg-1">
+                                                    </div>
+                                                    <div class="col-lg-8 offset-md-2">
+                                                        <div class="product_image"><img src="files/img/oferta 3.jpg" alt="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="home_item_side">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide -->
-                <div class="owl-item">
-                    <div class="background_image" style="background-image:url(assets/img/background/background.png); opacity:0.8"></div>
-                    <div class="container fill_height">
-                        <div class="row fill_height">
-                            <div class="col fill_height">
-                                <div class="home_container d-flex flex-column align-items-center justify-content-start">
-                                    <div class="home_content">
-                                        <div class="home_title"><h1>Ofertas</h1></div>
-                                        <!-- <div class="home_subtitle">Summer Wear</div> -->
-                                        <div class="home_items">
-                                            <div class="row">
-                                                <div class="col-sm-3 offset-lg-1">
-                                                </div>
-                                                <div class="col-lg-8 offset-md-2">
-                                                    <div class="product_image"><img src="files/img/oferta 2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="home_item_side">
                                     </div>
@@ -181,35 +189,34 @@
             </div>
             <div class="row products_row">
 
-                <?php //$id=parent::show_id($_GET['Id_producto']); ?>
-
                 <!-- Product -->
                 
             <?php 
                  $productos= new Producto();
-                 $ps=$productos->get_all("LIMIT 9");
-                 
-
+                 $ps=$productos->get_all("LIMIT 6");
                  foreach($ps as $p){
             ?>
                 <div class="col-xl-4 col-md-6">
                     <div class="product">
-                        <div class="product_image" style="height:250px;overflow:hidden"><img src="files/img/<?php echo $p->Imagen  ?>" alt=""></div>
+                        <div class="product_image" style="height:250px;overflow:hidden">
+                            <img src="files/img/<?php echo $p->Imagen ?>" alt="">
+                        </div>
                         <div class="product_content">
                             <div class="product_info d-flex flex-row align-items-start justify-content-start">
                                 <div>
                                     <div>
                                         <div class="product_name"><a href="?controller=Cobaltech&method=product">
-                                        <?php echo $p->Nombre_producto  ?>
-                                            </a></div>
+                                            <?php echo $p->Nombre_producto ?>
+                                        </a></div>
                                         <div class="product_category"><a href="category.html">
-                                        
-                                        <?php echo $p->Nombre_categoria  ?>
+                                            <?php echo $p->Nombre_categoria ?>
                                         </a></div>
                                     </div>
                                 </div>
                                 <div class="ml-auto text-right">
-                                    <div class="product_price text-right">$<?php echo $p->Precio  ?></div>
+                                    <div class="product_price text-right">
+                                        $<?php echo $p->Precio ?>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product_buttons">
@@ -222,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-                <?php  }  ?>
+            <?php } ?>
 
                 
 

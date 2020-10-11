@@ -40,11 +40,11 @@
                   <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
                    <nav class="main_nav">
                        <ul class="d-flex flex-row align-items-start justify-content-start">
-                           <li class="active"><a href="?controller=cobaltech&method=category">Accesorios</a></li>
-                           <li><a href="?controller=cobaltech&method=category">Almacenamiento</a></li>
-                           <li><a href="?controller=cobaltech&method=category">Componentes</a></li>
-                           <li><a href="?controller=cobaltech&method=category">Computadores</a></li>
-                           <li><a href="?controller=cobaltech&method=category">Perifericos</a></li>
+                           <li class="active"><a href="?controller=Cobaltech&method=category">Accesorios</a></li>
+                           <li><a href="?controller=Cobaltech&method=category">Almacenamiento</a></li>
+                           <li><a href="?controller=Cobaltech&method=category">Componentes</a></li>
+                           <li><a href="?controller=Cobaltech&method=category">Computadores</a></li>
+                           <li><a href="?controller=Cobaltech&method=category">Perifericos</a></li>
                        </ul>
                    </nav>
 

@@ -17,7 +17,7 @@
 					<div class="home_title">Producto</div>
 					<div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
 						<ul class="d-flex flex-row align-items-start justify-content-start text-center">
-							<!-- <li><a href="?controller=cobaltech&method=index">Inicio</a></li> -->
+							<!-- <li><a href="?controller=Cobaltech&method=index">Inicio</a></li> -->
 							<!-- <li><a href="category.html">Woman</a></li> -->
 							<!-- <li>New Products</li> -->
 						</ul>

@@ -52,7 +52,7 @@
                                         <div><div class="product_number">1</div></div>
                                         <div><div class="product_image"><img src="files/img/ACER SB220Q.jpg" alt=""></div></div>
                                         <div class="product_name_container">
-                                            <div class="product_name"><a href="product.html">Cool Flufy Clothing without Stripes</a></div>
+                                            <div class="product_name"><a href="?controller=Cobaltech&method=product">Monitor ACER SB220Q</a></div>
                                             <!-- <div class="product_text">Second line for additional info</div> -->
                                         </div>
                                     </div>
@@ -74,8 +74,8 @@
                         <!-- Cart Buttons -->
                         <div class="cart_buttons d-flex flex-row align-items-start justify-content-start">
                             <div class="cart_buttons_inner ml-sm-auto d-flex flex-row align-items-start justify-content-start flex-wrap">
-                                <div class="button button_clear trans_200"><a href="categories.html">Limpiar carrito</a></div>
-                                <div class="button button_continue trans_200"><a href="categories.html">Continuar comprando</a></div>
+                                <div class="button button_clear trans_200"><a href="#">Limpiar carrito</a></div>
+                                <div class="button button_continue trans_200"><a href="?controller=Cobaltech&method=index">Continuar comprando</a></div>
                                 
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                     <div class="cart_extra_total_value ml-auto">$29.90</div>
                                 </li>
                             </ul>
-                            <div class="checkout_button trans_200"><a href="checkout.html">Procesar pago</a></div>
+                            <div class="checkout_button trans_200"><a href="?controller=Cobaltech&method=checkout">Procesar pago</a></div>
                         </div>
                     </div>
                 </div>

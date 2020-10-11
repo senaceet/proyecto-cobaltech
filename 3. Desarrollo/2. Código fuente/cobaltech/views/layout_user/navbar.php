@@ -19,11 +19,11 @@
             </ul>
         <?php } */ ?>
        <ul>
-          <li><a href="?controller=cobaltech&method=category">Accesorios</a></li>
-          <li><a href="?controller=cobaltech&method=category">Almacenamiento</a></li>
-          <li><a href="?controller=cobaltech&method=category">Componentes</a></li>
-          <li><a href="?controller=cobaltech&method=category">Computadores</a></li>
-          <li><a href="?controller=cobaltech&method=category">Perifericos</a></li>
+          <li><a href="?controller=Cobaltech&method=category">Accesorios</a></li>
+          <li><a href="?controller=Cobaltech&method=category">Almacenamiento</a></li>
+          <li><a href="?controller=Cobaltech&method=category">Componentes</a></li>
+          <li><a href="?controller=Cobaltech&method=category">Computadores</a></li>
+          <li><a href="?controller=Cobaltech&method=category">Perifericos</a></li>
        </ul>
     </div>
 
