@@ -27,7 +27,7 @@
                            $_POST['RolId_rol'],
                            $_POST['CiudadId_ciudad'],
                            $_POST['Tipo_documentoId_tipodoc']);
-      header("location:?controller=Cobaltech&method=index&process=Se ha registrado correctamente");
+      header("location:?controller=Cobaltech&method=index&process=Tu usuario se ha registrado correctamente");
 
    }
 
