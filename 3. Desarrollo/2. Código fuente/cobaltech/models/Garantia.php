@@ -7,11 +7,11 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
-                    FROM garantia 
-                    INNER JOIN factura 
-                    INNER JOIN estado_garantia
-                    WHERE garantia.FacturaId_factura=factura.Id_factura
-                    AND garantia.Estado_garantiaId_estado_garantia=estado_garantia.Id_estado_garantia"
+                    FROM Garantia 
+                    INNER JOIN Factura 
+                    INNER JOIN Estado_garantia
+                    WHERE Garantia.FacturaId_factura=Factura.Id_factura
+                    AND Garantia.Estado_garantiaId_estado_garantia=Estado_garantia.Id_estado_garantia"
                 );
                 $query->execute();
                 return  $query->fetchAll(PDO::FETCH_OBJ);
@@ -28,7 +28,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "UPDATE garantia 
+                    "UPDATE Garantia 
                     SET Estado_garantiaId_estado_garantia= ? 
                     WHERE Id_garantia= ? "
                 );
@@ -54,7 +54,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
-                    FROM garantia 
+                    FROM Garantia 
                     WHERE Id_garantia= ?"
                 );
                 $query->bindParam(

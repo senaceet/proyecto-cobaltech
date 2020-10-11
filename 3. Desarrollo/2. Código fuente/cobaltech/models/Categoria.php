@@ -7,7 +7,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM categoria"
+               FROM Categoria"
             );
             $query->execute();
             return $query->fetchAll(PDO::FETCH_OBJ);
@@ -22,7 +22,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM categoria WHERE Id_categoria = ?"
+               FROM Categoria WHERE Id_categoria = ?"
             );
             $query->bindParam(
                1,
@@ -43,7 +43,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "INSERT INTO categoria (Nombre_categoria) 
+               "INSERT INTO Categoria (Nombre_categoria) 
                VALUES (?)"
             );
             $query->bindParam(
@@ -64,7 +64,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "DELETE FROM categoria 
+               "DELETE FROM Categoria 
                WHERE Id_categoria=?"
             );
             $query->bindParam(
@@ -86,7 +86,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "UPDATE categoria 
+               "UPDATE Categoria 
                SET Nombre_categoria= ? 
                WHERE Id_categoria= ?"
             ); 

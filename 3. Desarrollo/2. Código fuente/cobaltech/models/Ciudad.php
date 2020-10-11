@@ -7,7 +7,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM ciudad"
+               FROM Ciudad"
             );
             $query->execute();
             return $query->fetchAll(PDO::FETCH_OBJ);
@@ -24,7 +24,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT *
-               FROM ciudad
+               FROM Ciudad
                WHERE Id_ciudad=?"
             );
             $query->bindParam(
@@ -46,7 +46,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "INSERT INTO ciudad (Nombre_ciudad) 
+               "INSERT INTO Ciudad (Nombre_ciudad) 
                VALUES (?)"
             );
             $query->bindParam(
@@ -67,7 +67,7 @@
          ){
          try {
             $query= parent::connect()->prepare(
-               "DELETE FROM ciudad 
+               "DELETE FROM Ciudad 
                WHERE Id_ciudad=?"
             );
             $query->bindParam(
@@ -89,7 +89,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "UPDATE ciudad 
+               "UPDATE Ciudad 
                SET Nombre_ciudad = ? 
                WHERE Id_ciudad = ?"
             ); 
