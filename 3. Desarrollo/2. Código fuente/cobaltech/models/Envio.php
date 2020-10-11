@@ -7,12 +7,12 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM envio 
-               INNER JOIN factura 
-               INNER JOIN estado_envio
-               WHERE envio.FacturaId_factura=factura.Id_factura
-               AND envio.Estado_envioId_estado_envio=estado_envio.Id_estado_envio
-               ORDER BY envio.Id_envio asc"
+               FROM Envio 
+               INNER JOIN Factura 
+               INNER JOIN Estado_envio
+               WHERE Envio.FacturaId_factura=Factura.Id_factura
+               AND Envio.Estado_envioId_estado_envio=Estado_envio.Id_estado_envio
+               ORDER BY Envio.Id_envio asc"
             );
             $query->execute();
             return  $query->fetchAll(PDO::FETCH_OBJ);
@@ -29,7 +29,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "UPDATE envio 
+               "UPDATE Envio 
                SET Estado_envioId_estado_envio= ? 
                WHERE Id_envio= ? "
             );
@@ -57,7 +57,7 @@
          try {
             $query= parent::connect()->prepare(
                "SELECT * 
-               FROM envio 
+               FROM Envio 
                WHERE Id_envio = ?"
             );
             $query->bindParam(

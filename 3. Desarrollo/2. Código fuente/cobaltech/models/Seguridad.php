@@ -21,7 +21,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "INSERT INTO usuario (
+               "INSERT INTO Usuario (
                   Primer_nombre,
                   Primer_apellido,
                   Correo_electronico,

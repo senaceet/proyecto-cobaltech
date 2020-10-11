@@ -7,7 +7,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT *
-               FROM estado_garantia"
+               FROM Estado_garantia"
             );
             $query->execute();
             return $query->fetchAll(PDO::FETCH_OBJ);
@@ -24,7 +24,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT *
-               FROM estado_garantia
+               FROM Estado_garantia
                WHERE Id_estado_garantia=?"
             );
             $query->bindParam(
@@ -44,7 +44,7 @@
       public function store_estado_garantia(){
          try {
             $query=parent::connect()->prepare(
-               "INSERT INTO estado_garantia (Estado_garantia)
+               "INSERT INTO Estado_garantia (Estado_garantia)
                VALUES (?)"
             );
             $query->bindParam(
@@ -65,7 +65,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "DELETE FROM estado_garantia
+               "DELETE FROM Estado_garantia
                WHERE Id_estado_garantia = ?"
             );
             $query->bindParam(
@@ -87,7 +87,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "UPDATE estado_garantia
+               "UPDATE Estado_garantia
                SET Estado_garantia = ?
                WHERE Id_estado_garantia = ?"
             ); 
