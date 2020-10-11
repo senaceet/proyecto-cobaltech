@@ -9,7 +9,6 @@
 
     <!-- Home -->
     <div class="home">
-
         <!-- Home Slider -->
         <div class="home_slider_container">
             <div class="owl-carousel owl-theme home_slider">
@@ -22,7 +21,12 @@
                             <div class="col fill_height">
                                 <div class="home_container d-flex flex-column align-items-center justify-content-start">
                                     <div class="home_content">
-                                        <a href="?controller=Cobaltech&method=product">
+                                    <?php  if(isset($_GET['process'])){ ?>
+               <button class="alert alert-success"> 
+                  <?php echo $_GET['process'] ?>
+               </button>
+            <?php } ?>
+                                       <a href="?controller=Cobaltech&method=product">
                                             <div class="home_title"><h1>Oferta 1</h1></div>
                                             <!-- <div class="home_subtitle">Summer Wear</div> -->
                                             <div class="home_items">
