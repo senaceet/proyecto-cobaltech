@@ -7,7 +7,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
-                    FROM marca"
+                    FROM Marca"
                 );
                 $query->execute();
                 return $query->fetchAll(PDO::FETCH_OBJ);
@@ -24,7 +24,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT *
-                    FROM marca
+                    FROM Marca
                       WHERE Id_marca=?"
                 );
                 $query->bindParam(
@@ -46,7 +46,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "INSERT INTO marca (Nombre_marca) 
+                    "INSERT INTO Marca (Nombre_marca) 
                     VALUES (?)"
                 );
                 $query->bindParam(
@@ -67,7 +67,7 @@
             ){
             try{
                 $query=parent::connect()->prepare(
-                    "DELETE FROM marca 
+                    "DELETE FROM Marca 
                     WHERE Id_marca=?"
                 );
                 $query->bindParam(
@@ -86,7 +86,7 @@
         public function update_marca($id,$Nombre_marca){
             try {
                 $query=parent::connect()->prepare(
-                    "UPDATE marca 
+                    "UPDATE Marca 
                     SET Nombre_marca = ? 
                     WHERE Id_marca = ?"
                 );

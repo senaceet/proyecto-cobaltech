@@ -7,7 +7,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM factura 
+               FROM Factura 
                INNER JOIN usuario 
                INNER JOIN producto
                WHERE factura.UsuarioId_usuario=usuario.Id_usuario
@@ -29,7 +29,7 @@
          try {
             $query= parent::connect()->prepare(
                "SELECT * 
-               FROM factura 
+               FROM Factura 
                WHERE Id_factura = ?"
             );
             $query->bindParam(

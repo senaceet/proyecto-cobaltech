@@ -7,7 +7,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
-                    FROM proveedor"
+                    FROM Proveedor"
                 );
                 $query->execute();
                 return $query->fetchAll(PDO::FETCH_OBJ);
@@ -24,7 +24,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT *
-                    FROM proveedor
+                    FROM Proveedor
                     WHERE Id_proveedor=?"
                 );
                 $query->bindParam(
@@ -56,7 +56,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "INSERT INTO proveedor (
+                    "INSERT INTO Proveedor (
                         Id_proveedor,
                         Razon_social,
                         Contacto,
@@ -138,7 +138,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "DELETE FROM proveedor 
+                    "DELETE FROM Proveedor 
                     WHERE Id_proveedor=?"
                 );
                 $query->bindParam(
@@ -160,7 +160,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "UPDATE proveedor 
+                    "UPDATE Proveedor 
                     SET Razon_social = ? 
                     WHERE Id_proveedor= ?"
                 ); 
@@ -186,7 +186,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
-                    FROM proveedor 
+                    FROM Proveedor 
                     WHERE Id_proveedor= ?"
                 );
                 $query->bindParam(

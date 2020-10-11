@@ -11,11 +11,11 @@
                   Tarjeta_creditoId_tarjeta_credito,
                   Tarjeta_debitoId_tarjeta_debito,
                   EfectivoId_efectivo
-               FROM pago p,
-                  factura f,
-                  tarjeta_credito tc,
-                  tarjeta_debito td,
-                  efectivo e
+               FROM Pago p,
+                  Factura f,
+                  Tarjeta_credito tc,
+                  Tarjeta_debito td,
+                  Efectivo e
                WHERE p.FacturaId_factura=f.Id_factura
                AND (p.Tarjeta_creditoId_tarjeta_credito=tc.Id_tarjeta_credito
                OR p.Tarjeta_debitoId_tarjeta_debito=td.Id_tarjeta_debito
@@ -37,7 +37,7 @@
          try {
             $query= parent::connect()->prepare(
                "SELECT * 
-               FROM pago 
+               FROM Pago 
                WHERE Id_pago = ?"
             );
             $query->bindParam(

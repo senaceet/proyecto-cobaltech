@@ -7,7 +7,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM estado_envio"
+               FROM Estado_envio"
             );
             $query->execute();
             return  $query->fetchAll(PDO::FETCH_OBJ);
@@ -24,7 +24,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT *
-               FROM estado_envio
+               FROM Estado_envio
                WHERE Id_estado_envio=?"
             );
             $query->bindParam(
@@ -68,7 +68,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "UPDATE estado_envio 
+               "UPDATE Estado_envio 
                SET Estado_envio = ? 
                WHERE Id_estado_envio = ?"
             ); 
@@ -95,7 +95,7 @@
          ){
          try{
             $query=parent::connect()->prepare(
-               "DELETE FROM estado_envio
+               "DELETE FROM Estado_envio
                WHERE Id_estado_envio=?"
             );
             $query->bindParam(

@@ -10,7 +10,7 @@ class Cobaltech extends DB{
       try {
          $query=parent::connect()->prepare(
             "SELECT Nombre_categoria
-            FROM categoria"
+            FROM Categoria"
          );
          $query->execute();
          return $query->fetchAll(PDO::FETCH_OBJ);

@@ -7,7 +7,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM efectivo"
+               FROM Efectivo"
             );
             $query->execute();
             return $query->fetchAll(PDO::FETCH_OBJ);
@@ -24,7 +24,7 @@
          try {
             $query= parent::connect()->prepare(
                "SELECT * 
-               FROM efectivo 
+               FROM Efectivo 
                WHERE Id_efectivo = ?"
             );
             $query->bindParam(

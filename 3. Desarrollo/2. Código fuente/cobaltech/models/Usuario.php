@@ -7,7 +7,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM usuario 
+               FROM Usuario 
                WHERE correo_electronico = ?"
             );
             $query->bindParam(
@@ -28,14 +28,14 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM usuario 
-               INNER JOIN tipo_documento 
-               INNER JOIN ciudad 
-               INNER JOIN rol
-               WHERE usuario.Tipo_documentoId_tipodoc=tipo_documento.Id_tipodoc 
-               AND usuario.CiudadId_ciudad=ciudad.Id_ciudad
-               AND usuario.RolId_rol=rol.Id_rol
-               ORDER BY usuario.Id_usuario desc"
+               FROM Usuario 
+               INNER JOIN Tipo_documento 
+               INNER JOIN Ciudad 
+               INNER JOIN Rol
+               WHERE Usuario.Tipo_documentoId_tipodoc=Tipo_documento.Id_tipodoc 
+               AND Usuario.CiudadId_ciudad=Ciudad.Id_ciudad
+               AND usuario.RolId_rol=Rol.Id_rol
+               ORDER BY Usuario.Id_usuario desc"
             );
             $query->execute();
             return  $query->fetchAll(PDO::FETCH_OBJ);
@@ -52,7 +52,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT *
-               FROM usuario
+               FROM Usuario
                WHERE Id_usuario=?"
             );
             $query->bindParam(
@@ -86,7 +86,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "INSERT INTO usuario (
+               "INSERT INTO Usuario (
                   Doc_usuario,
                   Primer_nombre,
                   Segundo_nombre,
@@ -180,7 +180,7 @@
          ){
          try {
             $p= parent::connect()->prepare(
-               "DELETE FROM usuario 
+               "DELETE FROM Usuario 
                WHERE Id_usuario=?"
             );
             $p->bindParam(
@@ -213,7 +213,7 @@
          ){
          try {
             $query=parent::connect()->prepare(
-               "UPDATE usuario
+               "UPDATE Usuario
                SET Doc_usuario=?,
                Primer_nombre=?,
                Segundo_nombre=?,
@@ -312,7 +312,7 @@
          try {
             $query=parent::connect()->prepare(
                "SELECT * 
-               FROM usuario 
+               FROM Usuario 
                WHERE Id_usuario= ?"
             );
             $query->bindParam(

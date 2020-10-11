@@ -6,14 +6,14 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
-                    FROM producto 
-                    INNER JOIN categoria 
-                    INNER JOIN marca 
-                    INNER JOIN proveedor
-                    WHERE producto.CategoriaId_categoria=categoria.Id_categoria
-                    AND producto.MarcaId_marca=marca.Id_marca
-                    AND producto.ProveedorId_proveedor=proveedor.Id_proveedor
-                    ORDER BY producto.Id_producto asc $limit "
+                    FROM Producto 
+                    INNER JOIN Categoria 
+                    INNER JOIN Marca 
+                    INNER JOIN Proveedor
+                    WHERE Producto.CategoriaId_categoria=Categoria.Id_categoria
+                    AND Producto.MarcaId_marca=Marca.Id_marca
+                    AND Producto.ProveedorId_proveedor=Proveedor.Id_proveedor
+                    ORDER BY Producto.Id_producto asc $limit "
                 );
                 $query->execute();
                 return $query->fetchAll(PDO::FETCH_OBJ);
@@ -30,7 +30,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT *
-                    FROM producto
+                    FROM Producto
                     WHERE Id_producto=?"
                 );
                 $query->bindParam(
@@ -59,7 +59,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "INSERT INTO producto(
+                    "INSERT INTO Producto(
                         Nombre_producto,
                         Descripcion,
                         Existencia,
@@ -131,7 +131,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "UPDATE producto 
+                    "UPDATE Producto 
                     SET Nombre_producto=?,
                         Descripcion=?,
                         Existencia=?,
@@ -201,7 +201,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
-                    FROM producto 
+                    FROM Producto 
                     WHERE Id_producto=?"
                 );
                 $query->bindParam(
@@ -223,7 +223,7 @@
             ){
             try {
                 $query= parent::connect()->prepare(
-                    "DELETE FROM producto 
+                    "DELETE FROM Producto 
                     WHERE Id_producto=?"
                 );
                 $query->bindParam(
@@ -242,7 +242,7 @@
          try {
            $query=parent::connect()->prepare(
                "SELECT * 
-               FROM producto
+               FROM Producto
                WHERE Nombre_producto
                LIKE ?
                ORDER BY Nombre_producto desc"
