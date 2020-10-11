@@ -25,7 +25,7 @@
 		</div>
 
 		<!-- Products -->
-		
+      
 		<div class="products">
 			<div class="container">
 				<div class="row products_bar_row">
@@ -69,7 +69,6 @@
 				<div class="row products_row products_container grid">
 					
 					<!-- Product -->
-
 				<?php 
                  	$productos= new Producto();
                  	$ps=$productos->get_all("LIMIT 9");
@@ -87,7 +86,8 @@
 										<div>
 											<div class="product_name">
 												<a href="?controller=Cobaltech&method=product">
-													<?php echo $p->Nombre_producto ?>
+													<?php 
+                                       echo substr($p->Nombre_producto,0,28) ?>
 												</a></div>
 											<!-- <div class="product_category"> <a href="category.html">Gameplay</a></div> -->
 										</div>
@@ -113,7 +113,6 @@
 						</div>
 					</div>
 				<?php } ?>
-
 				</div>
 				<div class="row page_nav_row">
 					<div class="col">
