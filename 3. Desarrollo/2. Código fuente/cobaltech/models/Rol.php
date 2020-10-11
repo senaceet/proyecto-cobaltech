@@ -7,7 +7,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT * 
-                    FROM rol"
+                    FROM Rol"
                 );
                 $query->execute();
                 return $query->fetchAll(PDO::FETCH_OBJ);
@@ -24,7 +24,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT *
-                    FROM rol
+                    FROM Rol
                     WHERE Id_rol=?"
                 );
                 $query->bindParam(
@@ -46,7 +46,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "INSERT INTO rol (Tipo_rol) 
+                    "INSERT INTO Rol (Tipo_rol) 
                     VALUES (?)"
                 );
                 $query->bindParam(
@@ -67,7 +67,7 @@
             ){
             try {
                 $query= parent::connect()->prepare(
-                    "DELETE FROM rol 
+                    "DELETE FROM Rol 
                     WHERE Id_rol=?"
                 );
                 $query->bindParam(
@@ -89,7 +89,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "UPDATE rol 
+                    "UPDATE Rol 
                     SET Tipo_rol= ? 
                     WHERE Id_rol= ?"
                 ); 

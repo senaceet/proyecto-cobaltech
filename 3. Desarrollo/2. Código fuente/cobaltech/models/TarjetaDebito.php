@@ -7,7 +7,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT *
-                    FROM tarjeta_debito "
+                    FROM Tarjeta_debito "
                 );
                 $query->execute();
                 return $query->fetchAll(PDO::FETCH_OBJ);
@@ -24,7 +24,7 @@
             try {
                 $query= parent::connect()->prepare(
                     "SELECT *
-                    FROM tarjeta_debito
+                    FROM Tarjeta_debito
                     WHERE Id_tarjeta_debito = ?"
                 );
                 $query->bindParam(
