@@ -63,19 +63,19 @@
                                     <form action="?controller=seguridad&method=store" method="post">
                                         <div class="form-group">
                                             <label for="">Nombre</label>
-                                            <input class="form-control" type="text" name="Primer_nombre">
+                                            <input class="form-control" type="text" name="Primer_nombre" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="">Apellido</label>
-                                            <input class="form-control" type="text" name="Primer_apellido">
+                                            <input class="form-control" type="text" name="Primer_apellido" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="">Correo</label>
-                                            <input class="form-control" type="text" name="Correo_electronico">
+                                            <input class="form-control" type="email" name="Correo_electronico" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="">Contraseña</label>
-                                            <input class="form-control" type="password" name="Contrasena">
+                                            <input class="form-control" type="password" name="Contrasena" required>
                                         </div>
                                         <div class="form-group">
                                             <input class="form-control" type="hidden" name="RolId_rol" value="3">
