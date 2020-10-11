@@ -7,7 +7,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT *
-                    FROM tipo_documento "
+                    FROM Tipo_documento "
                 );
                 $query->execute();
                 return  $query->fetchAll(PDO::FETCH_OBJ
@@ -25,7 +25,7 @@
             try {
                 $query=parent::connect()->prepare(
                     "SELECT *
-                    FROM tipo_documento
+                    FROM Tipo_documento
                     WHERE Id_tipodoc=?"
                 );
                 $query->bindParam(
@@ -48,7 +48,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "INSERT INTO tipo_documento(
+                    "INSERT INTO Tipo_documento(
                         Abreviatura,
                         Tipodoc
                     )
@@ -77,7 +77,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "DELETE FROM tipo_documento 
+                    "DELETE FROM Tipo_documento 
                     WHERE Id_tipodoc=?"
                 );
                 $query->bindParam(
@@ -100,7 +100,7 @@
             ){
             try {
                 $query=parent::connect()->prepare(
-                    "UPDATE tipo_documento 
+                    "UPDATE Tipo_documento 
                     SET Abreviatura = ?,
                         Tipodoc = ? 
                     WHERE Id_tipodoc=?"
