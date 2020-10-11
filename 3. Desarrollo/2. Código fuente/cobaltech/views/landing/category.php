@@ -87,7 +87,7 @@
 										<div>
 											<div class="product_name">
 												<a href="?controller=Cobaltech&method=product">
-													<?php echo $p->Nombre_producto ?>
+													<?php echo substr($p->Nombre_producto,0,28) ?>
 												</a></div>
 											<!-- <div class="product_category"> <a href="category.html">Gameplay</a></div> -->
 										</div>
